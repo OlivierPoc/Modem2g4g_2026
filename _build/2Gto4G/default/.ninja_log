@@ -1,0 +1,17 @@
+# ninja log v7
+43	325	8133735267364314	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART2_modem.c.p1	543f7a0a465af9d6
+38	333	8133735267315125	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART1_DTE.c.p1	88725cf53f45c39b
+7	243	8133735748821660	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/LCD.c.p1	24e9ac2a5ac5be12
+47	364	8133735267408641	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/commands.c.p1	bedc016bdb56f3db
+12	258	8133735748875733	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/SIM7600.c.p1	91b5cc5fdceba8fd
+53	349	8133735267465437	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/interrupt.c.p1	543b0ca3d05b01d1
+17	252	8133735748927711	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/main.c.p1	eed41b4c873cac5
+258	1955	8133735751337409	D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/out/2Gto4G/default.elf	5f12ce4a1b846d6c
+36	569	8133740922562742	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART2_modem.c.p1	543f7a0a465af9d6
+28	579	8133740922479610	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART1_DTE.c.p1	88725cf53f45c39b
+44	584	8133740922636681	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/commands.c.p1	bedc016bdb56f3db
+14	586	8133740922338346	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/LCD.c.p1	24e9ac2a5ac5be12
+51	595	8133740922708002	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/interrupt.c.p1	543b0ca3d05b01d1
+21	602	8133740922409491	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/SIM7600.c.p1	91b5cc5fdceba8fd
+59	636	8133740922791415	CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/main.c.p1	eed41b4c873cac5
+637	2950	8133740928570165	D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/out/2Gto4G/default.elf	5f12ce4a1b846d6c
