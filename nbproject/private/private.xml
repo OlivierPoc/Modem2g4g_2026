@@ -6,8 +6,8 @@
             <file>file:/D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/SIM7600.c</file>
             <file>file:/D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/commands.c</file>
             <file>file:/D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/main.c</file>
-            <file>file:/D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART1_DTE.c</file>
-            <file>file:/D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART2_modem.c</file>
+            <file>file:/D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/commands.h</file>
+            <file>file:/D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/SIM7600.h</file>
         </group>
     </open-files>
 </project-private>

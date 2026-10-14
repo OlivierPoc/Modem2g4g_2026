@@ -12565,6 +12565,14 @@ double tempValue;
 uint8_t humidityValue;
 
 
+_Bool smsMode = 0;
+_Bool smsReadMode = 0;
+_Bool smsSend = 0;
+_Bool smsStartPoele = 0;
+_Bool smsStartPoeleLu = 0;
+_Bool smsTEL = 0;
+
+
 void Command(char *command, uint8_t from);
 void Execute(void);
 # 20 "SIM7600.c" 2
@@ -12583,11 +12591,6 @@ _Bool modemStartPin = 0;
 _Bool modemStart = 0;
 _Bool noSIM = 1;
 uint8_t ready = 0;
-
-
-_Bool smsMode = 0;
-_Bool smsReadMode = 0;
-_Bool smsSend = 0;
 # 50 "SIM7600.c"
 void SIM7600_Init(void)
 {
@@ -12721,6 +12724,49 @@ void DTE_CommandsReceive(void)
         {
             Uart1SendString_DTE("OK\r\n");
         }
+        else if (strncmp((const char *) bufferUart1, "AT+CMGR=1", 9) == 0)
+        {
+            if (smsStartPoele)
+            {
+                if (!smsStartPoeleLu)
+                {
+                    Uart1SendString_DTE(
+                                        "\r\n"
+                                        "+CMGR: \"REC UNREAD\",\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n"
+                                        "1234 ON\r\n"
+                                        "\r\n"
+                                        "OK\r\n"
+                                        );
+
+                    smsStartPoeleLu = 1;
+                }
+                else
+                {
+                    Uart1SendString_DTE(
+                                        "\r\n"
+                                        "+CMGR: \"REC READ\",\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n"
+                                        "1234 ON\r\n"
+                                        "\r\n"
+                                        "OK\r\n"
+                                        );
+                    smsStartPoele = 0;
+                    smsStartPoeleLu = 0;
+                }
+            }
+# 249 "SIM7600.c"
+            else
+            {
+                Uart1SendString_DTE("+CMGR: 0,,0\r\n");
+                Uart1SendString_DTE("OK\r\n");
+            }
+        }
+        else if (strncmp((const char *) bufferUart1, "AT+CMGD=1", 9) == 0)
+        {
+            smsStartPoele = 0;
+            smsStartPoeleLu = 0;
+
+            Uart1SendString_DTE("\r\nOK\r\n");
+        }
         else
         {
             Uart2SendString_modem(bufferUart1);
@@ -12736,7 +12782,7 @@ void DTE_CommandsReceive(void)
         index = 0;
     }
 }
-# 222 "SIM7600.c"
+# 286 "SIM7600.c"
 void SIM7600_CommandsReceive(void)
 {
     uint8_t index = 0;

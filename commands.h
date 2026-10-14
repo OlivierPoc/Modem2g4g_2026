@@ -22,8 +22,8 @@
 #define START_NOW_TXT "1234 ON" 
 //commmande poele time
 
-#define START_LATER 0x16
-#define START_LATERT "A1202" 
+#define TEL 0x16
+#define TEL_TXT "1234 TEL" 
 
 // Affiche Debug
 #define AFFICHE_DEBUG 0x14
@@ -128,6 +128,14 @@ bool executionFlag = false; // flag indicant si une commande doit être executee
 uint16_t co2Value;
 double tempValue;
 uint8_t humidityValue;
+
+// SMS states
+bool smsMode = false; // reception d'un SMS
+bool smsReadMode = false; // lecture d'un SMS recu
+bool smsSend = false; // envois d'un SMS
+bool smsStartPoele = false;  // sms recut pour le poele NEX
+bool smsStartPoeleLu = false;
+bool smsTEL = false;  // sms recut pour le poele NEX
         
 // functions
 void Command(char *command, uint8_t from); // prototype de fonciton de preparation des commandes en provenance du DTE ou par SMS

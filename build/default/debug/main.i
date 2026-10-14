@@ -12628,6 +12628,14 @@ double tempValue;
 uint8_t humidityValue;
 
 
+_Bool smsMode = 0;
+_Bool smsReadMode = 0;
+_Bool smsSend = 0;
+_Bool smsStartPoele = 0;
+_Bool smsStartPoeleLu = 0;
+_Bool smsTEL = 0;
+
+
 void Command(char *command, uint8_t from);
 void Execute(void);
 # 72 "main.c" 2

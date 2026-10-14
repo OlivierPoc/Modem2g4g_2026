@@ -43,6 +43,7 @@ uint8_t currentCommand = ERROR; // commande prevue
 // Desc.: sous programme de preparation des commandes en provenance du DTE ou par SMS
 // Ver. Date: V00 20250530 Creation (YYYYMMDD)	
 //---------------------------------------------------
+
 void Command(char *command, uint8_t from)
 {
     commandFrom = from; // memoriser d'ou vient la commande
@@ -50,13 +51,17 @@ void Command(char *command, uint8_t from)
     // set current command
     // commandes par SMS et par le DTE
     // ---------- BACKLIGHT LCD ----------
-    if (strncmp(command, BACKLIGHT_ON_TXT, strlen(BACKLIGHT_ON_TXT)) == 0)
-    {
-        currentCommand = BACKLIGHT_ON;
-    }
-    else if (strncmp(command, AFFICHE_DEBUG_TXT, strlen(AFFICHE_DEBUG_TXT)) == 0)
+    if (strncmp(command, AFFICHE_DEBUG_TXT, strlen(AFFICHE_DEBUG_TXT)) == 0)
     {
         currentCommand = AFFICHE_DEBUG;
+    }
+    else if (strncmp(command, START_NOW_TXT, strlen(START_NOW_TXT)) == 0)
+    {
+        currentCommand = START_NOW;
+    }
+    else if (strncmp(command, TEL_TXT, strlen(TEL_TXT)) == 0)
+    {
+        currentCommand = TEL;
     }
     else if (strncmp(command, BACKLIGHT_OFF_TXT, strlen(BACKLIGHT_OFF_TXT)) == 0)
     {
@@ -132,8 +137,8 @@ void Command(char *command, uint8_t from)
     else if (strncmp(command, GET_CO2_TXT, strlen(GET_CO2_TXT)) == 0)
     {
         currentCommand = GET_CO2;
-    }   
-    else   // commande invalide
+    }
+    else // commande invalide
     {
         currentCommand = ERROR;
         LCD_Clear();
@@ -150,6 +155,7 @@ void Command(char *command, uint8_t from)
 // Desc.: sous programme d'execution de la commande prevue
 // Ver. Date: V00 20250530 Creation (YYYYMMDD)	
 //---------------------------------------------------
+
 void Execute(void)
 {
     bool state = false; // renvois d'etat 
@@ -165,9 +171,14 @@ void Execute(void)
         break;
 
     case START_NOW:
-        Uart1SendString_DTE(START_NOW_TXT);
-        Uart1SendString_DTE("\r\n\r\n");
+        smsStartPoele = true;
         state = true;
+        break;
+
+    case TEL:
+        smsTEL = true;
+        state = true;
+
         break;
 
         // ---------- BACKLIGHT LCD ----------
@@ -513,14 +524,14 @@ void Execute(void)
 
         // ---------- ERROR ----------
     case ERROR:
-        if (commandFrom == SMS) // reponse SMS
-        {
-            SIM7600_SendSMS("ERROR"); // envois de l'erreur par SMS
-        }
-        else // reponse DTE
-        {
-            Uart1SendString_DTE("\r\nERROR\r\n");
-        }
+//        if (commandFrom == SMS) // reponse SMS
+//        {
+//            SIM7600_SendSMS("ERROR"); // envois de l'erreur par SMS
+//        }
+//        else // reponse DTE
+//        {
+//            Uart1SendString_DTE("\r\nERROR\r\n");
+//        }
         // affichage "ERROR" sur le LCD
         LCD_Clear();
         LCD_Write_String("ERROR");

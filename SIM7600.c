@@ -33,10 +33,10 @@ bool modemStart = false; // Modem demarre sans code PIN
 bool noSIM = true; // pas de carte SIM
 uint8_t ready = 0; // Modem pret
 
-// SMS states
-bool smsMode = false; // reception d'un SMS
-bool smsReadMode = false; // lecture d'un SMS recu
-bool smsSend = false; // envois d'un SMS
+//// SMS states
+//bool smsMode = false; // reception d'un SMS
+//bool smsReadMode = false; // lecture d'un SMS recu
+//bool smsSend = false; // envois d'un SMS
 
 //char phoneNumber[13]="+41793018256"; // numero de l'utilisateur "+41XXXXXXXXX\0" 
 
@@ -197,7 +197,67 @@ void DTE_CommandsReceive(void)
         }
         else if (strncmp((const char *) bufferUart1, "AT+CMGR=1", 9) == 0)
         {
-            Uart1SendString_DTE("+CMGR: 0,,0\r\n");
+            if (smsStartPoele)
+            {
+                if (!smsStartPoeleLu)
+                {
+                    Uart1SendString_DTE(
+                                        "\r\n"
+                                        "+CMGR: \"REC UNREAD\",\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n"
+                                        "1234 ON\r\n"
+                                        "\r\n"
+                                        "OK\r\n"
+                                        );
+
+                    smsStartPoeleLu = true;
+                }
+                else
+                {
+                    Uart1SendString_DTE(
+                                        "\r\n"
+                                        "+CMGR: \"REC READ\",\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n"
+                                        "1234 ON\r\n"
+                                        "\r\n"
+                                        "OK\r\n"
+                                        );
+                    smsStartPoele = false;
+                    smsStartPoeleLu = false;
+                }
+            }
+//            else if (smsTEL)
+//            {
+//                Uart1SendString_DTE(
+//                                    "\r\n"
+//                                    "+CMGR: 0,\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n"
+//                                    "1234 TEL\r\n"
+//                                    "\r\n"
+//                                    "OK\r\n"
+//                                    );
+//
+//                // Simule un SMS présent dans l'emplacement 1
+//                //                 Uart1SendString_DTE("+CMGR: 0,\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n");
+//                //
+//                //                // Contenu du SMS transmis au poêle
+//                //                Uart1SendString_DTE("1234 TEö\r\n");
+//                //
+//                //                // Fin de la réponse AT
+//                //                Uart1SendString_DTE("\r\nOK\r\n");
+//
+//                // Le SMS ne doit être présenté qu'une seule fois
+//                smsTEL = false;
+//            }
+            else
+            {
+                Uart1SendString_DTE("+CMGR: 0,,0\r\n");
+                Uart1SendString_DTE("OK\r\n");
+            }
+        }
+        else if (strncmp((const char *) bufferUart1, "AT+CMGD=1", 9) == 0)
+        {
+            smsStartPoele = false;
+            smsStartPoeleLu = false;
+
+            Uart1SendString_DTE("\r\nOK\r\n");
         }
         else // autre commande AT
         {

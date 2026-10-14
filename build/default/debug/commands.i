@@ -12524,6 +12524,14 @@ double tempValue;
 uint8_t humidityValue;
 
 
+_Bool smsMode = 0;
+_Bool smsReadMode = 0;
+_Bool smsSend = 0;
+_Bool smsStartPoele = 0;
+_Bool smsStartPoeleLu = 0;
+_Bool smsTEL = 0;
+
+
 void Command(char *command, uint8_t from);
 void Execute(void);
 # 16 "commands.c" 2
@@ -12561,13 +12569,7 @@ void Uart1ISR_DTE(void);
 # 37 "commands.c"
 uint8_t commandFrom = 2;
 uint8_t currentCommand = 0xFF;
-
-
-
-
-
-
-
+# 47 "commands.c"
 void Command(char *command, uint8_t from)
 {
     commandFrom = from;
@@ -12575,13 +12577,17 @@ void Command(char *command, uint8_t from)
 
 
 
-    if (strncmp(command, "Backlight on", strlen("Backlight on")) == 0)
-    {
-        currentCommand = 0x00;
-    }
-    else if (strncmp(command, "Debug", strlen("Debug")) == 0)
+    if (strncmp(command, "Debug", strlen("Debug")) == 0)
     {
         currentCommand = 0x14;
+    }
+    else if (strncmp(command, "1234 ON", strlen("1234 ON")) == 0)
+    {
+        currentCommand = 0x15;
+    }
+    else if (strncmp(command, "1234 TEL", strlen("1234 TEL")) == 0)
+    {
+        currentCommand = 0x16;
     }
     else if (strncmp(command, "Backlight off", strlen("Backlight off")) == 0)
     {
@@ -12667,7 +12673,7 @@ void Command(char *command, uint8_t from)
 
     executionFlag = 1;
 }
-# 153 "commands.c"
+# 159 "commands.c"
 void Execute(void)
 {
     _Bool state = 0;
@@ -12683,9 +12689,14 @@ void Execute(void)
         break;
 
     case 0x15:
-        Uart1SendString_DTE("1234 ON");
-        Uart1SendString_DTE("\r\n\r\n");
+        smsStartPoele = 1;
         state = 1;
+        break;
+
+    case 0x16:
+        smsTEL = 1;
+        state = 1;
+
         break;
 
 
@@ -13031,15 +13042,7 @@ void Execute(void)
 
 
     case 0xFF:
-        if (commandFrom == 1)
-        {
-            SIM7600_SendSMS("ERROR");
-        }
-        else
-        {
-            Uart1SendString_DTE("\r\nERROR\r\n");
-        }
-
+# 536 "commands.c"
         LCD_Clear();
         LCD_Write_String("ERROR");
         state = 1;

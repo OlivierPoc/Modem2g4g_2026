@@ -11,12 +11,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "41
 [; ;./LCD.h: 41: void LCD_Write_String(const char *str);
 [v _LCD_Write_String `(v ~T0 @X0 0 ef1`*Cuc ]
+"43
+[; ;./LCD.h: 43: void LCD_BackLight(_Bool backLight);
+[v _LCD_BackLight `(v ~T0 @X0 0 ef1`a ]
 "26 ./UART1_DTE.h
 [; ;./UART1_DTE.h: 26: void Uart1SendString_DTE(char *str);
 [v _Uart1SendString_DTE `(v ~T0 @X0 0 ef1`*uc ]
-"43 ./LCD.h
-[; ;./LCD.h: 43: void LCD_BackLight(_Bool backLight);
-[v _LCD_BackLight `(v ~T0 @X0 0 ef1`a ]
 "380 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16F1xxxx_DFP/1.31.465/xc8\pic\include\proc/pic16f15356.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16F1xxxx_DFP/1.31.465/xc8\pic\include\proc/pic16f15356.h: 380:     struct {
 [s S33 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -1106,6 +1106,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 "130
 [; ;./commands.h: 130: uint8_t humidityValue;
 [v _humidityValue `uc ~T0 @X0 1 e ]
+"133
+[; ;./commands.h: 133: _Bool smsMode = 0;
+[v _smsMode `a ~T0 @X0 1 e ]
+[i _smsMode
+-> -> 0 `i `a
+]
+"134
+[; ;./commands.h: 134: _Bool smsReadMode = 0;
+[v _smsReadMode `a ~T0 @X0 1 e ]
+[i _smsReadMode
+-> -> 0 `i `a
+]
+"135
+[; ;./commands.h: 135: _Bool smsSend = 0;
+[v _smsSend `a ~T0 @X0 1 e ]
+[i _smsSend
+-> -> 0 `i `a
+]
+"136
+[; ;./commands.h: 136: _Bool smsStartPoele = 0;
+[v _smsStartPoele `a ~T0 @X0 1 e ]
+[i _smsStartPoele
+-> -> 0 `i `a
+]
+"137
+[; ;./commands.h: 137: _Bool smsStartPoeleLu = 0;
+[v _smsStartPoeleLu `a ~T0 @X0 1 e ]
+[i _smsStartPoeleLu
+-> -> 0 `i `a
+]
+"138
+[; ;./commands.h: 138: _Bool smsTEL = 0;
+[v _smsTEL `a ~T0 @X0 1 e ]
+[i _smsTEL
+-> -> 0 `i `a
+]
 "21 ./UART1_DTE.h
 [; ;./UART1_DTE.h: 21: char bufferUart1[64] = {0};
 [v _bufferUart1 `uc ~T0 @X0 -> 64 `i e ]
@@ -1126,306 +1162,321 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _currentCommand
 -> -> 255 `i `uc
 ]
-"46
-[; ;commands.c: 46: void Command(char *command, uint8_t from)
-[v _Command `(v ~T0 @X0 1 ef2`*uc`uc ]
 "47
-[; ;commands.c: 47: {
+[; ;commands.c: 47: void Command(char *command, uint8_t from)
+[v _Command `(v ~T0 @X0 1 ef2`*uc`uc ]
+"48
+[; ;commands.c: 48: {
 {
 [e :U _Command ]
-"46
-[; ;commands.c: 46: void Command(char *command, uint8_t from)
+"47
+[; ;commands.c: 47: void Command(char *command, uint8_t from)
 [v _command `*uc ~T0 @X0 1 r1 ]
 [v _from `uc ~T0 @X0 1 r2 ]
-"47
-[; ;commands.c: 47: {
-[f ]
 "48
-[; ;commands.c: 48:     commandFrom = from;
+[; ;commands.c: 48: {
+[f ]
+"49
+[; ;commands.c: 49:     commandFrom = from;
 [e = _commandFrom _from ]
-"53
-[; ;commands.c: 53:     if (strncmp(command, "Backlight on", strlen("Backlight on")) == 0)
-[e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 1C ( _strlen (1 :s 2C -> 0 `i 976  ]
 "54
-[; ;commands.c: 54:     {
-{
+[; ;commands.c: 54:     if (strncmp(command, "Debug", strlen("Debug")) == 0)
+[e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 1C ( _strlen (1 :s 2C -> 0 `i 976  ]
 "55
-[; ;commands.c: 55:         currentCommand = 0x00;
-[e = _currentCommand -> -> 0 `i `uc ]
+[; ;commands.c: 55:     {
+{
 "56
-[; ;commands.c: 56:     }
+[; ;commands.c: 56:         currentCommand = 0x14;
+[e = _currentCommand -> -> 20 `i `uc ]
+"57
+[; ;commands.c: 57:     }
 }
 [e $U 977  ]
-"57
-[; ;commands.c: 57:     else if (strncmp(command, "Debug", strlen("Debug")) == 0)
+"58
+[; ;commands.c: 58:     else if (strncmp(command, "1234 ON", strlen("1234 ON")) == 0)
 [e :U 976 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 3C ( _strlen (1 :s 4C -> 0 `i 978  ]
-"58
-[; ;commands.c: 58:     {
-{
 "59
-[; ;commands.c: 59:         currentCommand = 0x14;
-[e = _currentCommand -> -> 20 `i `uc ]
+[; ;commands.c: 59:     {
+{
 "60
-[; ;commands.c: 60:     }
+[; ;commands.c: 60:         currentCommand = 0x15;
+[e = _currentCommand -> -> 21 `i `uc ]
+"61
+[; ;commands.c: 61:     }
 }
 [e $U 979  ]
-"61
-[; ;commands.c: 61:     else if (strncmp(command, "Backlight off", strlen("Backlight off")) == 0)
+"62
+[; ;commands.c: 62:     else if (strncmp(command, "1234 TEL", strlen("1234 TEL")) == 0)
 [e :U 978 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 5C ( _strlen (1 :s 6C -> 0 `i 980  ]
-"62
-[; ;commands.c: 62:     {
-{
 "63
-[; ;commands.c: 63:         currentCommand = 0x01;
-[e = _currentCommand -> -> 1 `i `uc ]
+[; ;commands.c: 63:     {
+{
 "64
-[; ;commands.c: 64:     }
+[; ;commands.c: 64:         currentCommand = 0x16;
+[e = _currentCommand -> -> 22 `i `uc ]
+"65
+[; ;commands.c: 65:     }
 }
 [e $U 981  ]
-"65
-[; ;commands.c: 65:     else if (strncmp(command, "Backlight", strlen("Backlight")) == 0)
+"66
+[; ;commands.c: 66:     else if (strncmp(command, "Backlight off", strlen("Backlight off")) == 0)
 [e :U 980 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 7C ( _strlen (1 :s 8C -> 0 `i 982  ]
-"66
-[; ;commands.c: 66:     {
-{
 "67
-[; ;commands.c: 67:         currentCommand = 0x02;
-[e = _currentCommand -> -> 2 `i `uc ]
+[; ;commands.c: 67:     {
+{
 "68
-[; ;commands.c: 68:     }
+[; ;commands.c: 68:         currentCommand = 0x01;
+[e = _currentCommand -> -> 1 `i `uc ]
+"69
+[; ;commands.c: 69:     }
 }
 [e $U 983  ]
 "70
-[; ;commands.c: 70:     else if (strncmp(command, "IO1 high", strlen("IO1 high")) == 0)
+[; ;commands.c: 70:     else if (strncmp(command, "Backlight", strlen("Backlight")) == 0)
 [e :U 982 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 9C ( _strlen (1 :s 10C -> 0 `i 984  ]
 "71
 [; ;commands.c: 71:     {
 {
 "72
-[; ;commands.c: 72:         currentCommand = 0x03;
-[e = _currentCommand -> -> 3 `i `uc ]
+[; ;commands.c: 72:         currentCommand = 0x02;
+[e = _currentCommand -> -> 2 `i `uc ]
 "73
 [; ;commands.c: 73:     }
 }
 [e $U 985  ]
-"74
-[; ;commands.c: 74:     else if (strncmp(command, "IO1 low", strlen("IO1 low")) == 0)
+"75
+[; ;commands.c: 75:     else if (strncmp(command, "IO1 high", strlen("IO1 high")) == 0)
 [e :U 984 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 11C ( _strlen (1 :s 12C -> 0 `i 986  ]
-"75
-[; ;commands.c: 75:     {
-{
 "76
-[; ;commands.c: 76:         currentCommand = 0x04;
-[e = _currentCommand -> -> 4 `i `uc ]
+[; ;commands.c: 76:     {
+{
 "77
-[; ;commands.c: 77:     }
+[; ;commands.c: 77:         currentCommand = 0x03;
+[e = _currentCommand -> -> 3 `i `uc ]
+"78
+[; ;commands.c: 78:     }
 }
 [e $U 987  ]
-"78
-[; ;commands.c: 78:     else if (strncmp(command, "IO1", strlen("IO1")) == 0)
+"79
+[; ;commands.c: 79:     else if (strncmp(command, "IO1 low", strlen("IO1 low")) == 0)
 [e :U 986 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 13C ( _strlen (1 :s 14C -> 0 `i 988  ]
-"79
-[; ;commands.c: 79:     {
-{
 "80
-[; ;commands.c: 80:         currentCommand = 0x05;
-[e = _currentCommand -> -> 5 `i `uc ]
+[; ;commands.c: 80:     {
+{
 "81
-[; ;commands.c: 81:     }
+[; ;commands.c: 81:         currentCommand = 0x04;
+[e = _currentCommand -> -> 4 `i `uc ]
+"82
+[; ;commands.c: 82:     }
 }
 [e $U 989  ]
 "83
-[; ;commands.c: 83:     else if (strncmp(command, "IO2 high", strlen("IO2 high")) == 0)
+[; ;commands.c: 83:     else if (strncmp(command, "IO1", strlen("IO1")) == 0)
 [e :U 988 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 15C ( _strlen (1 :s 16C -> 0 `i 990  ]
 "84
 [; ;commands.c: 84:     {
 {
 "85
-[; ;commands.c: 85:         currentCommand = 0x06;
-[e = _currentCommand -> -> 6 `i `uc ]
+[; ;commands.c: 85:         currentCommand = 0x05;
+[e = _currentCommand -> -> 5 `i `uc ]
 "86
 [; ;commands.c: 86:     }
 }
 [e $U 991  ]
-"87
-[; ;commands.c: 87:     else if (strncmp(command, "IO2 low", strlen("IO2 low")) == 0)
+"88
+[; ;commands.c: 88:     else if (strncmp(command, "IO2 high", strlen("IO2 high")) == 0)
 [e :U 990 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 17C ( _strlen (1 :s 18C -> 0 `i 992  ]
-"88
-[; ;commands.c: 88:     {
-{
 "89
-[; ;commands.c: 89:         currentCommand = 0x07;
-[e = _currentCommand -> -> 7 `i `uc ]
+[; ;commands.c: 89:     {
+{
 "90
-[; ;commands.c: 90:     }
+[; ;commands.c: 90:         currentCommand = 0x06;
+[e = _currentCommand -> -> 6 `i `uc ]
+"91
+[; ;commands.c: 91:     }
 }
 [e $U 993  ]
-"91
-[; ;commands.c: 91:     else if (strncmp(command, "IO2", strlen("IO2")) == 0)
+"92
+[; ;commands.c: 92:     else if (strncmp(command, "IO2 low", strlen("IO2 low")) == 0)
 [e :U 992 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 19C ( _strlen (1 :s 20C -> 0 `i 994  ]
-"92
-[; ;commands.c: 92:     {
-{
 "93
-[; ;commands.c: 93:         currentCommand = 0x08;
-[e = _currentCommand -> -> 8 `i `uc ]
+[; ;commands.c: 93:     {
+{
 "94
-[; ;commands.c: 94:     }
+[; ;commands.c: 94:         currentCommand = 0x07;
+[e = _currentCommand -> -> 7 `i `uc ]
+"95
+[; ;commands.c: 95:     }
 }
 [e $U 995  ]
 "96
-[; ;commands.c: 96:     else if (strncmp(command, "Relais1 on", strlen("Relais1 on")) == 0)
+[; ;commands.c: 96:     else if (strncmp(command, "IO2", strlen("IO2")) == 0)
 [e :U 994 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 21C ( _strlen (1 :s 22C -> 0 `i 996  ]
 "97
 [; ;commands.c: 97:     {
 {
 "98
-[; ;commands.c: 98:         currentCommand = 0x09;
-[e = _currentCommand -> -> 9 `i `uc ]
+[; ;commands.c: 98:         currentCommand = 0x08;
+[e = _currentCommand -> -> 8 `i `uc ]
 "99
 [; ;commands.c: 99:     }
 }
 [e $U 997  ]
-"100
-[; ;commands.c: 100:     else if (strncmp(command, "Relais1 off", strlen("Relais1 off")) == 0)
+"101
+[; ;commands.c: 101:     else if (strncmp(command, "Relais1 on", strlen("Relais1 on")) == 0)
 [e :U 996 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 23C ( _strlen (1 :s 24C -> 0 `i 998  ]
-"101
-[; ;commands.c: 101:     {
-{
 "102
-[; ;commands.c: 102:         currentCommand = 0x0A;
-[e = _currentCommand -> -> 10 `i `uc ]
+[; ;commands.c: 102:     {
+{
 "103
-[; ;commands.c: 103:     }
+[; ;commands.c: 103:         currentCommand = 0x09;
+[e = _currentCommand -> -> 9 `i `uc ]
+"104
+[; ;commands.c: 104:     }
 }
 [e $U 999  ]
-"104
-[; ;commands.c: 104:     else if (strncmp(command, "Relais1", strlen("Relais1")) == 0)
+"105
+[; ;commands.c: 105:     else if (strncmp(command, "Relais1 off", strlen("Relais1 off")) == 0)
 [e :U 998 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 25C ( _strlen (1 :s 26C -> 0 `i 1000  ]
-"105
-[; ;commands.c: 105:     {
-{
 "106
-[; ;commands.c: 106:         currentCommand = 0x0B;
-[e = _currentCommand -> -> 11 `i `uc ]
+[; ;commands.c: 106:     {
+{
 "107
-[; ;commands.c: 107:     }
+[; ;commands.c: 107:         currentCommand = 0x0A;
+[e = _currentCommand -> -> 10 `i `uc ]
+"108
+[; ;commands.c: 108:     }
 }
 [e $U 1001  ]
 "109
-[; ;commands.c: 109:     else if (strncmp(command, "Relais2 on", strlen("Relais2 on")) == 0)
+[; ;commands.c: 109:     else if (strncmp(command, "Relais1", strlen("Relais1")) == 0)
 [e :U 1000 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 27C ( _strlen (1 :s 28C -> 0 `i 1002  ]
 "110
 [; ;commands.c: 110:     {
 {
 "111
-[; ;commands.c: 111:         currentCommand = 0x0C;
-[e = _currentCommand -> -> 12 `i `uc ]
+[; ;commands.c: 111:         currentCommand = 0x0B;
+[e = _currentCommand -> -> 11 `i `uc ]
 "112
 [; ;commands.c: 112:     }
 }
 [e $U 1003  ]
-"113
-[; ;commands.c: 113:     else if (strncmp(command, "Relais2 off", strlen("Relais2 off")) == 0)
+"114
+[; ;commands.c: 114:     else if (strncmp(command, "Relais2 on", strlen("Relais2 on")) == 0)
 [e :U 1002 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 29C ( _strlen (1 :s 30C -> 0 `i 1004  ]
-"114
-[; ;commands.c: 114:     {
-{
 "115
-[; ;commands.c: 115:         currentCommand = 0x0D;
-[e = _currentCommand -> -> 13 `i `uc ]
+[; ;commands.c: 115:     {
+{
 "116
-[; ;commands.c: 116:     }
+[; ;commands.c: 116:         currentCommand = 0x0C;
+[e = _currentCommand -> -> 12 `i `uc ]
+"117
+[; ;commands.c: 117:     }
 }
 [e $U 1005  ]
-"117
-[; ;commands.c: 117:     else if (strncmp(command, "Relais2", strlen("Relais2")) == 0)
+"118
+[; ;commands.c: 118:     else if (strncmp(command, "Relais2 off", strlen("Relais2 off")) == 0)
 [e :U 1004 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 31C ( _strlen (1 :s 32C -> 0 `i 1006  ]
-"118
-[; ;commands.c: 118:     {
-{
 "119
-[; ;commands.c: 119:         currentCommand = 0x0E;
-[e = _currentCommand -> -> 14 `i `uc ]
+[; ;commands.c: 119:     {
+{
 "120
-[; ;commands.c: 120:     }
+[; ;commands.c: 120:         currentCommand = 0x0D;
+[e = _currentCommand -> -> 13 `i `uc ]
+"121
+[; ;commands.c: 121:     }
 }
 [e $U 1007  ]
 "122
-[; ;commands.c: 122:     else if (strncmp(command, "Temperature", strlen("Temperature")) == 0)
+[; ;commands.c: 122:     else if (strncmp(command, "Relais2", strlen("Relais2")) == 0)
 [e :U 1006 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 33C ( _strlen (1 :s 34C -> 0 `i 1008  ]
 "123
 [; ;commands.c: 123:     {
 {
 "124
-[; ;commands.c: 124:         currentCommand = 0x0F;
-[e = _currentCommand -> -> 15 `i `uc ]
+[; ;commands.c: 124:         currentCommand = 0x0E;
+[e = _currentCommand -> -> 14 `i `uc ]
 "125
 [; ;commands.c: 125:     }
 }
 [e $U 1009  ]
 "127
-[; ;commands.c: 127:     else if (strncmp(command, "Humidite", strlen("Humidite")) == 0)
+[; ;commands.c: 127:     else if (strncmp(command, "Temperature", strlen("Temperature")) == 0)
 [e :U 1008 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 35C ( _strlen (1 :s 36C -> 0 `i 1010  ]
 "128
 [; ;commands.c: 128:     {
 {
 "129
-[; ;commands.c: 129:         currentCommand = 0x10;
-[e = _currentCommand -> -> 16 `i `uc ]
+[; ;commands.c: 129:         currentCommand = 0x0F;
+[e = _currentCommand -> -> 15 `i `uc ]
 "130
 [; ;commands.c: 130:     }
 }
 [e $U 1011  ]
 "132
-[; ;commands.c: 132:     else if (strncmp(command, "CO2", strlen("CO2")) == 0)
+[; ;commands.c: 132:     else if (strncmp(command, "Humidite", strlen("Humidite")) == 0)
 [e :U 1010 ]
 [e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 37C ( _strlen (1 :s 38C -> 0 `i 1012  ]
 "133
 [; ;commands.c: 133:     {
 {
 "134
-[; ;commands.c: 134:         currentCommand = 0x11;
-[e = _currentCommand -> -> 17 `i `uc ]
+[; ;commands.c: 134:         currentCommand = 0x10;
+[e = _currentCommand -> -> 16 `i `uc ]
 "135
 [; ;commands.c: 135:     }
 }
 [e $U 1013  ]
-"136
-[; ;commands.c: 136:     else
-[e :U 1012 ]
 "137
-[; ;commands.c: 137:     {
-{
+[; ;commands.c: 137:     else if (strncmp(command, "CO2", strlen("CO2")) == 0)
+[e :U 1012 ]
+[e $ ! == ( _strncmp (3 , , -> _command `*Cuc :s 39C ( _strlen (1 :s 40C -> 0 `i 1014  ]
 "138
-[; ;commands.c: 138:         currentCommand = 0xFF;
-[e = _currentCommand -> -> 255 `i `uc ]
+[; ;commands.c: 138:     {
+{
 "139
-[; ;commands.c: 139:         LCD_Clear();
-[e ( _LCD_Clear ..  ]
+[; ;commands.c: 139:         currentCommand = 0x11;
+[e = _currentCommand -> -> 17 `i `uc ]
 "140
-[; ;commands.c: 140:         LCD_Write_String("ERR SMS");
-[e ( _LCD_Write_String (1 :s 39C ]
-"141
-[; ;commands.c: 141:     }
+[; ;commands.c: 140:     }
 }
+[e $U 1015  ]
+"141
+[; ;commands.c: 141:     else
+[e :U 1014 ]
+"142
+[; ;commands.c: 142:     {
+{
+"143
+[; ;commands.c: 143:         currentCommand = 0xFF;
+[e = _currentCommand -> -> 255 `i `uc ]
+"144
+[; ;commands.c: 144:         LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"145
+[; ;commands.c: 145:         LCD_Write_String("ERR SMS");
+[e ( _LCD_Write_String (1 :s 41C ]
+"146
+[; ;commands.c: 146:     }
+}
+[e :U 1015 ]
 [e :U 1013 ]
 [e :U 1011 ]
 [e :U 1009 ]
@@ -1445,1063 +1496,1045 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 981 ]
 [e :U 979 ]
 [e :U 977 ]
-"143
-[; ;commands.c: 143:     executionFlag = 1;
+"148
+[; ;commands.c: 148:     executionFlag = 1;
 [e = _executionFlag -> -> 1 `i `a ]
-"144
-[; ;commands.c: 144: }
+"149
+[; ;commands.c: 149: }
 [e :UE 975 ]
 }
-"153
-[; ;commands.c: 153: void Execute(void)
+"159
+[; ;commands.c: 159: void Execute(void)
 [v _Execute `(v ~T0 @X0 1 ef ]
-"154
-[; ;commands.c: 154: {
+"160
+[; ;commands.c: 160: {
 {
 [e :U _Execute ]
 [f ]
-"155
-[; ;commands.c: 155:     _Bool state = 0;
+"161
+[; ;commands.c: 161:     _Bool state = 0;
 [v _state `a ~T0 @X0 1 a ]
 [e = _state -> -> 0 `i `a ]
-"157
-[; ;commands.c: 157:     char stringBuffer[12];
-[v _stringBuffer `uc ~T0 @X0 -> 12 `i a ]
-"159
-[; ;commands.c: 159:     switch (currentCommand)
-[e $U 1016  ]
-"160
-[; ;commands.c: 160:     {
-{
-"161
-[; ;commands.c: 161:     case 0x14:
-[e :U 1017 ]
-"162
-[; ;commands.c: 162:         LCD_Clear();
-[e ( _LCD_Clear ..  ]
 "163
-[; ;commands.c: 163:         LCD_Write_String("MODE DEBUG");
-[e ( _LCD_Write_String (1 :s 40C ]
-"164
-[; ;commands.c: 164:         state = 1;
-[e = _state -> -> 1 `i `a ]
+[; ;commands.c: 163:     char stringBuffer[12];
+[v _stringBuffer `uc ~T0 @X0 -> 12 `i a ]
 "165
-[; ;commands.c: 165:         break;
-[e $U 1015  ]
+[; ;commands.c: 165:     switch (currentCommand)
+[e $U 1018  ]
+"166
+[; ;commands.c: 166:     {
+{
 "167
-[; ;commands.c: 167:     case 0x15:
-[e :U 1018 ]
+[; ;commands.c: 167:     case 0x14:
+[e :U 1019 ]
 "168
-[; ;commands.c: 168:         Uart1SendString_DTE("1234 ON");
-[e ( _Uart1SendString_DTE (1 :s 41C ]
+[; ;commands.c: 168:         LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "169
-[; ;commands.c: 169:         Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 42C ]
+[; ;commands.c: 169:         LCD_Write_String("MODE DEBUG");
+[e ( _LCD_Write_String (1 :s 42C ]
 "170
 [; ;commands.c: 170:         state = 1;
 [e = _state -> -> 1 `i `a ]
 "171
 [; ;commands.c: 171:         break;
-[e $U 1015  ]
-"174
-[; ;commands.c: 174:     case 0x00:
-[e :U 1019 ]
-"175
-[; ;commands.c: 175:         LCD_BackLight(0);
-[e ( _LCD_BackLight (1 -> -> 0 `i `a ]
-"176
-[; ;commands.c: 176:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1020  ]
-"177
-[; ;commands.c: 177:         {
-{
-"178
-[; ;commands.c: 178:             Uart1SendString_DTE("Backlight on");
-[e ( _Uart1SendString_DTE (1 :s 43C ]
-"179
-[; ;commands.c: 179:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 44C ]
-"180
-[; ;commands.c: 180:         }
-}
+[e $U 1017  ]
+"173
+[; ;commands.c: 173:     case 0x15:
 [e :U 1020 ]
-"181
-[; ;commands.c: 181:         state = 0;
-[e = _state -> -> 0 `i `a ]
+"174
+[; ;commands.c: 174:         smsStartPoele = 1;
+[e = _smsStartPoele -> -> 1 `i `a ]
+"175
+[; ;commands.c: 175:         state = 1;
+[e = _state -> -> 1 `i `a ]
+"176
+[; ;commands.c: 176:         break;
+[e $U 1017  ]
+"178
+[; ;commands.c: 178:     case 0x16:
+[e :U 1021 ]
+"179
+[; ;commands.c: 179:         smsTEL = 1;
+[e = _smsTEL -> -> 1 `i `a ]
+"180
+[; ;commands.c: 180:         state = 1;
+[e = _state -> -> 1 `i `a ]
 "182
 [; ;commands.c: 182:         break;
-[e $U 1015  ]
-"184
-[; ;commands.c: 184:     case 0x01:
-[e :U 1021 ]
+[e $U 1017  ]
 "185
-[; ;commands.c: 185:         LCD_BackLight(1);
-[e ( _LCD_BackLight (1 -> -> 1 `i `a ]
+[; ;commands.c: 185:     case 0x00:
+[e :U 1022 ]
+"186
+[; ;commands.c: 186:         LCD_BackLight(0);
+[e ( _LCD_BackLight (1 -> -> 0 `i `a ]
 "187
 [; ;commands.c: 187:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1022  ]
+[e $ ! == -> _commandFrom `i -> 2 `i 1023  ]
 "188
 [; ;commands.c: 188:         {
 {
 "189
-[; ;commands.c: 189:             Uart1SendString_DTE("Backlight off");
-[e ( _Uart1SendString_DTE (1 :s 45C ]
+[; ;commands.c: 189:             Uart1SendString_DTE("Backlight on");
+[e ( _Uart1SendString_DTE (1 :s 43C ]
 "190
 [; ;commands.c: 190:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 46C ]
+[e ( _Uart1SendString_DTE (1 :s 44C ]
 "191
 [; ;commands.c: 191:         }
 }
-[e :U 1022 ]
+[e :U 1023 ]
 "192
 [; ;commands.c: 192:         state = 0;
 [e = _state -> -> 0 `i `a ]
 "193
 [; ;commands.c: 193:         break;
-[e $U 1015  ]
+[e $U 1017  ]
 "195
-[; ;commands.c: 195:     case 0x02:
-[e :U 1023 ]
-"196
-[; ;commands.c: 196:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1024  ]
-"197
-[; ;commands.c: 197:         {
-{
-"198
-[; ;commands.c: 198:             Uart1SendString_DTE("Backlight");
-[e ( _Uart1SendString_DTE (1 :s 47C ]
-"199
-[; ;commands.c: 199:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 48C ]
-"202
-[; ;commands.c: 202:             if (PORTAbits.RA7 == 0)
-[e $ ! == -> . . _PORTAbits 0 7 `i -> 0 `i 1025  ]
-"203
-[; ;commands.c: 203:             {
-{
-"204
-[; ;commands.c: 204:                 Uart1SendString_DTE("ON\r\n");
-[e ( _Uart1SendString_DTE (1 :s 49C ]
-"207
-[; ;commands.c: 207:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"208
-[; ;commands.c: 208:                 LCD_Write_String("ON");
-[e ( _LCD_Write_String (1 :s 50C ]
-"209
-[; ;commands.c: 209:             }
-}
-[e $U 1026  ]
-"210
-[; ;commands.c: 210:             else
-[e :U 1025 ]
-"211
-[; ;commands.c: 211:             {
-{
-"212
-[; ;commands.c: 212:                 Uart1SendString_DTE("OFF\r\n");
-[e ( _Uart1SendString_DTE (1 :s 51C ]
-"215
-[; ;commands.c: 215:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"216
-[; ;commands.c: 216:                 LCD_Write_String("OFF");
-[e ( _LCD_Write_String (1 :s 52C ]
-"217
-[; ;commands.c: 217:             }
-}
-[e :U 1026 ]
-"218
-[; ;commands.c: 218:         }
-}
-[e $U 1027  ]
-"219
-[; ;commands.c: 219:         else
+[; ;commands.c: 195:     case 0x01:
 [e :U 1024 ]
-"220
-[; ;commands.c: 220:         {
+"196
+[; ;commands.c: 196:         LCD_BackLight(1);
+[e ( _LCD_BackLight (1 -> -> 1 `i `a ]
+"198
+[; ;commands.c: 198:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1025  ]
+"199
+[; ;commands.c: 199:         {
 {
-"222
-[; ;commands.c: 222:             if (PORTAbits.RA7 == 0)
+"200
+[; ;commands.c: 200:             Uart1SendString_DTE("Backlight off");
+[e ( _Uart1SendString_DTE (1 :s 45C ]
+"201
+[; ;commands.c: 201:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 46C ]
+"202
+[; ;commands.c: 202:         }
+}
+[e :U 1025 ]
+"203
+[; ;commands.c: 203:         state = 0;
+[e = _state -> -> 0 `i `a ]
+"204
+[; ;commands.c: 204:         break;
+[e $U 1017  ]
+"206
+[; ;commands.c: 206:     case 0x02:
+[e :U 1026 ]
+"207
+[; ;commands.c: 207:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1027  ]
+"208
+[; ;commands.c: 208:         {
+{
+"209
+[; ;commands.c: 209:             Uart1SendString_DTE("Backlight");
+[e ( _Uart1SendString_DTE (1 :s 47C ]
+"210
+[; ;commands.c: 210:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 48C ]
+"213
+[; ;commands.c: 213:             if (PORTAbits.RA7 == 0)
 [e $ ! == -> . . _PORTAbits 0 7 `i -> 0 `i 1028  ]
-"223
-[; ;commands.c: 223:             {
+"214
+[; ;commands.c: 214:             {
 {
-"224
-[; ;commands.c: 224:                 SIM7600_SendSMS("ON");
-[e ( _SIM7600_SendSMS (1 :s 53C ]
-"227
-[; ;commands.c: 227:                 LCD_Clear();
+"215
+[; ;commands.c: 215:                 Uart1SendString_DTE("ON\r\n");
+[e ( _Uart1SendString_DTE (1 :s 49C ]
+"218
+[; ;commands.c: 218:                 LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"228
-[; ;commands.c: 228:                 LCD_Write_String("ON");
-[e ( _LCD_Write_String (1 :s 54C ]
-"229
-[; ;commands.c: 229:             }
+"219
+[; ;commands.c: 219:                 LCD_Write_String("ON");
+[e ( _LCD_Write_String (1 :s 50C ]
+"220
+[; ;commands.c: 220:             }
 }
 [e $U 1029  ]
-"230
-[; ;commands.c: 230:             else
+"221
+[; ;commands.c: 221:             else
 [e :U 1028 ]
-"231
-[; ;commands.c: 231:             {
+"222
+[; ;commands.c: 222:             {
 {
-"232
-[; ;commands.c: 232:                 SIM7600_SendSMS("OFF");
-[e ( _SIM7600_SendSMS (1 :s 55C ]
-"235
-[; ;commands.c: 235:                 LCD_Clear();
+"223
+[; ;commands.c: 223:                 Uart1SendString_DTE("OFF\r\n");
+[e ( _Uart1SendString_DTE (1 :s 51C ]
+"226
+[; ;commands.c: 226:                 LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"236
-[; ;commands.c: 236:                 LCD_Write_String("OFF");
-[e ( _LCD_Write_String (1 :s 56C ]
-"237
-[; ;commands.c: 237:             }
+"227
+[; ;commands.c: 227:                 LCD_Write_String("OFF");
+[e ( _LCD_Write_String (1 :s 52C ]
+"228
+[; ;commands.c: 228:             }
 }
 [e :U 1029 ]
-"238
-[; ;commands.c: 238:         }
+"229
+[; ;commands.c: 229:         }
 }
+[e $U 1030  ]
+"230
+[; ;commands.c: 230:         else
 [e :U 1027 ]
+"231
+[; ;commands.c: 231:         {
+{
+"233
+[; ;commands.c: 233:             if (PORTAbits.RA7 == 0)
+[e $ ! == -> . . _PORTAbits 0 7 `i -> 0 `i 1031  ]
+"234
+[; ;commands.c: 234:             {
+{
+"235
+[; ;commands.c: 235:                 SIM7600_SendSMS("ON");
+[e ( _SIM7600_SendSMS (1 :s 53C ]
+"238
+[; ;commands.c: 238:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "239
-[; ;commands.c: 239:         state = 1;
-[e = _state -> -> 1 `i `a ]
+[; ;commands.c: 239:                 LCD_Write_String("ON");
+[e ( _LCD_Write_String (1 :s 54C ]
 "240
-[; ;commands.c: 240:         break;
-[e $U 1015  ]
-"243
-[; ;commands.c: 243:     case 0x03:
-[e :U 1030 ]
-"244
-[; ;commands.c: 244:         LATBbits.LATB2 = 1;
-[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
-"246
-[; ;commands.c: 246:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1031  ]
-"247
-[; ;commands.c: 247:         {
-{
-"248
-[; ;commands.c: 248:             Uart1SendString_DTE("IO1 high");
-[e ( _Uart1SendString_DTE (1 :s 57C ]
-"249
-[; ;commands.c: 249:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 58C ]
-"250
-[; ;commands.c: 250:         }
+[; ;commands.c: 240:             }
 }
+[e $U 1032  ]
+"241
+[; ;commands.c: 241:             else
 [e :U 1031 ]
-"251
-[; ;commands.c: 251:         state = 0;
-[e = _state -> -> 0 `i `a ]
-"252
-[; ;commands.c: 252:         break;
-[e $U 1015  ]
-"254
-[; ;commands.c: 254:     case 0x04:
+"242
+[; ;commands.c: 242:             {
+{
+"243
+[; ;commands.c: 243:                 SIM7600_SendSMS("OFF");
+[e ( _SIM7600_SendSMS (1 :s 55C ]
+"246
+[; ;commands.c: 246:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"247
+[; ;commands.c: 247:                 LCD_Write_String("OFF");
+[e ( _LCD_Write_String (1 :s 56C ]
+"248
+[; ;commands.c: 248:             }
+}
 [e :U 1032 ]
-"255
-[; ;commands.c: 255:         LATBbits.LATB2 = 0;
-[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
-"256
-[; ;commands.c: 256:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1033  ]
-"257
-[; ;commands.c: 257:         {
-{
-"258
-[; ;commands.c: 258:             Uart1SendString_DTE("IO1 low");
-[e ( _Uart1SendString_DTE (1 :s 59C ]
-"259
-[; ;commands.c: 259:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 60C ]
-"260
-[; ;commands.c: 260:         }
+"249
+[; ;commands.c: 249:         }
 }
+[e :U 1030 ]
+"250
+[; ;commands.c: 250:         state = 1;
+[e = _state -> -> 1 `i `a ]
+"251
+[; ;commands.c: 251:         break;
+[e $U 1017  ]
+"254
+[; ;commands.c: 254:     case 0x03:
 [e :U 1033 ]
+"255
+[; ;commands.c: 255:         LATBbits.LATB2 = 1;
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+"257
+[; ;commands.c: 257:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1034  ]
+"258
+[; ;commands.c: 258:         {
+{
+"259
+[; ;commands.c: 259:             Uart1SendString_DTE("IO1 high");
+[e ( _Uart1SendString_DTE (1 :s 57C ]
+"260
+[; ;commands.c: 260:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 58C ]
 "261
-[; ;commands.c: 261:         state = 0;
-[e = _state -> -> 0 `i `a ]
-"262
-[; ;commands.c: 262:         break;
-[e $U 1015  ]
-"264
-[; ;commands.c: 264:     case 0x05:
+[; ;commands.c: 261:         }
+}
 [e :U 1034 ]
+"262
+[; ;commands.c: 262:         state = 0;
+[e = _state -> -> 0 `i `a ]
+"263
+[; ;commands.c: 263:         break;
+[e $U 1017  ]
 "265
-[; ;commands.c: 265:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1035  ]
-"266
-[; ;commands.c: 266:         {
-{
-"267
-[; ;commands.c: 267:             Uart1SendString_DTE("IO1");
-[e ( _Uart1SendString_DTE (1 :s 61C ]
-"268
-[; ;commands.c: 268:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 62C ]
-"271
-[; ;commands.c: 271:             if (PORTBbits.RB2 == 1)
-[e $ ! == -> . . _PORTBbits 0 2 `i -> 1 `i 1036  ]
-"272
-[; ;commands.c: 272:             {
-{
-"273
-[; ;commands.c: 273:                 Uart1SendString_DTE("HIGH\r\n");
-[e ( _Uart1SendString_DTE (1 :s 63C ]
-"276
-[; ;commands.c: 276:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"277
-[; ;commands.c: 277:                 LCD_Write_String("HIGH");
-[e ( _LCD_Write_String (1 :s 64C ]
-"278
-[; ;commands.c: 278:             }
-}
-[e $U 1037  ]
-"279
-[; ;commands.c: 279:             else
-[e :U 1036 ]
-"280
-[; ;commands.c: 280:             {
-{
-"281
-[; ;commands.c: 281:                 Uart1SendString_DTE("LOW\r\n");
-[e ( _Uart1SendString_DTE (1 :s 65C ]
-"283
-[; ;commands.c: 283:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"284
-[; ;commands.c: 284:                 LCD_Write_String("LOW");
-[e ( _LCD_Write_String (1 :s 66C ]
-"285
-[; ;commands.c: 285:             }
-}
-[e :U 1037 ]
-"286
-[; ;commands.c: 286:         }
-}
-[e $U 1038  ]
-"287
-[; ;commands.c: 287:         else
+[; ;commands.c: 265:     case 0x04:
 [e :U 1035 ]
-"288
-[; ;commands.c: 288:         {
+"266
+[; ;commands.c: 266:         LATBbits.LATB2 = 0;
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+"267
+[; ;commands.c: 267:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1036  ]
+"268
+[; ;commands.c: 268:         {
 {
-"290
-[; ;commands.c: 290:             if (PORTBbits.RB2 == 1)
+"269
+[; ;commands.c: 269:             Uart1SendString_DTE("IO1 low");
+[e ( _Uart1SendString_DTE (1 :s 59C ]
+"270
+[; ;commands.c: 270:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 60C ]
+"271
+[; ;commands.c: 271:         }
+}
+[e :U 1036 ]
+"272
+[; ;commands.c: 272:         state = 0;
+[e = _state -> -> 0 `i `a ]
+"273
+[; ;commands.c: 273:         break;
+[e $U 1017  ]
+"275
+[; ;commands.c: 275:     case 0x05:
+[e :U 1037 ]
+"276
+[; ;commands.c: 276:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1038  ]
+"277
+[; ;commands.c: 277:         {
+{
+"278
+[; ;commands.c: 278:             Uart1SendString_DTE("IO1");
+[e ( _Uart1SendString_DTE (1 :s 61C ]
+"279
+[; ;commands.c: 279:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 62C ]
+"282
+[; ;commands.c: 282:             if (PORTBbits.RB2 == 1)
 [e $ ! == -> . . _PORTBbits 0 2 `i -> 1 `i 1039  ]
+"283
+[; ;commands.c: 283:             {
+{
+"284
+[; ;commands.c: 284:                 Uart1SendString_DTE("HIGH\r\n");
+[e ( _Uart1SendString_DTE (1 :s 63C ]
+"287
+[; ;commands.c: 287:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"288
+[; ;commands.c: 288:                 LCD_Write_String("HIGH");
+[e ( _LCD_Write_String (1 :s 64C ]
+"289
+[; ;commands.c: 289:             }
+}
+[e $U 1040  ]
+"290
+[; ;commands.c: 290:             else
+[e :U 1039 ]
 "291
 [; ;commands.c: 291:             {
 {
 "292
-[; ;commands.c: 292:                 SIM7600_SendSMS("HIGH");
-[e ( _SIM7600_SendSMS (1 :s 67C ]
+[; ;commands.c: 292:                 Uart1SendString_DTE("LOW\r\n");
+[e ( _Uart1SendString_DTE (1 :s 65C ]
+"294
+[; ;commands.c: 294:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "295
-[; ;commands.c: 295:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
+[; ;commands.c: 295:                 LCD_Write_String("LOW");
+[e ( _LCD_Write_String (1 :s 66C ]
 "296
-[; ;commands.c: 296:                 LCD_Write_String("HIGH");
-[e ( _LCD_Write_String (1 :s 68C ]
-"297
-[; ;commands.c: 297:             }
-}
-[e $U 1040  ]
-"298
-[; ;commands.c: 298:             else
-[e :U 1039 ]
-"299
-[; ;commands.c: 299:             {
-{
-"300
-[; ;commands.c: 300:                 SIM7600_SendSMS("LOW");
-[e ( _SIM7600_SendSMS (1 :s 69C ]
-"303
-[; ;commands.c: 303:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"304
-[; ;commands.c: 304:                 LCD_Write_String("LOW");
-[e ( _LCD_Write_String (1 :s 70C ]
-"305
-[; ;commands.c: 305:             }
+[; ;commands.c: 296:             }
 }
 [e :U 1040 ]
-"306
-[; ;commands.c: 306:         }
+"297
+[; ;commands.c: 297:         }
 }
+[e $U 1041  ]
+"298
+[; ;commands.c: 298:         else
 [e :U 1038 ]
-"307
-[; ;commands.c: 307:         state = 1;
-[e = _state -> -> 1 `i `a ]
-"308
-[; ;commands.c: 308:         break;
-[e $U 1015  ]
-"311
-[; ;commands.c: 311:     case 0x06:
-[e :U 1041 ]
-"312
-[; ;commands.c: 312:         LATBbits.LATB3 = 1;
-[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
-"313
-[; ;commands.c: 313:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1042  ]
-"314
-[; ;commands.c: 314:         {
+"299
+[; ;commands.c: 299:         {
 {
+"301
+[; ;commands.c: 301:             if (PORTBbits.RB2 == 1)
+[e $ ! == -> . . _PORTBbits 0 2 `i -> 1 `i 1042  ]
+"302
+[; ;commands.c: 302:             {
+{
+"303
+[; ;commands.c: 303:                 SIM7600_SendSMS("HIGH");
+[e ( _SIM7600_SendSMS (1 :s 67C ]
+"306
+[; ;commands.c: 306:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"307
+[; ;commands.c: 307:                 LCD_Write_String("HIGH");
+[e ( _LCD_Write_String (1 :s 68C ]
+"308
+[; ;commands.c: 308:             }
+}
+[e $U 1043  ]
+"309
+[; ;commands.c: 309:             else
+[e :U 1042 ]
+"310
+[; ;commands.c: 310:             {
+{
+"311
+[; ;commands.c: 311:                 SIM7600_SendSMS("LOW");
+[e ( _SIM7600_SendSMS (1 :s 69C ]
+"314
+[; ;commands.c: 314:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "315
-[; ;commands.c: 315:             Uart1SendString_DTE("IO2 high");
-[e ( _Uart1SendString_DTE (1 :s 71C ]
+[; ;commands.c: 315:                 LCD_Write_String("LOW");
+[e ( _LCD_Write_String (1 :s 70C ]
 "316
-[; ;commands.c: 316:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 72C ]
+[; ;commands.c: 316:             }
+}
+[e :U 1043 ]
 "317
 [; ;commands.c: 317:         }
 }
-[e :U 1042 ]
+[e :U 1041 ]
 "318
-[; ;commands.c: 318:         state = 0;
-[e = _state -> -> 0 `i `a ]
+[; ;commands.c: 318:         state = 1;
+[e = _state -> -> 1 `i `a ]
 "319
 [; ;commands.c: 319:         break;
-[e $U 1015  ]
-"321
-[; ;commands.c: 321:     case 0x07:
-[e :U 1043 ]
+[e $U 1017  ]
 "322
-[; ;commands.c: 322:         LATBbits.LATB3 = 0;
-[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
-"323
-[; ;commands.c: 323:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1044  ]
-"324
-[; ;commands.c: 324:         {
-{
-"325
-[; ;commands.c: 325:             Uart1SendString_DTE("IO2 low");
-[e ( _Uart1SendString_DTE (1 :s 73C ]
-"326
-[; ;commands.c: 326:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 74C ]
-"327
-[; ;commands.c: 327:         }
-}
+[; ;commands.c: 322:     case 0x06:
 [e :U 1044 ]
+"323
+[; ;commands.c: 323:         LATBbits.LATB3 = 1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"324
+[; ;commands.c: 324:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1045  ]
+"325
+[; ;commands.c: 325:         {
+{
+"326
+[; ;commands.c: 326:             Uart1SendString_DTE("IO2 high");
+[e ( _Uart1SendString_DTE (1 :s 71C ]
+"327
+[; ;commands.c: 327:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 72C ]
 "328
-[; ;commands.c: 328:         state = 0;
-[e = _state -> -> 0 `i `a ]
-"329
-[; ;commands.c: 329:         break;
-[e $U 1015  ]
-"331
-[; ;commands.c: 331:     case 0x08:
+[; ;commands.c: 328:         }
+}
 [e :U 1045 ]
+"329
+[; ;commands.c: 329:         state = 0;
+[e = _state -> -> 0 `i `a ]
+"330
+[; ;commands.c: 330:         break;
+[e $U 1017  ]
 "332
-[; ;commands.c: 332:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1046  ]
-"333
-[; ;commands.c: 333:         {
-{
-"334
-[; ;commands.c: 334:             Uart1SendString_DTE("IO2");
-[e ( _Uart1SendString_DTE (1 :s 75C ]
-"335
-[; ;commands.c: 335:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 76C ]
-"338
-[; ;commands.c: 338:             if (PORTBbits.RB3 == 1)
-[e $ ! == -> . . _PORTBbits 0 3 `i -> 1 `i 1047  ]
-"339
-[; ;commands.c: 339:             {
-{
-"340
-[; ;commands.c: 340:                 Uart1SendString_DTE("HIGH\r\n");
-[e ( _Uart1SendString_DTE (1 :s 77C ]
-"343
-[; ;commands.c: 343:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"344
-[; ;commands.c: 344:                 LCD_Write_String("HIGH");
-[e ( _LCD_Write_String (1 :s 78C ]
-"345
-[; ;commands.c: 345:             }
-}
-[e $U 1048  ]
-"346
-[; ;commands.c: 346:             else
-[e :U 1047 ]
-"347
-[; ;commands.c: 347:             {
-{
-"348
-[; ;commands.c: 348:                 Uart1SendString_DTE("LOW\r\n");
-[e ( _Uart1SendString_DTE (1 :s 79C ]
-"351
-[; ;commands.c: 351:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"352
-[; ;commands.c: 352:                 LCD_Write_String("LOW");
-[e ( _LCD_Write_String (1 :s 80C ]
-"353
-[; ;commands.c: 353:             }
-}
-[e :U 1048 ]
-"354
-[; ;commands.c: 354:         }
-}
-[e $U 1049  ]
-"355
-[; ;commands.c: 355:         else
+[; ;commands.c: 332:     case 0x07:
 [e :U 1046 ]
-"356
-[; ;commands.c: 356:         {
+"333
+[; ;commands.c: 333:         LATBbits.LATB3 = 0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"334
+[; ;commands.c: 334:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1047  ]
+"335
+[; ;commands.c: 335:         {
 {
-"358
-[; ;commands.c: 358:             if (PORTBbits.RB3 == 1)
+"336
+[; ;commands.c: 336:             Uart1SendString_DTE("IO2 low");
+[e ( _Uart1SendString_DTE (1 :s 73C ]
+"337
+[; ;commands.c: 337:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 74C ]
+"338
+[; ;commands.c: 338:         }
+}
+[e :U 1047 ]
+"339
+[; ;commands.c: 339:         state = 0;
+[e = _state -> -> 0 `i `a ]
+"340
+[; ;commands.c: 340:         break;
+[e $U 1017  ]
+"342
+[; ;commands.c: 342:     case 0x08:
+[e :U 1048 ]
+"343
+[; ;commands.c: 343:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1049  ]
+"344
+[; ;commands.c: 344:         {
+{
+"345
+[; ;commands.c: 345:             Uart1SendString_DTE("IO2");
+[e ( _Uart1SendString_DTE (1 :s 75C ]
+"346
+[; ;commands.c: 346:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 76C ]
+"349
+[; ;commands.c: 349:             if (PORTBbits.RB3 == 1)
 [e $ ! == -> . . _PORTBbits 0 3 `i -> 1 `i 1050  ]
-"359
-[; ;commands.c: 359:             {
+"350
+[; ;commands.c: 350:             {
 {
-"360
-[; ;commands.c: 360:                 SIM7600_SendSMS("HIGH");
-[e ( _SIM7600_SendSMS (1 :s 81C ]
-"363
-[; ;commands.c: 363:                 LCD_Clear();
+"351
+[; ;commands.c: 351:                 Uart1SendString_DTE("HIGH\r\n");
+[e ( _Uart1SendString_DTE (1 :s 77C ]
+"354
+[; ;commands.c: 354:                 LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"364
-[; ;commands.c: 364:                 LCD_Write_String("HIGH");
-[e ( _LCD_Write_String (1 :s 82C ]
-"365
-[; ;commands.c: 365:             }
+"355
+[; ;commands.c: 355:                 LCD_Write_String("HIGH");
+[e ( _LCD_Write_String (1 :s 78C ]
+"356
+[; ;commands.c: 356:             }
 }
 [e $U 1051  ]
-"366
-[; ;commands.c: 366:             else
+"357
+[; ;commands.c: 357:             else
 [e :U 1050 ]
-"367
-[; ;commands.c: 367:             {
+"358
+[; ;commands.c: 358:             {
 {
-"368
-[; ;commands.c: 368:                 SIM7600_SendSMS("LOW");
-[e ( _SIM7600_SendSMS (1 :s 83C ]
-"371
-[; ;commands.c: 371:                 LCD_Clear();
+"359
+[; ;commands.c: 359:                 Uart1SendString_DTE("LOW\r\n");
+[e ( _Uart1SendString_DTE (1 :s 79C ]
+"362
+[; ;commands.c: 362:                 LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"372
-[; ;commands.c: 372:                 LCD_Write_String("LOW");
-[e ( _LCD_Write_String (1 :s 84C ]
-"373
-[; ;commands.c: 373:             }
+"363
+[; ;commands.c: 363:                 LCD_Write_String("LOW");
+[e ( _LCD_Write_String (1 :s 80C ]
+"364
+[; ;commands.c: 364:             }
 }
 [e :U 1051 ]
-"374
-[; ;commands.c: 374:         }
+"365
+[; ;commands.c: 365:         }
 }
+[e $U 1052  ]
+"366
+[; ;commands.c: 366:         else
 [e :U 1049 ]
-"375
-[; ;commands.c: 375:         state = 1;
-[e = _state -> -> 1 `i `a ]
-"376
-[; ;commands.c: 376:         break;
-[e $U 1015  ]
-"379
-[; ;commands.c: 379:     case 0x09:
-[e :U 1052 ]
-"380
-[; ;commands.c: 380:         LATBbits.LATB4 = 1;
-[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
-"381
-[; ;commands.c: 381:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1053  ]
-"382
-[; ;commands.c: 382:         {
+"367
+[; ;commands.c: 367:         {
 {
+"369
+[; ;commands.c: 369:             if (PORTBbits.RB3 == 1)
+[e $ ! == -> . . _PORTBbits 0 3 `i -> 1 `i 1053  ]
+"370
+[; ;commands.c: 370:             {
+{
+"371
+[; ;commands.c: 371:                 SIM7600_SendSMS("HIGH");
+[e ( _SIM7600_SendSMS (1 :s 81C ]
+"374
+[; ;commands.c: 374:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"375
+[; ;commands.c: 375:                 LCD_Write_String("HIGH");
+[e ( _LCD_Write_String (1 :s 82C ]
+"376
+[; ;commands.c: 376:             }
+}
+[e $U 1054  ]
+"377
+[; ;commands.c: 377:             else
+[e :U 1053 ]
+"378
+[; ;commands.c: 378:             {
+{
+"379
+[; ;commands.c: 379:                 SIM7600_SendSMS("LOW");
+[e ( _SIM7600_SendSMS (1 :s 83C ]
+"382
+[; ;commands.c: 382:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "383
-[; ;commands.c: 383:             Uart1SendString_DTE("Relais1 on");
-[e ( _Uart1SendString_DTE (1 :s 85C ]
+[; ;commands.c: 383:                 LCD_Write_String("LOW");
+[e ( _LCD_Write_String (1 :s 84C ]
 "384
-[; ;commands.c: 384:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 86C ]
+[; ;commands.c: 384:             }
+}
+[e :U 1054 ]
 "385
 [; ;commands.c: 385:         }
 }
-[e :U 1053 ]
+[e :U 1052 ]
 "386
-[; ;commands.c: 386:         state = 0;
-[e = _state -> -> 0 `i `a ]
+[; ;commands.c: 386:         state = 1;
+[e = _state -> -> 1 `i `a ]
 "387
 [; ;commands.c: 387:         break;
-[e $U 1015  ]
-"389
-[; ;commands.c: 389:     case 0x0A:
-[e :U 1054 ]
+[e $U 1017  ]
 "390
-[; ;commands.c: 390:         LATBbits.LATB4 = 0;
-[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
-"391
-[; ;commands.c: 391:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1055  ]
-"392
-[; ;commands.c: 392:         {
-{
-"393
-[; ;commands.c: 393:             Uart1SendString_DTE("Relais1 off");
-[e ( _Uart1SendString_DTE (1 :s 87C ]
-"394
-[; ;commands.c: 394:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 88C ]
-"395
-[; ;commands.c: 395:         }
-}
+[; ;commands.c: 390:     case 0x09:
 [e :U 1055 ]
+"391
+[; ;commands.c: 391:         LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+"392
+[; ;commands.c: 392:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1056  ]
+"393
+[; ;commands.c: 393:         {
+{
+"394
+[; ;commands.c: 394:             Uart1SendString_DTE("Relais1 on");
+[e ( _Uart1SendString_DTE (1 :s 85C ]
+"395
+[; ;commands.c: 395:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 86C ]
 "396
-[; ;commands.c: 396:         state = 0;
-[e = _state -> -> 0 `i `a ]
-"397
-[; ;commands.c: 397:         break;
-[e $U 1015  ]
-"399
-[; ;commands.c: 399:     case 0x0B:
+[; ;commands.c: 396:         }
+}
 [e :U 1056 ]
+"397
+[; ;commands.c: 397:         state = 0;
+[e = _state -> -> 0 `i `a ]
+"398
+[; ;commands.c: 398:         break;
+[e $U 1017  ]
 "400
-[; ;commands.c: 400:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1057  ]
-"401
-[; ;commands.c: 401:         {
-{
-"402
-[; ;commands.c: 402:             Uart1SendString_DTE("Relais1");
-[e ( _Uart1SendString_DTE (1 :s 89C ]
-"403
-[; ;commands.c: 403:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 90C ]
-"406
-[; ;commands.c: 406:             if (PORTBbits.RB4 == 1)
-[e $ ! == -> . . _PORTBbits 0 4 `i -> 1 `i 1058  ]
-"407
-[; ;commands.c: 407:             {
-{
-"408
-[; ;commands.c: 408:                 Uart1SendString_DTE("ON\r\n");
-[e ( _Uart1SendString_DTE (1 :s 91C ]
-"411
-[; ;commands.c: 411:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"412
-[; ;commands.c: 412:                 LCD_Write_String("ON");
-[e ( _LCD_Write_String (1 :s 92C ]
-"413
-[; ;commands.c: 413:             }
-}
-[e $U 1059  ]
-"414
-[; ;commands.c: 414:             else
-[e :U 1058 ]
-"415
-[; ;commands.c: 415:             {
-{
-"416
-[; ;commands.c: 416:                 Uart1SendString_DTE("OFF\r\n");
-[e ( _Uart1SendString_DTE (1 :s 93C ]
-"419
-[; ;commands.c: 419:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"420
-[; ;commands.c: 420:                 LCD_Write_String("OFF");
-[e ( _LCD_Write_String (1 :s 94C ]
-"421
-[; ;commands.c: 421:             }
-}
-[e :U 1059 ]
-"422
-[; ;commands.c: 422:         }
-}
-[e $U 1060  ]
-"423
-[; ;commands.c: 423:         else
+[; ;commands.c: 400:     case 0x0A:
 [e :U 1057 ]
-"424
-[; ;commands.c: 424:         {
+"401
+[; ;commands.c: 401:         LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+"402
+[; ;commands.c: 402:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1058  ]
+"403
+[; ;commands.c: 403:         {
 {
-"426
-[; ;commands.c: 426:             if (PORTBbits.RB4 == 1)
+"404
+[; ;commands.c: 404:             Uart1SendString_DTE("Relais1 off");
+[e ( _Uart1SendString_DTE (1 :s 87C ]
+"405
+[; ;commands.c: 405:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 88C ]
+"406
+[; ;commands.c: 406:         }
+}
+[e :U 1058 ]
+"407
+[; ;commands.c: 407:         state = 0;
+[e = _state -> -> 0 `i `a ]
+"408
+[; ;commands.c: 408:         break;
+[e $U 1017  ]
+"410
+[; ;commands.c: 410:     case 0x0B:
+[e :U 1059 ]
+"411
+[; ;commands.c: 411:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1060  ]
+"412
+[; ;commands.c: 412:         {
+{
+"413
+[; ;commands.c: 413:             Uart1SendString_DTE("Relais1");
+[e ( _Uart1SendString_DTE (1 :s 89C ]
+"414
+[; ;commands.c: 414:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 90C ]
+"417
+[; ;commands.c: 417:             if (PORTBbits.RB4 == 1)
 [e $ ! == -> . . _PORTBbits 0 4 `i -> 1 `i 1061  ]
-"427
-[; ;commands.c: 427:             {
+"418
+[; ;commands.c: 418:             {
 {
-"428
-[; ;commands.c: 428:                 SIM7600_SendSMS("ON");
-[e ( _SIM7600_SendSMS (1 :s 95C ]
-"431
-[; ;commands.c: 431:                 LCD_Clear();
+"419
+[; ;commands.c: 419:                 Uart1SendString_DTE("ON\r\n");
+[e ( _Uart1SendString_DTE (1 :s 91C ]
+"422
+[; ;commands.c: 422:                 LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"432
-[; ;commands.c: 432:                 LCD_Write_String("ON");
-[e ( _LCD_Write_String (1 :s 96C ]
-"433
-[; ;commands.c: 433:             }
+"423
+[; ;commands.c: 423:                 LCD_Write_String("ON");
+[e ( _LCD_Write_String (1 :s 92C ]
+"424
+[; ;commands.c: 424:             }
 }
 [e $U 1062  ]
-"434
-[; ;commands.c: 434:             else
+"425
+[; ;commands.c: 425:             else
 [e :U 1061 ]
-"435
-[; ;commands.c: 435:             {
+"426
+[; ;commands.c: 426:             {
 {
-"436
-[; ;commands.c: 436:                 SIM7600_SendSMS("OFF");
-[e ( _SIM7600_SendSMS (1 :s 97C ]
-"438
-[; ;commands.c: 438:                 LCD_Clear();
+"427
+[; ;commands.c: 427:                 Uart1SendString_DTE("OFF\r\n");
+[e ( _Uart1SendString_DTE (1 :s 93C ]
+"430
+[; ;commands.c: 430:                 LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"439
-[; ;commands.c: 439:                 LCD_Write_String("OFF");
-[e ( _LCD_Write_String (1 :s 98C ]
-"440
-[; ;commands.c: 440:             }
+"431
+[; ;commands.c: 431:                 LCD_Write_String("OFF");
+[e ( _LCD_Write_String (1 :s 94C ]
+"432
+[; ;commands.c: 432:             }
 }
 [e :U 1062 ]
-"441
-[; ;commands.c: 441:         }
+"433
+[; ;commands.c: 433:         }
 }
+[e $U 1063  ]
+"434
+[; ;commands.c: 434:         else
 [e :U 1060 ]
-"442
-[; ;commands.c: 442:         state = 1;
-[e = _state -> -> 1 `i `a ]
-"443
-[; ;commands.c: 443:         break;
-[e $U 1015  ]
-"446
-[; ;commands.c: 446:     case 0x0C:
-[e :U 1063 ]
-"447
-[; ;commands.c: 447:         LATBbits.LATB5 = 1;
-[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
-"448
-[; ;commands.c: 448:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1064  ]
-"449
-[; ;commands.c: 449:         {
+"435
+[; ;commands.c: 435:         {
 {
+"437
+[; ;commands.c: 437:             if (PORTBbits.RB4 == 1)
+[e $ ! == -> . . _PORTBbits 0 4 `i -> 1 `i 1064  ]
+"438
+[; ;commands.c: 438:             {
+{
+"439
+[; ;commands.c: 439:                 SIM7600_SendSMS("ON");
+[e ( _SIM7600_SendSMS (1 :s 95C ]
+"442
+[; ;commands.c: 442:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"443
+[; ;commands.c: 443:                 LCD_Write_String("ON");
+[e ( _LCD_Write_String (1 :s 96C ]
+"444
+[; ;commands.c: 444:             }
+}
+[e $U 1065  ]
+"445
+[; ;commands.c: 445:             else
+[e :U 1064 ]
+"446
+[; ;commands.c: 446:             {
+{
+"447
+[; ;commands.c: 447:                 SIM7600_SendSMS("OFF");
+[e ( _SIM7600_SendSMS (1 :s 97C ]
+"449
+[; ;commands.c: 449:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "450
-[; ;commands.c: 450:             Uart1SendString_DTE("Relais2 on");
-[e ( _Uart1SendString_DTE (1 :s 99C ]
+[; ;commands.c: 450:                 LCD_Write_String("OFF");
+[e ( _LCD_Write_String (1 :s 98C ]
 "451
-[; ;commands.c: 451:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 100C ]
+[; ;commands.c: 451:             }
+}
+[e :U 1065 ]
 "452
 [; ;commands.c: 452:         }
 }
-[e :U 1064 ]
+[e :U 1063 ]
 "453
-[; ;commands.c: 453:         state = 0;
-[e = _state -> -> 0 `i `a ]
+[; ;commands.c: 453:         state = 1;
+[e = _state -> -> 1 `i `a ]
 "454
 [; ;commands.c: 454:         break;
-[e $U 1015  ]
-"456
-[; ;commands.c: 456:     case 0x0D:
-[e :U 1065 ]
+[e $U 1017  ]
 "457
-[; ;commands.c: 457:         LATBbits.LATB5 = 0;
-[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+[; ;commands.c: 457:     case 0x0C:
+[e :U 1066 ]
+"458
+[; ;commands.c: 458:         LATBbits.LATB5 = 1;
+[e = . . _LATBbits 0 5 -> -> 1 `i `uc ]
 "459
 [; ;commands.c: 459:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1066  ]
+[e $ ! == -> _commandFrom `i -> 2 `i 1067  ]
 "460
 [; ;commands.c: 460:         {
 {
 "461
-[; ;commands.c: 461:             Uart1SendString_DTE("Relais2 off");
-[e ( _Uart1SendString_DTE (1 :s 101C ]
+[; ;commands.c: 461:             Uart1SendString_DTE("Relais2 on");
+[e ( _Uart1SendString_DTE (1 :s 99C ]
 "462
 [; ;commands.c: 462:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 102C ]
+[e ( _Uart1SendString_DTE (1 :s 100C ]
 "463
 [; ;commands.c: 463:         }
 }
-[e :U 1066 ]
+[e :U 1067 ]
 "464
 [; ;commands.c: 464:         state = 0;
 [e = _state -> -> 0 `i `a ]
 "465
 [; ;commands.c: 465:         break;
-[e $U 1015  ]
+[e $U 1017  ]
 "467
-[; ;commands.c: 467:     case 0x0E:
-[e :U 1067 ]
-"468
-[; ;commands.c: 468:         if (commandFrom == 2)
-[e $ ! == -> _commandFrom `i -> 2 `i 1068  ]
-"469
-[; ;commands.c: 469:         {
-{
-"470
-[; ;commands.c: 470:             Uart1SendString_DTE("Relais2");
-[e ( _Uart1SendString_DTE (1 :s 103C ]
-"471
-[; ;commands.c: 471:             Uart1SendString_DTE("\r\n\r\n");
-[e ( _Uart1SendString_DTE (1 :s 104C ]
-"474
-[; ;commands.c: 474:             if (PORTBbits.RB5 == 1)
-[e $ ! == -> . . _PORTBbits 0 5 `i -> 1 `i 1069  ]
-"475
-[; ;commands.c: 475:             {
-{
-"476
-[; ;commands.c: 476:                 Uart1SendString_DTE("ON\r\n");
-[e ( _Uart1SendString_DTE (1 :s 105C ]
-"479
-[; ;commands.c: 479:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"480
-[; ;commands.c: 480:                 LCD_Write_String("ON");
-[e ( _LCD_Write_String (1 :s 106C ]
-"481
-[; ;commands.c: 481:             }
-}
-[e $U 1070  ]
-"482
-[; ;commands.c: 482:             else
-[e :U 1069 ]
-"483
-[; ;commands.c: 483:             {
-{
-"484
-[; ;commands.c: 484:                 Uart1SendString_DTE("OFF\r\n");
-[e ( _Uart1SendString_DTE (1 :s 107C ]
-"487
-[; ;commands.c: 487:                 LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"488
-[; ;commands.c: 488:                 LCD_Write_String("OFF");
-[e ( _LCD_Write_String (1 :s 108C ]
-"489
-[; ;commands.c: 489:             }
-}
-[e :U 1070 ]
-"490
-[; ;commands.c: 490:         }
-}
-[e $U 1071  ]
-"491
-[; ;commands.c: 491:         else
+[; ;commands.c: 467:     case 0x0D:
 [e :U 1068 ]
-"492
-[; ;commands.c: 492:         {
+"468
+[; ;commands.c: 468:         LATBbits.LATB5 = 0;
+[e = . . _LATBbits 0 5 -> -> 0 `i `uc ]
+"470
+[; ;commands.c: 470:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1069  ]
+"471
+[; ;commands.c: 471:         {
 {
-"494
-[; ;commands.c: 494:             if (PORTBbits.RB5 == 1)
+"472
+[; ;commands.c: 472:             Uart1SendString_DTE("Relais2 off");
+[e ( _Uart1SendString_DTE (1 :s 101C ]
+"473
+[; ;commands.c: 473:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 102C ]
+"474
+[; ;commands.c: 474:         }
+}
+[e :U 1069 ]
+"475
+[; ;commands.c: 475:         state = 0;
+[e = _state -> -> 0 `i `a ]
+"476
+[; ;commands.c: 476:         break;
+[e $U 1017  ]
+"478
+[; ;commands.c: 478:     case 0x0E:
+[e :U 1070 ]
+"479
+[; ;commands.c: 479:         if (commandFrom == 2)
+[e $ ! == -> _commandFrom `i -> 2 `i 1071  ]
+"480
+[; ;commands.c: 480:         {
+{
+"481
+[; ;commands.c: 481:             Uart1SendString_DTE("Relais2");
+[e ( _Uart1SendString_DTE (1 :s 103C ]
+"482
+[; ;commands.c: 482:             Uart1SendString_DTE("\r\n\r\n");
+[e ( _Uart1SendString_DTE (1 :s 104C ]
+"485
+[; ;commands.c: 485:             if (PORTBbits.RB5 == 1)
 [e $ ! == -> . . _PORTBbits 0 5 `i -> 1 `i 1072  ]
-"495
-[; ;commands.c: 495:             {
+"486
+[; ;commands.c: 486:             {
 {
-"496
-[; ;commands.c: 496:                 SIM7600_SendSMS("ON");
-[e ( _SIM7600_SendSMS (1 :s 109C ]
-"499
-[; ;commands.c: 499:                 LCD_Clear();
+"487
+[; ;commands.c: 487:                 Uart1SendString_DTE("ON\r\n");
+[e ( _Uart1SendString_DTE (1 :s 105C ]
+"490
+[; ;commands.c: 490:                 LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"500
-[; ;commands.c: 500:                 LCD_Write_String("ON");
-[e ( _LCD_Write_String (1 :s 110C ]
-"501
-[; ;commands.c: 501:             }
+"491
+[; ;commands.c: 491:                 LCD_Write_String("ON");
+[e ( _LCD_Write_String (1 :s 106C ]
+"492
+[; ;commands.c: 492:             }
 }
 [e $U 1073  ]
-"502
-[; ;commands.c: 502:             else
+"493
+[; ;commands.c: 493:             else
 [e :U 1072 ]
-"503
-[; ;commands.c: 503:             {
+"494
+[; ;commands.c: 494:             {
 {
-"504
-[; ;commands.c: 504:                 SIM7600_SendSMS("OFF");
-[e ( _SIM7600_SendSMS (1 :s 111C ]
-"507
-[; ;commands.c: 507:                 LCD_Clear();
+"495
+[; ;commands.c: 495:                 Uart1SendString_DTE("OFF\r\n");
+[e ( _Uart1SendString_DTE (1 :s 107C ]
+"498
+[; ;commands.c: 498:                 LCD_Clear();
 [e ( _LCD_Clear ..  ]
-"508
-[; ;commands.c: 508:                 LCD_Write_String("OFF");
-[e ( _LCD_Write_String (1 :s 112C ]
-"509
-[; ;commands.c: 509:             }
+"499
+[; ;commands.c: 499:                 LCD_Write_String("OFF");
+[e ( _LCD_Write_String (1 :s 108C ]
+"500
+[; ;commands.c: 500:             }
 }
 [e :U 1073 ]
-"510
-[; ;commands.c: 510:         }
+"501
+[; ;commands.c: 501:         }
 }
+[e $U 1074  ]
+"502
+[; ;commands.c: 502:         else
 [e :U 1071 ]
-"511
-[; ;commands.c: 511:         state = 1;
-[e = _state -> -> 1 `i `a ]
-"512
-[; ;commands.c: 512:         break;
-[e $U 1015  ]
-"515
-[; ;commands.c: 515:     case 0xFF:
-[e :U 1074 ]
-"516
-[; ;commands.c: 516:         if (commandFrom == 1)
-[e $ ! == -> _commandFrom `i -> 1 `i 1075  ]
-"517
-[; ;commands.c: 517:         {
+"503
+[; ;commands.c: 503:         {
 {
-"518
-[; ;commands.c: 518:             SIM7600_SendSMS("ERROR");
-[e ( _SIM7600_SendSMS (1 :s 113C ]
-"519
-[; ;commands.c: 519:         }
+"505
+[; ;commands.c: 505:             if (PORTBbits.RB5 == 1)
+[e $ ! == -> . . _PORTBbits 0 5 `i -> 1 `i 1075  ]
+"506
+[; ;commands.c: 506:             {
+{
+"507
+[; ;commands.c: 507:                 SIM7600_SendSMS("ON");
+[e ( _SIM7600_SendSMS (1 :s 109C ]
+"510
+[; ;commands.c: 510:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"511
+[; ;commands.c: 511:                 LCD_Write_String("ON");
+[e ( _LCD_Write_String (1 :s 110C ]
+"512
+[; ;commands.c: 512:             }
 }
 [e $U 1076  ]
-"520
-[; ;commands.c: 520:         else
+"513
+[; ;commands.c: 513:             else
 [e :U 1075 ]
-"521
-[; ;commands.c: 521:         {
+"514
+[; ;commands.c: 514:             {
 {
-"522
-[; ;commands.c: 522:             Uart1SendString_DTE("\r\nERROR\r\n");
-[e ( _Uart1SendString_DTE (1 :s 114C ]
-"523
-[; ;commands.c: 523:         }
+"515
+[; ;commands.c: 515:                 SIM7600_SendSMS("OFF");
+[e ( _SIM7600_SendSMS (1 :s 111C ]
+"518
+[; ;commands.c: 518:                 LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"519
+[; ;commands.c: 519:                 LCD_Write_String("OFF");
+[e ( _LCD_Write_String (1 :s 112C ]
+"520
+[; ;commands.c: 520:             }
 }
 [e :U 1076 ]
-"525
-[; ;commands.c: 525:         LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"526
-[; ;commands.c: 526:         LCD_Write_String("ERROR");
-[e ( _LCD_Write_String (1 :s 115C ]
-"527
-[; ;commands.c: 527:         state = 1;
+"521
+[; ;commands.c: 521:         }
+}
+[e :U 1074 ]
+"522
+[; ;commands.c: 522:         state = 1;
 [e = _state -> -> 1 `i `a ]
-"528
-[; ;commands.c: 528:         break;
-[e $U 1015  ]
-"529
-[; ;commands.c: 529:     }
-}
-[e $U 1015  ]
-[e :U 1016 ]
-[e [\ _currentCommand , $ -> 20 `i 1017
- , $ -> 21 `i 1018
- , $ -> 0 `i 1019
- , $ -> 1 `i 1021
- , $ -> 2 `i 1023
- , $ -> 3 `i 1030
- , $ -> 4 `i 1032
- , $ -> 5 `i 1034
- , $ -> 6 `i 1041
- , $ -> 7 `i 1043
- , $ -> 8 `i 1045
- , $ -> 9 `i 1052
- , $ -> 10 `i 1054
- , $ -> 11 `i 1056
- , $ -> 12 `i 1063
- , $ -> 13 `i 1065
- , $ -> 14 `i 1067
- , $ -> 255 `i 1074
- 1015 ]
-[e :U 1015 ]
-"532
-[; ;commands.c: 532:     if (!state)
-[e $ ! ! != -> _state `i -> 0 `i 1077  ]
-"533
-[; ;commands.c: 533:     {
-{
-"534
-[; ;commands.c: 534:         if (commandFrom == 1)
-[e $ ! == -> _commandFrom `i -> 1 `i 1078  ]
-"535
-[; ;commands.c: 535:         {
-{
-"536
-[; ;commands.c: 536:             SIM7600_SendSMS("OK");
-[e ( _SIM7600_SendSMS (1 :s 116C ]
-"537
-[; ;commands.c: 537:         }
-}
-[e $U 1079  ]
-"538
-[; ;commands.c: 538:         else
-[e :U 1078 ]
-"539
-[; ;commands.c: 539:         {
-{
-"540
-[; ;commands.c: 540:             Uart1SendString_DTE("OK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 117C ]
-"541
-[; ;commands.c: 541:         }
-}
-[e :U 1079 ]
-"544
-[; ;commands.c: 544:         LCD_Clear();
-[e ( _LCD_Clear ..  ]
-"545
-[; ;commands.c: 545:         LCD_Write_String("OK");
-[e ( _LCD_Write_String (1 :s 118C ]
-"546
-[; ;commands.c: 546:     }
-}
+"523
+[; ;commands.c: 523:         break;
+[e $U 1017  ]
+"526
+[; ;commands.c: 526:     case 0xFF:
 [e :U 1077 ]
-"548
-[; ;commands.c: 548:     executionFlag = 0;
-[e = _executionFlag -> -> 0 `i `a ]
-"549
-[; ;commands.c: 549: }
-[e :UE 1014 ]
+"536
+[; ;commands.c: 536:         LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"537
+[; ;commands.c: 537:         LCD_Write_String("ERROR");
+[e ( _LCD_Write_String (1 :s 113C ]
+"538
+[; ;commands.c: 538:         state = 1;
+[e = _state -> -> 1 `i `a ]
+"539
+[; ;commands.c: 539:         break;
+[e $U 1017  ]
+"540
+[; ;commands.c: 540:     }
 }
-[a 17C 73 79 50 32 108 111 119 0 ]
-[a 18C 73 79 50 32 108 111 119 0 ]
+[e $U 1017  ]
+[e :U 1018 ]
+[e [\ _currentCommand , $ -> 20 `i 1019
+ , $ -> 21 `i 1020
+ , $ -> 22 `i 1021
+ , $ -> 0 `i 1022
+ , $ -> 1 `i 1024
+ , $ -> 2 `i 1026
+ , $ -> 3 `i 1033
+ , $ -> 4 `i 1035
+ , $ -> 5 `i 1037
+ , $ -> 6 `i 1044
+ , $ -> 7 `i 1046
+ , $ -> 8 `i 1048
+ , $ -> 9 `i 1055
+ , $ -> 10 `i 1057
+ , $ -> 11 `i 1059
+ , $ -> 12 `i 1066
+ , $ -> 13 `i 1068
+ , $ -> 14 `i 1070
+ , $ -> 255 `i 1077
+ 1017 ]
+[e :U 1017 ]
+"543
+[; ;commands.c: 543:     if (!state)
+[e $ ! ! != -> _state `i -> 0 `i 1078  ]
+"544
+[; ;commands.c: 544:     {
+{
+"545
+[; ;commands.c: 545:         if (commandFrom == 1)
+[e $ ! == -> _commandFrom `i -> 1 `i 1079  ]
+"546
+[; ;commands.c: 546:         {
+{
+"547
+[; ;commands.c: 547:             SIM7600_SendSMS("OK");
+[e ( _SIM7600_SendSMS (1 :s 114C ]
+"548
+[; ;commands.c: 548:         }
+}
+[e $U 1080  ]
+"549
+[; ;commands.c: 549:         else
+[e :U 1079 ]
+"550
+[; ;commands.c: 550:         {
+{
+"551
+[; ;commands.c: 551:             Uart1SendString_DTE("OK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 115C ]
+"552
+[; ;commands.c: 552:         }
+}
+[e :U 1080 ]
+"555
+[; ;commands.c: 555:         LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"556
+[; ;commands.c: 556:         LCD_Write_String("OK");
+[e ( _LCD_Write_String (1 :s 116C ]
+"557
+[; ;commands.c: 557:     }
+}
+[e :U 1078 ]
+"559
+[; ;commands.c: 559:     executionFlag = 0;
+[e = _executionFlag -> -> 0 `i `a ]
+"560
+[; ;commands.c: 560: }
+[e :UE 1016 ]
+}
+[a 19C 73 79 50 32 108 111 119 0 ]
+[a 20C 73 79 50 32 108 111 119 0 ]
 [a 73C 73 79 50 32 108 111 119 0 ]
-[a 11C 73 79 49 32 108 111 119 0 ]
-[a 12C 73 79 49 32 108 111 119 0 ]
+[a 13C 73 79 49 32 108 111 119 0 ]
+[a 14C 73 79 49 32 108 111 119 0 ]
 [a 59C 73 79 49 32 108 111 119 0 ]
-[a 7C 66 97 99 107 108 105 103 104 116 0 ]
-[a 8C 66 97 99 107 108 105 103 104 116 0 ]
+[a 9C 66 97 99 107 108 105 103 104 116 0 ]
+[a 10C 66 97 99 107 108 105 103 104 116 0 ]
 [a 47C 66 97 99 107 108 105 103 104 116 0 ]
-[a 1C 66 97 99 107 108 105 103 104 116 32 111 110 0 ]
-[a 2C 66 97 99 107 108 105 103 104 116 32 111 110 0 ]
 [a 43C 66 97 99 107 108 105 103 104 116 32 111 110 0 ]
-[a 27C 82 101 108 97 105 115 50 32 111 110 0 ]
-[a 28C 82 101 108 97 105 115 50 32 111 110 0 ]
+[a 29C 82 101 108 97 105 115 50 32 111 110 0 ]
+[a 30C 82 101 108 97 105 115 50 32 111 110 0 ]
 [a 99C 82 101 108 97 105 115 50 32 111 110 0 ]
-[a 21C 82 101 108 97 105 115 49 32 111 110 0 ]
-[a 22C 82 101 108 97 105 115 49 32 111 110 0 ]
+[a 23C 82 101 108 97 105 115 49 32 111 110 0 ]
+[a 24C 82 101 108 97 105 115 49 32 111 110 0 ]
 [a 85C 82 101 108 97 105 115 49 32 111 110 0 ]
-[a 15C 73 79 50 32 104 105 103 104 0 ]
-[a 16C 73 79 50 32 104 105 103 104 0 ]
+[a 17C 73 79 50 32 104 105 103 104 0 ]
+[a 18C 73 79 50 32 104 105 103 104 0 ]
 [a 71C 73 79 50 32 104 105 103 104 0 ]
-[a 9C 73 79 49 32 104 105 103 104 0 ]
-[a 10C 73 79 49 32 104 105 103 104 0 ]
+[a 11C 73 79 49 32 104 105 103 104 0 ]
+[a 12C 73 79 49 32 104 105 103 104 0 ]
 [a 57C 73 79 49 32 104 105 103 104 0 ]
-[a 3C 68 101 98 117 103 0 ]
-[a 4C 68 101 98 117 103 0 ]
-[a 5C 66 97 99 107 108 105 103 104 116 32 111 102 102 0 ]
-[a 6C 66 97 99 107 108 105 103 104 116 32 111 102 102 0 ]
+[a 1C 68 101 98 117 103 0 ]
+[a 2C 68 101 98 117 103 0 ]
+[a 7C 66 97 99 107 108 105 103 104 116 32 111 102 102 0 ]
+[a 8C 66 97 99 107 108 105 103 104 116 32 111 102 102 0 ]
 [a 45C 66 97 99 107 108 105 103 104 116 32 111 102 102 0 ]
-[a 29C 82 101 108 97 105 115 50 32 111 102 102 0 ]
-[a 30C 82 101 108 97 105 115 50 32 111 102 102 0 ]
+[a 31C 82 101 108 97 105 115 50 32 111 102 102 0 ]
+[a 32C 82 101 108 97 105 115 50 32 111 102 102 0 ]
 [a 101C 82 101 108 97 105 115 50 32 111 102 102 0 ]
-[a 23C 82 101 108 97 105 115 49 32 111 102 102 0 ]
-[a 24C 82 101 108 97 105 115 49 32 111 102 102 0 ]
+[a 25C 82 101 108 97 105 115 49 32 111 102 102 0 ]
+[a 26C 82 101 108 97 105 115 49 32 111 102 102 0 ]
 [a 87C 82 101 108 97 105 115 49 32 111 102 102 0 ]
-[a 35C 72 117 109 105 100 105 116 101 0 ]
-[a 36C 72 117 109 105 100 105 116 101 0 ]
-[a 33C 84 101 109 112 101 114 97 116 117 114 101 0 ]
-[a 34C 84 101 109 112 101 114 97 116 117 114 101 0 ]
+[a 37C 72 117 109 105 100 105 116 101 0 ]
+[a 38C 72 117 109 105 100 105 116 101 0 ]
+[a 35C 84 101 109 112 101 114 97 116 117 114 101 0 ]
+[a 36C 84 101 109 112 101 114 97 116 117 114 101 0 ]
 [a 66C 76 79 87 0 ]
 [a 69C 76 79 87 0 ]
 [a 70C 76 79 87 0 ]
 [a 80C 76 79 87 0 ]
 [a 83C 76 79 87 0 ]
 [a 84C 76 79 87 0 ]
-[a 39C 69 82 82 32 83 77 83 0 ]
+[a 41C 69 82 82 32 83 77 83 0 ]
 [a 113C 69 82 82 79 82 0 ]
-[a 115C 69 82 82 79 82 0 ]
-[a 41C 49 50 51 52 32 79 78 0 ]
+[a 3C 49 50 51 52 32 79 78 0 ]
+[a 4C 49 50 51 52 32 79 78 0 ]
 [a 50C 79 78 0 ]
 [a 53C 79 78 0 ]
 [a 54C 79 78 0 ]
@@ -2511,15 +2544,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 106C 79 78 0 ]
 [a 109C 79 78 0 ]
 [a 110C 79 78 0 ]
+[a 5C 49 50 51 52 32 84 69 76 0 ]
+[a 6C 49 50 51 52 32 84 69 76 0 ]
+[a 114C 79 75 0 ]
 [a 116C 79 75 0 ]
-[a 118C 79 75 0 ]
 [a 64C 72 73 71 72 0 ]
 [a 67C 72 73 71 72 0 ]
 [a 68C 72 73 71 72 0 ]
 [a 78C 72 73 71 72 0 ]
 [a 81C 72 73 71 72 0 ]
 [a 82C 72 73 71 72 0 ]
-[a 40C 77 79 68 69 32 68 69 66 85 71 0 ]
+[a 42C 77 79 68 69 32 68 69 66 85 71 0 ]
 [a 52C 79 70 70 0 ]
 [a 55C 79 70 70 0 ]
 [a 56C 79 70 70 0 ]
@@ -2529,33 +2564,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 [a 108C 79 70 70 0 ]
 [a 111C 79 70 70 0 ]
 [a 112C 79 70 70 0 ]
-[a 31C 82 101 108 97 105 115 50 0 ]
-[a 32C 82 101 108 97 105 115 50 0 ]
+[a 33C 82 101 108 97 105 115 50 0 ]
+[a 34C 82 101 108 97 105 115 50 0 ]
 [a 103C 82 101 108 97 105 115 50 0 ]
-[a 19C 73 79 50 0 ]
-[a 20C 73 79 50 0 ]
+[a 21C 73 79 50 0 ]
+[a 22C 73 79 50 0 ]
 [a 75C 73 79 50 0 ]
-[a 37C 67 79 50 0 ]
-[a 38C 67 79 50 0 ]
-[a 25C 82 101 108 97 105 115 49 0 ]
-[a 26C 82 101 108 97 105 115 49 0 ]
+[a 39C 67 79 50 0 ]
+[a 40C 67 79 50 0 ]
+[a 27C 82 101 108 97 105 115 49 0 ]
+[a 28C 82 101 108 97 105 115 49 0 ]
 [a 89C 82 101 108 97 105 115 49 0 ]
-[a 13C 73 79 49 0 ]
-[a 14C 73 79 49 0 ]
+[a 15C 73 79 49 0 ]
+[a 16C 73 79 49 0 ]
 [a 61C 73 79 49 0 ]
 [a 65C 76 79 87 13 10 0 ]
 [a 79C 76 79 87 13 10 0 ]
-[a 114C 13 10 69 82 82 79 82 13 10 0 ]
 [a 49C 79 78 13 10 0 ]
 [a 91C 79 78 13 10 0 ]
 [a 105C 79 78 13 10 0 ]
-[a 117C 79 75 13 10 0 ]
+[a 115C 79 75 13 10 0 ]
 [a 63C 72 73 71 72 13 10 0 ]
 [a 77C 72 73 71 72 13 10 0 ]
 [a 51C 79 70 70 13 10 0 ]
 [a 93C 79 70 70 13 10 0 ]
 [a 107C 79 70 70 13 10 0 ]
-[a 42C 13 10 13 10 0 ]
 [a 44C 13 10 13 10 0 ]
 [a 46C 13 10 13 10 0 ]
 [a 48C 13 10 13 10 0 ]

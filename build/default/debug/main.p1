@@ -61,8 +61,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20 ./SIM7600.h
 [; ;./SIM7600.h: 20: void SIM7600_SendSMS(const char *text);
 [v _SIM7600_SendSMS `(v ~T0 @X0 0 ef1`*Cuc ]
-"134 ./commands.h
-[; ;./commands.h: 134: void Execute(void);
+"142 ./commands.h
+[; ;./commands.h: 142: void Execute(void);
 [v _Execute `(v ~T0 @X0 0 ef ]
 "10848 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16F1xxxx_DFP/1.31.465/xc8\pic\include\proc/pic16f15356.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16F1xxxx_DFP/1.31.465/xc8\pic\include\proc/pic16f15356.h: 10848:     struct {
@@ -1287,6 +1287,42 @@ Version 4.0 HI-TECH Software Intermediate Code
 "130
 [; ;./commands.h: 130: uint8_t humidityValue;
 [v _humidityValue `uc ~T0 @X0 1 e ]
+"133
+[; ;./commands.h: 133: _Bool smsMode = 0;
+[v _smsMode `a ~T0 @X0 1 e ]
+[i _smsMode
+-> -> 0 `i `a
+]
+"134
+[; ;./commands.h: 134: _Bool smsReadMode = 0;
+[v _smsReadMode `a ~T0 @X0 1 e ]
+[i _smsReadMode
+-> -> 0 `i `a
+]
+"135
+[; ;./commands.h: 135: _Bool smsSend = 0;
+[v _smsSend `a ~T0 @X0 1 e ]
+[i _smsSend
+-> -> 0 `i `a
+]
+"136
+[; ;./commands.h: 136: _Bool smsStartPoele = 0;
+[v _smsStartPoele `a ~T0 @X0 1 e ]
+[i _smsStartPoele
+-> -> 0 `i `a
+]
+"137
+[; ;./commands.h: 137: _Bool smsStartPoeleLu = 0;
+[v _smsStartPoeleLu `a ~T0 @X0 1 e ]
+[i _smsStartPoeleLu
+-> -> 0 `i `a
+]
+"138
+[; ;./commands.h: 138: _Bool smsTEL = 0;
+[v _smsTEL `a ~T0 @X0 1 e ]
+[i _smsTEL
+-> -> 0 `i `a
+]
 [v $root$_main `(v ~T0 @X0 0 e ]
 "79 main.c
 [; ;main.c: 79: int main(void)
