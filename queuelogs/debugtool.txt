@@ -1,0 +1,1005 @@
+34202 1791905933440 XXXX 1791905933440, Thread 34202: XXXX 1791905933440, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905933538 XXXX 1791905933538, Thread 34202: XXXX 1791905933538, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905933540 XXXX 1791905933540, Thread 34202: XXXX 1791905933540, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905933640 XXXX 1791905933640, Thread 34202: XXXX 1791905933640, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905933642 XXXX 1791905933642, Thread 34202: XXXX 1791905933642, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905933742 XXXX 1791905933742, Thread 34202: XXXX 1791905933742, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905933744 XXXX 1791905933744, Thread 34202: XXXX 1791905933744, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905933842 XXXX 1791905933842, Thread 34202: XXXX 1791905933842, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905933843 XXXX 1791905933843, Thread 34202: XXXX 1791905933843, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905933942 XXXX 1791905933942, Thread 34202: XXXX 1791905933942, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905933943 XXXX 1791905933943, Thread 34202: XXXX 1791905933943, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934042 XXXX 1791905934042, Thread 34202: XXXX 1791905934042, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934044 XXXX 1791905934044, Thread 34202: XXXX 1791905934044, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934143 XXXX 1791905934143, Thread 34202: XXXX 1791905934143, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934145 XXXX 1791905934145, Thread 34202: XXXX 1791905934145, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934245 XXXX 1791905934245, Thread 34202: XXXX 1791905934245, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934246 XXXX 1791905934246, Thread 34202: XXXX 1791905934246, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934346 XXXX 1791905934346, Thread 34202: XXXX 1791905934346, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934348 XXXX 1791905934348, Thread 34202: XXXX 1791905934348, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934447 XXXX 1791905934447, Thread 34202: XXXX 1791905934447, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934449 XXXX 1791905934449, Thread 34202: XXXX 1791905934449, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934547 XXXX 1791905934547, Thread 34202: XXXX 1791905934547, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934550 XXXX 1791905934550, Thread 34202: XXXX 1791905934550, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934648 XXXX 1791905934648, Thread 34202: XXXX 1791905934648, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934650 XXXX 1791905934650, Thread 34202: XXXX 1791905934650, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934749 XXXX 1791905934749, Thread 34202: XXXX 1791905934749, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934750 XXXX 1791905934750, Thread 34202: XXXX 1791905934750, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934850 XXXX 1791905934850, Thread 34202: XXXX 1791905934850, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934852 XXXX 1791905934852, Thread 34202: XXXX 1791905934852, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905934951 XXXX 1791905934951, Thread 34202: XXXX 1791905934951, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905934953 XXXX 1791905934953, Thread 34202: XXXX 1791905934953, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935052 XXXX 1791905935052, Thread 34202: XXXX 1791905935052, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935054 XXXX 1791905935054, Thread 34202: XXXX 1791905935054, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935152 XXXX 1791905935152, Thread 34202: XXXX 1791905935152, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935154 XXXX 1791905935154, Thread 34202: XXXX 1791905935154, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935254 XXXX 1791905935254, Thread 34202: XXXX 1791905935254, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935256 XXXX 1791905935256, Thread 34202: XXXX 1791905935256, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935357 XXXX 1791905935357, Thread 34202: XXXX 1791905935357, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935359 XXXX 1791905935359, Thread 34202: XXXX 1791905935359, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935456 XXXX 1791905935456, Thread 34202: XXXX 1791905935456, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935458 XXXX 1791905935458, Thread 34202: XXXX 1791905935458, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935557 XXXX 1791905935557, Thread 34202: XXXX 1791905935557, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935559 XXXX 1791905935559, Thread 34202: XXXX 1791905935559, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935658 XXXX 1791905935658, Thread 34202: XXXX 1791905935658, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935660 XXXX 1791905935660, Thread 34202: XXXX 1791905935660, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935758 XXXX 1791905935758, Thread 34202: XXXX 1791905935758, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935760 XXXX 1791905935760, Thread 34202: XXXX 1791905935760, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935859 XXXX 1791905935859, Thread 34202: XXXX 1791905935859, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935860 XXXX 1791905935860, Thread 34202: XXXX 1791905935860, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905935961 XXXX 1791905935961, Thread 34202: XXXX 1791905935961, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905935963 XXXX 1791905935963, Thread 34202: XXXX 1791905935963, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936063 XXXX 1791905936063, Thread 34202: XXXX 1791905936063, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936065 XXXX 1791905936065, Thread 34202: XXXX 1791905936065, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936163 XXXX 1791905936163, Thread 34202: XXXX 1791905936163, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936164 XXXX 1791905936164, Thread 34202: XXXX 1791905936164, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936263 XXXX 1791905936263, Thread 34202: XXXX 1791905936263, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936264 XXXX 1791905936264, Thread 34202: XXXX 1791905936264, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936364 XXXX 1791905936364, Thread 34202: XXXX 1791905936364, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936365 XXXX 1791905936365, Thread 34202: XXXX 1791905936365, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936465 XXXX 1791905936465, Thread 34202: XXXX 1791905936465, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936467 XXXX 1791905936467, Thread 34202: XXXX 1791905936467, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936565 XXXX 1791905936565, Thread 34202: XXXX 1791905936565, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936567 XXXX 1791905936567, Thread 34202: XXXX 1791905936567, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936667 XXXX 1791905936667, Thread 34202: XXXX 1791905936667, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936670 XXXX 1791905936670, Thread 34202: XXXX 1791905936670, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936768 XXXX 1791905936768, Thread 34202: XXXX 1791905936768, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936769 XXXX 1791905936769, Thread 34202: XXXX 1791905936769, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936870 XXXX 1791905936870, Thread 34202: XXXX 1791905936870, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936871 XXXX 1791905936871, Thread 34202: XXXX 1791905936871, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905936971 XXXX 1791905936971, Thread 34202: XXXX 1791905936971, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905936972 XXXX 1791905936972, Thread 34202: XXXX 1791905936972, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937072 XXXX 1791905937072, Thread 34202: XXXX 1791905937072, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937073 XXXX 1791905937073, Thread 34202: XXXX 1791905937073, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937175 XXXX 1791905937175, Thread 34202: XXXX 1791905937175, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937177 XXXX 1791905937177, Thread 34202: XXXX 1791905937177, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937274 XXXX 1791905937274, Thread 34202: XXXX 1791905937274, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937276 XXXX 1791905937276, Thread 34202: XXXX 1791905937276, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937375 XXXX 1791905937375, Thread 34202: XXXX 1791905937375, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937376 XXXX 1791905937376, Thread 34202: XXXX 1791905937376, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937476 XXXX 1791905937476, Thread 34202: XXXX 1791905937476, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937477 XXXX 1791905937477, Thread 34202: XXXX 1791905937477, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937577 XXXX 1791905937577, Thread 34202: XXXX 1791905937577, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937579 XXXX 1791905937579, Thread 34202: XXXX 1791905937579, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937679 XXXX 1791905937679, Thread 34202: XXXX 1791905937679, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937680 XXXX 1791905937680, Thread 34202: XXXX 1791905937680, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937780 XXXX 1791905937780, Thread 34202: XXXX 1791905937780, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937781 XXXX 1791905937781, Thread 34202: XXXX 1791905937781, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937880 XXXX 1791905937880, Thread 34202: XXXX 1791905937880, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937881 XXXX 1791905937881, Thread 34202: XXXX 1791905937881, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905937980 XXXX 1791905937980, Thread 34202: XXXX 1791905937980, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905937982 XXXX 1791905937982, Thread 34202: XXXX 1791905937982, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938081 XXXX 1791905938081, Thread 34202: XXXX 1791905938081, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938083 XXXX 1791905938083, Thread 34202: XXXX 1791905938083, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938182 XXXX 1791905938182, Thread 34202: XXXX 1791905938182, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938185 XXXX 1791905938185, Thread 34202: XXXX 1791905938185, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938283 XXXX 1791905938283, Thread 34202: XXXX 1791905938283, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938285 XXXX 1791905938285, Thread 34202: XXXX 1791905938285, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938383 XXXX 1791905938383, Thread 34202: XXXX 1791905938383, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938385 XXXX 1791905938385, Thread 34202: XXXX 1791905938385, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938484 XXXX 1791905938484, Thread 34202: XXXX 1791905938484, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938486 XXXX 1791905938486, Thread 34202: XXXX 1791905938486, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938584 XXXX 1791905938584, Thread 34202: XXXX 1791905938584, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938586 XXXX 1791905938586, Thread 34202: XXXX 1791905938586, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938685 XXXX 1791905938685, Thread 34202: XXXX 1791905938685, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938687 XXXX 1791905938687, Thread 34202: XXXX 1791905938687, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938785 XXXX 1791905938785, Thread 34202: XXXX 1791905938785, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938787 XXXX 1791905938787, Thread 34202: XXXX 1791905938787, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938885 XXXX 1791905938885, Thread 34202: XXXX 1791905938885, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938888 XXXX 1791905938888, Thread 34202: XXXX 1791905938888, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905938985 XXXX 1791905938985, Thread 34202: XXXX 1791905938985, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905938987 XXXX 1791905938987, Thread 34202: XXXX 1791905938987, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939086 XXXX 1791905939086, Thread 34202: XXXX 1791905939086, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939088 XXXX 1791905939088, Thread 34202: XXXX 1791905939088, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939186 XXXX 1791905939186, Thread 34202: XXXX 1791905939186, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939188 XXXX 1791905939188, Thread 34202: XXXX 1791905939188, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939286 XXXX 1791905939286, Thread 34202: XXXX 1791905939286, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939288 XXXX 1791905939288, Thread 34202: XXXX 1791905939288, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939387 XXXX 1791905939387, Thread 34202: XXXX 1791905939387, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939389 XXXX 1791905939389, Thread 34202: XXXX 1791905939389, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939487 XXXX 1791905939487, Thread 34202: XXXX 1791905939487, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939489 XXXX 1791905939489, Thread 34202: XXXX 1791905939489, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939587 XXXX 1791905939587, Thread 34202: XXXX 1791905939587, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939589 XXXX 1791905939589, Thread 34202: XXXX 1791905939589, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939688 XXXX 1791905939688, Thread 34202: XXXX 1791905939688, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939689 XXXX 1791905939689, Thread 34202: XXXX 1791905939689, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939789 XXXX 1791905939789, Thread 34202: XXXX 1791905939789, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939790 XXXX 1791905939790, Thread 34202: XXXX 1791905939790, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939890 XXXX 1791905939890, Thread 34202: XXXX 1791905939890, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939892 XXXX 1791905939892, Thread 34202: XXXX 1791905939892, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905939991 XXXX 1791905939991, Thread 34202: XXXX 1791905939991, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905939992 XXXX 1791905939992, Thread 34202: XXXX 1791905939992, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940092 XXXX 1791905940092, Thread 34202: XXXX 1791905940092, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940094 XXXX 1791905940093, Thread 34202: XXXX 1791905940093, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940192 XXXX 1791905940192, Thread 34202: XXXX 1791905940192, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940193 XXXX 1791905940193, Thread 34202: XXXX 1791905940193, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940292 XXXX 1791905940292, Thread 34202: XXXX 1791905940292, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940294 XXXX 1791905940294, Thread 34202: XXXX 1791905940294, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940393 XXXX 1791905940393, Thread 34202: XXXX 1791905940393, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940395 XXXX 1791905940395, Thread 34202: XXXX 1791905940395, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940494 XXXX 1791905940494, Thread 34202: XXXX 1791905940494, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940495 XXXX 1791905940495, Thread 34202: XXXX 1791905940495, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940593 XXXX 1791905940593, Thread 34202: XXXX 1791905940593, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940595 XXXX 1791905940595, Thread 34202: XXXX 1791905940595, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940693 XXXX 1791905940693, Thread 34202: XXXX 1791905940693, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940695 XXXX 1791905940695, Thread 34202: XXXX 1791905940695, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940794 XXXX 1791905940794, Thread 34202: XXXX 1791905940794, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940796 XXXX 1791905940796, Thread 34202: XXXX 1791905940796, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940896 XXXX 1791905940896, Thread 34202: XXXX 1791905940896, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940897 XXXX 1791905940897, Thread 34202: XXXX 1791905940897, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905940996 XXXX 1791905940996, Thread 34202: XXXX 1791905940996, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905940998 XXXX 1791905940998, Thread 34202: XXXX 1791905940998, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941097 XXXX 1791905941097, Thread 34202: XXXX 1791905941097, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941099 XXXX 1791905941099, Thread 34202: XXXX 1791905941099, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941197 XXXX 1791905941197, Thread 34202: XXXX 1791905941197, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941200 XXXX 1791905941200, Thread 34202: XXXX 1791905941200, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941298 XXXX 1791905941298, Thread 34202: XXXX 1791905941298, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941300 XXXX 1791905941300, Thread 34202: XXXX 1791905941300, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941398 XXXX 1791905941398, Thread 34202: XXXX 1791905941398, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941400 XXXX 1791905941400, Thread 34202: XXXX 1791905941400, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941500 XXXX 1791905941500, Thread 34202: XXXX 1791905941500, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941502 XXXX 1791905941502, Thread 34202: XXXX 1791905941502, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941600 XXXX 1791905941600, Thread 34202: XXXX 1791905941600, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941602 XXXX 1791905941602, Thread 34202: XXXX 1791905941602, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941701 XXXX 1791905941701, Thread 34202: XXXX 1791905941701, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941702 XXXX 1791905941702, Thread 34202: XXXX 1791905941702, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941802 XXXX 1791905941802, Thread 34202: XXXX 1791905941802, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941804 XXXX 1791905941804, Thread 34202: XXXX 1791905941804, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905941904 XXXX 1791905941904, Thread 34202: XXXX 1791905941904, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905941906 XXXX 1791905941906, Thread 34202: XXXX 1791905941906, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942006 XXXX 1791905942006, Thread 34202: XXXX 1791905942006, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942007 XXXX 1791905942007, Thread 34202: XXXX 1791905942007, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942106 XXXX 1791905942106, Thread 34202: XXXX 1791905942106, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942108 XXXX 1791905942108, Thread 34202: XXXX 1791905942108, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942206 XXXX 1791905942206, Thread 34202: XXXX 1791905942206, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942207 XXXX 1791905942207, Thread 34202: XXXX 1791905942207, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942307 XXXX 1791905942307, Thread 34202: XXXX 1791905942307, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942309 XXXX 1791905942309, Thread 34202: XXXX 1791905942309, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942408 XXXX 1791905942408, Thread 34202: XXXX 1791905942408, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942410 XXXX 1791905942410, Thread 34202: XXXX 1791905942410, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942508 XXXX 1791905942508, Thread 34202: XXXX 1791905942508, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942510 XXXX 1791905942510, Thread 34202: XXXX 1791905942510, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942609 XXXX 1791905942609, Thread 34202: XXXX 1791905942609, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942610 XXXX 1791905942610, Thread 34202: XXXX 1791905942610, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942710 XXXX 1791905942710, Thread 34202: XXXX 1791905942710, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942711 XXXX 1791905942711, Thread 34202: XXXX 1791905942711, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942810 XXXX 1791905942810, Thread 34202: XXXX 1791905942810, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942812 XXXX 1791905942812, Thread 34202: XXXX 1791905942812, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905942910 XXXX 1791905942910, Thread 34202: XXXX 1791905942910, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905942911 XXXX 1791905942911, Thread 34202: XXXX 1791905942911, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943010 XXXX 1791905943010, Thread 34202: XXXX 1791905943010, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943011 XXXX 1791905943011, Thread 34202: XXXX 1791905943011, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943111 XXXX 1791905943111, Thread 34202: XXXX 1791905943111, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943113 XXXX 1791905943113, Thread 34202: XXXX 1791905943113, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943211 XXXX 1791905943211, Thread 34202: XXXX 1791905943211, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943212 XXXX 1791905943212, Thread 34202: XXXX 1791905943212, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943312 XXXX 1791905943312, Thread 34202: XXXX 1791905943312, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943314 XXXX 1791905943314, Thread 34202: XXXX 1791905943314, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943412 XXXX 1791905943412, Thread 34202: XXXX 1791905943412, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943413 XXXX 1791905943413, Thread 34202: XXXX 1791905943413, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943513 XXXX 1791905943513, Thread 34202: XXXX 1791905943513, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943514 XXXX 1791905943514, Thread 34202: XXXX 1791905943514, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943615 XXXX 1791905943615, Thread 34202: XXXX 1791905943615, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943617 XXXX 1791905943617, Thread 34202: XXXX 1791905943617, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943716 XXXX 1791905943716, Thread 34202: XXXX 1791905943716, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943717 XXXX 1791905943717, Thread 34202: XXXX 1791905943717, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943816 XXXX 1791905943816, Thread 34202: XXXX 1791905943816, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943817 XXXX 1791905943817, Thread 34202: XXXX 1791905943817, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905943916 XXXX 1791905943916, Thread 34202: XXXX 1791905943916, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905943919 XXXX 1791905943919, Thread 34202: XXXX 1791905943919, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944017 XXXX 1791905944017, Thread 34202: XXXX 1791905944017, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944019 XXXX 1791905944019, Thread 34202: XXXX 1791905944019, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944117 XXXX 1791905944117, Thread 34202: XXXX 1791905944117, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944119 XXXX 1791905944119, Thread 34202: XXXX 1791905944119, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944218 XXXX 1791905944218, Thread 34202: XXXX 1791905944218, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944219 XXXX 1791905944219, Thread 34202: XXXX 1791905944219, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944321 XXXX 1791905944321, Thread 34202: XXXX 1791905944321, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944322 XXXX 1791905944322, Thread 34202: XXXX 1791905944322, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944421 XXXX 1791905944421, Thread 34202: XXXX 1791905944421, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944423 XXXX 1791905944423, Thread 34202: XXXX 1791905944423, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944521 XXXX 1791905944521, Thread 34202: XXXX 1791905944521, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944523 XXXX 1791905944523, Thread 34202: XXXX 1791905944523, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944621 XXXX 1791905944621, Thread 34202: XXXX 1791905944621, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944624 XXXX 1791905944624, Thread 34202: XXXX 1791905944624, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944721 XXXX 1791905944721, Thread 34202: XXXX 1791905944721, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944723 XXXX 1791905944723, Thread 34202: XXXX 1791905944723, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944823 XXXX 1791905944823, Thread 34202: XXXX 1791905944823, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944825 XXXX 1791905944825, Thread 34202: XXXX 1791905944825, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905944924 XXXX 1791905944924, Thread 34202: XXXX 1791905944924, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905944927 XXXX 1791905944925, Thread 34202: XXXX 1791905944925, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945025 XXXX 1791905945025, Thread 34202: XXXX 1791905945025, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945027 XXXX 1791905945027, Thread 34202: XXXX 1791905945027, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945126 XXXX 1791905945126, Thread 34202: XXXX 1791905945126, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945128 XXXX 1791905945128, Thread 34202: XXXX 1791905945128, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945226 XXXX 1791905945226, Thread 34202: XXXX 1791905945226, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945228 XXXX 1791905945228, Thread 34202: XXXX 1791905945228, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945328 XXXX 1791905945328, Thread 34202: XXXX 1791905945328, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945329 XXXX 1791905945329, Thread 34202: XXXX 1791905945329, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945430 XXXX 1791905945430, Thread 34202: XXXX 1791905945430, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945431 XXXX 1791905945431, Thread 34202: XXXX 1791905945431, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945530 XXXX 1791905945530, Thread 34202: XXXX 1791905945530, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945531 XXXX 1791905945531, Thread 34202: XXXX 1791905945531, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945630 XXXX 1791905945630, Thread 34202: XXXX 1791905945630, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945632 XXXX 1791905945632, Thread 34202: XXXX 1791905945632, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945731 XXXX 1791905945731, Thread 34202: XXXX 1791905945731, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945733 XXXX 1791905945733, Thread 34202: XXXX 1791905945733, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945832 XXXX 1791905945832, Thread 34202: XXXX 1791905945832, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945834 XXXX 1791905945834, Thread 34202: XXXX 1791905945834, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905945934 XXXX 1791905945934, Thread 34202: XXXX 1791905945934, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905945935 XXXX 1791905945935, Thread 34202: XXXX 1791905945935, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946035 XXXX 1791905946035, Thread 34202: XXXX 1791905946035, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946036 XXXX 1791905946036, Thread 34202: XXXX 1791905946036, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946136 XXXX 1791905946136, Thread 34202: XXXX 1791905946136, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946137 XXXX 1791905946137, Thread 34202: XXXX 1791905946137, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946237 XXXX 1791905946237, Thread 34202: XXXX 1791905946237, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946239 XXXX 1791905946239, Thread 34202: XXXX 1791905946239, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946337 XXXX 1791905946337, Thread 34202: XXXX 1791905946337, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946339 XXXX 1791905946339, Thread 34202: XXXX 1791905946339, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946438 XXXX 1791905946438, Thread 34202: XXXX 1791905946438, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946440 XXXX 1791905946440, Thread 34202: XXXX 1791905946440, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946541 XXXX 1791905946541, Thread 34202: XXXX 1791905946541, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946543 XXXX 1791905946543, Thread 34202: XXXX 1791905946543, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946641 XXXX 1791905946641, Thread 34202: XXXX 1791905946641, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946643 XXXX 1791905946643, Thread 34202: XXXX 1791905946643, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946742 XXXX 1791905946742, Thread 34202: XXXX 1791905946742, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946744 XXXX 1791905946744, Thread 34202: XXXX 1791905946744, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946842 XXXX 1791905946842, Thread 34202: XXXX 1791905946842, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946843 XXXX 1791905946843, Thread 34202: XXXX 1791905946843, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905946943 XXXX 1791905946943, Thread 34202: XXXX 1791905946943, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905946945 XXXX 1791905946945, Thread 34202: XXXX 1791905946945, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947044 XXXX 1791905947044, Thread 34202: XXXX 1791905947044, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947046 XXXX 1791905947046, Thread 34202: XXXX 1791905947046, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947146 XXXX 1791905947146, Thread 34202: XXXX 1791905947146, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947147 XXXX 1791905947147, Thread 34202: XXXX 1791905947147, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947247 XXXX 1791905947247, Thread 34202: XXXX 1791905947247, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947249 XXXX 1791905947249, Thread 34202: XXXX 1791905947249, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947348 XXXX 1791905947348, Thread 34202: XXXX 1791905947348, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947350 XXXX 1791905947350, Thread 34202: XXXX 1791905947350, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947449 XXXX 1791905947449, Thread 34202: XXXX 1791905947449, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947450 XXXX 1791905947450, Thread 34202: XXXX 1791905947450, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947551 XXXX 1791905947551, Thread 34202: XXXX 1791905947551, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947552 XXXX 1791905947552, Thread 34202: XXXX 1791905947552, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947651 XXXX 1791905947651, Thread 34202: XXXX 1791905947651, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947653 XXXX 1791905947653, Thread 34202: XXXX 1791905947653, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947752 XXXX 1791905947752, Thread 34202: XXXX 1791905947752, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947753 XXXX 1791905947753, Thread 34202: XXXX 1791905947753, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947854 XXXX 1791905947854, Thread 34202: XXXX 1791905947854, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947855 XXXX 1791905947855, Thread 34202: XXXX 1791905947855, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905947956 XXXX 1791905947956, Thread 34202: XXXX 1791905947956, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905947957 XXXX 1791905947957, Thread 34202: XXXX 1791905947957, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948057 XXXX 1791905948057, Thread 34202: XXXX 1791905948057, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948058 XXXX 1791905948058, Thread 34202: XXXX 1791905948058, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948158 XXXX 1791905948158, Thread 34202: XXXX 1791905948158, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948160 XXXX 1791905948160, Thread 34202: XXXX 1791905948160, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948259 XXXX 1791905948258, Thread 34202: XXXX 1791905948258, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948260 XXXX 1791905948260, Thread 34202: XXXX 1791905948260, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948360 XXXX 1791905948360, Thread 34202: XXXX 1791905948360, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948361 XXXX 1791905948361, Thread 34202: XXXX 1791905948361, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948462 XXXX 1791905948462, Thread 34202: XXXX 1791905948462, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948464 XXXX 1791905948464, Thread 34202: XXXX 1791905948464, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948563 XXXX 1791905948563, Thread 34202: XXXX 1791905948563, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948565 XXXX 1791905948565, Thread 34202: XXXX 1791905948565, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948664 XXXX 1791905948664, Thread 34202: XXXX 1791905948664, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948665 XXXX 1791905948665, Thread 34202: XXXX 1791905948665, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948764 XXXX 1791905948764, Thread 34202: XXXX 1791905948764, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948766 XXXX 1791905948766, Thread 34202: XXXX 1791905948766, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948865 XXXX 1791905948865, Thread 34202: XXXX 1791905948865, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948866 XXXX 1791905948866, Thread 34202: XXXX 1791905948866, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905948965 XXXX 1791905948965, Thread 34202: XXXX 1791905948965, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905948966 XXXX 1791905948966, Thread 34202: XXXX 1791905948966, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949065 XXXX 1791905949065, Thread 34202: XXXX 1791905949065, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949066 XXXX 1791905949066, Thread 34202: XXXX 1791905949066, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949167 XXXX 1791905949167, Thread 34202: XXXX 1791905949167, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949168 XXXX 1791905949168, Thread 34202: XXXX 1791905949168, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949267 XXXX 1791905949267, Thread 34202: XXXX 1791905949267, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949269 XXXX 1791905949269, Thread 34202: XXXX 1791905949269, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949370 XXXX 1791905949370, Thread 34202: XXXX 1791905949370, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949372 XXXX 1791905949372, Thread 34202: XXXX 1791905949372, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949471 XXXX 1791905949471, Thread 34202: XXXX 1791905949471, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949473 XXXX 1791905949473, Thread 34202: XXXX 1791905949473, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949571 XXXX 1791905949571, Thread 34202: XXXX 1791905949571, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949572 XXXX 1791905949572, Thread 34202: XXXX 1791905949572, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949672 XXXX 1791905949672, Thread 34202: XXXX 1791905949672, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949674 XXXX 1791905949674, Thread 34202: XXXX 1791905949674, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949775 XXXX 1791905949775, Thread 34202: XXXX 1791905949775, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949776 XXXX 1791905949776, Thread 34202: XXXX 1791905949776, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949877 XXXX 1791905949877, Thread 34202: XXXX 1791905949877, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949880 XXXX 1791905949880, Thread 34202: XXXX 1791905949880, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905949976 XXXX 1791905949976, Thread 34202: XXXX 1791905949976, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905949978 XXXX 1791905949978, Thread 34202: XXXX 1791905949978, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950077 XXXX 1791905950077, Thread 34202: XXXX 1791905950077, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950079 XXXX 1791905950079, Thread 34202: XXXX 1791905950079, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950177 XXXX 1791905950177, Thread 34202: XXXX 1791905950177, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950179 XXXX 1791905950179, Thread 34202: XXXX 1791905950179, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950280 XXXX 1791905950280, Thread 34202: XXXX 1791905950280, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950281 XXXX 1791905950281, Thread 34202: XXXX 1791905950281, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950381 XXXX 1791905950381, Thread 34202: XXXX 1791905950381, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950384 XXXX 1791905950384, Thread 34202: XXXX 1791905950384, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950482 XXXX 1791905950482, Thread 34202: XXXX 1791905950482, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950483 XXXX 1791905950483, Thread 34202: XXXX 1791905950483, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950582 XXXX 1791905950582, Thread 34202: XXXX 1791905950582, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950584 XXXX 1791905950584, Thread 34202: XXXX 1791905950584, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950684 XXXX 1791905950684, Thread 34202: XXXX 1791905950684, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950685 XXXX 1791905950685, Thread 34202: XXXX 1791905950685, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950786 XXXX 1791905950786, Thread 34202: XXXX 1791905950786, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950787 XXXX 1791905950787, Thread 34202: XXXX 1791905950787, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950887 XXXX 1791905950887, Thread 34202: XXXX 1791905950887, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950889 XXXX 1791905950888, Thread 34202: XXXX 1791905950888, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905950987 XXXX 1791905950987, Thread 34202: XXXX 1791905950987, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905950989 XXXX 1791905950989, Thread 34202: XXXX 1791905950989, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951089 XXXX 1791905951089, Thread 34202: XXXX 1791905951089, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951091 XXXX 1791905951091, Thread 34202: XXXX 1791905951091, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951189 XXXX 1791905951189, Thread 34202: XXXX 1791905951189, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951190 XXXX 1791905951190, Thread 34202: XXXX 1791905951190, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951292 XXXX 1791905951292, Thread 34202: XXXX 1791905951292, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951293 XXXX 1791905951293, Thread 34202: XXXX 1791905951293, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951392 XXXX 1791905951392, Thread 34202: XXXX 1791905951392, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951394 XXXX 1791905951394, Thread 34202: XXXX 1791905951394, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951492 XXXX 1791905951492, Thread 34202: XXXX 1791905951492, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951494 XXXX 1791905951494, Thread 34202: XXXX 1791905951494, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951592 XXXX 1791905951592, Thread 34202: XXXX 1791905951592, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951594 XXXX 1791905951594, Thread 34202: XXXX 1791905951594, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951692 XXXX 1791905951692, Thread 34202: XXXX 1791905951692, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951694 XXXX 1791905951694, Thread 34202: XXXX 1791905951694, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951793 XXXX 1791905951793, Thread 34202: XXXX 1791905951793, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951795 XXXX 1791905951795, Thread 34202: XXXX 1791905951795, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951893 XXXX 1791905951893, Thread 34202: XXXX 1791905951893, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951894 XXXX 1791905951894, Thread 34202: XXXX 1791905951894, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905951993 XXXX 1791905951993, Thread 34202: XXXX 1791905951993, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905951995 XXXX 1791905951995, Thread 34202: XXXX 1791905951995, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952093 XXXX 1791905952093, Thread 34202: XXXX 1791905952093, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952094 XXXX 1791905952094, Thread 34202: XXXX 1791905952094, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952193 XXXX 1791905952193, Thread 34202: XXXX 1791905952193, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952194 XXXX 1791905952194, Thread 34202: XXXX 1791905952194, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952294 XXXX 1791905952294, Thread 34202: XXXX 1791905952294, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952295 XXXX 1791905952295, Thread 34202: XXXX 1791905952295, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952395 XXXX 1791905952395, Thread 34202: XXXX 1791905952395, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952397 XXXX 1791905952397, Thread 34202: XXXX 1791905952397, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952495 XXXX 1791905952495, Thread 34202: XXXX 1791905952495, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952497 XXXX 1791905952497, Thread 34202: XXXX 1791905952497, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952596 XXXX 1791905952596, Thread 34202: XXXX 1791905952596, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952597 XXXX 1791905952597, Thread 34202: XXXX 1791905952597, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952697 XXXX 1791905952697, Thread 34202: XXXX 1791905952697, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952698 XXXX 1791905952698, Thread 34202: XXXX 1791905952698, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952798 XXXX 1791905952798, Thread 34202: XXXX 1791905952798, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952800 XXXX 1791905952800, Thread 34202: XXXX 1791905952800, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952898 XXXX 1791905952898, Thread 34202: XXXX 1791905952898, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905952900 XXXX 1791905952900, Thread 34202: XXXX 1791905952900, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905952999 XXXX 1791905952999, Thread 34202: XXXX 1791905952999, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953001 XXXX 1791905953001, Thread 34202: XXXX 1791905953001, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953099 XXXX 1791905953099, Thread 34202: XXXX 1791905953099, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953102 XXXX 1791905953102, Thread 34202: XXXX 1791905953102, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953199 XXXX 1791905953199, Thread 34202: XXXX 1791905953199, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953200 XXXX 1791905953200, Thread 34202: XXXX 1791905953200, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953300 XXXX 1791905953300, Thread 34202: XXXX 1791905953300, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953302 XXXX 1791905953302, Thread 34202: XXXX 1791905953302, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953401 XXXX 1791905953401, Thread 34202: XXXX 1791905953401, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953402 XXXX 1791905953402, Thread 34202: XXXX 1791905953402, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953502 XXXX 1791905953502, Thread 34202: XXXX 1791905953502, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953503 XXXX 1791905953503, Thread 34202: XXXX 1791905953503, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953603 XXXX 1791905953603, Thread 34202: XXXX 1791905953603, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953605 XXXX 1791905953605, Thread 34202: XXXX 1791905953605, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953704 XXXX 1791905953704, Thread 34202: XXXX 1791905953704, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953705 XXXX 1791905953705, Thread 34202: XXXX 1791905953705, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953805 XXXX 1791905953805, Thread 34202: XXXX 1791905953805, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953806 XXXX 1791905953806, Thread 34202: XXXX 1791905953806, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905953906 XXXX 1791905953906, Thread 34202: XXXX 1791905953906, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905953907 XXXX 1791905953907, Thread 34202: XXXX 1791905953907, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954006 XXXX 1791905954006, Thread 34202: XXXX 1791905954006, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954007 XXXX 1791905954007, Thread 34202: XXXX 1791905954007, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954108 XXXX 1791905954108, Thread 34202: XXXX 1791905954108, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954109 XXXX 1791905954109, Thread 34202: XXXX 1791905954109, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954210 XXXX 1791905954210, Thread 34202: XXXX 1791905954210, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954211 XXXX 1791905954211, Thread 34202: XXXX 1791905954211, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954312 XXXX 1791905954312, Thread 34202: XXXX 1791905954312, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954314 XXXX 1791905954314, Thread 34202: XXXX 1791905954314, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954413 XXXX 1791905954413, Thread 34202: XXXX 1791905954413, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954415 XXXX 1791905954415, Thread 34202: XXXX 1791905954415, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954514 XXXX 1791905954514, Thread 34202: XXXX 1791905954514, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954515 XXXX 1791905954515, Thread 34202: XXXX 1791905954515, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954614 XXXX 1791905954614, Thread 34202: XXXX 1791905954614, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954616 XXXX 1791905954616, Thread 34202: XXXX 1791905954616, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954715 XXXX 1791905954715, Thread 34202: XXXX 1791905954715, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954717 XXXX 1791905954717, Thread 34202: XXXX 1791905954717, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954817 XXXX 1791905954817, Thread 34202: XXXX 1791905954817, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954819 XXXX 1791905954819, Thread 34202: XXXX 1791905954819, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905954918 XXXX 1791905954918, Thread 34202: XXXX 1791905954918, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905954919 XXXX 1791905954919, Thread 34202: XXXX 1791905954919, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955019 XXXX 1791905955019, Thread 34202: XXXX 1791905955019, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955021 XXXX 1791905955021, Thread 34202: XXXX 1791905955021, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955120 XXXX 1791905955120, Thread 34202: XXXX 1791905955120, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955121 XXXX 1791905955121, Thread 34202: XXXX 1791905955121, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955222 XXXX 1791905955222, Thread 34202: XXXX 1791905955222, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955224 XXXX 1791905955224, Thread 34202: XXXX 1791905955224, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955323 XXXX 1791905955323, Thread 34202: XXXX 1791905955323, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955325 XXXX 1791905955325, Thread 34202: XXXX 1791905955325, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955424 XXXX 1791905955424, Thread 34202: XXXX 1791905955424, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955425 XXXX 1791905955425, Thread 34202: XXXX 1791905955425, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955526 XXXX 1791905955526, Thread 34202: XXXX 1791905955526, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955528 XXXX 1791905955528, Thread 34202: XXXX 1791905955528, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955626 XXXX 1791905955626, Thread 34202: XXXX 1791905955626, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955627 XXXX 1791905955627, Thread 34202: XXXX 1791905955627, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955728 XXXX 1791905955728, Thread 34202: XXXX 1791905955728, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955730 XXXX 1791905955730, Thread 34202: XXXX 1791905955730, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955829 XXXX 1791905955829, Thread 34202: XXXX 1791905955829, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955831 XXXX 1791905955831, Thread 34202: XXXX 1791905955831, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905955931 XXXX 1791905955931, Thread 34202: XXXX 1791905955931, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905955933 XXXX 1791905955933, Thread 34202: XXXX 1791905955933, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956033 XXXX 1791905956033, Thread 34202: XXXX 1791905956033, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956034 XXXX 1791905956034, Thread 34202: XXXX 1791905956034, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956134 XXXX 1791905956134, Thread 34202: XXXX 1791905956134, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956136 XXXX 1791905956136, Thread 34202: XXXX 1791905956136, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956236 XXXX 1791905956236, Thread 34202: XXXX 1791905956236, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956238 XXXX 1791905956238, Thread 34202: XXXX 1791905956238, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956337 XXXX 1791905956337, Thread 34202: XXXX 1791905956337, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956339 XXXX 1791905956339, Thread 34202: XXXX 1791905956339, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956438 XXXX 1791905956438, Thread 34202: XXXX 1791905956438, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956440 XXXX 1791905956440, Thread 34202: XXXX 1791905956440, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956539 XXXX 1791905956539, Thread 34202: XXXX 1791905956539, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956541 XXXX 1791905956541, Thread 34202: XXXX 1791905956541, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956640 XXXX 1791905956640, Thread 34202: XXXX 1791905956640, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956642 XXXX 1791905956642, Thread 34202: XXXX 1791905956642, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956740 XXXX 1791905956740, Thread 34202: XXXX 1791905956740, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956742 XXXX 1791905956742, Thread 34202: XXXX 1791905956742, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956841 XXXX 1791905956841, Thread 34202: XXXX 1791905956841, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956842 XXXX 1791905956842, Thread 34202: XXXX 1791905956842, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905956943 XXXX 1791905956943, Thread 34202: XXXX 1791905956943, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905956944 XXXX 1791905956944, Thread 34202: XXXX 1791905956944, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957044 XXXX 1791905957044, Thread 34202: XXXX 1791905957044, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957046 XXXX 1791905957046, Thread 34202: XXXX 1791905957046, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957146 XXXX 1791905957146, Thread 34202: XXXX 1791905957146, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957148 XXXX 1791905957148, Thread 34202: XXXX 1791905957148, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957246 XXXX 1791905957246, Thread 34202: XXXX 1791905957246, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957248 XXXX 1791905957248, Thread 34202: XXXX 1791905957248, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957346 XXXX 1791905957346, Thread 34202: XXXX 1791905957346, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957348 XXXX 1791905957348, Thread 34202: XXXX 1791905957348, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957446 XXXX 1791905957446, Thread 34202: XXXX 1791905957446, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957448 XXXX 1791905957448, Thread 34202: XXXX 1791905957448, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957546 XXXX 1791905957546, Thread 34202: XXXX 1791905957546, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957548 XXXX 1791905957548, Thread 34202: XXXX 1791905957548, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957646 XXXX 1791905957646, Thread 34202: XXXX 1791905957646, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957648 XXXX 1791905957648, Thread 34202: XXXX 1791905957648, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957747 XXXX 1791905957747, Thread 34202: XXXX 1791905957747, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957749 XXXX 1791905957749, Thread 34202: XXXX 1791905957749, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957847 XXXX 1791905957847, Thread 34202: XXXX 1791905957847, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957849 XXXX 1791905957849, Thread 34202: XXXX 1791905957849, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905957947 XXXX 1791905957947, Thread 34202: XXXX 1791905957947, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905957949 XXXX 1791905957949, Thread 34202: XXXX 1791905957949, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958048 XXXX 1791905958048, Thread 34202: XXXX 1791905958048, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958050 XXXX 1791905958050, Thread 34202: XXXX 1791905958050, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958150 XXXX 1791905958150, Thread 34202: XXXX 1791905958150, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958152 XXXX 1791905958152, Thread 34202: XXXX 1791905958152, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958251 XXXX 1791905958251, Thread 34202: XXXX 1791905958251, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958252 XXXX 1791905958252, Thread 34202: XXXX 1791905958252, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958351 XXXX 1791905958351, Thread 34202: XXXX 1791905958351, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958353 XXXX 1791905958353, Thread 34202: XXXX 1791905958353, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958452 XXXX 1791905958452, Thread 34202: XXXX 1791905958452, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958454 XXXX 1791905958454, Thread 34202: XXXX 1791905958454, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958552 XXXX 1791905958552, Thread 34202: XXXX 1791905958552, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958554 XXXX 1791905958554, Thread 34202: XXXX 1791905958554, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958653 XXXX 1791905958653, Thread 34202: XXXX 1791905958653, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958655 XXXX 1791905958655, Thread 34202: XXXX 1791905958655, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958753 XXXX 1791905958753, Thread 34202: XXXX 1791905958753, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958755 XXXX 1791905958755, Thread 34202: XXXX 1791905958755, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958854 XXXX 1791905958854, Thread 34202: XXXX 1791905958854, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958856 XXXX 1791905958856, Thread 34202: XXXX 1791905958856, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905958954 XXXX 1791905958954, Thread 34202: XXXX 1791905958954, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905958956 XXXX 1791905958956, Thread 34202: XXXX 1791905958956, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959054 XXXX 1791905959054, Thread 34202: XXXX 1791905959054, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959056 XXXX 1791905959056, Thread 34202: XXXX 1791905959056, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959154 XXXX 1791905959154, Thread 34202: XXXX 1791905959154, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959157 XXXX 1791905959157, Thread 34202: XXXX 1791905959157, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959256 XXXX 1791905959256, Thread 34202: XXXX 1791905959256, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959258 XXXX 1791905959258, Thread 34202: XXXX 1791905959258, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959356 XXXX 1791905959356, Thread 34202: XXXX 1791905959356, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959358 XXXX 1791905959358, Thread 34202: XXXX 1791905959358, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959458 XXXX 1791905959458, Thread 34202: XXXX 1791905959458, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959459 XXXX 1791905959459, Thread 34202: XXXX 1791905959459, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959559 XXXX 1791905959559, Thread 34202: XXXX 1791905959559, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959561 XXXX 1791905959561, Thread 34202: XXXX 1791905959561, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959660 XXXX 1791905959660, Thread 34202: XXXX 1791905959660, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959662 XXXX 1791905959662, Thread 34202: XXXX 1791905959662, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959761 XXXX 1791905959761, Thread 34202: XXXX 1791905959761, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959763 XXXX 1791905959763, Thread 34202: XXXX 1791905959763, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959861 XXXX 1791905959861, Thread 34202: XXXX 1791905959861, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959862 XXXX 1791905959862, Thread 34202: XXXX 1791905959862, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905959963 XXXX 1791905959963, Thread 34202: XXXX 1791905959963, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905959964 XXXX 1791905959964, Thread 34202: XXXX 1791905959964, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960062 XXXX 1791905960062, Thread 34202: XXXX 1791905960062, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960064 XXXX 1791905960064, Thread 34202: XXXX 1791905960064, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960164 XXXX 1791905960164, Thread 34202: XXXX 1791905960164, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960166 XXXX 1791905960166, Thread 34202: XXXX 1791905960166, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960265 XXXX 1791905960265, Thread 34202: XXXX 1791905960265, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960267 XXXX 1791905960267, Thread 34202: XXXX 1791905960267, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960366 XXXX 1791905960366, Thread 34202: XXXX 1791905960366, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960367 XXXX 1791905960367, Thread 34202: XXXX 1791905960367, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960468 XXXX 1791905960468, Thread 34202: XXXX 1791905960468, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960469 XXXX 1791905960469, Thread 34202: XXXX 1791905960469, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960568 XXXX 1791905960568, Thread 34202: XXXX 1791905960568, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960570 XXXX 1791905960570, Thread 34202: XXXX 1791905960570, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960668 XXXX 1791905960668, Thread 34202: XXXX 1791905960668, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960670 XXXX 1791905960670, Thread 34202: XXXX 1791905960670, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960769 XXXX 1791905960769, Thread 34202: XXXX 1791905960769, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960771 XXXX 1791905960771, Thread 34202: XXXX 1791905960771, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960870 XXXX 1791905960870, Thread 34202: XXXX 1791905960870, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960872 XXXX 1791905960872, Thread 34202: XXXX 1791905960872, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905960971 XXXX 1791905960971, Thread 34202: XXXX 1791905960971, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905960973 XXXX 1791905960973, Thread 34202: XXXX 1791905960973, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961073 XXXX 1791905961073, Thread 34202: XXXX 1791905961073, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961074 XXXX 1791905961074, Thread 34202: XXXX 1791905961074, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961175 XXXX 1791905961175, Thread 34202: XXXX 1791905961175, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961177 XXXX 1791905961177, Thread 34202: XXXX 1791905961177, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961275 XXXX 1791905961275, Thread 34202: XXXX 1791905961275, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961277 XXXX 1791905961277, Thread 34202: XXXX 1791905961277, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961376 XXXX 1791905961376, Thread 34202: XXXX 1791905961376, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961378 XXXX 1791905961378, Thread 34202: XXXX 1791905961378, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961477 XXXX 1791905961477, Thread 34202: XXXX 1791905961477, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961479 XXXX 1791905961479, Thread 34202: XXXX 1791905961479, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961577 XXXX 1791905961577, Thread 34202: XXXX 1791905961577, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961579 XXXX 1791905961579, Thread 34202: XXXX 1791905961579, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961678 XXXX 1791905961678, Thread 34202: XXXX 1791905961678, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961680 XXXX 1791905961680, Thread 34202: XXXX 1791905961680, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961779 XXXX 1791905961779, Thread 34202: XXXX 1791905961779, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961781 XXXX 1791905961781, Thread 34202: XXXX 1791905961781, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961880 XXXX 1791905961880, Thread 34202: XXXX 1791905961880, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961881 XXXX 1791905961881, Thread 34202: XXXX 1791905961881, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905961981 XXXX 1791905961981, Thread 34202: XXXX 1791905961981, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905961983 XXXX 1791905961983, Thread 34202: XXXX 1791905961983, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962082 XXXX 1791905962082, Thread 34202: XXXX 1791905962082, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962083 XXXX 1791905962083, Thread 34202: XXXX 1791905962083, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962182 XXXX 1791905962182, Thread 34202: XXXX 1791905962182, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962183 XXXX 1791905962183, Thread 34202: XXXX 1791905962183, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962282 XXXX 1791905962282, Thread 34202: XXXX 1791905962282, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962283 XXXX 1791905962283, Thread 34202: XXXX 1791905962283, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962383 XXXX 1791905962383, Thread 34202: XXXX 1791905962383, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962384 XXXX 1791905962384, Thread 34202: XXXX 1791905962384, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962483 XXXX 1791905962483, Thread 34202: XXXX 1791905962483, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962484 XXXX 1791905962484, Thread 34202: XXXX 1791905962484, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962584 XXXX 1791905962584, Thread 34202: XXXX 1791905962584, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962586 XXXX 1791905962586, Thread 34202: XXXX 1791905962586, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962685 XXXX 1791905962685, Thread 34202: XXXX 1791905962685, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962687 XXXX 1791905962687, Thread 34202: XXXX 1791905962687, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962786 XXXX 1791905962786, Thread 34202: XXXX 1791905962786, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962787 XXXX 1791905962787, Thread 34202: XXXX 1791905962787, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962887 XXXX 1791905962887, Thread 34202: XXXX 1791905962887, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962888 XXXX 1791905962888, Thread 34202: XXXX 1791905962888, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905962987 XXXX 1791905962987, Thread 34202: XXXX 1791905962987, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905962988 XXXX 1791905962988, Thread 34202: XXXX 1791905962988, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963088 XXXX 1791905963088, Thread 34202: XXXX 1791905963088, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963090 XXXX 1791905963090, Thread 34202: XXXX 1791905963090, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963189 XXXX 1791905963189, Thread 34202: XXXX 1791905963189, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963190 XXXX 1791905963190, Thread 34202: XXXX 1791905963190, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963290 XXXX 1791905963290, Thread 34202: XXXX 1791905963290, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963291 XXXX 1791905963291, Thread 34202: XXXX 1791905963291, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963391 XXXX 1791905963391, Thread 34202: XXXX 1791905963391, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963392 XXXX 1791905963392, Thread 34202: XXXX 1791905963392, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963493 XXXX 1791905963493, Thread 34202: XXXX 1791905963493, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963495 XXXX 1791905963495, Thread 34202: XXXX 1791905963495, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963595 XXXX 1791905963595, Thread 34202: XXXX 1791905963595, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963597 XXXX 1791905963597, Thread 34202: XXXX 1791905963597, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963696 XXXX 1791905963696, Thread 34202: XXXX 1791905963696, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963697 XXXX 1791905963697, Thread 34202: XXXX 1791905963697, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963799 XXXX 1791905963799, Thread 34202: XXXX 1791905963799, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963801 XXXX 1791905963801, Thread 34202: XXXX 1791905963801, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963898 XXXX 1791905963898, Thread 34202: XXXX 1791905963898, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905963900 XXXX 1791905963900, Thread 34202: XXXX 1791905963900, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905963999 XXXX 1791905963999, Thread 34202: XXXX 1791905963999, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964001 XXXX 1791905964001, Thread 34202: XXXX 1791905964001, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964100 XXXX 1791905964100, Thread 34202: XXXX 1791905964100, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964101 XXXX 1791905964101, Thread 34202: XXXX 1791905964101, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964201 XXXX 1791905964201, Thread 34202: XXXX 1791905964201, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964202 XXXX 1791905964202, Thread 34202: XXXX 1791905964202, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964302 XXXX 1791905964302, Thread 34202: XXXX 1791905964302, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964304 XXXX 1791905964304, Thread 34202: XXXX 1791905964304, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964402 XXXX 1791905964402, Thread 34202: XXXX 1791905964402, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964403 XXXX 1791905964403, Thread 34202: XXXX 1791905964403, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964503 XXXX 1791905964503, Thread 34202: XXXX 1791905964503, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964505 XXXX 1791905964505, Thread 34202: XXXX 1791905964505, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964604 XXXX 1791905964604, Thread 34202: XXXX 1791905964604, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964605 XXXX 1791905964605, Thread 34202: XXXX 1791905964605, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964706 XXXX 1791905964706, Thread 34202: XXXX 1791905964706, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964708 XXXX 1791905964708, Thread 34202: XXXX 1791905964708, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964807 XXXX 1791905964807, Thread 34202: XXXX 1791905964807, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964809 XXXX 1791905964809, Thread 34202: XXXX 1791905964809, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905964907 XXXX 1791905964907, Thread 34202: XXXX 1791905964907, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905964909 XXXX 1791905964909, Thread 34202: XXXX 1791905964909, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965008 XXXX 1791905965008, Thread 34202: XXXX 1791905965008, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965010 XXXX 1791905965010, Thread 34202: XXXX 1791905965010, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965107 XXXX 1791905965107, Thread 34202: XXXX 1791905965107, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965109 XXXX 1791905965109, Thread 34202: XXXX 1791905965109, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965209 XXXX 1791905965209, Thread 34202: XXXX 1791905965209, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965211 XXXX 1791905965211, Thread 34202: XXXX 1791905965211, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965309 XXXX 1791905965309, Thread 34202: XXXX 1791905965309, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965311 XXXX 1791905965311, Thread 34202: XXXX 1791905965311, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965410 XXXX 1791905965410, Thread 34202: XXXX 1791905965410, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965411 XXXX 1791905965411, Thread 34202: XXXX 1791905965411, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965511 XXXX 1791905965511, Thread 34202: XXXX 1791905965511, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965513 XXXX 1791905965513, Thread 34202: XXXX 1791905965513, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965611 XXXX 1791905965611, Thread 34202: XXXX 1791905965611, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965612 XXXX 1791905965612, Thread 34202: XXXX 1791905965612, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965712 XXXX 1791905965712, Thread 34202: XXXX 1791905965712, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965714 XXXX 1791905965714, Thread 34202: XXXX 1791905965714, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965813 XXXX 1791905965813, Thread 34202: XXXX 1791905965813, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965815 XXXX 1791905965815, Thread 34202: XXXX 1791905965815, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905965914 XXXX 1791905965914, Thread 34202: XXXX 1791905965914, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905965916 XXXX 1791905965916, Thread 34202: XXXX 1791905965916, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966015 XXXX 1791905966015, Thread 34202: XXXX 1791905966015, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966016 XXXX 1791905966016, Thread 34202: XXXX 1791905966016, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966117 XXXX 1791905966117, Thread 34202: XXXX 1791905966117, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966119 XXXX 1791905966119, Thread 34202: XXXX 1791905966119, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966217 XXXX 1791905966217, Thread 34202: XXXX 1791905966217, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966219 XXXX 1791905966219, Thread 34202: XXXX 1791905966219, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966317 XXXX 1791905966317, Thread 34202: XXXX 1791905966317, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966319 XXXX 1791905966319, Thread 34202: XXXX 1791905966319, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966418 XXXX 1791905966418, Thread 34202: XXXX 1791905966418, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966420 XXXX 1791905966420, Thread 34202: XXXX 1791905966420, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966520 XXXX 1791905966520, Thread 34202: XXXX 1791905966519, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966521 XXXX 1791905966521, Thread 34202: XXXX 1791905966521, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966619 XXXX 1791905966619, Thread 34202: XXXX 1791905966619, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966621 XXXX 1791905966621, Thread 34202: XXXX 1791905966621, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966720 XXXX 1791905966720, Thread 34202: XXXX 1791905966720, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966722 XXXX 1791905966722, Thread 34202: XXXX 1791905966722, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966820 XXXX 1791905966820, Thread 34202: XXXX 1791905966820, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966822 XXXX 1791905966822, Thread 34202: XXXX 1791905966822, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905966922 XXXX 1791905966922, Thread 34202: XXXX 1791905966922, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905966924 XXXX 1791905966924, Thread 34202: XXXX 1791905966924, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967023 XXXX 1791905967023, Thread 34202: XXXX 1791905967023, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967025 XXXX 1791905967025, Thread 34202: XXXX 1791905967025, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967124 XXXX 1791905967124, Thread 34202: XXXX 1791905967124, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967125 XXXX 1791905967125, Thread 34202: XXXX 1791905967125, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967225 XXXX 1791905967225, Thread 34202: XXXX 1791905967225, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967227 XXXX 1791905967227, Thread 34202: XXXX 1791905967227, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967326 XXXX 1791905967325, Thread 34202: XXXX 1791905967325, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967328 XXXX 1791905967328, Thread 34202: XXXX 1791905967328, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967426 XXXX 1791905967426, Thread 34202: XXXX 1791905967426, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967427 XXXX 1791905967427, Thread 34202: XXXX 1791905967427, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967526 XXXX 1791905967526, Thread 34202: XXXX 1791905967526, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967528 XXXX 1791905967528, Thread 34202: XXXX 1791905967528, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967627 XXXX 1791905967627, Thread 34202: XXXX 1791905967627, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967629 XXXX 1791905967629, Thread 34202: XXXX 1791905967629, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967728 XXXX 1791905967728, Thread 34202: XXXX 1791905967728, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967730 XXXX 1791905967730, Thread 34202: XXXX 1791905967730, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967829 XXXX 1791905967829, Thread 34202: XXXX 1791905967829, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967831 XXXX 1791905967831, Thread 34202: XXXX 1791905967831, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905967929 XXXX 1791905967929, Thread 34202: XXXX 1791905967929, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905967930 XXXX 1791905967930, Thread 34202: XXXX 1791905967930, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968031 XXXX 1791905968031, Thread 34202: XXXX 1791905968031, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968033 XXXX 1791905968033, Thread 34202: XXXX 1791905968033, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968131 XXXX 1791905968131, Thread 34202: XXXX 1791905968131, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968132 XXXX 1791905968132, Thread 34202: XXXX 1791905968132, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968231 XXXX 1791905968231, Thread 34202: XXXX 1791905968231, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968233 XXXX 1791905968233, Thread 34202: XXXX 1791905968233, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968332 XXXX 1791905968332, Thread 34202: XXXX 1791905968332, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968334 XXXX 1791905968334, Thread 34202: XXXX 1791905968334, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968433 XXXX 1791905968433, Thread 34202: XXXX 1791905968433, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968434 XXXX 1791905968434, Thread 34202: XXXX 1791905968434, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968534 XXXX 1791905968534, Thread 34202: XXXX 1791905968534, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968536 XXXX 1791905968536, Thread 34202: XXXX 1791905968536, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968635 XXXX 1791905968635, Thread 34202: XXXX 1791905968635, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968637 XXXX 1791905968637, Thread 34202: XXXX 1791905968637, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968736 XXXX 1791905968736, Thread 34202: XXXX 1791905968736, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968737 XXXX 1791905968737, Thread 34202: XXXX 1791905968737, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968837 XXXX 1791905968837, Thread 34202: XXXX 1791905968837, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968839 XXXX 1791905968839, Thread 34202: XXXX 1791905968839, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905968938 XXXX 1791905968938, Thread 34202: XXXX 1791905968938, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905968939 XXXX 1791905968939, Thread 34202: XXXX 1791905968939, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969039 XXXX 1791905969039, Thread 34202: XXXX 1791905969039, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969041 XXXX 1791905969041, Thread 34202: XXXX 1791905969041, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969140 XXXX 1791905969140, Thread 34202: XXXX 1791905969140, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969142 XXXX 1791905969142, Thread 34202: XXXX 1791905969142, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969240 XXXX 1791905969240, Thread 34202: XXXX 1791905969240, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969242 XXXX 1791905969242, Thread 34202: XXXX 1791905969242, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969341 XXXX 1791905969341, Thread 34202: XXXX 1791905969341, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969343 XXXX 1791905969343, Thread 34202: XXXX 1791905969343, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969441 XXXX 1791905969441, Thread 34202: XXXX 1791905969441, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969443 XXXX 1791905969443, Thread 34202: XXXX 1791905969443, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969542 XXXX 1791905969542, Thread 34202: XXXX 1791905969542, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969543 XXXX 1791905969543, Thread 34202: XXXX 1791905969543, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969643 XXXX 1791905969643, Thread 34202: XXXX 1791905969643, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969645 XXXX 1791905969645, Thread 34202: XXXX 1791905969645, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969743 XXXX 1791905969743, Thread 34202: XXXX 1791905969743, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969746 XXXX 1791905969746, Thread 34202: XXXX 1791905969746, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969845 XXXX 1791905969845, Thread 34202: XXXX 1791905969845, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969846 XXXX 1791905969846, Thread 34202: XXXX 1791905969846, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905969945 XXXX 1791905969945, Thread 34202: XXXX 1791905969945, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905969947 XXXX 1791905969947, Thread 34202: XXXX 1791905969947, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970045 XXXX 1791905970045, Thread 34202: XXXX 1791905970045, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970047 XXXX 1791905970047, Thread 34202: XXXX 1791905970047, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970145 XXXX 1791905970145, Thread 34202: XXXX 1791905970145, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970147 XXXX 1791905970147, Thread 34202: XXXX 1791905970147, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970247 XXXX 1791905970247, Thread 34202: XXXX 1791905970247, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970249 XXXX 1791905970249, Thread 34202: XXXX 1791905970249, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970348 XXXX 1791905970348, Thread 34202: XXXX 1791905970348, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970350 XXXX 1791905970350, Thread 34202: XXXX 1791905970350, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970449 XXXX 1791905970449, Thread 34202: XXXX 1791905970449, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970450 XXXX 1791905970450, Thread 34202: XXXX 1791905970450, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970549 XXXX 1791905970549, Thread 34202: XXXX 1791905970549, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970551 XXXX 1791905970551, Thread 34202: XXXX 1791905970551, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970649 XXXX 1791905970649, Thread 34202: XXXX 1791905970649, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970651 XXXX 1791905970651, Thread 34202: XXXX 1791905970651, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970750 XXXX 1791905970750, Thread 34202: XXXX 1791905970750, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970752 XXXX 1791905970752, Thread 34202: XXXX 1791905970752, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970851 XXXX 1791905970851, Thread 34202: XXXX 1791905970851, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970852 XXXX 1791905970852, Thread 34202: XXXX 1791905970852, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905970952 XXXX 1791905970952, Thread 34202: XXXX 1791905970952, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905970953 XXXX 1791905970953, Thread 34202: XXXX 1791905970953, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971053 XXXX 1791905971053, Thread 34202: XXXX 1791905971053, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971055 XXXX 1791905971055, Thread 34202: XXXX 1791905971055, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971154 XXXX 1791905971154, Thread 34202: XXXX 1791905971154, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971156 XXXX 1791905971156, Thread 34202: XXXX 1791905971156, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971255 XXXX 1791905971255, Thread 34202: XXXX 1791905971255, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971257 XXXX 1791905971257, Thread 34202: XXXX 1791905971257, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971355 XXXX 1791905971355, Thread 34202: XXXX 1791905971355, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971357 XXXX 1791905971357, Thread 34202: XXXX 1791905971357, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971455 XXXX 1791905971455, Thread 34202: XXXX 1791905971455, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971456 XXXX 1791905971456, Thread 34202: XXXX 1791905971456, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971555 XXXX 1791905971555, Thread 34202: XXXX 1791905971555, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971557 XXXX 1791905971557, Thread 34202: XXXX 1791905971557, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971657 XXXX 1791905971657, Thread 34202: XXXX 1791905971657, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971659 XXXX 1791905971659, Thread 34202: XXXX 1791905971659, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971757 XXXX 1791905971757, Thread 34202: XXXX 1791905971757, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971758 XXXX 1791905971758, Thread 34202: XXXX 1791905971758, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971857 XXXX 1791905971857, Thread 34202: XXXX 1791905971857, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971859 XXXX 1791905971859, Thread 34202: XXXX 1791905971859, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905971957 XXXX 1791905971957, Thread 34202: XXXX 1791905971957, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905971959 XXXX 1791905971959, Thread 34202: XXXX 1791905971959, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972058 XXXX 1791905972058, Thread 34202: XXXX 1791905972058, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972060 XXXX 1791905972060, Thread 34202: XXXX 1791905972060, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972159 XXXX 1791905972159, Thread 34202: XXXX 1791905972159, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972160 XXXX 1791905972160, Thread 34202: XXXX 1791905972160, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972259 XXXX 1791905972259, Thread 34202: XXXX 1791905972259, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972261 XXXX 1791905972261, Thread 34202: XXXX 1791905972261, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972360 XXXX 1791905972360, Thread 34202: XXXX 1791905972360, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972362 XXXX 1791905972362, Thread 34202: XXXX 1791905972362, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972460 XXXX 1791905972460, Thread 34202: XXXX 1791905972460, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972462 XXXX 1791905972462, Thread 34202: XXXX 1791905972462, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972561 XXXX 1791905972561, Thread 34202: XXXX 1791905972561, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972562 XXXX 1791905972562, Thread 34202: XXXX 1791905972562, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972662 XXXX 1791905972662, Thread 34202: XXXX 1791905972662, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972664 XXXX 1791905972664, Thread 34202: XXXX 1791905972664, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972763 XXXX 1791905972763, Thread 34202: XXXX 1791905972763, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972764 XXXX 1791905972764, Thread 34202: XXXX 1791905972764, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972864 XXXX 1791905972864, Thread 34202: XXXX 1791905972864, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972865 XXXX 1791905972865, Thread 34202: XXXX 1791905972865, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905972965 XXXX 1791905972965, Thread 34202: XXXX 1791905972965, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905972967 XXXX 1791905972967, Thread 34202: XXXX 1791905972967, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973066 XXXX 1791905973066, Thread 34202: XXXX 1791905973066, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973067 XXXX 1791905973067, Thread 34202: XXXX 1791905973067, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973166 XXXX 1791905973166, Thread 34202: XXXX 1791905973166, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973168 XXXX 1791905973168, Thread 34202: XXXX 1791905973168, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973268 XXXX 1791905973268, Thread 34202: XXXX 1791905973268, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973269 XXXX 1791905973269, Thread 34202: XXXX 1791905973269, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973368 XXXX 1791905973368, Thread 34202: XXXX 1791905973368, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973370 XXXX 1791905973370, Thread 34202: XXXX 1791905973370, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973469 XXXX 1791905973469, Thread 34202: XXXX 1791905973469, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973470 XXXX 1791905973470, Thread 34202: XXXX 1791905973470, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973570 XXXX 1791905973570, Thread 34202: XXXX 1791905973570, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973572 XXXX 1791905973572, Thread 34202: XXXX 1791905973572, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973671 XXXX 1791905973671, Thread 34202: XXXX 1791905973671, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973672 XXXX 1791905973672, Thread 34202: XXXX 1791905973672, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973772 XXXX 1791905973772, Thread 34202: XXXX 1791905973772, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973773 XXXX 1791905973773, Thread 34202: XXXX 1791905973773, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973874 XXXX 1791905973874, Thread 34202: XXXX 1791905973874, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973875 XXXX 1791905973875, Thread 34202: XXXX 1791905973875, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905973974 XXXX 1791905973974, Thread 34202: XXXX 1791905973974, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905973975 XXXX 1791905973975, Thread 34202: XXXX 1791905973975, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974076 XXXX 1791905974076, Thread 34202: XXXX 1791905974076, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974078 XXXX 1791905974078, Thread 34202: XXXX 1791905974078, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974178 XXXX 1791905974178, Thread 34202: XXXX 1791905974178, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974180 XXXX 1791905974180, Thread 34202: XXXX 1791905974180, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974279 XXXX 1791905974279, Thread 34202: XXXX 1791905974279, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974281 XXXX 1791905974281, Thread 34202: XXXX 1791905974281, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974380 XXXX 1791905974380, Thread 34202: XXXX 1791905974380, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974382 XXXX 1791905974382, Thread 34202: XXXX 1791905974382, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974481 XXXX 1791905974481, Thread 34202: XXXX 1791905974481, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974483 XXXX 1791905974483, Thread 34202: XXXX 1791905974483, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974582 XXXX 1791905974582, Thread 34202: XXXX 1791905974582, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974584 XXXX 1791905974584, Thread 34202: XXXX 1791905974584, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974682 XXXX 1791905974682, Thread 34202: XXXX 1791905974682, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974684 XXXX 1791905974684, Thread 34202: XXXX 1791905974684, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974783 XXXX 1791905974783, Thread 34202: XXXX 1791905974783, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974785 XXXX 1791905974785, Thread 34202: XXXX 1791905974785, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974885 XXXX 1791905974885, Thread 34202: XXXX 1791905974885, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974887 XXXX 1791905974887, Thread 34202: XXXX 1791905974887, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905974986 XXXX 1791905974986, Thread 34202: XXXX 1791905974986, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905974988 XXXX 1791905974988, Thread 34202: XXXX 1791905974988, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975086 XXXX 1791905975086, Thread 34202: XXXX 1791905975086, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975088 XXXX 1791905975088, Thread 34202: XXXX 1791905975088, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975188 XXXX 1791905975188, Thread 34202: XXXX 1791905975188, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975190 XXXX 1791905975190, Thread 34202: XXXX 1791905975190, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975290 XXXX 1791905975290, Thread 34202: XXXX 1791905975290, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975292 XXXX 1791905975292, Thread 34202: XXXX 1791905975292, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975391 XXXX 1791905975391, Thread 34202: XXXX 1791905975391, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975393 XXXX 1791905975393, Thread 34202: XXXX 1791905975393, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975491 XXXX 1791905975491, Thread 34202: XXXX 1791905975491, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975493 XXXX 1791905975493, Thread 34202: XXXX 1791905975493, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975592 XXXX 1791905975592, Thread 34202: XXXX 1791905975592, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975594 XXXX 1791905975594, Thread 34202: XXXX 1791905975594, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975694 XXXX 1791905975693, Thread 34202: XXXX 1791905975693, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975696 XXXX 1791905975696, Thread 34202: XXXX 1791905975696, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975794 XXXX 1791905975794, Thread 34202: XXXX 1791905975794, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975796 XXXX 1791905975796, Thread 34202: XXXX 1791905975796, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975894 XXXX 1791905975894, Thread 34202: XXXX 1791905975894, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975896 XXXX 1791905975896, Thread 34202: XXXX 1791905975896, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905975995 XXXX 1791905975995, Thread 34202: XXXX 1791905975995, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905975997 XXXX 1791905975997, Thread 34202: XXXX 1791905975997, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976096 XXXX 1791905976096, Thread 34202: XXXX 1791905976096, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976098 XXXX 1791905976098, Thread 34202: XXXX 1791905976098, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976198 XXXX 1791905976198, Thread 34202: XXXX 1791905976198, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976199 XXXX 1791905976199, Thread 34202: XXXX 1791905976199, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976299 XXXX 1791905976299, Thread 34202: XXXX 1791905976299, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976301 XXXX 1791905976301, Thread 34202: XXXX 1791905976301, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976399 XXXX 1791905976399, Thread 34202: XXXX 1791905976399, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976401 XXXX 1791905976401, Thread 34202: XXXX 1791905976401, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976500 XXXX 1791905976500, Thread 34202: XXXX 1791905976500, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976501 XXXX 1791905976501, Thread 34202: XXXX 1791905976501, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976602 XXXX 1791905976602, Thread 34202: XXXX 1791905976602, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976603 XXXX 1791905976603, Thread 34202: XXXX 1791905976603, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976703 XXXX 1791905976703, Thread 34202: XXXX 1791905976703, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976705 XXXX 1791905976705, Thread 34202: XXXX 1791905976705, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976803 XXXX 1791905976803, Thread 34202: XXXX 1791905976803, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976805 XXXX 1791905976805, Thread 34202: XXXX 1791905976805, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905976904 XXXX 1791905976904, Thread 34202: XXXX 1791905976904, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905976906 XXXX 1791905976906, Thread 34202: XXXX 1791905976906, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977004 XXXX 1791905977004, Thread 34202: XXXX 1791905977004, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977006 XXXX 1791905977006, Thread 34202: XXXX 1791905977006, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977104 XXXX 1791905977104, Thread 34202: XXXX 1791905977104, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977106 XXXX 1791905977106, Thread 34202: XXXX 1791905977106, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977205 XXXX 1791905977205, Thread 34202: XXXX 1791905977205, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977207 XXXX 1791905977207, Thread 34202: XXXX 1791905977207, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977306 XXXX 1791905977306, Thread 34202: XXXX 1791905977306, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977308 XXXX 1791905977308, Thread 34202: XXXX 1791905977308, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977407 XXXX 1791905977407, Thread 34202: XXXX 1791905977407, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977409 XXXX 1791905977409, Thread 34202: XXXX 1791905977409, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977507 XXXX 1791905977507, Thread 34202: XXXX 1791905977507, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977509 XXXX 1791905977509, Thread 34202: XXXX 1791905977509, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977607 XXXX 1791905977607, Thread 34202: XXXX 1791905977607, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977608 XXXX 1791905977608, Thread 34202: XXXX 1791905977608, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977709 XXXX 1791905977709, Thread 34202: XXXX 1791905977709, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977711 XXXX 1791905977711, Thread 34202: XXXX 1791905977711, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977810 XXXX 1791905977810, Thread 34202: XXXX 1791905977810, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977812 XXXX 1791905977812, Thread 34202: XXXX 1791905977812, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905977911 XXXX 1791905977911, Thread 34202: XXXX 1791905977911, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905977912 XXXX 1791905977912, Thread 34202: XXXX 1791905977912, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978011 XXXX 1791905978011, Thread 34202: XXXX 1791905978011, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978013 XXXX 1791905978013, Thread 34202: XXXX 1791905978013, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978111 XXXX 1791905978111, Thread 34202: XXXX 1791905978111, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978113 XXXX 1791905978113, Thread 34202: XXXX 1791905978113, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978212 XXXX 1791905978212, Thread 34202: XXXX 1791905978212, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978214 XXXX 1791905978214, Thread 34202: XXXX 1791905978214, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978312 XXXX 1791905978312, Thread 34202: XXXX 1791905978312, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978315 XXXX 1791905978315, Thread 34202: XXXX 1791905978313, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978412 XXXX 1791905978412, Thread 34202: XXXX 1791905978412, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978414 XXXX 1791905978414, Thread 34202: XXXX 1791905978414, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978512 XXXX 1791905978512, Thread 34202: XXXX 1791905978512, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978514 XXXX 1791905978514, Thread 34202: XXXX 1791905978514, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978613 XXXX 1791905978613, Thread 34202: XXXX 1791905978613, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978614 XXXX 1791905978614, Thread 34202: XXXX 1791905978614, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978713 XXXX 1791905978713, Thread 34202: XXXX 1791905978713, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978715 XXXX 1791905978715, Thread 34202: XXXX 1791905978715, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978814 XXXX 1791905978814, Thread 34202: XXXX 1791905978814, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978816 XXXX 1791905978816, Thread 34202: XXXX 1791905978816, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905978915 XXXX 1791905978915, Thread 34202: XXXX 1791905978915, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905978917 XXXX 1791905978917, Thread 34202: XXXX 1791905978917, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979016 XXXX 1791905979016, Thread 34202: XXXX 1791905979016, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979018 XXXX 1791905979018, Thread 34202: XXXX 1791905979018, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979116 XXXX 1791905979116, Thread 34202: XXXX 1791905979116, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979118 XXXX 1791905979118, Thread 34202: XXXX 1791905979118, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979216 XXXX 1791905979216, Thread 34202: XXXX 1791905979216, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979219 XXXX 1791905979219, Thread 34202: XXXX 1791905979219, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979317 XXXX 1791905979317, Thread 34202: XXXX 1791905979317, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979319 XXXX 1791905979319, Thread 34202: XXXX 1791905979319, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979417 XXXX 1791905979417, Thread 34202: XXXX 1791905979417, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979418 XXXX 1791905979418, Thread 34202: XXXX 1791905979418, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979517 XXXX 1791905979517, Thread 34202: XXXX 1791905979517, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979519 XXXX 1791905979519, Thread 34202: XXXX 1791905979519, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979617 XXXX 1791905979617, Thread 34202: XXXX 1791905979617, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979618 XXXX 1791905979618, Thread 34202: XXXX 1791905979618, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979719 XXXX 1791905979719, Thread 34202: XXXX 1791905979719, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979721 XXXX 1791905979721, Thread 34202: XXXX 1791905979721, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979819 XXXX 1791905979819, Thread 34202: XXXX 1791905979819, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979821 XXXX 1791905979821, Thread 34202: XXXX 1791905979821, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905979921 XXXX 1791905979921, Thread 34202: XXXX 1791905979921, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905979922 XXXX 1791905979922, Thread 34202: XXXX 1791905979922, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980021 XXXX 1791905980021, Thread 34202: XXXX 1791905980021, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980023 XXXX 1791905980023, Thread 34202: XXXX 1791905980023, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980122 XXXX 1791905980122, Thread 34202: XXXX 1791905980122, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980124 XXXX 1791905980124, Thread 34202: XXXX 1791905980124, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980222 XXXX 1791905980222, Thread 34202: XXXX 1791905980222, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980223 XXXX 1791905980223, Thread 34202: XXXX 1791905980223, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980323 XXXX 1791905980323, Thread 34202: XXXX 1791905980323, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980325 XXXX 1791905980325, Thread 34202: XXXX 1791905980325, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980424 XXXX 1791905980424, Thread 34202: XXXX 1791905980424, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980425 XXXX 1791905980425, Thread 34202: XXXX 1791905980425, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980524 XXXX 1791905980524, Thread 34202: XXXX 1791905980524, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980526 XXXX 1791905980526, Thread 34202: XXXX 1791905980526, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980625 XXXX 1791905980625, Thread 34202: XXXX 1791905980625, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980627 XXXX 1791905980627, Thread 34202: XXXX 1791905980627, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980725 XXXX 1791905980725, Thread 34202: XXXX 1791905980725, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980727 XXXX 1791905980727, Thread 34202: XXXX 1791905980727, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980826 XXXX 1791905980826, Thread 34202: XXXX 1791905980826, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980827 XXXX 1791905980827, Thread 34202: XXXX 1791905980827, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905980927 XXXX 1791905980927, Thread 34202: XXXX 1791905980927, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905980928 XXXX 1791905980928, Thread 34202: XXXX 1791905980928, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981027 XXXX 1791905981027, Thread 34202: XXXX 1791905981027, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981029 XXXX 1791905981029, Thread 34202: XXXX 1791905981029, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981128 XXXX 1791905981128, Thread 34202: XXXX 1791905981128, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981130 XXXX 1791905981130, Thread 34202: XXXX 1791905981130, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981228 XXXX 1791905981228, Thread 34202: XXXX 1791905981228, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981230 XXXX 1791905981230, Thread 34202: XXXX 1791905981230, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981330 XXXX 1791905981330, Thread 34202: XXXX 1791905981330, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981332 XXXX 1791905981332, Thread 34202: XXXX 1791905981332, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981431 XXXX 1791905981431, Thread 34202: XXXX 1791905981431, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981433 XXXX 1791905981433, Thread 34202: XXXX 1791905981433, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981533 XXXX 1791905981533, Thread 34202: XXXX 1791905981533, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981535 XXXX 1791905981535, Thread 34202: XXXX 1791905981535, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981634 XXXX 1791905981634, Thread 34202: XXXX 1791905981634, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981636 XXXX 1791905981636, Thread 34202: XXXX 1791905981636, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981735 XXXX 1791905981735, Thread 34202: XXXX 1791905981735, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981736 XXXX 1791905981736, Thread 34202: XXXX 1791905981736, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981835 XXXX 1791905981835, Thread 34202: XXXX 1791905981835, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981837 XXXX 1791905981837, Thread 34202: XXXX 1791905981837, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905981937 XXXX 1791905981937, Thread 34202: XXXX 1791905981937, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905981939 XXXX 1791905981939, Thread 34202: XXXX 1791905981939, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905982038 XXXX 1791905982038, Thread 34202: XXXX 1791905982038, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905982040 XXXX 1791905982040, Thread 34202: XXXX 1791905982040, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905982139 XXXX 1791905982139, Thread 34202: XXXX 1791905982139, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905982141 XXXX 1791905982141, Thread 34202: XXXX 1791905982141, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905982240 XXXX 1791905982240, Thread 34202: XXXX 1791905982240, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905982242 XXXX 1791905982242, Thread 34202: XXXX 1791905982242, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905982340 XXXX 1791905982340, Thread 34202: XXXX 1791905982340, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905982342 XXXX 1791905982342, Thread 34202: XXXX 1791905982342, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905982441 XXXX 1791905982441, Thread 34202: XXXX 1791905982441, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905982443 XXXX 1791905982443, Thread 34202: XXXX 1791905982443, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905982542 XXXX 1791905982542, Thread 34202: XXXX 1791905982542, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905982544 XXXX 1791905982544, Thread 34202: XXXX 1791905982544, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905982643 XXXX 1791905982643, Thread 34202: XXXX 1791905982643, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905982644 XXXX 1791905982644, Thread 34202: XXXX 1791905982644, Exiting Thread 34202: Commands::runScriptBasic  
+34202 1791905982743 XXXX 1791905982743, Thread 34202: XXXX 1791905982743, Entering Thread 34202: Commands::runScriptBasic, script name = GetHaltStatus, timeOut = -1 ms  
+34202 1791905982745 XXXX 1791905982745, Thread 34202: Type = runScript, Script name = GetHaltStatus, Status = 0x305
+ 
+
+34148 1791905982753 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 Pre:GetPC
+34148 1791905982753 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 Payload
+34148 1791905982753 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 null
+34148 1791905982753 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 Payload End
+34148 1791905982753 XXXX 1791905982753, Thread 34148: XXXX 1791905982753, Entering Thread 34148: Commands::runScriptBasic, script name = GetPC, timeOut = -1 ms  
+34148 1791905984754 XXXX 1791905984754, Thread 34148: Type = runScript, Script name = GetPC, Status = 0xa00
+ 
+
+39726 1791905984756 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 Pre:DebugReadTargetMemory
+39726 1791905984756 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 Payload
+39726 1791905984756 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 FileRegs
+39726 1791905984756 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 9
+39726 1791905984756 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 9
+39726 1791905984756 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 Length = 1
+39726 1791905984756 GEN4_TO_CONTROLLER_LOG:GEN4_DEBUG_INT_LOG_PIC16F15356 Payload End
+39726 1791905984756 XXXX 1791905984756, Thread 39726: XXXX 1791905984756, Entering Thread 39726: Commands::runScriptWithUpload, script name = ReadRAM  
+39726 1791905984756 XXXX 1791905984756, Thread 39726: XXXX 1791905984756, Entering Thread 39726: ToolCommUsb::readTransfer, sideData is 0x25 bytes long, transferDataLength is 0x1 bytes long  
+39727 1791905984758 GEN4_CONNECT_DIAGNOSTICS:MPLABCommTool is null
+39726 1791907352657 XXXX 1791907352574, Thread 39726: com.Send returned false 
+
+39727 1791907352657 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC16F15356 Pre:GetFirmwareInfo
+39727 1791907352657 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC16F15356 Payload
+39727 1791907352657 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC16F15356 null
+39727 1791907352657 GEN4_TO_CONTROLLER_LOG:GEN4_CONNECT_INT_LOG_PIC16F15356 Payload End

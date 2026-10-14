@@ -1,0 +1,44 @@
+[
+{
+  "directory": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default",
+  "command": "\"c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-cc.exe\" -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/olive/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\D_\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\LCD.c.p1 -c D:\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\LCD.c",
+  "file": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/LCD.c",
+  "output": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/LCD.c.p1"
+},
+{
+  "directory": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default",
+  "command": "\"c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-cc.exe\" -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/olive/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\D_\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\SIM7600.c.p1 -c D:\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\SIM7600.c",
+  "file": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/SIM7600.c",
+  "output": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/SIM7600.c.p1"
+},
+{
+  "directory": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default",
+  "command": "\"c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-cc.exe\" -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/olive/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\D_\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\UART1_DTE.c.p1 -c D:\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\UART1_DTE.c",
+  "file": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART1_DTE.c",
+  "output": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART1_DTE.c.p1"
+},
+{
+  "directory": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default",
+  "command": "\"c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-cc.exe\" -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/olive/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\D_\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\UART2_modem.c.p1 -c D:\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\UART2_modem.c",
+  "file": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART2_modem.c",
+  "output": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/UART2_modem.c.p1"
+},
+{
+  "directory": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default",
+  "command": "\"c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-cc.exe\" -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/olive/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\D_\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\commands.c.p1 -c D:\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\commands.c",
+  "file": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/commands.c",
+  "output": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/commands.c.p1"
+},
+{
+  "directory": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default",
+  "command": "\"c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-cc.exe\" -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/olive/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\D_\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\interrupt.c.p1 -c D:\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\interrupt.c",
+  "file": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/interrupt.c",
+  "output": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/interrupt.c.p1"
+},
+{
+  "directory": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default",
+  "command": "\"c:\\Program Files\\Microchip\\xc8\\v3.10\\bin\\xc8-cc.exe\" -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/olive/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\D_\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\main.c.p1 -c D:\\olive\\OneDrive\\_MyHouse\\Mayen\\_PoeleModem\\fw\\2g4g_2026\\2Gto4G.X\\main.c",
+  "file": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/main.c",
+  "output": "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/CMakeFiles/A_2Gto4G_default_toolchain_XC8_3_10_compile.dir/D_/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/main.c.p1"
+}
+]

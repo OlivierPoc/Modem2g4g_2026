@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\out\2Gto4G\default.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>16384</length>
+      <used>4301</used>
+      <free>12083</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>2048</length>
+      <used>376</used>
+      <free>1672</free>
+    </memory>
+  </executable>
+</project>
