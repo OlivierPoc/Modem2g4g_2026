@@ -35,5 +35,11 @@ bool displayStatus = false; // pour affichage
 bool modemStatus_OK = false;  // Status du modem
 bool poeleStatus_OK = false;  // Status du poele (DTR))
 
+//buffer
+#define BUFFER_SIZE 64
+char bufferSMS[BUFFER_SIZE];
+bool uart2FrameReady=false;
+bool smsToSend=false; 
+
 #endif	/* MAIN_H*/
 

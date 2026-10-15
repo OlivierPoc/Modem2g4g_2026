@@ -16,9 +16,10 @@
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include <stdbool.h>
 #include <stdint.h>
+#include "main.h"
 
 // buffer lecture uart
-char bufferUart2[64] = {0};
+char bufferUart_modem[BUFFER_SIZE] = {0};
 
 void Uart2Init_modem(void); // prototype fonction de l'initialisation de l'USART
 void Uart2Write_modem(char data); // prototype de fonction ecriture Uart

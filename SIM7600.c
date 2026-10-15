@@ -154,52 +154,49 @@ void DTE_CommandsReceive(void)
     uint8_t index = 0;
     uint8_t loop;
 
-    char commandDTE[64] = {0};
+
+    //    char commandDTE[64] = {0};
 
     // commande AT
     // Cast all buffer arguments to (const char *) for strncmp/strcmp to remove warnings
-    if (strncmp((const char *) bufferUart1, "AT", 2) == 0) // strncmp renvois 0 si les n premier caracteres des deux chaines sont les meme
+    if (strncmp((const char *) bufferUart_DTE, "AT", 2) == 0) // strncmp renvois 0 si les n premier caracteres des deux chaines sont les meme
     {
         // exception demande de l'identite et modele du constructeur GMM=CGMM et GMI=CGMI
-        if (strncmp((const char *) bufferUart1, "AT+GMI", 6) == 0) // strcmp comare deux chaine et renvois 0 si elles sont identiques
+        if (strncmp((const char *) bufferUart_DTE, "AT+GMI", 6) == 0) // strcmp comare deux chaine et renvois 0 si elles sont identiques
         {
             Uart1SendString_DTE("Cinterion\r\n\r\nOK\r\n");
         }
-        else if (strncmp((const char *) bufferUart1, "AT+GMM", 6) == 0)
+        else if (strncmp((const char *) bufferUart_DTE, "AT+GMM", 6) == 0)
         {
             Uart1SendString_DTE("BGS2-W\r\n\r\nOK\r\n");
         }
-        else if (strncmp((const char *) bufferUart1, "AT+CMGF", 7) == 0)
+        else if (strncmp((const char *) bufferUart_DTE, "AT+CMGF", 7) == 0)
         {
             Uart1SendString_DTE("OK\r\n");
         }
-        else if (strncmp((const char *) bufferUart1, "AT+CNMI=", 8) == 0)
+        else if (strncmp((const char *) bufferUart_DTE, "AT+CNMI=", 8) == 0)
         {
             Uart1SendString_DTE("OK\r\n");
         }
-        else if (strncmp((const char *) bufferUart1, "AT+CMGD", 7) == 0)
+        else if (strncmp((const char *) bufferUart_DTE, "AT+CMGD", 7) == 0)
         {
             Uart1SendString_DTE("OK\r\n");
         }
-        else if (strncmp((const char *) bufferUart1, "AT+IPREX", 8) == 0) // bloque la commande de changement de baud rate permanent pour eviter que les communications deviennent impossible
+        else if (strncmp((const char *) bufferUart_DTE, "AT+IPREX", 8) == 0) // bloque la commande de changement de baud rate permanent pour eviter que les communications deviennent impossible
         {
             Uart1SendString_DTE("AT+IPREX\r\r\nERROR\r\n");
         }
-        else if (strcmp((const char *) bufferUart1, "AT") == 0)
+        else if (strncmp((const char *) bufferUart_DTE, "AT&F", 4) == 0)
         {
             Uart1SendString_DTE("OK\r\n");
         }
-        else if (strncmp((const char *) bufferUart1, "AT&F", 4) == 0)
+        else if (strncmp((const char *) bufferUart_DTE, "ATE0", 4) == 0)
         {
             Uart1SendString_DTE("OK\r\n");
         }
-        else if (strncmp((const char *) bufferUart1, "ATE0", 4) == 0)
+        else if (strncmp((const char *) bufferUart_DTE, "AT+CMGR=1", 9) == 0)
         {
-            Uart1SendString_DTE("OK\r\n");
-        }
-        else if (strncmp((const char *) bufferUart1, "AT+CMGR=1", 9) == 0)
-        {
-            poeleStatus_OK = true;  // pole communique
+            poeleStatus_OK = true; // pole communique
             if (smsStartPoele)
             {
                 if (!smsStartPoeleLu)
@@ -227,54 +224,68 @@ void DTE_CommandsReceive(void)
                     smsStartPoeleLu = false;
                 }
             }
-//            else if (smsTEL)
-//            {
-//                Uart1SendString_DTE(
-//                                    "\r\n"
-//                                    "+CMGR: 0,\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n"
-//                                    "1234 TEL\r\n"
-//                                    "\r\n"
-//                                    "OK\r\n"
-//                                    );
-//
-//                // Simule un SMS présent dans l'emplacement 1
-//                //                 Uart1SendString_DTE("+CMGR: 0,\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n");
-//                //
-//                //                // Contenu du SMS transmis au poêle
-//                //                Uart1SendString_DTE("1234 TEö\r\n");
-//                //
-//                //                // Fin de la réponse AT
-//                //                Uart1SendString_DTE("\r\nOK\r\n");
-//
-//                // Le SMS ne doit être présenté qu'une seule fois
-//                smsTEL = false;
-//            }
+            else if (smsInfo)
+            {
+                if (!smsInfoLu)
+                {
+                    Uart1SendString_DTE(
+                                        "\r\n"
+                                        "+CMGR: \"REC UNREAD\",\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n"
+                                        "1234 ?\r\n"
+                                        "\r\n"
+                                        "OK\r\n"
+                                        );
+
+                    smsInfoLu = true;
+                }
+                else
+                {
+                    Uart1SendString_DTE(
+                                        "\r\n"
+                                        "+CMGR: \"REC READ\",\"+41793018256\",\"\",\"26/10/14,10:30:00+08\"\r\n"
+                                        "1234 ?\r\n"
+                                        "\r\n"
+                                        "OK\r\n"
+                                        );
+                    smsInfo = false;
+                    smsInfoLu = false;
+                }
+            }
             else
             {
                 Uart1SendString_DTE("+CMGR: 0,,0\r\n");
                 Uart1SendString_DTE("OK\r\n");
             }
         }
-        else if (strncmp((const char *) bufferUart1, "AT+CMGD=1", 9) == 0)
+        else if (strncmp((const char *) bufferUart_DTE, "AT+CMGD=1", 9) == 0)
         {
             smsStartPoele = false;
             smsStartPoeleLu = false;
+            smsInfo = false;
+            smsInfoLu = false;
 
             Uart1SendString_DTE("\r\nOK\r\n");
         }
+        else if (strncmp((const char *) bufferUart_DTE, "AT", 2) == 0)
+        {
+            Uart1SendString_DTE("OK\r\n");
+        }
         else // autre commande AT
         {
-            Uart2SendString_modem(bufferUart1); // transmission de la commande au Modem 4G
+            Uart2SendString_modem(bufferUart_DTE); // transmission de la commande au Modem 4G
         }
     }
     else // pas une commande AT
     {
-        Command(bufferUart1, DTE); // prepare la commande a executer
-
-        // vide le buffer 
-        bufferUart1[0] = '\0';
-
-        index = 0; // reinitialise l'index
+        if (Uart2CopySMSCommand())
+        {
+            Command(bufferUart_DTE, DTE); // prepare la commande a executer
+            //SIM7600_SendSMS(bufferUart1);
+            // vide le buffer 
+            bufferUart_DTE[0] = '\0';
+            index = 0; // reinitialise l'index
+            smsToSend=true;
+        }
     }
 }
 //---------------------------------------------------------
@@ -295,16 +306,16 @@ void SIM7600_CommandsReceive(void)
     if (!smsReadMode)
     {
         // Cast all buffer arguments to (const char *) for strncmp/strcmp to remove warnings
-        if ((strncmp((const char *) bufferUart2, "+CMTI:", 6) == 0) && !startMode) // reception de SMS
+        if ((strncmp((const char *) bufferUart_modem, "+CMTI:", 6) == 0) && !startMode) // reception de SMS
         {
             Uart2SendString_modem("AT+CMGRD=0\r\n"); // commande de lecture et suppression du SMS recu
             smsMode = true;
         }
-        else if ((strncmp((const char *) bufferUart2, "+CMGRD:", 7) == 0) && !startMode) // lecture du SMS
+        else if ((strncmp((const char *) bufferUart_modem, "+CMGRD:", 7) == 0) && !startMode) // lecture du SMS
         {
             smsReadMode = true; // preparation a la lecture du contenu du message
         }
-        else if ((strncmp((const char *) bufferUart2, "OK", 2) == 0) && (smsMode || startMode || smsSend)) // en sms ou start mode et la reponse de fin est OK
+        else if ((strncmp((const char *) bufferUart_modem, "OK", 2) == 0) && (smsMode || startMode || smsSend)) // en sms ou start mode et la reponse de fin est OK
         {
             if (smsMode)
             {
@@ -320,72 +331,101 @@ void SIM7600_CommandsReceive(void)
                 modemOK = true; // le Modem repond OK
             }
         }
-        else if ((strncmp((const char *) bufferUart2, "+CPIN: SIM PIN", 14) == 0) && startMode) // en start mode demarrage du Modem avec code pin
+        else if ((strncmp((const char *) bufferUart_modem, "+CPIN: SIM PIN", 14) == 0) && startMode) // en start mode demarrage du Modem avec code pin
         {
             noSIM = false; // carte SIM presente
             modemStartPin = true; // indique le demarage du Modem avec code pin
         }
-        else if ((strncmp((const char *) bufferUart2, "+CPIN: READY", 12) == 0) && startMode) // en start mode demarrage du Modem sans code pin
+        else if ((strncmp((const char *) bufferUart_modem, "+CPIN: READY", 12) == 0) && startMode) // en start mode demarrage du Modem sans code pin
         {
             noSIM = false; // carte SIM presente
             modemStart = true; // indique le demarage du Modem avec sans pin
         }
-        else if ((strncmp((const char *) bufferUart2, "+CME ERROR:", 11) == 0) && startMode) // erreur pas de carte sim presente au demarrage
+        else if ((strncmp((const char *) bufferUart_modem, "+CME ERROR:", 11) == 0) && startMode) // erreur pas de carte sim presente au demarrage
         {
             modemStart = true; // indique le demarrage du Modem
             noSIM = true; // carte SIM manquante
         }
 
-        else if ((strncmp((const char *) bufferUart2, "ERROR", 5) == 0) && startMode) // erreur pas de carte sim presente au demarrage (si le Modem est deja alimente au demarrage du programme)
+        else if ((strncmp((const char *) bufferUart_modem, "ERROR", 5) == 0) && startMode) // erreur pas de carte sim presente au demarrage (si le Modem est deja alimente au demarrage du programme)
         {
             noSIM = true; // carte SIM manquante
         }
 
-        else if ((strncmp((const char *) bufferUart2, "SMS DONE", 8) == 0) && startMode) // SMS ready
+        else if ((strncmp((const char *) bufferUart_modem, "SMS DONE", 8) == 0) && startMode) // SMS ready
         {
             ready++; // une des deux conditions pour etre pret 
         }
 
-        else if ((strncmp((const char *) bufferUart2, "PB DONE", 7) == 0) && startMode) // PhoneBook ready (non utilisee mais indique qu'il est pret)
+        else if ((strncmp((const char *) bufferUart_modem, "PB DONE", 7) == 0) && startMode) // PhoneBook ready (non utilisee mais indique qu'il est pret)
         {
             ready++; // deuxieme condition pour etre pret 
         }
 
-        else if ((strncmp((const char *) bufferUart2, "+SMS FULL", 9) == 0)) // probleme reception SMS
+        else if ((strncmp((const char *) bufferUart_modem, "+SMS FULL", 9) == 0)) // probleme reception SMS
         {
             startMode = true;
 
-//            for (uint8_t loop = 2; loop != 0; loop--)
-//            {
-                Uart2SendString_modem("AT+CMGD=0\r\n"); // vide l'espace memoire SMS 0
-                __delay_ms(10); // delay aquisition de la commande 
+            //            for (uint8_t loop = 2; loop != 0; loop--)
+            //            {
+            Uart2SendString_modem("AT+CMGD=0\r\n"); // vide l'espace memoire SMS 0
+            __delay_ms(10); // delay aquisition de la commande 
 
-                while (!modemOK); // attendre la reponse de la commande
-                modemOK = false; // reset state
-                __delay_ms(10); // delay aquisition de la commande
+            while (!modemOK); // attendre la reponse de la commande
+            modemOK = false; // reset state
+            __delay_ms(10); // delay aquisition de la commande
 
-                startMode = false;
-//            }
+            startMode = false;
+            //            }
         }
         else if (!smsMode && !startMode && !smsSend) // autres reponse en mode normal
         {
-            Uart1SendString_DTE(bufferUart2); // transmission au DTE de maniere transparente
+            Uart1SendString_DTE(bufferUart_modem); // transmission au DTE de maniere transparente
         }
     }
     else // mode SMS, lecture du message et execution de la commande
     {
 
-        Command(bufferUart2, SMS);
+        Command(bufferUart_modem, SMS);
 
         // vide le buffer 
-        bufferUart2[0] = '\0';
+        bufferUart_modem[0] = '\0';
 
         index = 0; // reinitialise l'index
 
         smsReadMode = false; // fin du mode lecture SMS
+
     }
 }
 //---------------------------------------------------------
 
+bool Uart2CopySMSCommand(void)
+{
+    uint8_t index = 0;
 
+    /*
+     * Arrêter la copie à CR, LF, à la fin de la chaîne,
+     * ou lorsque le tampon de destination est plein.
+     */
+    while ((index < (BUFFER_SIZE - 1)) &&
+            (bufferUart_DTE[index] != '\0') &&
+            (bufferUart_DTE[index] != '\r') &&
+            (bufferUart_DTE[index] != '\n'))
+    {
+        bufferSMS[index] = bufferUart_DTE[index];
+        index++;
+    }
 
+    bufferSMS[index] = '\0';
+
+    /*
+     * Retourner false si la commande est vide.
+     */
+    if (index != 0)
+    {
+        return true;
+    }
+
+    return false;
+}
+//---------------------------------------------------------

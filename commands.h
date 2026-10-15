@@ -22,8 +22,8 @@
 #define START_NOW_TXT "1234 ON" 
 //commmande poele time
 
-#define TEL 0x16
-#define TEL_TXT "1234 TEL" 
+#define INFO 0x16
+#define INFO_TXT "1234 ?" 
 
 // Affiche Debug
 #define AFFICHE_DEBUG 0x14
@@ -135,7 +135,8 @@ bool smsReadMode = false; // lecture d'un SMS recu
 bool smsSend = false; // envois d'un SMS
 bool smsStartPoele = false;  // sms recut pour le poele NEX
 bool smsStartPoeleLu = false;
-bool smsTEL = false;  // sms recut pour le poele NEX
+bool smsInfo = false;  // sms recut pour le poele NEX
+bool smsInfoLu = false;
         
 // functions
 void Command(char *command, uint8_t from); // prototype de fonciton de preparation des commandes en provenance du DTE ou par SMS

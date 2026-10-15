@@ -82,8 +82,10 @@ int main(void)
     //    char stringBuffer[12]; // buffer pour l'envois de string convertit depuis une variable (-XXXX.Xxxxx\0)
     uint8_t affiche_modem = 254; // quelle valeurs on affiche 
     uint8_t affiche_poele = 254; // quelle valeurs on affiche 
+
     poeleStatus_OK = false;
     modemStatus_OK = false;
+    smsToSend = false;
 
     bool negTemp = false; // indicateur de temperature negative
     // Removed: unused variable selfTest
@@ -116,9 +118,6 @@ int main(void)
     // indique qu'il est pret
     LCD_Clear();
     LCD_Write_String("READY");
-
-    // demare les mesures
-    //    SCD41_StartPeriodicMeasurement();
 
     while (1) // boucle infinie
     {
@@ -188,11 +187,18 @@ int main(void)
             affiche_poele--;
         }
 
-        // __delay_ms(50);
+        if (smsToSend)
+        {
+            SIM7600_SendSMS(bufferSMS);
+            bufferSMS[0] = '\0';
+            smsToSend = false;
+            LCD_Cursor_Position(1, 1);
+            LCD_Write_String(bufferSMS);
+        }
     }
-
     while (1); // Garde-Fou  ->  Boucle infinie
 }
+//---------------------------------------------------
 
 //=================== Functions =====================
 //---------------------------------------------------

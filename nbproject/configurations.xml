@@ -50,7 +50,7 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC16F1xxxx_DFP" vendor="Microchip" version="1.31.465"/>
+        <pack name="PIC16F1xxxx_DFP" vendor="Microchip" version="1.32.471"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>

@@ -20,6 +20,7 @@ void SIM7600_Init(void); // prototype fonction d'initialisation du SIM7600
 void SIM7600_SendSMS(const char *text); // prototype fontion d'envois de SMS
 void DTE_CommandsReceive(void); // prototype fonction de contrôle et d'envois de toutes les commandes
 void SIM7600_CommandsReceive(void); // prototype fonction de reception de commande depuis le Modem 4G
+bool Uart2CopySMSCommand(void);//copy uart
 //void SIM7600_SetPhoneNumber(void); // prototype fonction d'initialisation du numero de l'utilisateur
 //void SIM7600_SetCodePin(void); // prototype fonction d'initialisation du code PIN de la carte SIM
 

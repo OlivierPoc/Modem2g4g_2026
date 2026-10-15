@@ -149,7 +149,7 @@ void Uart1ISR_DTE(void)
 
     if (caractere == '\r') // si c'est la fin d'une commande
     {
-        bufferUart1[indexBufferUart1] = '\0'; // fin de chaine 
+        bufferUart_DTE[indexBufferUart1] = '\0'; // fin de chaine 
 
         if (indexBufferUart1 != 0)
         {
@@ -157,19 +157,19 @@ void Uart1ISR_DTE(void)
         }
 
         indexBufferUart1 = 0;
-        bufferUart1[0] = '\0';
+        bufferUart_DTE[0] = '\0';
     }
     else if (caractere != '\n')
     {
 
-        if (indexBufferUart1 < sizeof (bufferUart1) - 1)
+        if (indexBufferUart1 < sizeof (bufferUart_DTE) - 1)
         {
-            bufferUart1[indexBufferUart1++] = caractere;
+            bufferUart_DTE[indexBufferUart1++] = caractere;
         }
         else
         {
             indexBufferUart1 = 0;
-            bufferUart1[0] = '\0';
+            bufferUart_DTE[0] = '\0';
         }
     }
 }

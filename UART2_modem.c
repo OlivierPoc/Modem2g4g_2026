@@ -150,7 +150,7 @@ void Uart2ISR_modem(void)
     
     if (caractere == '\r') // si c'est la fin d'une commande
     {
-        bufferUart2[indexBufferUart2] = '\0'; // fin de chaine 
+        bufferUart_modem[indexBufferUart2] = '\0'; // fin de chaine 
 
         if (indexBufferUart2 != 0)
         {
@@ -158,18 +158,18 @@ void Uart2ISR_modem(void)
         }
 
         indexBufferUart2 = 0;
-        bufferUart2[0] = '\0';
+        bufferUart_modem[0] = '\0';
     }
     else if (caractere != '\n')
     {
-        if (indexBufferUart2 < sizeof (bufferUart2) - 1)
+        if (indexBufferUart2 < sizeof (bufferUart_modem) - 1)
         {
-            bufferUart2[indexBufferUart2++] = caractere;
+            bufferUart_modem[indexBufferUart2++] = caractere;
         }
         else
         {
             indexBufferUart2 = 0;
-            bufferUart2[0] = '\0';
+            bufferUart_modem[0] = '\0';
         }
     }
 }

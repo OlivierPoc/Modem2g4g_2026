@@ -16,9 +16,10 @@
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include <stdbool.h>
 #include <stdint.h>
+#include "main.h"
 
 // buffer lecture uart
-char bufferUart1[64] = {0};
+char bufferUart_DTE[BUFFER_SIZE] = {0};
 
 void Uart1Init_DTE(void); // prototype fonction de l'initialisation de l'USART
 void Uart1Write_DTE(char data); // prototype de fonction ecriture Uart

@@ -3,4 +3,5 @@ commands.c  \
 commands.h  \
 SIM7600.h  \
 LCD.h  \
-UART1_DTE.h 
+UART1_DTE.h  \
+main.h 

@@ -43,7 +43,6 @@ uint8_t currentCommand = ERROR; // commande prevue
 // Desc.: sous programme de preparation des commandes en provenance du DTE ou par SMS
 // Ver. Date: V00 20250530 Creation (YYYYMMDD)	
 //---------------------------------------------------
-
 void Command(char *command, uint8_t from)
 {
     commandFrom = from; // memoriser d'ou vient la commande
@@ -59,9 +58,9 @@ void Command(char *command, uint8_t from)
     {
         currentCommand = START_NOW;
     }
-    else if (strncmp(command, TEL_TXT, strlen(TEL_TXT)) == 0)
+    else if (strncmp(command, INFO_TXT, strlen(INFO_TXT)) == 0)
     {
-        currentCommand = TEL;
+        currentCommand = INFO;
     }
     else if (strncmp(command, BACKLIGHT_OFF_TXT, strlen(BACKLIGHT_OFF_TXT)) == 0)
     {
@@ -175,10 +174,9 @@ void Execute(void)
         state = true;
         break;
 
-    case TEL:
-        smsTEL = true;
+    case INFO:
+        smsInfo = true;
         state = true;
-
         break;
 
         // ---------- BACKLIGHT LCD ----------
