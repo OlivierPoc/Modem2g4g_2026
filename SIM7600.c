@@ -17,9 +17,10 @@
 #include "UART2_modem.h"
 #include "LCD.h"
 #include "commands.h"
+#include "main.h"
 //#include "EEPROM.h"
 //#include "convertToString.h"
-//#include "main.h"
+
 
 #define _XTAL_FREQ 32000000 // 32Mhz freq pour delay
 
@@ -27,7 +28,7 @@
 bool startMode = false; // mode d'init
 bool modemOK = false; // Modem repond
 bool modemPrompt = false;
-bool modemError = false;
+//bool modemError = false;
 bool modemStartPin = false; // Modem demarre avec code PIN
 bool modemStart = false; // Modem demarre sans code PIN
 bool noSIM = true; // pas de carte SIM
@@ -98,6 +99,7 @@ void SIM7600_Init(void)
         modemOK = false; // reset statee 
 
         startMode = false; // fin du start mode
+        modemStatus_OK = true;
     }
 }
 //---------------------------------------------------------
@@ -197,6 +199,7 @@ void DTE_CommandsReceive(void)
         }
         else if (strncmp((const char *) bufferUart1, "AT+CMGR=1", 9) == 0)
         {
+            poeleStatus_OK = true;  // pole communique
             if (smsStartPoele)
             {
                 if (!smsStartPoeleLu)
@@ -352,8 +355,8 @@ void SIM7600_CommandsReceive(void)
         {
             startMode = true;
 
-            for (uint8_t loop = 2; loop != 0; loop--)
-            {
+//            for (uint8_t loop = 2; loop != 0; loop--)
+//            {
                 Uart2SendString_modem("AT+CMGD=0\r\n"); // vide l'espace memoire SMS 0
                 __delay_ms(10); // delay aquisition de la commande 
 
@@ -362,7 +365,7 @@ void SIM7600_CommandsReceive(void)
                 __delay_ms(10); // delay aquisition de la commande
 
                 startMode = false;
-            }
+//            }
         }
         else if (!smsMode && !startMode && !smsSend) // autres reponse en mode normal
         {

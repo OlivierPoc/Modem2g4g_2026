@@ -12576,6 +12576,12 @@ _Bool smsTEL = 0;
 void Command(char *command, uint8_t from);
 void Execute(void);
 # 20 "SIM7600.c" 2
+# 1 "./main.h" 1
+# 34 "./main.h"
+_Bool displayStatus = 0;
+_Bool modemStatus_OK = 0;
+_Bool poeleStatus_OK = 0;
+# 21 "SIM7600.c" 2
 
 
 
@@ -12586,12 +12592,12 @@ void Execute(void);
 _Bool startMode = 0;
 _Bool modemOK = 0;
 _Bool modemPrompt = 0;
-_Bool modemError = 0;
+
 _Bool modemStartPin = 0;
 _Bool modemStart = 0;
 _Bool noSIM = 1;
 uint8_t ready = 0;
-# 50 "SIM7600.c"
+# 51 "SIM7600.c"
 void SIM7600_Init(void)
 {
     char cptStart = 100;
@@ -12643,9 +12649,10 @@ void SIM7600_Init(void)
         modemOK = 0;
 
         startMode = 0;
+        modemStatus_OK = 1;
     }
 }
-# 112 "SIM7600.c"
+# 114 "SIM7600.c"
 void SIM7600_SendSMS(const char *text)
 {
     smsSend = 1;
@@ -12675,7 +12682,7 @@ void SIM7600_SendSMS(const char *text)
 
     smsSend = 0;
 }
-# 150 "SIM7600.c"
+# 152 "SIM7600.c"
 void DTE_CommandsReceive(void)
 {
     uint8_t index = 0;
@@ -12726,6 +12733,7 @@ void DTE_CommandsReceive(void)
         }
         else if (strncmp((const char *) bufferUart1, "AT+CMGR=1", 9) == 0)
         {
+            poeleStatus_OK = 1;
             if (smsStartPoele)
             {
                 if (!smsStartPoeleLu)
@@ -12753,7 +12761,7 @@ void DTE_CommandsReceive(void)
                     smsStartPoeleLu = 0;
                 }
             }
-# 249 "SIM7600.c"
+# 252 "SIM7600.c"
             else
             {
                 Uart1SendString_DTE("+CMGR: 0,,0\r\n");
@@ -12782,7 +12790,7 @@ void DTE_CommandsReceive(void)
         index = 0;
     }
 }
-# 286 "SIM7600.c"
+# 289 "SIM7600.c"
 void SIM7600_CommandsReceive(void)
 {
     uint8_t index = 0;
@@ -12852,8 +12860,8 @@ void SIM7600_CommandsReceive(void)
         {
             startMode = 1;
 
-            for (uint8_t loop = 2; loop != 0; loop--)
-            {
+
+
                 Uart2SendString_modem("AT+CMGD=0\r\n");
                 _delay((unsigned long)((10)*(32000000/4000.0)));
 
@@ -12862,7 +12870,7 @@ void SIM7600_CommandsReceive(void)
                 _delay((unsigned long)((10)*(32000000/4000.0)));
 
                 startMode = 0;
-            }
+
         }
         else if (!smsMode && !startMode && !smsSend)
         {

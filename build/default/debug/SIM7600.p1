@@ -1135,550 +1135,568 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _smsTEL
 -> -> 0 `i `a
 ]
-"27 SIM7600.c
-[; ;SIM7600.c: 27: _Bool startMode = 0;
+"34 ./main.h
+[; ;./main.h: 34: _Bool displayStatus = 0;
+[v _displayStatus `a ~T0 @X0 1 e ]
+[i _displayStatus
+-> -> 0 `i `a
+]
+"35
+[; ;./main.h: 35: _Bool modemStatus_OK = 0;
+[v _modemStatus_OK `a ~T0 @X0 1 e ]
+[i _modemStatus_OK
+-> -> 0 `i `a
+]
+"36
+[; ;./main.h: 36: _Bool poeleStatus_OK = 0;
+[v _poeleStatus_OK `a ~T0 @X0 1 e ]
+[i _poeleStatus_OK
+-> -> 0 `i `a
+]
+"28 SIM7600.c
+[; ;SIM7600.c: 28: _Bool startMode = 0;
 [v _startMode `a ~T0 @X0 1 e ]
 [i _startMode
 -> -> 0 `i `a
 ]
-"28
-[; ;SIM7600.c: 28: _Bool modemOK = 0;
+"29
+[; ;SIM7600.c: 29: _Bool modemOK = 0;
 [v _modemOK `a ~T0 @X0 1 e ]
 [i _modemOK
 -> -> 0 `i `a
 ]
-"29
-[; ;SIM7600.c: 29: _Bool modemPrompt = 0;
+"30
+[; ;SIM7600.c: 30: _Bool modemPrompt = 0;
 [v _modemPrompt `a ~T0 @X0 1 e ]
 [i _modemPrompt
 -> -> 0 `i `a
 ]
-"30
-[; ;SIM7600.c: 30: _Bool modemError = 0;
-[v _modemError `a ~T0 @X0 1 e ]
-[i _modemError
--> -> 0 `i `a
-]
-"31
-[; ;SIM7600.c: 31: _Bool modemStartPin = 0;
+"32
+[; ;SIM7600.c: 32: _Bool modemStartPin = 0;
 [v _modemStartPin `a ~T0 @X0 1 e ]
 [i _modemStartPin
 -> -> 0 `i `a
 ]
-"32
-[; ;SIM7600.c: 32: _Bool modemStart = 0;
+"33
+[; ;SIM7600.c: 33: _Bool modemStart = 0;
 [v _modemStart `a ~T0 @X0 1 e ]
 [i _modemStart
 -> -> 0 `i `a
 ]
-"33
-[; ;SIM7600.c: 33: _Bool noSIM = 1;
+"34
+[; ;SIM7600.c: 34: _Bool noSIM = 1;
 [v _noSIM `a ~T0 @X0 1 e ]
 [i _noSIM
 -> -> 1 `i `a
 ]
-"34
-[; ;SIM7600.c: 34: uint8_t ready = 0;
+"35
+[; ;SIM7600.c: 35: uint8_t ready = 0;
 [v _ready `uc ~T0 @X0 1 e ]
 [i _ready
 -> -> 0 `i `uc
 ]
-"50
-[; ;SIM7600.c: 50: void SIM7600_Init(void)
-[v _SIM7600_Init `(v ~T0 @X0 1 ef ]
 "51
-[; ;SIM7600.c: 51: {
+[; ;SIM7600.c: 51: void SIM7600_Init(void)
+[v _SIM7600_Init `(v ~T0 @X0 1 ef ]
+"52
+[; ;SIM7600.c: 52: {
 {
 [e :U _SIM7600_Init ]
 [f ]
-"52
-[; ;SIM7600.c: 52:     char cptStart = 100;
+"53
+[; ;SIM7600.c: 53:     char cptStart = 100;
 [v _cptStart `uc ~T0 @X0 1 a ]
 [e = _cptStart -> -> 100 `i `uc ]
-"53
-[; ;SIM7600.c: 53:     startMode = 1;
-[e = _startMode -> -> 1 `i `a ]
 "54
-[; ;SIM7600.c: 54:     Uart2SendString_modem("AT\r\n");
+[; ;SIM7600.c: 54:     startMode = 1;
+[e = _startMode -> -> 1 `i `a ]
+"55
+[; ;SIM7600.c: 55:     Uart2SendString_modem("AT\r\n");
 [e ( _Uart2SendString_modem (1 :s 1C ]
-"56
-[; ;SIM7600.c: 56:     while (!modemOK && !modemStartPin && !modemStart)
+"57
+[; ;SIM7600.c: 57:     while (!modemOK && !modemStartPin && !modemStart)
 [e $U 976  ]
 [e :U 977 ]
-"57
-[; ;SIM7600.c: 57:     {
-{
 "58
-[; ;SIM7600.c: 58:         _delay((unsigned long)((100)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"59
-[; ;SIM7600.c: 59:         cptStart--;
-[e -- _cptStart -> -> 1 `i `uc ]
-"60
-[; ;SIM7600.c: 60:         if (cptStart == 0)
-[e $ ! == -> _cptStart `i -> 0 `i 979  ]
-"61
-[; ;SIM7600.c: 61:         {
+[; ;SIM7600.c: 58:     {
 {
+"59
+[; ;SIM7600.c: 59:         _delay((unsigned long)((100)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"60
+[; ;SIM7600.c: 60:         cptStart--;
+[e -- _cptStart -> -> 1 `i `uc ]
+"61
+[; ;SIM7600.c: 61:         if (cptStart == 0)
+[e $ ! == -> _cptStart `i -> 0 `i 979  ]
 "62
-[; ;SIM7600.c: 62:             Uart2SendString_modem("AT\r\n");
-[e ( _Uart2SendString_modem (1 :s 2C ]
+[; ;SIM7600.c: 62:         {
+{
 "63
-[; ;SIM7600.c: 63:             cptStart = 100;
-[e = _cptStart -> -> 100 `i `uc ]
+[; ;SIM7600.c: 63:             Uart2SendString_modem("AT\r\n");
+[e ( _Uart2SendString_modem (1 :s 2C ]
 "64
-[; ;SIM7600.c: 64:         }
+[; ;SIM7600.c: 64:             cptStart = 100;
+[e = _cptStart -> -> 100 `i `uc ]
+"65
+[; ;SIM7600.c: 65:         }
 }
 [e :U 979 ]
-"65
-[; ;SIM7600.c: 65:     };
+"66
+[; ;SIM7600.c: 66:     };
 }
 [e :U 976 ]
-"56
-[; ;SIM7600.c: 56:     while (!modemOK && !modemStartPin && !modemStart)
+"57
+[; ;SIM7600.c: 57:     while (!modemOK && !modemStartPin && !modemStart)
 [e $ && && ! != -> _modemOK `i -> 0 `i ! != -> _modemStartPin `i -> 0 `i ! != -> _modemStart `i -> 0 `i 977  ]
 [e :U 978 ]
-"67
-[; ;SIM7600.c: 67:     if (noSIM)
-[e $ ! != -> _noSIM `i -> 0 `i 980  ]
 "68
-[; ;SIM7600.c: 68:     {
+[; ;SIM7600.c: 68:     if (noSIM)
+[e $ ! != -> _noSIM `i -> 0 `i 980  ]
+"69
+[; ;SIM7600.c: 69:     {
 {
-"70
-[; ;SIM7600.c: 70:         LCD_Clear();
-[e ( _LCD_Clear ..  ]
 "71
-[; ;SIM7600.c: 71:         LCD_Write_String("NO SIM");
-[e ( _LCD_Write_String (1 :s 3C ]
+[; ;SIM7600.c: 71:         LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "72
-[; ;SIM7600.c: 72:         LCD_Cursor_Position(2, 1);
-[e ( _LCD_Cursor_Position (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+[; ;SIM7600.c: 72:         LCD_Write_String("NO SIM");
+[e ( _LCD_Write_String (1 :s 3C ]
 "73
-[; ;SIM7600.c: 73:         LCD_Write_String("REBOOT");
+[; ;SIM7600.c: 73:         LCD_Cursor_Position(2, 1);
+[e ( _LCD_Cursor_Position (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"74
+[; ;SIM7600.c: 74:         LCD_Write_String("REBOOT");
 [e ( _LCD_Write_String (1 :s 4C ]
-"75
-[; ;SIM7600.c: 75:         while (1);
+"76
+[; ;SIM7600.c: 76:         while (1);
 [e :U 982 ]
 [e :U 981 ]
 [e $U 982  ]
 [e :U 983 ]
-"76
-[; ;SIM7600.c: 76:     }
+"77
+[; ;SIM7600.c: 77:     }
 }
 [e $U 984  ]
-"77
-[; ;SIM7600.c: 77:     else
-[e :U 980 ]
 "78
-[; ;SIM7600.c: 78:     {
-{
+[; ;SIM7600.c: 78:     else
+[e :U 980 ]
 "79
-[; ;SIM7600.c: 79:         ready = 0;
-[e = _ready -> -> 0 `i `uc ]
+[; ;SIM7600.c: 79:     {
+{
 "80
-[; ;SIM7600.c: 80:         modemOK = 0;
-[e = _modemOK -> -> 0 `i `a ]
+[; ;SIM7600.c: 80:         ready = 0;
+[e = _ready -> -> 0 `i `uc ]
 "81
-[; ;SIM7600.c: 81:         modemStart = 0;
-[e = _modemStart -> -> 0 `i `a ]
+[; ;SIM7600.c: 81:         modemOK = 0;
+[e = _modemOK -> -> 0 `i `a ]
 "82
-[; ;SIM7600.c: 82:         modemStartPin = 0;
+[; ;SIM7600.c: 82:         modemStart = 0;
+[e = _modemStart -> -> 0 `i `a ]
+"83
+[; ;SIM7600.c: 83:         modemStartPin = 0;
 [e = _modemStartPin -> -> 0 `i `a ]
-"84
-[; ;SIM7600.c: 84:         Uart2SendString_modem("ATE0\r\n");
-[e ( _Uart2SendString_modem (1 :s 5C ]
 "85
-[; ;SIM7600.c: 85:         while (!modemOK);
+[; ;SIM7600.c: 85:         Uart2SendString_modem("ATE0\r\n");
+[e ( _Uart2SendString_modem (1 :s 5C ]
+"86
+[; ;SIM7600.c: 86:         while (!modemOK);
 [e $U 985  ]
 [e :U 986 ]
 [e :U 985 ]
 [e $ ! != -> _modemOK `i -> 0 `i 986  ]
 [e :U 987 ]
-"86
-[; ;SIM7600.c: 86:         modemOK = 0;
+"87
+[; ;SIM7600.c: 87:         modemOK = 0;
 [e = _modemOK -> -> 0 `i `a ]
-"88
-[; ;SIM7600.c: 88:         Uart2SendString_modem("AT+CMGF=1\r\n");
-[e ( _Uart2SendString_modem (1 :s 6C ]
 "89
-[; ;SIM7600.c: 89:         while (!modemOK);
+[; ;SIM7600.c: 89:         Uart2SendString_modem("AT+CMGF=1\r\n");
+[e ( _Uart2SendString_modem (1 :s 6C ]
+"90
+[; ;SIM7600.c: 90:         while (!modemOK);
 [e $U 988  ]
 [e :U 989 ]
 [e :U 988 ]
 [e $ ! != -> _modemOK `i -> 0 `i 989  ]
 [e :U 990 ]
-"90
-[; ;SIM7600.c: 90:         modemOK = 0;
+"91
+[; ;SIM7600.c: 91:         modemOK = 0;
 [e = _modemOK -> -> 0 `i `a ]
-"92
-[; ;SIM7600.c: 92:         Uart2SendString_modem("AT+CMGD=1,4\r\n");
-[e ( _Uart2SendString_modem (1 :s 7C ]
 "93
-[; ;SIM7600.c: 93:         while (!modemOK);
+[; ;SIM7600.c: 93:         Uart2SendString_modem("AT+CMGD=1,4\r\n");
+[e ( _Uart2SendString_modem (1 :s 7C ]
+"94
+[; ;SIM7600.c: 94:         while (!modemOK);
 [e $U 991  ]
 [e :U 992 ]
 [e :U 991 ]
 [e $ ! != -> _modemOK `i -> 0 `i 992  ]
 [e :U 993 ]
-"94
-[; ;SIM7600.c: 94:         modemOK = 0;
+"95
+[; ;SIM7600.c: 95:         modemOK = 0;
 [e = _modemOK -> -> 0 `i `a ]
-"96
-[; ;SIM7600.c: 96:         Uart2SendString_modem("AT+CNMI=2,1,0,0,0\r\n");
-[e ( _Uart2SendString_modem (1 :s 8C ]
 "97
-[; ;SIM7600.c: 97:         while (!modemOK);
+[; ;SIM7600.c: 97:         Uart2SendString_modem("AT+CNMI=2,1,0,0,0\r\n");
+[e ( _Uart2SendString_modem (1 :s 8C ]
+"98
+[; ;SIM7600.c: 98:         while (!modemOK);
 [e $U 994  ]
 [e :U 995 ]
 [e :U 994 ]
 [e $ ! != -> _modemOK `i -> 0 `i 995  ]
 [e :U 996 ]
-"98
-[; ;SIM7600.c: 98:         modemOK = 0;
+"99
+[; ;SIM7600.c: 99:         modemOK = 0;
 [e = _modemOK -> -> 0 `i `a ]
-"100
-[; ;SIM7600.c: 100:         startMode = 0;
-[e = _startMode -> -> 0 `i `a ]
 "101
-[; ;SIM7600.c: 101:     }
+[; ;SIM7600.c: 101:         startMode = 0;
+[e = _startMode -> -> 0 `i `a ]
+"102
+[; ;SIM7600.c: 102:         modemStatus_OK = 1;
+[e = _modemStatus_OK -> -> 1 `i `a ]
+"103
+[; ;SIM7600.c: 103:     }
 }
 [e :U 984 ]
-"102
-[; ;SIM7600.c: 102: }
+"104
+[; ;SIM7600.c: 104: }
 [e :UE 975 ]
 }
-"112
-[; ;SIM7600.c: 112: void SIM7600_SendSMS(const char *text)
+"114
+[; ;SIM7600.c: 114: void SIM7600_SendSMS(const char *text)
 [v _SIM7600_SendSMS `(v ~T0 @X0 1 ef1`*Cuc ]
-"113
-[; ;SIM7600.c: 113: {
+"115
+[; ;SIM7600.c: 115: {
 {
 [e :U _SIM7600_SendSMS ]
-"112
-[; ;SIM7600.c: 112: void SIM7600_SendSMS(const char *text)
-[v _text `*Cuc ~T0 @X0 1 r1 ]
-"113
-[; ;SIM7600.c: 113: {
-[f ]
 "114
-[; ;SIM7600.c: 114:     smsSend = 1;
+[; ;SIM7600.c: 114: void SIM7600_SendSMS(const char *text)
+[v _text `*Cuc ~T0 @X0 1 r1 ]
+"115
+[; ;SIM7600.c: 115: {
+[f ]
+"116
+[; ;SIM7600.c: 116:     smsSend = 1;
 [e = _smsSend -> -> 1 `i `a ]
-"117
-[; ;SIM7600.c: 117:     Uart2SendString_modem("AT+CMGF=1\r\n");
+"119
+[; ;SIM7600.c: 119:     Uart2SendString_modem("AT+CMGF=1\r\n");
 [e ( _Uart2SendString_modem (1 :s 9C ]
-"118
-[; ;SIM7600.c: 118:     while (!modemOK);
+"120
+[; ;SIM7600.c: 120:     while (!modemOK);
 [e $U 998  ]
 [e :U 999 ]
 [e :U 998 ]
 [e $ ! != -> _modemOK `i -> 0 `i 999  ]
 [e :U 1000 ]
-"119
-[; ;SIM7600.c: 119:     modemOK = 0;
+"121
+[; ;SIM7600.c: 121:     modemOK = 0;
 [e = _modemOK -> -> 0 `i `a ]
-"122
-[; ;SIM7600.c: 122:     Uart2SendString_modem("AT+CMGS=\"");
-[e ( _Uart2SendString_modem (1 :s 10C ]
-"123
-[; ;SIM7600.c: 123:     Uart2SendString_modem("+41793018256");
-[e ( _Uart2SendString_modem (1 :s 11C ]
 "124
-[; ;SIM7600.c: 124:     Uart2SendString_modem("\"\r\n");
-[e ( _Uart2SendString_modem (1 :s 12C ]
+[; ;SIM7600.c: 124:     Uart2SendString_modem("AT+CMGS=\"");
+[e ( _Uart2SendString_modem (1 :s 10C ]
 "125
-[; ;SIM7600.c: 125:     _delay((unsigned long)((10)*(32000000/4000.0)));
+[; ;SIM7600.c: 125:     Uart2SendString_modem("+41793018256");
+[e ( _Uart2SendString_modem (1 :s 11C ]
+"126
+[; ;SIM7600.c: 126:     Uart2SendString_modem("\"\r\n");
+[e ( _Uart2SendString_modem (1 :s 12C ]
+"127
+[; ;SIM7600.c: 127:     _delay((unsigned long)((10)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"128
-[; ;SIM7600.c: 128:     Uart2SendString_modem(text);
-[e ( _Uart2SendString_modem (1 _text ]
 "130
-[; ;SIM7600.c: 130:     Uart2Write_modem(26);
-[e ( _Uart2Write_modem (1 -> -> 26 `i `uc ]
+[; ;SIM7600.c: 130:     Uart2SendString_modem(text);
+[e ( _Uart2SendString_modem (1 _text ]
 "132
-[; ;SIM7600.c: 132:     modemOK = 0;
+[; ;SIM7600.c: 132:     Uart2Write_modem(26);
+[e ( _Uart2Write_modem (1 -> -> 26 `i `uc ]
+"134
+[; ;SIM7600.c: 134:     modemOK = 0;
 [e = _modemOK -> -> 0 `i `a ]
-"133
-[; ;SIM7600.c: 133:     _delay((unsigned long)((10)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 "135
-[; ;SIM7600.c: 135:     while (!modemOK);
+[; ;SIM7600.c: 135:     _delay((unsigned long)((10)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"137
+[; ;SIM7600.c: 137:     while (!modemOK);
 [e $U 1001  ]
 [e :U 1002 ]
 [e :U 1001 ]
 [e $ ! != -> _modemOK `i -> 0 `i 1002  ]
 [e :U 1003 ]
-"136
-[; ;SIM7600.c: 136:     modemOK = 0;
+"138
+[; ;SIM7600.c: 138:     modemOK = 0;
 [e = _modemOK -> -> 0 `i `a ]
-"137
-[; ;SIM7600.c: 137:     _delay((unsigned long)((10)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
 "139
-[; ;SIM7600.c: 139:     smsSend = 0;
+[; ;SIM7600.c: 139:     _delay((unsigned long)((10)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"141
+[; ;SIM7600.c: 141:     smsSend = 0;
 [e = _smsSend -> -> 0 `i `a ]
-"140
-[; ;SIM7600.c: 140: }
+"142
+[; ;SIM7600.c: 142: }
 [e :UE 997 ]
 }
-"150
-[; ;SIM7600.c: 150: void DTE_CommandsReceive(void)
+"152
+[; ;SIM7600.c: 152: void DTE_CommandsReceive(void)
 [v _DTE_CommandsReceive `(v ~T0 @X0 1 ef ]
-"151
-[; ;SIM7600.c: 151: {
+"153
+[; ;SIM7600.c: 153: {
 {
 [e :U _DTE_CommandsReceive ]
 [f ]
-"152
-[; ;SIM7600.c: 152:     uint8_t index = 0;
+"154
+[; ;SIM7600.c: 154:     uint8_t index = 0;
 [v _index `uc ~T0 @X0 1 a ]
 [e = _index -> -> 0 `i `uc ]
-"153
-[; ;SIM7600.c: 153:     uint8_t loop;
-[v _loop `uc ~T0 @X0 1 a ]
-[v F7554 `uc ~T0 @X0 -> 64 `i s ]
-[i F7554
-:U ..
 "155
-[; ;SIM7600.c: 155:     char commandDTE[64] = {0};
+[; ;SIM7600.c: 155:     uint8_t loop;
+[v _loop `uc ~T0 @X0 1 a ]
+[v F7556 `uc ~T0 @X0 -> 64 `i s ]
+[i F7556
+:U ..
+"157
+[; ;SIM7600.c: 157:     char commandDTE[64] = {0};
 -> -> 0 `i `uc
 ..
 ]
 [v _commandDTE `uc ~T0 @X0 -> 64 `i a ]
-[e = _commandDTE F7554 ]
-"159
-[; ;SIM7600.c: 159:     if (strncmp((const char *) bufferUart1, "AT", 2) == 0)
+[e = _commandDTE F7556 ]
+"161
+[; ;SIM7600.c: 161:     if (strncmp((const char *) bufferUart1, "AT", 2) == 0)
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 13C -> -> 2 `i `ui -> 0 `i 1005  ]
-"160
-[; ;SIM7600.c: 160:     {
-{
 "162
-[; ;SIM7600.c: 162:         if (strncmp((const char *) bufferUart1, "AT+GMI", 6) == 0)
-[e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 14C -> -> 6 `i `ui -> 0 `i 1006  ]
-"163
-[; ;SIM7600.c: 163:         {
+[; ;SIM7600.c: 162:     {
 {
 "164
-[; ;SIM7600.c: 164:             Uart1SendString_DTE("Cinterion\r\n\r\nOK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 15C ]
+[; ;SIM7600.c: 164:         if (strncmp((const char *) bufferUart1, "AT+GMI", 6) == 0)
+[e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 14C -> -> 6 `i `ui -> 0 `i 1006  ]
 "165
-[; ;SIM7600.c: 165:         }
+[; ;SIM7600.c: 165:         {
+{
+"166
+[; ;SIM7600.c: 166:             Uart1SendString_DTE("Cinterion\r\n\r\nOK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 15C ]
+"167
+[; ;SIM7600.c: 167:         }
 }
 [e $U 1007  ]
-"166
-[; ;SIM7600.c: 166:         else if (strncmp((const char *) bufferUart1, "AT+GMM", 6) == 0)
+"168
+[; ;SIM7600.c: 168:         else if (strncmp((const char *) bufferUart1, "AT+GMM", 6) == 0)
 [e :U 1006 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 16C -> -> 6 `i `ui -> 0 `i 1008  ]
-"167
-[; ;SIM7600.c: 167:         {
-{
-"168
-[; ;SIM7600.c: 168:             Uart1SendString_DTE("BGS2-W\r\n\r\nOK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 17C ]
 "169
-[; ;SIM7600.c: 169:         }
+[; ;SIM7600.c: 169:         {
+{
+"170
+[; ;SIM7600.c: 170:             Uart1SendString_DTE("BGS2-W\r\n\r\nOK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 17C ]
+"171
+[; ;SIM7600.c: 171:         }
 }
 [e $U 1009  ]
-"170
-[; ;SIM7600.c: 170:         else if (strncmp((const char *) bufferUart1, "AT+CMGF", 7) == 0)
+"172
+[; ;SIM7600.c: 172:         else if (strncmp((const char *) bufferUart1, "AT+CMGF", 7) == 0)
 [e :U 1008 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 18C -> -> 7 `i `ui -> 0 `i 1010  ]
-"171
-[; ;SIM7600.c: 171:         {
-{
-"172
-[; ;SIM7600.c: 172:             Uart1SendString_DTE("OK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 19C ]
 "173
-[; ;SIM7600.c: 173:         }
+[; ;SIM7600.c: 173:         {
+{
+"174
+[; ;SIM7600.c: 174:             Uart1SendString_DTE("OK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 19C ]
+"175
+[; ;SIM7600.c: 175:         }
 }
 [e $U 1011  ]
-"174
-[; ;SIM7600.c: 174:         else if (strncmp((const char *) bufferUart1, "AT+CNMI=", 8) == 0)
+"176
+[; ;SIM7600.c: 176:         else if (strncmp((const char *) bufferUart1, "AT+CNMI=", 8) == 0)
 [e :U 1010 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 20C -> -> 8 `i `ui -> 0 `i 1012  ]
-"175
-[; ;SIM7600.c: 175:         {
-{
-"176
-[; ;SIM7600.c: 176:             Uart1SendString_DTE("OK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 21C ]
 "177
-[; ;SIM7600.c: 177:         }
+[; ;SIM7600.c: 177:         {
+{
+"178
+[; ;SIM7600.c: 178:             Uart1SendString_DTE("OK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 21C ]
+"179
+[; ;SIM7600.c: 179:         }
 }
 [e $U 1013  ]
-"178
-[; ;SIM7600.c: 178:         else if (strncmp((const char *) bufferUart1, "AT+CMGD", 7) == 0)
+"180
+[; ;SIM7600.c: 180:         else if (strncmp((const char *) bufferUart1, "AT+CMGD", 7) == 0)
 [e :U 1012 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 22C -> -> 7 `i `ui -> 0 `i 1014  ]
-"179
-[; ;SIM7600.c: 179:         {
-{
-"180
-[; ;SIM7600.c: 180:             Uart1SendString_DTE("OK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 23C ]
 "181
-[; ;SIM7600.c: 181:         }
+[; ;SIM7600.c: 181:         {
+{
+"182
+[; ;SIM7600.c: 182:             Uart1SendString_DTE("OK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 23C ]
+"183
+[; ;SIM7600.c: 183:         }
 }
 [e $U 1015  ]
-"182
-[; ;SIM7600.c: 182:         else if (strncmp((const char *) bufferUart1, "AT+IPREX", 8) == 0)
+"184
+[; ;SIM7600.c: 184:         else if (strncmp((const char *) bufferUart1, "AT+IPREX", 8) == 0)
 [e :U 1014 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 24C -> -> 8 `i `ui -> 0 `i 1016  ]
-"183
-[; ;SIM7600.c: 183:         {
-{
-"184
-[; ;SIM7600.c: 184:             Uart1SendString_DTE("AT+IPREX\r\r\nERROR\r\n");
-[e ( _Uart1SendString_DTE (1 :s 25C ]
 "185
-[; ;SIM7600.c: 185:         }
+[; ;SIM7600.c: 185:         {
+{
+"186
+[; ;SIM7600.c: 186:             Uart1SendString_DTE("AT+IPREX\r\r\nERROR\r\n");
+[e ( _Uart1SendString_DTE (1 :s 25C ]
+"187
+[; ;SIM7600.c: 187:         }
 }
 [e $U 1017  ]
-"186
-[; ;SIM7600.c: 186:         else if (strcmp((const char *) bufferUart1, "AT") == 0)
+"188
+[; ;SIM7600.c: 188:         else if (strcmp((const char *) bufferUart1, "AT") == 0)
 [e :U 1016 ]
 [e $ ! == ( _strcmp (2 , &U _bufferUart1 :s 26C -> 0 `i 1018  ]
-"187
-[; ;SIM7600.c: 187:         {
-{
-"188
-[; ;SIM7600.c: 188:             Uart1SendString_DTE("OK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 27C ]
 "189
-[; ;SIM7600.c: 189:         }
+[; ;SIM7600.c: 189:         {
+{
+"190
+[; ;SIM7600.c: 190:             Uart1SendString_DTE("OK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 27C ]
+"191
+[; ;SIM7600.c: 191:         }
 }
 [e $U 1019  ]
-"190
-[; ;SIM7600.c: 190:         else if (strncmp((const char *) bufferUart1, "AT&F", 4) == 0)
+"192
+[; ;SIM7600.c: 192:         else if (strncmp((const char *) bufferUart1, "AT&F", 4) == 0)
 [e :U 1018 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 28C -> -> 4 `i `ui -> 0 `i 1020  ]
-"191
-[; ;SIM7600.c: 191:         {
-{
-"192
-[; ;SIM7600.c: 192:             Uart1SendString_DTE("OK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 29C ]
 "193
-[; ;SIM7600.c: 193:         }
+[; ;SIM7600.c: 193:         {
+{
+"194
+[; ;SIM7600.c: 194:             Uart1SendString_DTE("OK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 29C ]
+"195
+[; ;SIM7600.c: 195:         }
 }
 [e $U 1021  ]
-"194
-[; ;SIM7600.c: 194:         else if (strncmp((const char *) bufferUart1, "ATE0", 4) == 0)
+"196
+[; ;SIM7600.c: 196:         else if (strncmp((const char *) bufferUart1, "ATE0", 4) == 0)
 [e :U 1020 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 30C -> -> 4 `i `ui -> 0 `i 1022  ]
-"195
-[; ;SIM7600.c: 195:         {
-{
-"196
-[; ;SIM7600.c: 196:             Uart1SendString_DTE("OK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 31C ]
 "197
-[; ;SIM7600.c: 197:         }
+[; ;SIM7600.c: 197:         {
+{
+"198
+[; ;SIM7600.c: 198:             Uart1SendString_DTE("OK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 31C ]
+"199
+[; ;SIM7600.c: 199:         }
 }
 [e $U 1023  ]
-"198
-[; ;SIM7600.c: 198:         else if (strncmp((const char *) bufferUart1, "AT+CMGR=1", 9) == 0)
+"200
+[; ;SIM7600.c: 200:         else if (strncmp((const char *) bufferUart1, "AT+CMGR=1", 9) == 0)
 [e :U 1022 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 32C -> -> 9 `i `ui -> 0 `i 1024  ]
-"199
-[; ;SIM7600.c: 199:         {
-{
-"200
-[; ;SIM7600.c: 200:             if (smsStartPoele)
-[e $ ! != -> _smsStartPoele `i -> 0 `i 1025  ]
 "201
-[; ;SIM7600.c: 201:             {
+[; ;SIM7600.c: 201:         {
 {
 "202
-[; ;SIM7600.c: 202:                 if (!smsStartPoeleLu)
-[e $ ! ! != -> _smsStartPoeleLu `i -> 0 `i 1026  ]
+[; ;SIM7600.c: 202:             poeleStatus_OK = 1;
+[e = _poeleStatus_OK -> -> 1 `i `a ]
 "203
-[; ;SIM7600.c: 203:                 {
-{
+[; ;SIM7600.c: 203:             if (smsStartPoele)
+[e $ ! != -> _smsStartPoele `i -> 0 `i 1025  ]
 "204
-[; ;SIM7600.c: 204:                     Uart1SendString_DTE(
+[; ;SIM7600.c: 204:             {
+{
+"205
+[; ;SIM7600.c: 205:                 if (!smsStartPoeleLu)
+[e $ ! ! != -> _smsStartPoeleLu `i -> 0 `i 1026  ]
+"206
+[; ;SIM7600.c: 206:                 {
+{
+"207
+[; ;SIM7600.c: 207:                     Uart1SendString_DTE(
 [e ( _Uart1SendString_DTE (1 :s 33C ]
-"212
-[; ;SIM7600.c: 212:                     smsStartPoeleLu = 1;
+"215
+[; ;SIM7600.c: 215:                     smsStartPoeleLu = 1;
 [e = _smsStartPoeleLu -> -> 1 `i `a ]
-"213
-[; ;SIM7600.c: 213:                 }
+"216
+[; ;SIM7600.c: 216:                 }
 }
 [e $U 1027  ]
-"214
-[; ;SIM7600.c: 214:                 else
+"217
+[; ;SIM7600.c: 217:                 else
 [e :U 1026 ]
-"215
-[; ;SIM7600.c: 215:                 {
+"218
+[; ;SIM7600.c: 218:                 {
 {
-"216
-[; ;SIM7600.c: 216:                     Uart1SendString_DTE(
+"219
+[; ;SIM7600.c: 219:                     Uart1SendString_DTE(
 [e ( _Uart1SendString_DTE (1 :s 34C ]
-"223
-[; ;SIM7600.c: 223:                     smsStartPoele = 0;
+"226
+[; ;SIM7600.c: 226:                     smsStartPoele = 0;
 [e = _smsStartPoele -> -> 0 `i `a ]
-"224
-[; ;SIM7600.c: 224:                     smsStartPoeleLu = 0;
+"227
+[; ;SIM7600.c: 227:                     smsStartPoeleLu = 0;
 [e = _smsStartPoeleLu -> -> 0 `i `a ]
-"225
-[; ;SIM7600.c: 225:                 }
+"228
+[; ;SIM7600.c: 228:                 }
 }
 [e :U 1027 ]
-"226
-[; ;SIM7600.c: 226:             }
+"229
+[; ;SIM7600.c: 229:             }
 }
 [e $U 1028  ]
-"249
-[; ;SIM7600.c: 249:             else
-[e :U 1025 ]
-"250
-[; ;SIM7600.c: 250:             {
-{
-"251
-[; ;SIM7600.c: 251:                 Uart1SendString_DTE("+CMGR: 0,,0\r\n");
-[e ( _Uart1SendString_DTE (1 :s 35C ]
 "252
-[; ;SIM7600.c: 252:                 Uart1SendString_DTE("OK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 36C ]
+[; ;SIM7600.c: 252:             else
+[e :U 1025 ]
 "253
-[; ;SIM7600.c: 253:             }
+[; ;SIM7600.c: 253:             {
+{
+"254
+[; ;SIM7600.c: 254:                 Uart1SendString_DTE("+CMGR: 0,,0\r\n");
+[e ( _Uart1SendString_DTE (1 :s 35C ]
+"255
+[; ;SIM7600.c: 255:                 Uart1SendString_DTE("OK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 36C ]
+"256
+[; ;SIM7600.c: 256:             }
 }
 [e :U 1028 ]
-"254
-[; ;SIM7600.c: 254:         }
+"257
+[; ;SIM7600.c: 257:         }
 }
 [e $U 1029  ]
-"255
-[; ;SIM7600.c: 255:         else if (strncmp((const char *) bufferUart1, "AT+CMGD=1", 9) == 0)
+"258
+[; ;SIM7600.c: 258:         else if (strncmp((const char *) bufferUart1, "AT+CMGD=1", 9) == 0)
 [e :U 1024 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart1 :s 37C -> -> 9 `i `ui -> 0 `i 1030  ]
-"256
-[; ;SIM7600.c: 256:         {
+"259
+[; ;SIM7600.c: 259:         {
 {
-"257
-[; ;SIM7600.c: 257:             smsStartPoele = 0;
-[e = _smsStartPoele -> -> 0 `i `a ]
-"258
-[; ;SIM7600.c: 258:             smsStartPoeleLu = 0;
-[e = _smsStartPoeleLu -> -> 0 `i `a ]
 "260
-[; ;SIM7600.c: 260:             Uart1SendString_DTE("\r\nOK\r\n");
-[e ( _Uart1SendString_DTE (1 :s 38C ]
+[; ;SIM7600.c: 260:             smsStartPoele = 0;
+[e = _smsStartPoele -> -> 0 `i `a ]
 "261
-[; ;SIM7600.c: 261:         }
+[; ;SIM7600.c: 261:             smsStartPoeleLu = 0;
+[e = _smsStartPoeleLu -> -> 0 `i `a ]
+"263
+[; ;SIM7600.c: 263:             Uart1SendString_DTE("\r\nOK\r\n");
+[e ( _Uart1SendString_DTE (1 :s 38C ]
+"264
+[; ;SIM7600.c: 264:         }
 }
 [e $U 1031  ]
-"262
-[; ;SIM7600.c: 262:         else
-[e :U 1030 ]
-"263
-[; ;SIM7600.c: 263:         {
-{
-"264
-[; ;SIM7600.c: 264:             Uart2SendString_modem(bufferUart1);
-[e ( _Uart2SendString_modem (1 -> &U _bufferUart1 `*Cuc ]
 "265
-[; ;SIM7600.c: 265:         }
+[; ;SIM7600.c: 265:         else
+[e :U 1030 ]
+"266
+[; ;SIM7600.c: 266:         {
+{
+"267
+[; ;SIM7600.c: 267:             Uart2SendString_modem(bufferUart1);
+[e ( _Uart2SendString_modem (1 -> &U _bufferUart1 `*Cuc ]
+"268
+[; ;SIM7600.c: 268:         }
 }
 [e :U 1031 ]
 [e :U 1029 ]
@@ -1691,308 +1709,290 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 1011 ]
 [e :U 1009 ]
 [e :U 1007 ]
-"266
-[; ;SIM7600.c: 266:     }
+"269
+[; ;SIM7600.c: 269:     }
 }
 [e $U 1032  ]
-"267
-[; ;SIM7600.c: 267:     else
+"270
+[; ;SIM7600.c: 270:     else
 [e :U 1005 ]
-"268
-[; ;SIM7600.c: 268:     {
+"271
+[; ;SIM7600.c: 271:     {
 {
-"269
-[; ;SIM7600.c: 269:         Command(bufferUart1, 2);
-[e ( _Command (2 , &U _bufferUart1 -> -> 2 `i `uc ]
 "272
-[; ;SIM7600.c: 272:         bufferUart1[0] = '\0';
-[e = *U + &U _bufferUart1 * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferUart1 `ui `ux -> -> 0 `ui `uc ]
-"274
-[; ;SIM7600.c: 274:         index = 0;
-[e = _index -> -> 0 `i `uc ]
+[; ;SIM7600.c: 272:         Command(bufferUart1, 2);
+[e ( _Command (2 , &U _bufferUart1 -> -> 2 `i `uc ]
 "275
-[; ;SIM7600.c: 275:     }
+[; ;SIM7600.c: 275:         bufferUart1[0] = '\0';
+[e = *U + &U _bufferUart1 * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferUart1 `ui `ux -> -> 0 `ui `uc ]
+"277
+[; ;SIM7600.c: 277:         index = 0;
+[e = _index -> -> 0 `i `uc ]
+"278
+[; ;SIM7600.c: 278:     }
 }
 [e :U 1032 ]
-"276
-[; ;SIM7600.c: 276: }
+"279
+[; ;SIM7600.c: 279: }
 [e :UE 1004 ]
 }
-"286
-[; ;SIM7600.c: 286: void SIM7600_CommandsReceive(void)
+"289
+[; ;SIM7600.c: 289: void SIM7600_CommandsReceive(void)
 [v _SIM7600_CommandsReceive `(v ~T0 @X0 1 ef ]
-"287
-[; ;SIM7600.c: 287: {
+"290
+[; ;SIM7600.c: 290: {
 {
 [e :U _SIM7600_CommandsReceive ]
 [f ]
-"288
-[; ;SIM7600.c: 288:     uint8_t index = 0;
+"291
+[; ;SIM7600.c: 291:     uint8_t index = 0;
 [v _index `uc ~T0 @X0 1 a ]
 [e = _index -> -> 0 `i `uc ]
-"289
-[; ;SIM7600.c: 289:     uint8_t loop;
+"292
+[; ;SIM7600.c: 292:     uint8_t loop;
 [v _loop `uc ~T0 @X0 1 a ]
-[v F7559 `uc ~T0 @X0 -> 64 `i s ]
-[i F7559
+[v F7561 `uc ~T0 @X0 -> 64 `i s ]
+[i F7561
 :U ..
-"290
-[; ;SIM7600.c: 290:     char commandSMS[64] = {0};
+"293
+[; ;SIM7600.c: 293:     char commandSMS[64] = {0};
 -> -> 0 `i `uc
 ..
 ]
 [v _commandSMS `uc ~T0 @X0 -> 64 `i a ]
-[e = _commandSMS F7559 ]
-"292
-[; ;SIM7600.c: 292:     if (!smsReadMode)
-[e $ ! ! != -> _smsReadMode `i -> 0 `i 1034  ]
-"293
-[; ;SIM7600.c: 293:     {
-{
+[e = _commandSMS F7561 ]
 "295
-[; ;SIM7600.c: 295:         if ((strncmp((const char *) bufferUart2, "+CMTI:", 6) == 0) && !startMode)
-[e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 39C -> -> 6 `i `ui -> 0 `i ! != -> _startMode `i -> 0 `i 1035  ]
+[; ;SIM7600.c: 295:     if (!smsReadMode)
+[e $ ! ! != -> _smsReadMode `i -> 0 `i 1034  ]
 "296
-[; ;SIM7600.c: 296:         {
+[; ;SIM7600.c: 296:     {
 {
-"297
-[; ;SIM7600.c: 297:             Uart2SendString_modem("AT+CMGRD=0\r\n");
-[e ( _Uart2SendString_modem (1 :s 40C ]
 "298
-[; ;SIM7600.c: 298:             smsMode = 1;
-[e = _smsMode -> -> 1 `i `a ]
+[; ;SIM7600.c: 298:         if ((strncmp((const char *) bufferUart2, "+CMTI:", 6) == 0) && !startMode)
+[e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 39C -> -> 6 `i `ui -> 0 `i ! != -> _startMode `i -> 0 `i 1035  ]
 "299
-[; ;SIM7600.c: 299:         }
+[; ;SIM7600.c: 299:         {
+{
+"300
+[; ;SIM7600.c: 300:             Uart2SendString_modem("AT+CMGRD=0\r\n");
+[e ( _Uart2SendString_modem (1 :s 40C ]
+"301
+[; ;SIM7600.c: 301:             smsMode = 1;
+[e = _smsMode -> -> 1 `i `a ]
+"302
+[; ;SIM7600.c: 302:         }
 }
 [e $U 1036  ]
-"300
-[; ;SIM7600.c: 300:         else if ((strncmp((const char *) bufferUart2, "+CMGRD:", 7) == 0) && !startMode)
+"303
+[; ;SIM7600.c: 303:         else if ((strncmp((const char *) bufferUart2, "+CMGRD:", 7) == 0) && !startMode)
 [e :U 1035 ]
 [e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 41C -> -> 7 `i `ui -> 0 `i ! != -> _startMode `i -> 0 `i 1037  ]
-"301
-[; ;SIM7600.c: 301:         {
+"304
+[; ;SIM7600.c: 304:         {
 {
-"302
-[; ;SIM7600.c: 302:             smsReadMode = 1;
+"305
+[; ;SIM7600.c: 305:             smsReadMode = 1;
 [e = _smsReadMode -> -> 1 `i `a ]
-"303
-[; ;SIM7600.c: 303:         }
+"306
+[; ;SIM7600.c: 306:         }
 }
 [e $U 1038  ]
-"304
-[; ;SIM7600.c: 304:         else if ((strncmp((const char *) bufferUart2, "OK", 2) == 0) && (smsMode || startMode || smsSend))
+"307
+[; ;SIM7600.c: 307:         else if ((strncmp((const char *) bufferUart2, "OK", 2) == 0) && (smsMode || startMode || smsSend))
 [e :U 1037 ]
 [e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 42C -> -> 2 `i `ui -> 0 `i || || != -> _smsMode `i -> 0 `i != -> _startMode `i -> 0 `i != -> _smsSend `i -> 0 `i 1039  ]
-"305
-[; ;SIM7600.c: 305:         {
-{
-"306
-[; ;SIM7600.c: 306:             if (smsMode)
-[e $ ! != -> _smsMode `i -> 0 `i 1040  ]
-"307
-[; ;SIM7600.c: 307:             {
-{
 "308
-[; ;SIM7600.c: 308:                 smsMode = 0;
-[e = _smsMode -> -> 0 `i `a ]
+[; ;SIM7600.c: 308:         {
+{
 "309
-[; ;SIM7600.c: 309:             }
+[; ;SIM7600.c: 309:             if (smsMode)
+[e $ ! != -> _smsMode `i -> 0 `i 1040  ]
+"310
+[; ;SIM7600.c: 310:             {
+{
+"311
+[; ;SIM7600.c: 311:                 smsMode = 0;
+[e = _smsMode -> -> 0 `i `a ]
+"312
+[; ;SIM7600.c: 312:             }
 }
 [e $U 1041  ]
-"310
-[; ;SIM7600.c: 310:             else if (startMode)
+"313
+[; ;SIM7600.c: 313:             else if (startMode)
 [e :U 1040 ]
 [e $ ! != -> _startMode `i -> 0 `i 1042  ]
-"311
-[; ;SIM7600.c: 311:             {
+"314
+[; ;SIM7600.c: 314:             {
 {
-"312
-[; ;SIM7600.c: 312:                 noSIM = 0;
+"315
+[; ;SIM7600.c: 315:                 noSIM = 0;
 [e = _noSIM -> -> 0 `i `a ]
-"313
-[; ;SIM7600.c: 313:             }
+"316
+[; ;SIM7600.c: 316:             }
 }
 [e :U 1042 ]
 [e :U 1041 ]
-"315
-[; ;SIM7600.c: 315:             if (startMode || smsSend)
-[e $ ! || != -> _startMode `i -> 0 `i != -> _smsSend `i -> 0 `i 1043  ]
-"316
-[; ;SIM7600.c: 316:             {
-{
-"317
-[; ;SIM7600.c: 317:                 modemOK = 1;
-[e = _modemOK -> -> 1 `i `a ]
 "318
-[; ;SIM7600.c: 318:             }
+[; ;SIM7600.c: 318:             if (startMode || smsSend)
+[e $ ! || != -> _startMode `i -> 0 `i != -> _smsSend `i -> 0 `i 1043  ]
+"319
+[; ;SIM7600.c: 319:             {
+{
+"320
+[; ;SIM7600.c: 320:                 modemOK = 1;
+[e = _modemOK -> -> 1 `i `a ]
+"321
+[; ;SIM7600.c: 321:             }
 }
 [e :U 1043 ]
-"319
-[; ;SIM7600.c: 319:         }
+"322
+[; ;SIM7600.c: 322:         }
 }
 [e $U 1044  ]
-"320
-[; ;SIM7600.c: 320:         else if ((strncmp((const char *) bufferUart2, "+CPIN: SIM PIN", 14) == 0) && startMode)
+"323
+[; ;SIM7600.c: 323:         else if ((strncmp((const char *) bufferUart2, "+CPIN: SIM PIN", 14) == 0) && startMode)
 [e :U 1039 ]
 [e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 43C -> -> 14 `i `ui -> 0 `i != -> _startMode `i -> 0 `i 1045  ]
-"321
-[; ;SIM7600.c: 321:         {
-{
-"322
-[; ;SIM7600.c: 322:             noSIM = 0;
-[e = _noSIM -> -> 0 `i `a ]
-"323
-[; ;SIM7600.c: 323:             modemStartPin = 1;
-[e = _modemStartPin -> -> 1 `i `a ]
 "324
-[; ;SIM7600.c: 324:         }
+[; ;SIM7600.c: 324:         {
+{
+"325
+[; ;SIM7600.c: 325:             noSIM = 0;
+[e = _noSIM -> -> 0 `i `a ]
+"326
+[; ;SIM7600.c: 326:             modemStartPin = 1;
+[e = _modemStartPin -> -> 1 `i `a ]
+"327
+[; ;SIM7600.c: 327:         }
 }
 [e $U 1046  ]
-"325
-[; ;SIM7600.c: 325:         else if ((strncmp((const char *) bufferUart2, "+CPIN: READY", 12) == 0) && startMode)
+"328
+[; ;SIM7600.c: 328:         else if ((strncmp((const char *) bufferUart2, "+CPIN: READY", 12) == 0) && startMode)
 [e :U 1045 ]
 [e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 44C -> -> 12 `i `ui -> 0 `i != -> _startMode `i -> 0 `i 1047  ]
-"326
-[; ;SIM7600.c: 326:         {
-{
-"327
-[; ;SIM7600.c: 327:             noSIM = 0;
-[e = _noSIM -> -> 0 `i `a ]
-"328
-[; ;SIM7600.c: 328:             modemStart = 1;
-[e = _modemStart -> -> 1 `i `a ]
 "329
-[; ;SIM7600.c: 329:         }
+[; ;SIM7600.c: 329:         {
+{
+"330
+[; ;SIM7600.c: 330:             noSIM = 0;
+[e = _noSIM -> -> 0 `i `a ]
+"331
+[; ;SIM7600.c: 331:             modemStart = 1;
+[e = _modemStart -> -> 1 `i `a ]
+"332
+[; ;SIM7600.c: 332:         }
 }
 [e $U 1048  ]
-"330
-[; ;SIM7600.c: 330:         else if ((strncmp((const char *) bufferUart2, "+CME ERROR:", 11) == 0) && startMode)
+"333
+[; ;SIM7600.c: 333:         else if ((strncmp((const char *) bufferUart2, "+CME ERROR:", 11) == 0) && startMode)
 [e :U 1047 ]
 [e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 45C -> -> 11 `i `ui -> 0 `i != -> _startMode `i -> 0 `i 1049  ]
-"331
-[; ;SIM7600.c: 331:         {
-{
-"332
-[; ;SIM7600.c: 332:             modemStart = 1;
-[e = _modemStart -> -> 1 `i `a ]
-"333
-[; ;SIM7600.c: 333:             noSIM = 1;
-[e = _noSIM -> -> 1 `i `a ]
 "334
-[; ;SIM7600.c: 334:         }
+[; ;SIM7600.c: 334:         {
+{
+"335
+[; ;SIM7600.c: 335:             modemStart = 1;
+[e = _modemStart -> -> 1 `i `a ]
+"336
+[; ;SIM7600.c: 336:             noSIM = 1;
+[e = _noSIM -> -> 1 `i `a ]
+"337
+[; ;SIM7600.c: 337:         }
 }
 [e $U 1050  ]
-"336
-[; ;SIM7600.c: 336:         else if ((strncmp((const char *) bufferUart2, "ERROR", 5) == 0) && startMode)
+"339
+[; ;SIM7600.c: 339:         else if ((strncmp((const char *) bufferUart2, "ERROR", 5) == 0) && startMode)
 [e :U 1049 ]
 [e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 46C -> -> 5 `i `ui -> 0 `i != -> _startMode `i -> 0 `i 1051  ]
-"337
-[; ;SIM7600.c: 337:         {
+"340
+[; ;SIM7600.c: 340:         {
 {
-"338
-[; ;SIM7600.c: 338:             noSIM = 1;
+"341
+[; ;SIM7600.c: 341:             noSIM = 1;
 [e = _noSIM -> -> 1 `i `a ]
-"339
-[; ;SIM7600.c: 339:         }
+"342
+[; ;SIM7600.c: 342:         }
 }
 [e $U 1052  ]
-"341
-[; ;SIM7600.c: 341:         else if ((strncmp((const char *) bufferUart2, "SMS DONE", 8) == 0) && startMode)
+"344
+[; ;SIM7600.c: 344:         else if ((strncmp((const char *) bufferUart2, "SMS DONE", 8) == 0) && startMode)
 [e :U 1051 ]
 [e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 47C -> -> 8 `i `ui -> 0 `i != -> _startMode `i -> 0 `i 1053  ]
-"342
-[; ;SIM7600.c: 342:         {
+"345
+[; ;SIM7600.c: 345:         {
 {
-"343
-[; ;SIM7600.c: 343:             ready++;
+"346
+[; ;SIM7600.c: 346:             ready++;
 [e ++ _ready -> -> 1 `i `uc ]
-"344
-[; ;SIM7600.c: 344:         }
+"347
+[; ;SIM7600.c: 347:         }
 }
 [e $U 1054  ]
-"346
-[; ;SIM7600.c: 346:         else if ((strncmp((const char *) bufferUart2, "PB DONE", 7) == 0) && startMode)
+"349
+[; ;SIM7600.c: 349:         else if ((strncmp((const char *) bufferUart2, "PB DONE", 7) == 0) && startMode)
 [e :U 1053 ]
 [e $ ! && == ( _strncmp (3 , , &U _bufferUart2 :s 48C -> -> 7 `i `ui -> 0 `i != -> _startMode `i -> 0 `i 1055  ]
-"347
-[; ;SIM7600.c: 347:         {
+"350
+[; ;SIM7600.c: 350:         {
 {
-"348
-[; ;SIM7600.c: 348:             ready++;
+"351
+[; ;SIM7600.c: 351:             ready++;
 [e ++ _ready -> -> 1 `i `uc ]
-"349
-[; ;SIM7600.c: 349:         }
+"352
+[; ;SIM7600.c: 352:         }
 }
 [e $U 1056  ]
-"351
-[; ;SIM7600.c: 351:         else if ((strncmp((const char *) bufferUart2, "+SMS FULL", 9) == 0))
+"354
+[; ;SIM7600.c: 354:         else if ((strncmp((const char *) bufferUart2, "+SMS FULL", 9) == 0))
 [e :U 1055 ]
 [e $ ! == ( _strncmp (3 , , &U _bufferUart2 :s 49C -> -> 9 `i `ui -> 0 `i 1057  ]
-"352
-[; ;SIM7600.c: 352:         {
-{
-"353
-[; ;SIM7600.c: 353:             startMode = 1;
-[e = _startMode -> -> 1 `i `a ]
 "355
-[; ;SIM7600.c: 355:             for (uint8_t loop = 2; loop != 0; loop--)
+[; ;SIM7600.c: 355:         {
 {
-[v _loop `uc ~T0 @X0 1 a ]
-[e = _loop -> -> 2 `i `uc ]
-[e $ != -> _loop `i -> 0 `i 1058  ]
-[e $U 1059  ]
-[e :U 1058 ]
 "356
-[; ;SIM7600.c: 356:             {
-{
-"357
-[; ;SIM7600.c: 357:                 Uart2SendString_modem("AT+CMGD=0\r\n");
-[e ( _Uart2SendString_modem (1 :s 50C ]
-"358
-[; ;SIM7600.c: 358:                 _delay((unsigned long)((10)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;SIM7600.c: 356:             startMode = 1;
+[e = _startMode -> -> 1 `i `a ]
 "360
-[; ;SIM7600.c: 360:                 while (!modemOK);
+[; ;SIM7600.c: 360:                 Uart2SendString_modem("AT+CMGD=0\r\n");
+[e ( _Uart2SendString_modem (1 :s 50C ]
+"361
+[; ;SIM7600.c: 361:                 _delay((unsigned long)((10)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"363
+[; ;SIM7600.c: 363:                 while (!modemOK);
+[e $U 1058  ]
+[e :U 1059 ]
+[e :U 1058 ]
+[e $ ! != -> _modemOK `i -> 0 `i 1059  ]
+[e :U 1060 ]
+"364
+[; ;SIM7600.c: 364:                 modemOK = 0;
+[e = _modemOK -> -> 0 `i `a ]
+"365
+[; ;SIM7600.c: 365:                 _delay((unsigned long)((10)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"367
+[; ;SIM7600.c: 367:                 startMode = 0;
+[e = _startMode -> -> 0 `i `a ]
+"369
+[; ;SIM7600.c: 369:         }
+}
 [e $U 1061  ]
+"370
+[; ;SIM7600.c: 370:         else if (!smsMode && !startMode && !smsSend)
+[e :U 1057 ]
+[e $ ! && && ! != -> _smsMode `i -> 0 `i ! != -> _startMode `i -> 0 `i ! != -> _smsSend `i -> 0 `i 1062  ]
+"371
+[; ;SIM7600.c: 371:         {
+{
+"372
+[; ;SIM7600.c: 372:             Uart1SendString_DTE(bufferUart2);
+[e ( _Uart1SendString_DTE (1 &U _bufferUart2 ]
+"373
+[; ;SIM7600.c: 373:         }
+}
 [e :U 1062 ]
 [e :U 1061 ]
-[e $ ! != -> _modemOK `i -> 0 `i 1062  ]
-[e :U 1063 ]
-"361
-[; ;SIM7600.c: 361:                 modemOK = 0;
-[e = _modemOK -> -> 0 `i `a ]
-"362
-[; ;SIM7600.c: 362:                 _delay((unsigned long)((10)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"364
-[; ;SIM7600.c: 364:                 startMode = 0;
-[e = _startMode -> -> 0 `i `a ]
-"365
-[; ;SIM7600.c: 365:             }
-}
-[e -- _loop -> -> 1 `i `uc ]
-[e $ != -> _loop `i -> 0 `i 1058  ]
-[e :U 1059 ]
-}
-"366
-[; ;SIM7600.c: 366:         }
-}
-[e $U 1064  ]
-"367
-[; ;SIM7600.c: 367:         else if (!smsMode && !startMode && !smsSend)
-[e :U 1057 ]
-[e $ ! && && ! != -> _smsMode `i -> 0 `i ! != -> _startMode `i -> 0 `i ! != -> _smsSend `i -> 0 `i 1065  ]
-"368
-[; ;SIM7600.c: 368:         {
-{
-"369
-[; ;SIM7600.c: 369:             Uart1SendString_DTE(bufferUart2);
-[e ( _Uart1SendString_DTE (1 &U _bufferUart2 ]
-"370
-[; ;SIM7600.c: 370:         }
-}
-[e :U 1065 ]
-[e :U 1064 ]
 [e :U 1056 ]
 [e :U 1054 ]
 [e :U 1052 ]
@@ -2002,34 +2002,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 1044 ]
 [e :U 1038 ]
 [e :U 1036 ]
-"371
-[; ;SIM7600.c: 371:     }
+"374
+[; ;SIM7600.c: 374:     }
 }
-[e $U 1066  ]
-"372
-[; ;SIM7600.c: 372:     else
-[e :U 1034 ]
-"373
-[; ;SIM7600.c: 373:     {
-{
+[e $U 1063  ]
 "375
-[; ;SIM7600.c: 375:         Command(bufferUart2, 1);
-[e ( _Command (2 , &U _bufferUart2 -> -> 1 `i `uc ]
+[; ;SIM7600.c: 375:     else
+[e :U 1034 ]
+"376
+[; ;SIM7600.c: 376:     {
+{
 "378
-[; ;SIM7600.c: 378:         bufferUart2[0] = '\0';
+[; ;SIM7600.c: 378:         Command(bufferUart2, 1);
+[e ( _Command (2 , &U _bufferUart2 -> -> 1 `i `uc ]
+"381
+[; ;SIM7600.c: 381:         bufferUart2[0] = '\0';
 [e = *U + &U _bufferUart2 * -> -> -> 0 `i `ui `ux -> -> # *U &U _bufferUart2 `ui `ux -> -> 0 `ui `uc ]
-"380
-[; ;SIM7600.c: 380:         index = 0;
-[e = _index -> -> 0 `i `uc ]
-"382
-[; ;SIM7600.c: 382:         smsReadMode = 0;
-[e = _smsReadMode -> -> 0 `i `a ]
 "383
-[; ;SIM7600.c: 383:     }
+[; ;SIM7600.c: 383:         index = 0;
+[e = _index -> -> 0 `i `uc ]
+"385
+[; ;SIM7600.c: 385:         smsReadMode = 0;
+[e = _smsReadMode -> -> 0 `i `a ]
+"386
+[; ;SIM7600.c: 386:     }
 }
-[e :U 1066 ]
-"384
-[; ;SIM7600.c: 384: }
+[e :U 1063 ]
+"387
+[; ;SIM7600.c: 387: }
 [e :UE 1033 ]
 }
 [a 44C 43 67 80 73 78 58 32 82 69 65 68 89 0 ]

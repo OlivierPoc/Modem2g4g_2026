@@ -64,6 +64,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "142 ./commands.h
 [; ;./commands.h: 142: void Execute(void);
 [v _Execute `(v ~T0 @X0 0 ef ]
+"39 ./LCD.h
+[; ;./LCD.h: 39: void LCD_Cursor_Position(uint8_t ligne, uint8_t colonne);
+[v _LCD_Cursor_Position `(v ~T0 @X0 0 ef2`uc`uc ]
 "10848 C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16F1xxxx_DFP/1.31.465/xc8\pic\include\proc/pic16f15356.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16F1xxxx_DFP/1.31.465/xc8\pic\include\proc/pic16f15356.h: 10848:     struct {
 [s S512 :4 `uc 1 :3 `uc 1 ]
@@ -1256,6 +1259,24 @@ Version 4.0 HI-TECH Software Intermediate Code
 "21289
 [; ;C:/Program Files/Microchip/MPLABX/v6.35/packs/Microchip/PIC16F1xxxx_DFP/1.31.465/xc8\pic\include\proc/pic16f15356.h: 21289: __asm("TOSH equ 01FEFh");
 [; <" TOSH equ 01FEFh ;# ">
+"34 ./main.h
+[; ;./main.h: 34: _Bool displayStatus = 0;
+[v _displayStatus `a ~T0 @X0 1 e ]
+[i _displayStatus
+-> -> 0 `i `a
+]
+"35
+[; ;./main.h: 35: _Bool modemStatus_OK = 0;
+[v _modemStatus_OK `a ~T0 @X0 1 e ]
+[i _modemStatus_OK
+-> -> 0 `i `a
+]
+"36
+[; ;./main.h: 36: _Bool poeleStatus_OK = 0;
+[v _poeleStatus_OK `a ~T0 @X0 1 e ]
+[i _poeleStatus_OK
+-> -> 0 `i `a
+]
 "21 ./UART1_DTE.h
 [; ;./UART1_DTE.h: 21: char bufferUart1[64] = {0};
 [v _bufferUart1 `uc ~T0 @X0 -> 64 `i e ]
@@ -1324,256 +1345,395 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 0 `i `a
 ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"79 main.c
-[; ;main.c: 79: int main(void)
+"80 main.c
+[; ;main.c: 80: int main(void)
 [v _main `(i ~T0 @X0 1 ef ]
-"80
-[; ;main.c: 80: {
+"81
+[; ;main.c: 81: {
 {
 [e :U _main ]
 [f ]
-"81
-[; ;main.c: 81:     char stringBuffer[12];
-[v _stringBuffer `uc ~T0 @X0 -> 12 `i a ]
-"82
-[; ;main.c: 82:     uint8_t affiche = 0;
-[v _affiche `uc ~T0 @X0 1 a ]
-[e = _affiche -> -> 0 `i `uc ]
+"83
+[; ;main.c: 83:     uint8_t affiche_modem = 254;
+[v _affiche_modem `uc ~T0 @X0 1 a ]
+[e = _affiche_modem -> -> 254 `i `uc ]
 "84
-[; ;main.c: 84:     _Bool negTemp = 0;
+[; ;main.c: 84:     uint8_t affiche_poele = 254;
+[v _affiche_poele `uc ~T0 @X0 1 a ]
+[e = _affiche_poele -> -> 254 `i `uc ]
+"85
+[; ;main.c: 85:     poeleStatus_OK = 0;
+[e = _poeleStatus_OK -> -> 0 `i `a ]
+"86
+[; ;main.c: 86:     modemStatus_OK = 0;
+[e = _modemStatus_OK -> -> 0 `i `a ]
+"88
+[; ;main.c: 88:     _Bool negTemp = 0;
 [v _negTemp `a ~T0 @X0 1 a ]
 [e = _negTemp -> -> 0 `i `a ]
-"86
-[; ;main.c: 86:     Sys_Init();
-[e ( _Sys_Init ..  ]
-"89
-[; ;main.c: 89:     LCD_Clear();
-[e ( _LCD_Clear ..  ]
 "90
-[; ;main.c: 90:     LCD_Cursor(0);
-[e ( _LCD_Cursor (1 -> -> 0 `i `uc ]
-"91
-[; ;main.c: 91:     LCD_BackLight(0);
-[e ( _LCD_BackLight (1 -> -> 0 `i `a ]
+[; ;main.c: 90:     Sys_Init();
+[e ( _Sys_Init ..  ]
+"93
+[; ;main.c: 93:     LCD_Clear();
+[e ( _LCD_Clear ..  ]
 "94
-[; ;main.c: 94:     LCD_Clear();
-[e ( _LCD_Clear ..  ]
+[; ;main.c: 94:     LCD_Cursor(0);
+[e ( _LCD_Cursor (1 -> -> 0 `i `uc ]
 "95
-[; ;main.c: 95:     LCD_Write_String("LOADING");
-[e ( _LCD_Write_String (1 :s 1C ]
-"97
-[; ;main.c: 97:     _delay((unsigned long)((1000)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"100
-[; ;main.c: 100:     (INTCONbits.GIE = 1);
-[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"103
-[; ;main.c: 103:     (INTCONbits.PEIE = 1);
-[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"106
-[; ;main.c: 106:     PIE3bits.RC1IE = 1;
-[e = . . _PIE3bits 0 5 -> -> 1 `i `uc ]
-"107
-[; ;main.c: 107:     PIE3bits.RC2IE = 1;
-[e = . . _PIE3bits 0 7 -> -> 1 `i `uc ]
-"110
-[; ;main.c: 110:     SIM7600_Init();
-[e ( _SIM7600_Init ..  ]
-"113
-[; ;main.c: 113:     LCD_Clear();
+[; ;main.c: 95:     LCD_BackLight(0);
+[e ( _LCD_BackLight (1 -> -> 0 `i `a ]
+"98
+[; ;main.c: 98:     LCD_Clear();
 [e ( _LCD_Clear ..  ]
+"99
+[; ;main.c: 99:     LCD_Write_String("LOADING");
+[e ( _LCD_Write_String (1 :s 1C ]
+"101
+[; ;main.c: 101:     _delay((unsigned long)((1000)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"104
+[; ;main.c: 104:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
+"107
+[; ;main.c: 107:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
+"110
+[; ;main.c: 110:     PIE3bits.RC1IE = 1;
+[e = . . _PIE3bits 0 5 -> -> 1 `i `uc ]
+"111
+[; ;main.c: 111:     PIE3bits.RC2IE = 1;
+[e = . . _PIE3bits 0 7 -> -> 1 `i `uc ]
 "114
-[; ;main.c: 114:     LCD_Write_String("READY");
+[; ;main.c: 114:     SIM7600_Init();
+[e ( _SIM7600_Init ..  ]
+"117
+[; ;main.c: 117:     LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"118
+[; ;main.c: 118:     LCD_Write_String("READY");
 [e ( _LCD_Write_String (1 :s 2C ]
-"119
-[; ;main.c: 119:     while (1)
-[e :U 977 ]
-"120
-[; ;main.c: 120:     {
-{
-"121
-[; ;main.c: 121:         if (PORTCbits.RC2 == 0)
-[e $ ! == -> . . _PORTCbits 0 2 `i -> 0 `i 979  ]
-"122
-[; ;main.c: 122:         {
-{
 "123
-[; ;main.c: 123:             while(PORTCbits.RC2 == 0);
+[; ;main.c: 123:     while (1)
+[e :U 977 ]
+"124
+[; ;main.c: 124:     {
+{
+"125
+[; ;main.c: 125:         if (PORTCbits.RC2 == 0)
+[e $ ! == -> . . _PORTCbits 0 2 `i -> 0 `i 979  ]
+"126
+[; ;main.c: 126:         {
+{
+"127
+[; ;main.c: 127:             while (PORTCbits.RC2 == 0);
 [e $U 980  ]
 [e :U 981 ]
 [e :U 980 ]
 [e $ == -> . . _PORTCbits 0 2 `i -> 0 `i 981  ]
 [e :U 982 ]
-"124
-[; ;main.c: 124:             Uart2SendString_modem("AT+CMGR=0\r\n");
+"128
+[; ;main.c: 128:             Uart2SendString_modem("AT+CMGR=0\r\n");
 [e ( _Uart2SendString_modem (1 :s 3C ]
-"125
-[; ;main.c: 125:         }
+"129
+[; ;main.c: 129:         }
 }
 [e :U 979 ]
-"127
-[; ;main.c: 127:         if (PORTCbits.RC1 == 0)
+"131
+[; ;main.c: 131:         if (PORTCbits.RC1 == 0)
 [e $ ! == -> . . _PORTCbits 0 1 `i -> 0 `i 983  ]
-"128
-[; ;main.c: 128:         {
+"132
+[; ;main.c: 132:         {
 {
-"129
-[; ;main.c: 129:             while(PORTCbits.RC1 == 0);
+"133
+[; ;main.c: 133:             while (PORTCbits.RC1 == 0);
 [e $U 984  ]
 [e :U 985 ]
 [e :U 984 ]
 [e $ == -> . . _PORTCbits 0 1 `i -> 0 `i 985  ]
 [e :U 986 ]
-"131
-[; ;main.c: 131:             Uart2SendString_modem("AT+CPMS?\r\n");
+"135
+[; ;main.c: 135:             Uart2SendString_modem("AT+CPMS?\r\n");
 [e ( _Uart2SendString_modem (1 :s 4C ]
-"133
-[; ;main.c: 133:         }
+"136
+[; ;main.c: 136:         }
 }
 [e :U 983 ]
-"136
-[; ;main.c: 136:         if (PORTCbits.RC0 == 0)
-[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 987  ]
-"137
-[; ;main.c: 137:         {
-{
 "138
-[; ;main.c: 138:             while(PORTCbits.RC0 == 0);
+[; ;main.c: 138:         if (PORTCbits.RC0 == 0)
+[e $ ! == -> . . _PORTCbits 0 0 `i -> 0 `i 987  ]
+"139
+[; ;main.c: 139:         {
+{
+"140
+[; ;main.c: 140:             while (PORTCbits.RC0 == 0);
 [e $U 988  ]
 [e :U 989 ]
 [e :U 988 ]
 [e $ == -> . . _PORTCbits 0 0 `i -> 0 `i 989  ]
 [e :U 990 ]
-"139
-[; ;main.c: 139:             SIM7600_SendSMS("S4");
+"141
+[; ;main.c: 141:             SIM7600_SendSMS("S4");
 [e ( _SIM7600_SendSMS (1 :s 5C ]
-"140
-[; ;main.c: 140:         }
+"142
+[; ;main.c: 142:         }
 }
 [e :U 987 ]
-"142
-[; ;main.c: 142:         if (executionFlag)
-[e $ ! != -> _executionFlag `i -> 0 `i 991  ]
-"143
-[; ;main.c: 143:         {
-{
 "144
-[; ;main.c: 144:             Execute();
-[e ( _Execute ..  ]
+[; ;main.c: 144:         if (executionFlag)
+[e $ ! != -> _executionFlag `i -> 0 `i 991  ]
 "145
-[; ;main.c: 145:         }
+[; ;main.c: 145:         {
+{
+"146
+[; ;main.c: 146:             Execute();
+[e ( _Execute ..  ]
+"147
+[; ;main.c: 147:         }
 }
 [e :U 991 ]
-"148
-[; ;main.c: 148:     }
+"149
+[; ;main.c: 149:         if (modemStatus_OK)
+[e $ ! != -> _modemStatus_OK `i -> 0 `i 992  ]
+"150
+[; ;main.c: 150:         {
+{
+"151
+[; ;main.c: 151:             if (affiche_modem == 0)
+[e $ ! == -> _affiche_modem `i -> 0 `i 993  ]
+"152
+[; ;main.c: 152:             {
+{
+"153
+[; ;main.c: 153:                 LCD_Cursor_Position(2, 1);
+[e ( _LCD_Cursor_Position (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"154
+[; ;main.c: 154:                 LCD_Write_String("MODEM OK");
+[e ( _LCD_Write_String (1 :s 6C ]
+"155
+[; ;main.c: 155:                 affiche_modem = 254;
+[e = _affiche_modem -> -> 254 `i `uc ]
+"156
+[; ;main.c: 156:             }
+}
+[e :U 993 ]
+"157
+[; ;main.c: 157:             affiche_modem--;
+[e -- _affiche_modem -> -> 1 `i `uc ]
+"158
+[; ;main.c: 158:         }
+}
+[e $U 994  ]
+"159
+[; ;main.c: 159:         else
+[e :U 992 ]
+"160
+[; ;main.c: 160:         {
+{
+"161
+[; ;main.c: 161:             if (affiche_modem == 0)
+[e $ ! == -> _affiche_modem `i -> 0 `i 995  ]
+"162
+[; ;main.c: 162:             {
+{
+"163
+[; ;main.c: 163:                 LCD_Cursor_Position(2, 1);
+[e ( _LCD_Cursor_Position (2 , -> -> 2 `i `uc -> -> 1 `i `uc ]
+"164
+[; ;main.c: 164:                 LCD_Write_String("MODEM KO");
+[e ( _LCD_Write_String (1 :s 7C ]
+"165
+[; ;main.c: 165:                 affiche_modem = 254;
+[e = _affiche_modem -> -> 254 `i `uc ]
+"166
+[; ;main.c: 166:             }
+}
+[e :U 995 ]
+"167
+[; ;main.c: 167:             affiche_modem--;
+[e -- _affiche_modem -> -> 1 `i `uc ]
+"168
+[; ;main.c: 168:         }
+}
+[e :U 994 ]
+"170
+[; ;main.c: 170:         if (poeleStatus_OK)
+[e $ ! != -> _poeleStatus_OK `i -> 0 `i 996  ]
+"171
+[; ;main.c: 171:         {
+{
+"172
+[; ;main.c: 172:             if (affiche_poele == 0)
+[e $ ! == -> _affiche_poele `i -> 0 `i 997  ]
+"173
+[; ;main.c: 173:             {
+{
+"174
+[; ;main.c: 174:                 LCD_Cursor_Position(1, 1);
+[e ( _LCD_Cursor_Position (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"175
+[; ;main.c: 175:                 LCD_Write_String("Poele OK");
+[e ( _LCD_Write_String (1 :s 8C ]
+"176
+[; ;main.c: 176:                 affiche_poele = 254;
+[e = _affiche_poele -> -> 254 `i `uc ]
+"177
+[; ;main.c: 177:             }
+}
+[e :U 997 ]
+"178
+[; ;main.c: 178:             affiche_poele--;
+[e -- _affiche_poele -> -> 1 `i `uc ]
+"179
+[; ;main.c: 179:         }
+}
+[e $U 998  ]
+"180
+[; ;main.c: 180:         else
+[e :U 996 ]
+"181
+[; ;main.c: 181:         {
+{
+"182
+[; ;main.c: 182:             if (affiche_poele == 0)
+[e $ ! == -> _affiche_poele `i -> 0 `i 999  ]
+"183
+[; ;main.c: 183:             {
+{
+"184
+[; ;main.c: 184:                 LCD_Cursor_Position(1, 1);
+[e ( _LCD_Cursor_Position (2 , -> -> 1 `i `uc -> -> 1 `i `uc ]
+"185
+[; ;main.c: 185:                 LCD_Write_String("Poele KO");
+[e ( _LCD_Write_String (1 :s 9C ]
+"186
+[; ;main.c: 186:                 affiche_poele = 254;
+[e = _affiche_poele -> -> 254 `i `uc ]
+"187
+[; ;main.c: 187:             }
+}
+[e :U 999 ]
+"188
+[; ;main.c: 188:             affiche_poele--;
+[e -- _affiche_poele -> -> 1 `i `uc ]
+"189
+[; ;main.c: 189:         }
+}
+[e :U 998 ]
+"192
+[; ;main.c: 192:     }
 }
 [e :U 976 ]
 [e $U 977  ]
 [e :U 978 ]
-"150
-[; ;main.c: 150:     while (1);
-[e :U 993 ]
-[e :U 992 ]
-[e $U 993  ]
-[e :U 994 ]
-"151
-[; ;main.c: 151: }
+"194
+[; ;main.c: 194:     while (1);
+[e :U 1001 ]
+[e :U 1000 ]
+[e $U 1001  ]
+[e :U 1002 ]
+"195
+[; ;main.c: 195: }
 [e :UE 975 ]
 }
-"160
-[; ;main.c: 160: void Sys_Init(void)
+"205
+[; ;main.c: 205: void Sys_Init(void)
 [v _Sys_Init `(v ~T0 @X0 1 ef ]
-"161
-[; ;main.c: 161: {
+"206
+[; ;main.c: 206: {
 {
 [e :U _Sys_Init ]
 [f ]
-"172
-[; ;main.c: 172:     OSCCON1bits.NOSC = 0b110;
+"217
+[; ;main.c: 217:     OSCCON1bits.NOSC = 0b110;
 [e = . . _OSCCON1bits 0 1 -> -> 6 `i `uc ]
-"184
-[; ;main.c: 184:     OSCFRQbits.HFFRQ = 0b110;
+"229
+[; ;main.c: 229:     OSCFRQbits.HFFRQ = 0b110;
 [e = . . _OSCFRQbits 0 0 -> -> 6 `i `uc ]
-"199
-[; ;main.c: 199:     OSCCON1bits.NDIV = 0b0000;
+"244
+[; ;main.c: 244:     OSCCON1bits.NDIV = 0b0000;
 [e = . . _OSCCON1bits 0 0 -> -> 0 `i `uc ]
-"202
-[; ;main.c: 202:     ANSELA = 0;
+"247
+[; ;main.c: 247:     ANSELA = 0;
 [e = _ANSELA -> -> 0 `i `uc ]
-"203
-[; ;main.c: 203:     ANSELB = 0;
+"248
+[; ;main.c: 248:     ANSELB = 0;
 [e = _ANSELB -> -> 0 `i `uc ]
-"204
-[; ;main.c: 204:     ANSELC = 0;
+"249
+[; ;main.c: 249:     ANSELC = 0;
 [e = _ANSELC -> -> 0 `i `uc ]
-"206
-[; ;main.c: 206:     LATA = 0b10000000;
+"251
+[; ;main.c: 251:     LATA = 0b10000000;
 [e = _LATA -> -> 128 `i `uc ]
-"207
-[; ;main.c: 207:     LATB = 0b00000000;
+"252
+[; ;main.c: 252:     LATB = 0b00000000;
 [e = _LATB -> -> 0 `i `uc ]
-"208
-[; ;main.c: 208:     LATC = 0b00000000;
+"253
+[; ;main.c: 253:     LATC = 0b00000000;
 [e = _LATC -> -> 0 `i `uc ]
-"210
-[; ;main.c: 210:     TRISA = 0b00000000;
+"255
+[; ;main.c: 255:     TRISA = 0b00000000;
 [e = _TRISA -> -> 0 `i `uc ]
-"211
-[; ;main.c: 211:     TRISB = 0b00000010;
+"256
+[; ;main.c: 256:     TRISB = 0b00000010;
 [e = _TRISB -> -> 2 `i `uc ]
-"212
-[; ;main.c: 212:     TRISC = 0b01011111;
+"257
+[; ;main.c: 257:     TRISC = 0b01011111;
 [e = _TRISC -> -> 95 `i `uc ]
-"214
-[; ;main.c: 214:     WPUA = 0b00000000;
+"259
+[; ;main.c: 259:     WPUA = 0b00000000;
 [e = _WPUA -> -> 0 `i `uc ]
-"215
-[; ;main.c: 215:     WPUB = 0b00000000;
+"260
+[; ;main.c: 260:     WPUB = 0b00000000;
 [e = _WPUB -> -> 0 `i `uc ]
-"216
-[; ;main.c: 216:     WPUC = 0b00000111;
+"261
+[; ;main.c: 261:     WPUC = 0b00000111;
 [e = _WPUC -> -> 7 `i `uc ]
-"219
-[; ;main.c: 219:     RX1DTPPS = 0x16;
+"264
+[; ;main.c: 264:     RX1DTPPS = 0x16;
 [e = _RX1DTPPS -> -> 22 `i `uc ]
-"220
-[; ;main.c: 220:     RC7PPS = 0x0F;
+"265
+[; ;main.c: 265:     RC7PPS = 0x0F;
 [e = _RC7PPS -> -> 15 `i `uc ]
-"221
-[; ;main.c: 221:     RB0PPS = 0x11;
+"266
+[; ;main.c: 266:     RB0PPS = 0x11;
 [e = _RB0PPS -> -> 17 `i `uc ]
-"222
-[; ;main.c: 222:     RX2DTPPS = 0x09;
+"267
+[; ;main.c: 267:     RX2DTPPS = 0x09;
 [e = _RX2DTPPS -> -> 9 `i `uc ]
-"225
-[; ;main.c: 225:     SSP1CLKPPS = 0x13;
+"270
+[; ;main.c: 270:     SSP1CLKPPS = 0x13;
 [e = _SSP1CLKPPS -> -> 19 `i `uc ]
-"226
-[; ;main.c: 226:     RC3PPS = 0x15;
+"271
+[; ;main.c: 271:     RC3PPS = 0x15;
 [e = _RC3PPS -> -> 21 `i `uc ]
-"227
-[; ;main.c: 227:     SSP1DATPPS = 0x14;
+"272
+[; ;main.c: 272:     SSP1DATPPS = 0x14;
 [e = _SSP1DATPPS -> -> 20 `i `uc ]
-"228
-[; ;main.c: 228:     RC4PPS = 0x16;
+"273
+[; ;main.c: 273:     RC4PPS = 0x16;
 [e = _RC4PPS -> -> 22 `i `uc ]
-"231
-[; ;main.c: 231:     LCD_Init();
+"276
+[; ;main.c: 276:     LCD_Init();
 [e ( _LCD_Init ..  ]
-"234
-[; ;main.c: 234:     Uart1Init_DTE();
+"279
+[; ;main.c: 279:     Uart1Init_DTE();
 [e ( _Uart1Init_DTE ..  ]
-"235
-[; ;main.c: 235:     Uart2Init_modem();
+"280
+[; ;main.c: 280:     Uart2Init_modem();
 [e ( _Uart2Init_modem ..  ]
-"238
-[; ;main.c: 238:     INTERRUPT_Initialize();
+"283
+[; ;main.c: 283:     INTERRUPT_Initialize();
 [e ( _INTERRUPT_Initialize ..  ]
-"241
-[; ;main.c: 241: }
-[e :UE 995 ]
+"286
+[; ;main.c: 286: }
+[e :UE 1003 ]
 }
 [a 2C 82 69 65 68 89 0 ]
+[a 9C 80 111 101 108 101 32 75 79 0 ]
+[a 7C 77 79 68 69 77 32 75 79 0 ]
+[a 8C 80 111 101 108 101 32 79 75 0 ]
+[a 6C 77 79 68 69 77 32 79 75 0 ]
 [a 1C 76 79 65 68 73 78 71 0 ]
 [a 5C 83 52 0 ]
 [a 4C 65 84 43 67 80 77 83 63 13 10 0 ]

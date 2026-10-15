@@ -76,10 +76,14 @@
 void Sys_Init(void); // prototype fonction d'initialisation du systeme
 
 //========== Main Function Implementation ===========
+
 int main(void)
 {
-    char stringBuffer[12]; // buffer pour l'envois de string convertit depuis une variable (-XXXX.Xxxxx\0)
-    uint8_t affiche = 0; // quelle valeurs on affiche 
+    //    char stringBuffer[12]; // buffer pour l'envois de string convertit depuis une variable (-XXXX.Xxxxx\0)
+    uint8_t affiche_modem = 254; // quelle valeurs on affiche 
+    uint8_t affiche_poele = 254; // quelle valeurs on affiche 
+    poeleStatus_OK = false;
+    modemStatus_OK = false;
 
     bool negTemp = false; // indicateur de temperature negative
     // Removed: unused variable selfTest
@@ -120,22 +124,20 @@ int main(void)
     {
         if (S2 == PRESS)
         {
-            while(S2 == PRESS);
+            while (S2 == PRESS);
             Uart2SendString_modem("AT+CMGR=0\r\n");
         }
 
         if (S3 == PRESS)
         {
-            while(S3 == PRESS);
-            
+            while (S3 == PRESS);
+
             Uart2SendString_modem("AT+CPMS?\r\n");
-
         }
-
 
         if (S4 == PRESS)
         {
-            while(S4 == PRESS);
+            while (S4 == PRESS);
             SIM7600_SendSMS("S4");
         }
         // execution de commande
@@ -144,7 +146,49 @@ int main(void)
             Execute(); // execution de la commande set avec "Command"
         }
 
-       // __delay_ms(50);
+        if (modemStatus_OK)
+        {
+            if (affiche_modem == 0)
+            {
+                LCD_Cursor_Position(2, 1);
+                LCD_Write_String("MODEM OK");
+                affiche_modem = 254;
+            }
+            affiche_modem--;
+        }
+        else
+        {
+            if (affiche_modem == 0)
+            {
+                LCD_Cursor_Position(2, 1);
+                LCD_Write_String("MODEM KO");
+                affiche_modem = 254;
+            }
+            affiche_modem--;
+        }
+
+        if (poeleStatus_OK)
+        {
+            if (affiche_poele == 0)
+            {
+                LCD_Cursor_Position(1, 1);
+                LCD_Write_String("Poele OK");
+                affiche_poele = 254;
+            }
+            affiche_poele--;
+        }
+        else
+        {
+            if (affiche_poele == 0)
+            {
+                LCD_Cursor_Position(1, 1);
+                LCD_Write_String("Poele KO");
+                affiche_poele = 254;
+            }
+            affiche_poele--;
+        }
+
+        // __delay_ms(50);
     }
 
     while (1); // Garde-Fou  ->  Boucle infinie
@@ -157,6 +201,7 @@ int main(void)
 // Desc.: sous programme d'initialisation du systeme
 // Ver. Date: V00 20250519 Cr�ation (YYYYMMDD)	
 //---------------------------------------------------
+
 void Sys_Init(void)
 {
     // Oscillator 32MHz  

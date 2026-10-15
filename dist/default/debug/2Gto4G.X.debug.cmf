@@ -13,51 +13,51 @@
 %PSECTS
 $dist/default/debug\2Gto4G.X.debug.o
 cinit CODE 0 2C 2C 41 2 1
-text1 CODE 0 BB5 BB5 41 2 1
-text2 CODE 0 91E 91E C 2 1
-text3 CODE 0 912 912 C 2 1
-text4 CODE 0 B75 B75 40 2 1
-text5 CODE 0 946 946 E 2 1
-text6 CODE 0 8DC 8DC 6 2 1
-text7 CODE 0 690 690 A1 2 1
-text8 CODE 0 974 974 11 2 1
+text1 CODE 0 B24 B24 41 2 1
+text2 CODE 0 8BC 8BC C 2 1
+text3 CODE 0 8B0 8B0 C 2 1
+text4 CODE 0 AE4 AE4 40 2 1
+text5 CODE 0 8E4 8E4 E 2 1
+text6 CODE 0 874 874 6 2 1
+text7 CODE 0 C3F C3F A4 2 1
+text8 CODE 0 912 912 11 2 1
 text9 CODE 0 6D 6D 3B7 2 1
-text10 CODE 0 A3D A3D 19 2 1
-text11 CODE 0 964 964 10 2 1
-text12 CODE 0 C80 C80 5D 2 1
-text13 CODE 0 A24 A24 19 2 1
-text14 CODE 0 954 954 10 2 1
-text15 CODE 0 A0B A0B 19 2 1
-text16 CODE 0 906 906 C 2 1
-text17 CODE 0 A71 A71 1D 2 1
-text18 CODE 0 998 998 15 2 1
-text19 CODE 0 AB3 AB3 2A 2 1
-text20 CODE 0 B3F B3F 36 2 1
-text21 CODE 0 8F2 8F2 9 2 1
-text23 CODE 0 C3B C3B 45 2 1
-text24 CODE 0 8EA 8EA 8 2 1
-text25 CODE 0 E60 E60 1A0 2 1
-text26 CODE 0 BF6 BF6 45 2 1
-text27 CODE 0 8E2 8E2 8 2 1
-text28 CODE 0 CDD CDD 183 2 1
-text29 CODE 0 9DB 9DB 17 2 1
-text30 CODE 0 938 938 E 2 1
-text31 CODE 0 9C4 9C4 17 2 1
-text32 CODE 0 92A 92A E 2 1
-text33 CODE 0 ADD ADD 2F 2 1
+text10 CODE 0 9DB 9DB 19 2 1
+text11 CODE 0 902 902 10 2 1
+text12 CODE 0 772 772 5D 2 1
+text13 CODE 0 9C2 9C2 19 2 1
+text14 CODE 0 8F2 8F2 10 2 1
+text15 CODE 0 9A9 9A9 19 2 1
+text16 CODE 0 8A4 8A4 C 2 1
+text17 CODE 0 A0F A0F 1D 2 1
+text18 CODE 0 936 936 15 2 1
+text19 CODE 0 A51 A51 2A 2 1
+text20 CODE 0 AAE AAE 36 2 1
+text21 CODE 0 890 890 9 2 1
+text23 CODE 0 BAA BAA 45 2 1
+text24 CODE 0 888 888 8 2 1
+text25 CODE 0 E69 E69 197 2 1
+text26 CODE 0 B65 B65 45 2 1
+text27 CODE 0 880 880 8 2 1
+text28 CODE 0 CE3 CE3 186 2 1
+text29 CODE 0 979 979 17 2 1
+text30 CODE 0 8D6 8D6 E 2 1
+text31 CODE 0 962 962 17 2 1
+text32 CODE 0 8C8 8C8 E 2 1
+text33 CODE 0 7CF 7CF 2F 2 1
 text34 CODE 0 424 424 26C 2 1
-text35 CODE 0 9AD 9AD 17 2 1
-text36 CODE 0 8FB 8FB B 2 1
-text37 CODE 0 A56 A56 1B 2 1
-text38 CODE 0 985 985 13 2 1
-text39 CODE 0 A8E A8E 25 2 1
-text40 CODE 0 B0C B0C 33 2 1
-text41 CODE 0 7AA 7AA 50 2 1
-text42 CODE 0 9F2 9F2 19 2 1
-maintext CODE 0 731 731 79 2 1
+text35 CODE 0 94B 94B 17 2 1
+text36 CODE 0 899 899 B 2 1
+text37 CODE 0 9F4 9F4 1B 2 1
+text38 CODE 0 923 923 13 2 1
+text39 CODE 0 A2C A2C 25 2 1
+text40 CODE 0 A7B A7B 33 2 1
+text41 CODE 0 BEF BEF 50 2 1
+text42 CODE 0 990 990 19 2 1
+maintext CODE 0 690 690 E2 2 1
 cstackCOMMON COMMON 1 70 70 E 1 1
-cstackBANK0 BANK0 1 20 20 43 1 1
-cstackBANK1 BANK1 1 A0 A0 E 1 1
+cstackBANK0 BANK0 1 20 20 42 1 1
+cstackBANK1 BANK1 1 A0 A0 F 1 1
 stringtext1 STRCODE 0 1000 1000 50 2 1
 stringtext2 STRCODE 0 1050 1050 4E 2 1
 stringtext3 STRCODE 0 109E 109E 14 2 1
@@ -68,17 +68,17 @@ stringtext7 STRCODE 0 10E6 10E6 F 2 1
 stringtext8 STRCODE 0 10F5 10F5 E 2 1
 stringtext9 STRCODE 0 1103 1103 E 2 1
 intentry CODE 0 4 4 26 2 1
-bssBANK0 BANK0 1 63 63 C 1 1
-bssBANK1 BANK1 1 AE AE D 1 1
+bssBANK0 BANK0 1 62 62 D 1 1
+bssBANK1 BANK1 1 AF AF E 1 1
 bssBANK2 BANK2 1 120 120 40 1 1
 bssBANK3 BANK3 1 1A0 1A0 40 1 1
 bssBANK4 BANK4 1 220 220 40 1 1
 bssBANK5 BANK5 1 2A0 2A0 40 1 1
 idataBANK0 CODE 0 3 3 1 2 1
-idataBANK1 CODE 0 8DA 8DA 2 2 1
+idataBANK1 CODE 0 7FE 7FE 2 2 1
 dataBANK0 BANK0 1 6F 6F 1 1 1
-dataBANK1 BANK1 1 BB BB 2 1 1
-clrtext CODE 0 7FA 7FA 6 2 1
+dataBANK1 BANK1 1 BD BD 2 1 1
+clrtext CODE 0 87A 87A 6 2 1
 stringtext10 STRCODE 0 1111 1111 E 2 1
 stringtext11 STRCODE 0 111F 111F D 2 1
 stringtext12 STRCODE 0 112C 112C D 2 1
@@ -107,45 +107,48 @@ stringtext34 STRCODE 0 1220 1220 9 2 1
 stringtext35 STRCODE 0 1229 1229 9 2 1
 stringtext36 STRCODE 0 1232 1232 9 2 1
 stringtext37 STRCODE 0 123B 123B 9 2 1
-stringtext38 STRCODE 0 1244 1244 8 2 1
-stringtext39 STRCODE 0 124C 124C 8 2 1
-stringtext40 STRCODE 0 1254 1254 8 2 1
-stringtext41 STRCODE 0 125C 125C 8 2 1
-stringtext42 STRCODE 0 1264 1264 8 2 1
-stringtext43 STRCODE 0 126C 126C 8 2 1
-stringtext44 STRCODE 0 1274 1274 8 2 1
-stringtext45 STRCODE 0 127C 127C 8 2 1
-stringtext46 STRCODE 0 1284 1284 8 2 1
-stringtext47 STRCODE 0 128C 128C 8 2 1
-stringtext48 STRCODE 0 1294 1294 8 2 1
-stringtext49 STRCODE 0 129C 129C 7 2 1
-stringtext50 STRCODE 0 12A3 12A3 7 2 1
-stringtext51 STRCODE 0 12AA 12AA 7 2 1
-stringtext52 STRCODE 0 12B1 12B1 7 2 1
-stringtext53 STRCODE 0 12B8 12B8 7 2 1
-stringtext54 STRCODE 0 12BF 12BF 7 2 1
-stringtext55 STRCODE 0 12C6 12C6 7 2 1
-stringtext56 STRCODE 0 12CD 12CD 6 2 1
-stringtext57 STRCODE 0 12D3 12D3 6 2 1
-stringtext58 STRCODE 0 12D9 12D9 6 2 1
-stringtext59 STRCODE 0 12DF 12DF 6 2 1
-stringtext60 STRCODE 0 12E5 12E5 5 2 1
-stringtext61 STRCODE 0 12EA 12EA 5 2 1
-stringtext62 STRCODE 0 12EF 12EF 5 2 1
-stringtext63 STRCODE 0 12F4 12F4 5 2 1
-stringtext64 STRCODE 0 12F9 12F9 5 2 1
-stringtext65 STRCODE 0 12FE 12FE 5 2 1
-stringtext66 STRCODE 0 1303 1303 4 2 1
-stringtext67 STRCODE 0 1307 1307 4 2 1
-stringtext68 STRCODE 0 130B 130B 4 2 1
-stringtext69 STRCODE 0 130F 130F 4 2 1
-stringtext70 STRCODE 0 1313 1313 4 2 1
-stringtext71 STRCODE 0 1317 1317 4 2 1
-stringtext72 STRCODE 0 131B 131B 3 2 1
-stringtext73 STRCODE 0 131E 131E 3 2 1
-stringtext74 STRCODE 0 1321 1321 3 2 1
+stringtext38 STRCODE 0 1244 1244 9 2 1
+stringtext39 STRCODE 0 124D 124D 9 2 1
+stringtext40 STRCODE 0 1256 1256 9 2 1
+stringtext41 STRCODE 0 125F 125F 9 2 1
+stringtext42 STRCODE 0 1268 1268 8 2 1
+stringtext43 STRCODE 0 1270 1270 8 2 1
+stringtext44 STRCODE 0 1278 1278 8 2 1
+stringtext45 STRCODE 0 1280 1280 8 2 1
+stringtext46 STRCODE 0 1288 1288 8 2 1
+stringtext47 STRCODE 0 1290 1290 8 2 1
+stringtext48 STRCODE 0 1298 1298 8 2 1
+stringtext49 STRCODE 0 12A0 12A0 8 2 1
+stringtext50 STRCODE 0 12A8 12A8 8 2 1
+stringtext51 STRCODE 0 12B0 12B0 8 2 1
+stringtext52 STRCODE 0 12B8 12B8 8 2 1
+stringtext53 STRCODE 0 12C0 12C0 7 2 1
+stringtext54 STRCODE 0 12C7 12C7 7 2 1
+stringtext55 STRCODE 0 12CE 12CE 7 2 1
+stringtext56 STRCODE 0 12D5 12D5 7 2 1
+stringtext57 STRCODE 0 12DC 12DC 7 2 1
+stringtext58 STRCODE 0 12E3 12E3 7 2 1
+stringtext59 STRCODE 0 12EA 12EA 7 2 1
+stringtext60 STRCODE 0 12F1 12F1 6 2 1
+stringtext61 STRCODE 0 12F7 12F7 6 2 1
+stringtext62 STRCODE 0 12FD 12FD 6 2 1
+stringtext63 STRCODE 0 1303 1303 6 2 1
+stringtext64 STRCODE 0 1309 1309 5 2 1
+stringtext65 STRCODE 0 130E 130E 5 2 1
+stringtext66 STRCODE 0 1313 1313 5 2 1
+stringtext67 STRCODE 0 1318 1318 5 2 1
+stringtext68 STRCODE 0 131D 131D 5 2 1
+stringtext69 STRCODE 0 1322 1322 5 2 1
+stringtext70 STRCODE 0 1327 1327 4 2 1
+stringtext71 STRCODE 0 132B 132B 4 2 1
+stringtext72 STRCODE 0 132F 132F 4 2 1
+stringtext73 STRCODE 0 1333 1333 4 2 1
+stringtext74 STRCODE 0 1337 1337 4 2 1
+stringtext75 STRCODE 0 133B 133B 4 2 1
+stringtext76 STRCODE 0 133F 133F 3 2 1
+stringtext77 STRCODE 0 1342 1342 3 2 1
 config CONFIG 4 8007 8007 5 2 1
-$C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
+$C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
 reset_vec CODE 0 0 0 3 2 1
 end_init CODE 0 2A 2A 2 2 1
 config CONFIG 4 8007 8007 5 2 1
@@ -155,7 +158,7 @@ config CONFIG 4 8007 8007 5 2 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM BD-EF 1
+RAM BF-EF 1
 RAM 160-16F 1
 RAM 1E0-1EF 1
 RAM 260-26F 1
@@ -180,7 +183,7 @@ RAM B20-B6F 1
 RAM BA0-BEF 1
 RAM C20-C6F 1
 RAM CA0-CBF 1
-BANK1 BD-EF 1
+BANK1 BF-EF 1
 BANK2 160-16F 1
 BANK3 1E0-1EF 1
 BANK4 260-26F 1
@@ -189,10 +192,10 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 800-8D9 2
-CONST 1324-3FFF 2
-ENTRY 800-8D9 2
-ENTRY 1324-3FFF 2
+CONST 800-873 2
+CONST 1345-3FFF 2
+ENTRY 800-873 2
+ENTRY 1345-3FFF 2
 IDLOC 8000-8003 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -248,8 +251,8 @@ SFR60 1E00-1E6F 1
 SFR61 1E80-1EEF 1
 SFR62 1F00-1F6F 1
 SFR63 1F80-1FEF 1
-CODE 800-8D9 2
-CODE 1324-3FFF 2
+CODE 800-873 2
+CODE 1345-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
 SFR2 100-11F 1
@@ -277,10 +280,10 @@ BANK23 BA0-BEF 1
 BANK24 C20-C6F 1
 BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
-STRCODE 800-8D9 2
-STRCODE 1324-3FFF 2
-STRING 800-8D9 2
-STRING 1324-3FFF 2
+STRCODE 800-873 2
+STRCODE 1345-3FFF 2
+STRING 800-873 2
+STRING 1345-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -295,55 +298,55 @@ STRING 1324-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/debug\2Gto4G.X.debug.o
-2C cinit CODE >6451:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-2C cinit CODE >6454:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-2C cinit CODE >6572:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-2F cinit CODE >6573:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-30 cinit CODE >6577:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-31 cinit CODE >6578:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-34 cinit CODE >6579:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-35 cinit CODE >6580:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-38 cinit CODE >6581:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-39 cinit CODE >6598:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-3A cinit CODE >6599:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-3B cinit CODE >6600:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-3C cinit CODE >6601:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-3D cinit CODE >6602:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-3E cinit CODE >6603:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-41 cinit CODE >6607:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-42 cinit CODE >6608:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-43 cinit CODE >6609:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-44 cinit CODE >6610:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-45 cinit CODE >6611:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-46 cinit CODE >6612:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-49 cinit CODE >6616:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-4A cinit CODE >6617:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-4B cinit CODE >6618:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-4C cinit CODE >6619:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-4D cinit CODE >6620:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-4E cinit CODE >6621:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-51 cinit CODE >6625:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-52 cinit CODE >6626:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-53 cinit CODE >6627:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-54 cinit CODE >6628:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-55 cinit CODE >6629:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-56 cinit CODE >6630:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-59 cinit CODE >6634:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-5A cinit CODE >6635:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-5B cinit CODE >6636:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-5C cinit CODE >6637:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-5D cinit CODE >6638:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-5E cinit CODE >6639:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-61 cinit CODE >6643:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-62 cinit CODE >6644:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-63 cinit CODE >6645:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-64 cinit CODE >6646:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-65 cinit CODE >6647:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-66 cinit CODE >6648:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-69 cinit CODE >6654:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-69 cinit CODE >6656:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-6A cinit CODE >6657:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-6B cinit CODE >6658:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
+2C cinit CODE >6503:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+2C cinit CODE >6506:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+2C cinit CODE >6630:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+2F cinit CODE >6631:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+30 cinit CODE >6635:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+31 cinit CODE >6636:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+34 cinit CODE >6637:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+35 cinit CODE >6638:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+38 cinit CODE >6639:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+39 cinit CODE >6656:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+3A cinit CODE >6657:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+3B cinit CODE >6658:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+3C cinit CODE >6659:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+3D cinit CODE >6660:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+3E cinit CODE >6661:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+41 cinit CODE >6665:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+42 cinit CODE >6666:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+43 cinit CODE >6667:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+44 cinit CODE >6668:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+45 cinit CODE >6669:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+46 cinit CODE >6670:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+49 cinit CODE >6674:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+4A cinit CODE >6675:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+4B cinit CODE >6676:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+4C cinit CODE >6677:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+4D cinit CODE >6678:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+4E cinit CODE >6679:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+51 cinit CODE >6683:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+52 cinit CODE >6684:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+53 cinit CODE >6685:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+54 cinit CODE >6686:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+55 cinit CODE >6687:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+56 cinit CODE >6688:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+59 cinit CODE >6692:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+5A cinit CODE >6693:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+5B cinit CODE >6694:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+5C cinit CODE >6695:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+5D cinit CODE >6696:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+5E cinit CODE >6697:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+61 cinit CODE >6701:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+62 cinit CODE >6702:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+63 cinit CODE >6703:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+64 cinit CODE >6704:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+65 cinit CODE >6705:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+66 cinit CODE >6706:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+69 cinit CODE >6712:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+69 cinit CODE >6714:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+6A cinit CODE >6715:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+6B cinit CODE >6716:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
 4 intentry CODE >76:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
 A intentry CODE >79:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
 E intentry CODE >84:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
@@ -353,79 +356,79 @@ E intentry CODE >84:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2G
 24 intentry CODE >93:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
 25 intentry CODE >95:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
 28 intentry CODE >98:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-9F2 text42 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-9F2 text42 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-9F6 text42 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-9F7 text42 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-9FB text42 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-A04 text42 CODE >11:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-A0A text42 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
-7AA text41 CODE >3:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
-7AA text41 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
-7AF text41 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
-7B9 text41 CODE >6:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
-7E7 text41 CODE >6:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
-7EB text41 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
-7F7 text41 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
-7F9 text41 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
-B0C text40 CODE >157:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B0D text40 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B0E text40 CODE >163:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B11 text40 CODE >166:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B15 text40 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B16 text40 CODE >169:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B16 text40 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B1A text40 CODE >173:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B1B text40 CODE >174:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B1B text40 CODE >176:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B1F text40 CODE >178:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B20 text40 CODE >179:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B20 text40 CODE >181:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B24 text40 CODE >183:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B25 text40 CODE >186:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B29 text40 CODE >188:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B2C text40 CODE >189:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B2E text40 CODE >191:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B32 text40 CODE >192:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B34 text40 CODE >193:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B38 text40 CODE >194:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B3A text40 CODE >195:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B3E text40 CODE >196:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A8E text39 CODE >327:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A8F text39 CODE >329:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A91 text39 CODE >331:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A9B text39 CODE >332:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A9F text39 CODE >334:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AA3 text39 CODE >336:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AA8 text39 CODE >338:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AB0 text39 CODE >341:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AB2 text39 CODE >342:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-985 text38 CODE >206:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-986 text38 CODE >208:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-990 text38 CODE >209:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-994 text38 CODE >211:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-997 text38 CODE >212:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A56 text37 CODE >258:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A57 text37 CODE >260:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A5B text37 CODE >262:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A5D text37 CODE >264:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A5F text37 CODE >266:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A65 text37 CODE >268:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A67 text37 CODE >269:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A67 text37 CODE >271:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A6A text37 CODE >273:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A6E text37 CODE >275:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A70 text37 CODE >276:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-8FB text36 CODE >222:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-8FB text36 CODE >224:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-8FF text36 CODE >226:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-905 text36 CODE >227:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9AD text35 CODE >310:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9AD text35 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9AE text35 CODE >314:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9B6 text35 CODE >315:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9BA text35 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9C3 text35 CODE >317:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+990 text42 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+990 text42 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+994 text42 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+995 text42 CODE >9:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+999 text42 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+9A2 text42 CODE >11:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+9A8 text42 CODE >12:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strlen.c
+BEF text41 CODE >3:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
+BEF text41 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
+BF4 text41 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
+BFE text41 CODE >6:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
+C2C text41 CODE >6:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
+C30 text41 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
+C3C text41 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
+C3E text41 CODE >8:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strncmp.c
+A7B text40 CODE >157:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A7C text40 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A7D text40 CODE >163:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A80 text40 CODE >166:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A84 text40 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A85 text40 CODE >169:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A85 text40 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A89 text40 CODE >173:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A8A text40 CODE >174:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A8A text40 CODE >176:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A8E text40 CODE >178:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A8F text40 CODE >179:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A8F text40 CODE >181:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A93 text40 CODE >183:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A94 text40 CODE >186:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A98 text40 CODE >188:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A9B text40 CODE >189:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A9D text40 CODE >191:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AA1 text40 CODE >192:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AA3 text40 CODE >193:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AA7 text40 CODE >194:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AA9 text40 CODE >195:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AAD text40 CODE >196:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A2C text39 CODE >327:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A2D text39 CODE >329:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A2F text39 CODE >331:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A39 text39 CODE >332:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A3D text39 CODE >334:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A41 text39 CODE >336:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A46 text39 CODE >338:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A4E text39 CODE >341:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A50 text39 CODE >342:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+923 text38 CODE >206:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+924 text38 CODE >208:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+92E text38 CODE >209:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+932 text38 CODE >211:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+935 text38 CODE >212:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9F4 text37 CODE >258:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9F5 text37 CODE >260:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9F9 text37 CODE >262:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9FB text37 CODE >264:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9FD text37 CODE >266:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A03 text37 CODE >268:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A05 text37 CODE >269:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A05 text37 CODE >271:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A08 text37 CODE >273:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A0C text37 CODE >275:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A0E text37 CODE >276:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+899 text36 CODE >222:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+899 text36 CODE >224:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+89D text36 CODE >226:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+8A3 text36 CODE >227:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+94B text35 CODE >310:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+94B text35 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+94C text35 CODE >314:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+954 text35 CODE >315:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+958 text35 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+961 text35 CODE >317:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
 424 text34 CODE >47:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
 424 text34 CODE >49:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
 427 text34 CODE >54:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
@@ -494,296 +497,296 @@ A70 text37 CODE >276:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2
 685 text34 CODE >145:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
 68C text34 CODE >148:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
 68F text34 CODE >149:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
-ADD text33 CODE >3:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
-ADD text33 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
-AF0 text33 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
-AFD text33 CODE >6:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
-B09 text33 CODE >6:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
-B0B text33 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
-92A text32 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-92B text32 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-930 text32 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-933 text32 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-937 text32 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-9C4 text31 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-9C4 text31 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-9C5 text31 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-9CD text31 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-9D1 text31 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-9DA text31 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-938 text30 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-939 text30 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-93E text30 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-941 text30 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-945 text30 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-9DB text29 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-9DB text29 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-9DC text29 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-9E4 text29 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-9E8 text29 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-9F1 text29 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-CDD text28 CODE >150:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CDD text28 CODE >152:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CDD text28 CODE >155:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CEB text28 CODE >159:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CFE text28 CODE >162:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D11 text28 CODE >164:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D18 text28 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D19 text28 CODE >166:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D2C text28 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D33 text28 CODE >169:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D34 text28 CODE >170:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D47 text28 CODE >172:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D4E text28 CODE >173:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D4F text28 CODE >174:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D62 text28 CODE >176:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D69 text28 CODE >177:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D6A text28 CODE >178:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D7D text28 CODE >180:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D84 text28 CODE >181:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D85 text28 CODE >182:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D98 text28 CODE >184:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-D9F text28 CODE >185:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DA0 text28 CODE >186:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DAF text28 CODE >188:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DB6 text28 CODE >189:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DB7 text28 CODE >190:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DCA text28 CODE >192:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DD1 text28 CODE >193:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DD2 text28 CODE >194:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DE5 text28 CODE >196:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DEC text28 CODE >197:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-DED text28 CODE >198:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E00 text28 CODE >200:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7CF text33 CODE >3:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
+7CF text33 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
+7E2 text33 CODE >5:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
+7EF text33 CODE >6:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
+7FB text33 CODE >6:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
+7FD text33 CODE >7:C:\Program Files\Microchip\xc8\v3.10\pic\sources\c99\common\strcmp.c
+8C8 text32 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8C9 text32 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8CE text32 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8D1 text32 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8D5 text32 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+962 text31 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+962 text31 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+963 text31 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+96B text31 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+96F text31 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+978 text31 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8D6 text30 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8D7 text30 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8DC text30 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8DF text30 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8E3 text30 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+979 text29 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+979 text29 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+97A text29 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+982 text29 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+986 text29 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+98F text29 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+CE3 text28 CODE >152:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CE3 text28 CODE >154:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CE3 text28 CODE >157:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CF1 text28 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D04 text28 CODE >164:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D17 text28 CODE >166:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D1E text28 CODE >167:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D1F text28 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D32 text28 CODE >170:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D39 text28 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D3A text28 CODE >172:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D4D text28 CODE >174:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D54 text28 CODE >175:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D55 text28 CODE >176:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D68 text28 CODE >178:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D6F text28 CODE >179:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D70 text28 CODE >180:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D83 text28 CODE >182:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D8A text28 CODE >183:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D8B text28 CODE >184:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+D9E text28 CODE >186:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DA5 text28 CODE >187:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DA6 text28 CODE >188:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DB5 text28 CODE >190:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DBC text28 CODE >191:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DBD text28 CODE >192:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DD0 text28 CODE >194:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DD7 text28 CODE >195:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DD8 text28 CODE >196:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DEB text28 CODE >198:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DF2 text28 CODE >199:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+DF3 text28 CODE >200:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
 E06 text28 CODE >202:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E0B text28 CODE >204:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E12 text28 CODE >212:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E15 text28 CODE >213:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E16 text28 CODE >216:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E1D text28 CODE >223:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E1F text28 CODE >224:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E21 text28 CODE >251:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E28 text28 CODE >252:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E30 text28 CODE >255:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E43 text28 CODE >257:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E45 text28 CODE >258:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E46 text28 CODE >260:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E4D text28 CODE >261:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E4E text28 CODE >264:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E56 text28 CODE >269:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E5D text28 CODE >272:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E5F text28 CODE >274:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E5F text28 CODE >276:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-8E2 text27 CODE >102:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-8E2 text27 CODE >104:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-8E7 text27 CODE >106:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-8E9 text27 CODE >107:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-BF6 text26 CODE >133:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-BF6 text26 CODE >138:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-BF8 text26 CODE >140:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-BFD text26 CODE >142:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C00 text26 CODE >144:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C02 text26 CODE >145:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C03 text26 CODE >148:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C08 text26 CODE >150:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C0E text26 CODE >152:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C14 text26 CODE >154:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C19 text26 CODE >156:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C1C text26 CODE >159:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C1E text26 CODE >160:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C20 text26 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C21 text26 CODE >162:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C27 text26 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C29 text26 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C2D text26 CODE >167:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C36 text26 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C37 text26 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C38 text26 CODE >172:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-C3A text26 CODE >175:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-E60 text25 CODE >286:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E60 text25 CODE >288:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E60 text25 CODE >290:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E6E text25 CODE >292:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E74 text25 CODE >295:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E8D text25 CODE >297:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E94 text25 CODE >298:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E97 text25 CODE >299:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-E98 text25 CODE >300:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EB1 text25 CODE >302:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EB3 text25 CODE >303:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EB4 text25 CODE >304:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-ED7 text25 CODE >306:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EDC text25 CODE >308:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EDD text25 CODE >309:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EDE text25 CODE >310:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EE3 text25 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EE4 text25 CODE >315:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EEE text25 CODE >317:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-EF1 text25 CODE >320:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F0A text25 CODE >322:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F0B text25 CODE >323:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F0D text25 CODE >324:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F0E text25 CODE >325:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F27 text25 CODE >327:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F28 text25 CODE >328:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F2A text25 CODE >329:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F2B text25 CODE >330:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F44 text25 CODE >332:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F46 text25 CODE >333:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F48 text25 CODE >334:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F49 text25 CODE >336:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F62 text25 CODE >338:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F64 text25 CODE >339:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F65 text25 CODE >341:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F7E text25 CODE >343:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F81 text25 CODE >344:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F82 text25 CODE >346:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-F9C text25 CODE >351:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FAF text25 CODE >353:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FB2 text25 CODE >355:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FB4 text25 CODE >357:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FBB text25 CODE >358:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FC3 text25 CODE >360:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FC9 text25 CODE >361:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FCA text25 CODE >362:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FD2 text25 CODE >364:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FD4 text25 CODE >365:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FDC text25 CODE >367:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FEC text25 CODE >369:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FF4 text25 CODE >375:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FFB text25 CODE >378:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FFD text25 CODE >380:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FFD text25 CODE >382:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-FFF text25 CODE >384:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-8EA text24 CODE >102:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-8EA text24 CODE >104:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-8EF text24 CODE >106:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-8F1 text24 CODE >107:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C3B text23 CODE >133:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C3B text23 CODE >139:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C3D text23 CODE >141:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C42 text23 CODE >143:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C45 text23 CODE >145:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C47 text23 CODE >146:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C48 text23 CODE >149:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C4D text23 CODE >151:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C53 text23 CODE >153:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C59 text23 CODE >155:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C5E text23 CODE >157:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C61 text23 CODE >160:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C63 text23 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C65 text23 CODE >162:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C66 text23 CODE >163:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C6C text23 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C6E text23 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C72 text23 CODE >167:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C7B text23 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C7C text23 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C7D text23 CODE >172:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C7F text23 CODE >175:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-8F2 text21 CODE >352:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-8F4 text21 CODE >354:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-8F6 text21 CODE >354:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-8F8 text21 CODE >354:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-8FA text21 CODE >355:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B3F text20 CODE >157:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B41 text20 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B42 text20 CODE >163:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B45 text20 CODE >166:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B49 text20 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B4A text20 CODE >169:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B4A text20 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B4E text20 CODE >173:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B4F text20 CODE >174:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B4F text20 CODE >176:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B53 text20 CODE >178:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B54 text20 CODE >179:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B54 text20 CODE >181:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B58 text20 CODE >183:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B59 text20 CODE >186:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B5E text20 CODE >188:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B61 text20 CODE >189:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B64 text20 CODE >191:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B68 text20 CODE >192:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B6A text20 CODE >193:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B6E text20 CODE >194:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B70 text20 CODE >195:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B74 text20 CODE >196:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AB3 text19 CODE >327:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AB5 text19 CODE >329:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AB7 text19 CODE >331:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AC2 text19 CODE >332:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AC7 text19 CODE >334:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-ACB text19 CODE >336:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-AD1 text19 CODE >338:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-ADA text19 CODE >341:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-ADC text19 CODE >342:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-998 text18 CODE >206:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-99A text18 CODE >208:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9A4 text18 CODE >209:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9A9 text18 CODE >211:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-9AC text18 CODE >212:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A71 text17 CODE >258:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A73 text17 CODE >260:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A77 text17 CODE >262:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A79 text17 CODE >264:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A7C text17 CODE >266:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A82 text17 CODE >268:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A84 text17 CODE >269:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A84 text17 CODE >271:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A87 text17 CODE >273:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A8B text17 CODE >275:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A8D text17 CODE >276:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-906 text16 CODE >222:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-906 text16 CODE >224:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-90A text16 CODE >226:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-911 text16 CODE >227:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A0B text15 CODE >310:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A0B text15 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A0C text15 CODE >314:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A14 text15 CODE >315:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A19 text15 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-A23 text15 CODE >317:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-954 text14 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-956 text14 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-95B text14 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-95F text14 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-963 text14 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-A24 text13 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-A24 text13 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-A25 text13 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-A2D text13 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-A32 text13 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-A3C text13 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-C80 text12 CODE >112:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-C80 text12 CODE >114:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-C83 text12 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-C8B text12 CODE >118:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-C91 text12 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-C92 text12 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-C9A text12 CODE >123:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CA2 text12 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CAA text12 CODE >125:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CB3 text12 CODE >128:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CBB text12 CODE >130:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CBF text12 CODE >132:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CC1 text12 CODE >133:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CCA text12 CODE >135:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CD0 text12 CODE >136:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CD1 text12 CODE >137:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CDA text12 CODE >139:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-CDC text12 CODE >140:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-964 text11 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-966 text11 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-96B text11 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-96F text11 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-973 text11 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-A3D text10 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-A3D text10 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-A3E text10 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-A46 text10 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-A4B text10 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-A55 text10 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+E09 text28 CODE >203:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E0F text28 CODE >205:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E14 text28 CODE >207:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E1B text28 CODE >215:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E1E text28 CODE >216:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E1F text28 CODE >219:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E26 text28 CODE >226:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E28 text28 CODE >227:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E2A text28 CODE >254:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E31 text28 CODE >255:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E39 text28 CODE >258:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E4C text28 CODE >260:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E4E text28 CODE >261:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E4F text28 CODE >263:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E56 text28 CODE >264:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E57 text28 CODE >267:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E5F text28 CODE >272:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E66 text28 CODE >275:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E68 text28 CODE >277:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E68 text28 CODE >279:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+880 text27 CODE >102:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+880 text27 CODE >104:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+885 text27 CODE >106:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+887 text27 CODE >107:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B65 text26 CODE >133:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B65 text26 CODE >138:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B67 text26 CODE >140:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B6C text26 CODE >142:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B6F text26 CODE >144:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B71 text26 CODE >145:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B72 text26 CODE >148:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B77 text26 CODE >150:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B7D text26 CODE >152:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B83 text26 CODE >154:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B88 text26 CODE >156:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B8B text26 CODE >159:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B8D text26 CODE >160:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B8F text26 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B90 text26 CODE >162:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B96 text26 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B98 text26 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+B9C text26 CODE >167:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+BA5 text26 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+BA6 text26 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+BA7 text26 CODE >172:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+BA9 text26 CODE >175:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+E69 text25 CODE >289:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E69 text25 CODE >291:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E69 text25 CODE >293:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E77 text25 CODE >295:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E7D text25 CODE >298:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E96 text25 CODE >300:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+E9D text25 CODE >301:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EA0 text25 CODE >302:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EA1 text25 CODE >303:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EBA text25 CODE >305:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EBC text25 CODE >306:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EBD text25 CODE >307:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EE0 text25 CODE >309:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EE5 text25 CODE >311:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EE6 text25 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EE7 text25 CODE >313:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EEC text25 CODE >315:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EED text25 CODE >318:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EF7 text25 CODE >320:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+EFA text25 CODE >323:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F13 text25 CODE >325:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F14 text25 CODE >326:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F16 text25 CODE >327:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F17 text25 CODE >328:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F30 text25 CODE >330:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F31 text25 CODE >331:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F33 text25 CODE >332:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F34 text25 CODE >333:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F4D text25 CODE >335:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F4F text25 CODE >336:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F51 text25 CODE >337:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F52 text25 CODE >339:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F6B text25 CODE >341:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F6D text25 CODE >342:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F6E text25 CODE >344:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F87 text25 CODE >346:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F8A text25 CODE >347:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+F8B text25 CODE >349:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FA5 text25 CODE >354:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FB8 text25 CODE >356:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FBB text25 CODE >360:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FC2 text25 CODE >361:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FCA text25 CODE >363:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FD0 text25 CODE >364:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FD1 text25 CODE >365:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FD9 text25 CODE >367:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FDB text25 CODE >369:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FDC text25 CODE >370:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FEC text25 CODE >372:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FF4 text25 CODE >378:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FFB text25 CODE >381:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FFD text25 CODE >383:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FFD text25 CODE >385:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+FFF text25 CODE >387:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+888 text24 CODE >102:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+888 text24 CODE >104:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+88D text24 CODE >106:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+88F text24 CODE >107:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BAA text23 CODE >133:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BAA text23 CODE >139:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BAC text23 CODE >141:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BB1 text23 CODE >143:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BB4 text23 CODE >145:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BB6 text23 CODE >146:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BB7 text23 CODE >149:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BBC text23 CODE >151:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BC2 text23 CODE >153:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BC8 text23 CODE >155:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BCD text23 CODE >157:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BD0 text23 CODE >160:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BD2 text23 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BD4 text23 CODE >162:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BD5 text23 CODE >163:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BDB text23 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BDD text23 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BE1 text23 CODE >167:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BEA text23 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BEB text23 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BEC text23 CODE >172:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+BEE text23 CODE >175:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+890 text21 CODE >352:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+892 text21 CODE >354:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+894 text21 CODE >354:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+896 text21 CODE >354:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+898 text21 CODE >355:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AAE text20 CODE >157:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AB0 text20 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AB1 text20 CODE >163:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AB4 text20 CODE >166:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AB8 text20 CODE >168:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AB9 text20 CODE >169:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AB9 text20 CODE >171:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+ABD text20 CODE >173:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+ABE text20 CODE >174:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+ABE text20 CODE >176:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AC2 text20 CODE >178:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AC3 text20 CODE >179:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AC3 text20 CODE >181:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AC7 text20 CODE >183:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AC8 text20 CODE >186:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+ACD text20 CODE >188:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AD0 text20 CODE >189:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AD3 text20 CODE >191:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AD7 text20 CODE >192:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AD9 text20 CODE >193:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+ADD text20 CODE >194:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+ADF text20 CODE >195:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AE3 text20 CODE >196:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A51 text19 CODE >327:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A53 text19 CODE >329:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A55 text19 CODE >331:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A60 text19 CODE >332:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A65 text19 CODE >334:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A69 text19 CODE >336:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A6F text19 CODE >338:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A78 text19 CODE >341:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A7A text19 CODE >342:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+936 text18 CODE >206:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+938 text18 CODE >208:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+942 text18 CODE >209:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+947 text18 CODE >211:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+94A text18 CODE >212:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A0F text17 CODE >258:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A11 text17 CODE >260:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A15 text17 CODE >262:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A17 text17 CODE >264:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A1A text17 CODE >266:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A20 text17 CODE >268:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A22 text17 CODE >269:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A22 text17 CODE >271:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A25 text17 CODE >273:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A29 text17 CODE >275:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+A2B text17 CODE >276:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+8A4 text16 CODE >222:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+8A4 text16 CODE >224:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+8A8 text16 CODE >226:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+8AF text16 CODE >227:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9A9 text15 CODE >310:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9A9 text15 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9AA text15 CODE >314:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9B2 text15 CODE >315:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9B7 text15 CODE >312:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+9C1 text15 CODE >317:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+8F2 text14 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8F4 text14 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8F9 text14 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8FD text14 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+901 text14 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+9C2 text13 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+9C2 text13 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+9C3 text13 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+9CB text13 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+9D0 text13 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+9DA text13 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+772 text12 CODE >114:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+772 text12 CODE >116:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+775 text12 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+77D text12 CODE >120:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+783 text12 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+784 text12 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+78C text12 CODE >125:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+794 text12 CODE >126:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+79C text12 CODE >127:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7A5 text12 CODE >130:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7AD text12 CODE >132:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7B1 text12 CODE >134:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7B3 text12 CODE >135:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7BC text12 CODE >137:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7C2 text12 CODE >138:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7C3 text12 CODE >139:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7CC text12 CODE >141:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+7CE text12 CODE >142:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+902 text11 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+904 text11 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+909 text11 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+90D text11 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+911 text11 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+9DB text10 CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+9DB text10 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+9DC text10 CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+9E4 text10 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+9E9 text10 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+9F3 text10 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
 6D text9 CODE >159:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
 6D text9 CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
 6F text9 CODE >165:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
@@ -980,160 +983,183 @@ FC text9 CODE >227:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gt
 419 text9 CODE >556:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
 421 text9 CODE >559:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
 423 text9 CODE >560:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\commands.c
-974 text8 CODE >237:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-976 text8 CODE >239:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-97B text8 CODE >241:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-97F text8 CODE >242:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-980 text8 CODE >246:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-984 text8 CODE >248:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-690 text7 CODE >50:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-690 text7 CODE >52:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-693 text7 CODE >53:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-696 text7 CODE >54:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-69E text7 CODE >56:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-69F text7 CODE >58:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6AB text7 CODE >59:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6AE text7 CODE >60:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6B3 text7 CODE >62:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6BA text7 CODE >63:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6BD text7 CODE >56:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6CD text7 CODE >67:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6D2 text7 CODE >70:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6D5 text7 CODE >71:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6DD text7 CODE >72:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6E4 text7 CODE >73:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6EC text7 CODE >75:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6ED text7 CODE >79:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6EF text7 CODE >80:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6F1 text7 CODE >81:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6F2 text7 CODE >82:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6F3 text7 CODE >84:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-6FB text7 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-701 text7 CODE >86:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-702 text7 CODE >88:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-70A text7 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-710 text7 CODE >90:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-711 text7 CODE >92:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-719 text7 CODE >93:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-71F text7 CODE >94:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-720 text7 CODE >96:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-728 text7 CODE >97:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-72E text7 CODE >98:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-72F text7 CODE >100:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-730 text7 CODE >102:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
-8DC text6 CODE >118:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-8DC text6 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-8E1 text6 CODE >120:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-946 text5 CODE >56:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-946 text5 CODE >59:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-948 text5 CODE >61:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-950 text5 CODE >65:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-952 text5 CODE >66:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-953 text5 CODE >67:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
-B75 text4 CODE >109:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B75 text4 CODE >113:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B7E text4 CODE >115:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B80 text4 CODE >116:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B81 text4 CODE >118:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B85 text4 CODE >120:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B8E text4 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B92 text4 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B96 text4 CODE >126:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B9A text4 CODE >128:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-B9E text4 CODE >131:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-BA2 text4 CODE >134:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-BA6 text4 CODE >137:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-BAA text4 CODE >140:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-BAE text4 CODE >143:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-BB2 text4 CODE >145:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-BB4 text4 CODE >146:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
-912 text3 CODE >24:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-912 text3 CODE >30:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-914 text3 CODE >35:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-915 text3 CODE >41:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-916 text3 CODE >48:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-917 text3 CODE >53:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-918 text3 CODE >60:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-919 text3 CODE >66:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-91A text3 CODE >71:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-91B text3 CODE >73:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-91D text3 CODE >74:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
-91E text2 CODE >24:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-91E text2 CODE >30:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-920 text2 CODE >35:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-921 text2 CODE >41:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-922 text2 CODE >48:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-923 text2 CODE >53:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-924 text2 CODE >60:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-925 text2 CODE >66:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-926 text2 CODE >71:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-927 text2 CODE >73:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-929 text2 CODE >74:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
-BB5 text1 CODE >160:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BB5 text1 CODE >172:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BBA text1 CODE >184:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BBE text1 CODE >199:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BC0 text1 CODE >202:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BC2 text1 CODE >203:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BC3 text1 CODE >204:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BC4 text1 CODE >206:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BC7 text1 CODE >207:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BC8 text1 CODE >208:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BC9 text1 CODE >210:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BCA text1 CODE >211:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BCC text1 CODE >212:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BCE text1 CODE >214:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BD0 text1 CODE >215:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BD1 text1 CODE >216:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BD3 text1 CODE >219:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BD6 text1 CODE >220:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BD9 text1 CODE >221:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BDB text1 CODE >222:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BDE text1 CODE >225:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BE0 text1 CODE >226:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BE3 text1 CODE >227:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BE6 text1 CODE >228:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BE9 text1 CODE >231:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BEC text1 CODE >234:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BEF text1 CODE >235:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BF2 text1 CODE >238:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-BF5 text1 CODE >241:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-731 maintext CODE >79:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-731 maintext CODE >82:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-731 maintext CODE >84:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-733 maintext CODE >86:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-736 maintext CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-739 maintext CODE >90:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-73D maintext CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-741 maintext CODE >94:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-744 maintext CODE >95:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-74C maintext CODE >97:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-758 maintext CODE >100:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-759 maintext CODE >103:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-75A maintext CODE >106:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-75C maintext CODE >107:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-75D maintext CODE >110:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-760 maintext CODE >113:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-763 maintext CODE >114:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-76B maintext CODE >121:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-770 maintext CODE >123:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-774 maintext CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-77C maintext CODE >127:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-781 maintext CODE >129:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-785 maintext CODE >131:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-78D maintext CODE >136:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-792 maintext CODE >138:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-796 maintext CODE >139:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-79E maintext CODE >142:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-7A4 maintext CODE >144:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
-7FA clrtext CODE >6587:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-7FA clrtext CODE >6588:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-7FB clrtext CODE >6589:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-7FB clrtext CODE >6590:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-7FC clrtext CODE >6591:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-7FD clrtext CODE >6592:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-7FE clrtext CODE >6593:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
-7FF clrtext CODE >6594:C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_1.s
+912 text8 CODE >237:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+914 text8 CODE >239:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+919 text8 CODE >241:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+91D text8 CODE >242:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+91E text8 CODE >246:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+922 text8 CODE >248:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+C3F text7 CODE >51:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C3F text7 CODE >53:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C42 text7 CODE >54:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C45 text7 CODE >55:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C4D text7 CODE >57:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C4E text7 CODE >59:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C5A text7 CODE >60:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C5D text7 CODE >61:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C62 text7 CODE >63:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C69 text7 CODE >64:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C6C text7 CODE >57:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C7C text7 CODE >68:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C81 text7 CODE >71:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C84 text7 CODE >72:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C8C text7 CODE >73:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C93 text7 CODE >74:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C9B text7 CODE >76:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C9C text7 CODE >80:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+C9E text7 CODE >81:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CA0 text7 CODE >82:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CA1 text7 CODE >83:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CA2 text7 CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CAA text7 CODE >86:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CB0 text7 CODE >87:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CB1 text7 CODE >89:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CB9 text7 CODE >90:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CBF text7 CODE >91:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CC0 text7 CODE >93:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CC8 text7 CODE >94:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CCE text7 CODE >95:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CCF text7 CODE >97:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CD7 text7 CODE >98:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CDD text7 CODE >99:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CDE text7 CODE >101:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CDF text7 CODE >102:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+CE2 text7 CODE >104:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\SIM7600.c
+874 text6 CODE >118:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+874 text6 CODE >119:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+879 text6 CODE >120:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+8E4 text5 CODE >56:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+8E4 text5 CODE >59:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+8E6 text5 CODE >61:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+8EE text5 CODE >65:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+8F0 text5 CODE >66:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+8F1 text5 CODE >67:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\interrupt.c
+AE4 text4 CODE >109:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AE4 text4 CODE >113:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AED text4 CODE >115:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AEF text4 CODE >116:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AF0 text4 CODE >118:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AF4 text4 CODE >120:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+AFD text4 CODE >122:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B01 text4 CODE >124:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B05 text4 CODE >126:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B09 text4 CODE >128:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B0D text4 CODE >131:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B11 text4 CODE >134:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B15 text4 CODE >137:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B19 text4 CODE >140:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B1D text4 CODE >143:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B21 text4 CODE >145:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+B23 text4 CODE >146:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\LCD.c
+8B0 text3 CODE >24:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B0 text3 CODE >30:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B2 text3 CODE >35:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B3 text3 CODE >41:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B4 text3 CODE >48:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B5 text3 CODE >53:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B6 text3 CODE >60:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B7 text3 CODE >66:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B8 text3 CODE >71:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8B9 text3 CODE >73:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8BB text3 CODE >74:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART1_DTE.c
+8BC text2 CODE >24:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8BC text2 CODE >30:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8BE text2 CODE >35:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8BF text2 CODE >41:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8C0 text2 CODE >48:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8C1 text2 CODE >53:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8C2 text2 CODE >60:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8C3 text2 CODE >66:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8C4 text2 CODE >71:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8C5 text2 CODE >73:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+8C7 text2 CODE >74:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\UART2_modem.c
+B24 text1 CODE >205:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B24 text1 CODE >217:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B29 text1 CODE >229:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B2D text1 CODE >244:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B2F text1 CODE >247:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B31 text1 CODE >248:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B32 text1 CODE >249:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B33 text1 CODE >251:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B36 text1 CODE >252:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B37 text1 CODE >253:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B38 text1 CODE >255:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B39 text1 CODE >256:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B3B text1 CODE >257:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B3D text1 CODE >259:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B3F text1 CODE >260:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B40 text1 CODE >261:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B42 text1 CODE >264:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B45 text1 CODE >265:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B48 text1 CODE >266:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B4A text1 CODE >267:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B4D text1 CODE >270:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B4F text1 CODE >271:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B52 text1 CODE >272:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B55 text1 CODE >273:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B58 text1 CODE >276:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B5B text1 CODE >279:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B5E text1 CODE >280:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B61 text1 CODE >283:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+B64 text1 CODE >286:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+690 maintext CODE >80:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+690 maintext CODE >83:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+693 maintext CODE >84:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+695 maintext CODE >85:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+696 maintext CODE >86:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+697 maintext CODE >90:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+69A maintext CODE >93:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+69D maintext CODE >94:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6A1 maintext CODE >95:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6A5 maintext CODE >98:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6A8 maintext CODE >99:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6B0 maintext CODE >101:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6BC maintext CODE >104:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6BD maintext CODE >107:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6BE maintext CODE >110:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6C0 maintext CODE >111:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6C1 maintext CODE >114:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6C4 maintext CODE >117:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6C7 maintext CODE >118:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6CF maintext CODE >125:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6D4 maintext CODE >127:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6D8 maintext CODE >128:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6E0 maintext CODE >131:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6E5 maintext CODE >133:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6E9 maintext CODE >135:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6F1 maintext CODE >138:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6F6 maintext CODE >140:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+6FA maintext CODE >141:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+702 maintext CODE >144:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+708 maintext CODE >146:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+70B maintext CODE >149:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+711 maintext CODE >151:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+716 maintext CODE >153:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+71C maintext CODE >154:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+724 maintext CODE >155:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+727 maintext CODE >157:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+729 maintext CODE >158:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+72A maintext CODE >161:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+72F maintext CODE >163:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+735 maintext CODE >164:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+73E maintext CODE >170:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+743 maintext CODE >172:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+748 maintext CODE >174:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+74E maintext CODE >175:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+756 maintext CODE >176:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+759 maintext CODE >178:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+75B maintext CODE >179:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+75C maintext CODE >182:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+761 maintext CODE >184:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+767 maintext CODE >185:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2Gto4G.X\main.c
+87A clrtext CODE >6645:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+87A clrtext CODE >6646:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+87B clrtext CODE >6647:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+87B clrtext CODE >6648:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+87C clrtext CODE >6649:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+87D clrtext CODE >6650:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+87E clrtext CODE >6651:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
+87F clrtext CODE >6652:C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1147,24 +1173,26 @@ BF5 text1 CODE >241:D:\olive\OneDrive\_MyHouse\Mayen\_PoeleModem\fw\2g4g_2026\2G
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
 ___latbits 3 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_Uart1Write_DTE 1270 0 CODE 0 text32 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_Uart1Write_DTE 11AC 0 CODE 0 text32 dist/default/debug\2Gto4G.X.debug.o
 __LdataBANK0 0 0 ABS 0 dataBANK0 -
 __LdataBANK1 0 0 ABS 0 dataBANK1 -
-__Hspace_0 1324 0 ABS 0 - -
+__Hspace_0 1345 0 ABS 0 - -
 __Hspace_1 2E0 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 10013 0 ABS 0 - -
-_Uart2Write_modem 12A8 0 CODE 0 text14 dist/default/debug\2Gto4G.X.debug.o
+_Uart2Write_modem 11E4 0 CODE 0 text14 dist/default/debug\2Gto4G.X.debug.o
 __HidataBANK0 0 0 ABS 0 idataBANK0 -
 __HidataBANK1 0 0 ABS 0 idataBANK1 -
 Uart2SendString_modem@str A1 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-_LCD_Write_Char 1330 0 CODE 0 text18 dist/default/debug\2Gto4G.X.debug.o
+_LCD_Write_Char 126C 0 CODE 0 text18 dist/default/debug\2Gto4G.X.debug.o
 _Execute DA 0 CODE 0 text9 dist/default/debug\2Gto4G.X.debug.o
+main@affiche_modem AD 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 LCD_Cursor_Position@ligne A6 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
+main@affiche_poele AE 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 __Heeprom_data 0 0 EEDATA 3 eeprom_data -
-__end_of_INTERRUPT_Initialize 12A8 0 CODE 0 text5 dist/default/debug\2Gto4G.X.debug.o
-_LCD_Cursor_Position 14E2 0 CODE 0 text17 dist/default/debug\2Gto4G.X.debug.o
+__end_of_INTERRUPT_Initialize 11E4 0 CODE 0 text5 dist/default/debug\2Gto4G.X.debug.o
+_LCD_Cursor_Position 141E 0 CODE 0 text17 dist/default/debug\2Gto4G.X.debug.o
 __L__absolute__ 0 0 ABS 0 __absolute__ -
 __Hstrings 0 0 ABS 0 strings -
 _LATA 18 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
@@ -1173,13 +1201,13 @@ _LATC 1A 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _WPUA 1F39 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _WPUB 1F44 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _WPUC 1F4F 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-___sp 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-_main E62 0 CODE 0 maintext dist/default/debug\2Gto4G.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+_main D20 0 CODE 0 maintext dist/default/debug\2Gto4G.X.debug.o
 btemp 7E 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-___stack_hi 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-___stack_lo 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-_LCD_Cursor 12E8 0 CODE 0 text8 dist/default/debug\2Gto4G.X.debug.o
-start 54 0 CODE 0 init C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
+___stack_hi 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+_LCD_Cursor 1224 0 CODE 0 text8 dist/default/debug\2Gto4G.X.debug.o
+start 54 0 CODE 0 init C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
 __Hstringtext10 0 0 ABS 0 stringtext10 -
 __Hstringtext11 0 0 ABS 0 stringtext11 -
 __Hstringtext12 0 0 ABS 0 stringtext12 -
@@ -1246,65 +1274,68 @@ __Hstringtext72 0 0 ABS 0 stringtext72 -
 __Hstringtext73 0 0 ABS 0 stringtext73 -
 __Hstringtext74 0 0 ABS 0 stringtext74 -
 __Hstringtext75 0 0 ABS 0 stringtext75 -
-__end_of_LCD_Write_Quartet 16EA 0 CODE 0 text20 dist/default/debug\2Gto4G.X.debug.o
+__Hstringtext76 0 0 ABS 0 stringtext76 -
+__Hstringtext77 0 0 ABS 0 stringtext77 -
+__Hstringtext78 0 0 ABS 0 stringtext78 -
+__end_of_LCD_Write_Quartet 15C8 0 CODE 0 text20 dist/default/debug\2Gto4G.X.debug.o
 _OSCFRQbits 893 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _RC2STAbits A1D 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-_Uart1SendString_DTE 147A 0 CODE 0 text10 dist/default/debug\2Gto4G.X.debug.o
+_Uart1SendString_DTE 13B6 0 CODE 0 text10 dist/default/debug\2Gto4G.X.debug.o
 __LidataBANK0 0 0 ABS 0 idataBANK0 -
 __LidataBANK1 0 0 ABS 0 idataBANK1 -
-_LCD_Init 16EA 0 CODE 0 text4 dist/default/debug\2Gto4G.X.debug.o
+_LCD_Init 15C8 0 CODE 0 text4 dist/default/debug\2Gto4G.X.debug.o
 __Hpowerup 0 0 CODE 0 powerup -
 LCD_Write_String@str A5 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 LCD_Cursor_Position@colonne A5 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-i1_LCD_Write_Quartet 1618 0 CODE 0 text40 dist/default/debug\2Gto4G.X.debug.o
+i1_LCD_Write_Quartet 14F6 0 CODE 0 text40 dist/default/debug\2Gto4G.X.debug.o
 i1LCD_Write_Quartet@data 72 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart2Read_modem 11E4 0 CODE 0 text24 dist/default/debug\2Gto4G.X.debug.o
-__end_of_LCD_Init 176A 0 CODE 0 text4 dist/default/debug\2Gto4G.X.debug.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-DTE_CommandsReceive@F7554 220 0 BANK4 1 bssBANK4 dist/default/debug\2Gto4G.X.debug.o
-__end_of_LCD_Write_Char 135A 0 CODE 0 text18 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart2Read_modem 1120 0 CODE 0 text24 dist/default/debug\2Gto4G.X.debug.o
+__end_of_LCD_Init 1648 0 CODE 0 text4 dist/default/debug\2Gto4G.X.debug.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+DTE_CommandsReceive@F7556 220 0 BANK4 1 bssBANK4 dist/default/debug\2Gto4G.X.debug.o
+__end_of_LCD_Write_Char 1296 0 CODE 0 text18 dist/default/debug\2Gto4G.X.debug.o
 i1LCD_Write_Char@caractere 74 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 wtemp0 7E 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __Hfunctab 0 0 ENTRY 0 functab -
 _RC1STAbits 11D 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-i1_LCD_Command 151C 0 CODE 0 text39 dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart1Init_DTE 123C 0 CODE 0 text3 dist/default/debug\2Gto4G.X.debug.o
+i1_LCD_Command 1458 0 CODE 0 text39 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart1Init_DTE 1178 0 CODE 0 text3 dist/default/debug\2Gto4G.X.debug.o
 i1LCD_Cursor_Position@colonne 75 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 __Hclrtext 0 0 ABS 0 clrtext -
-_DTE_CommandsReceive 19BA 0 CODE 0 text28 dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart2Write_modem 12C8 0 CODE 0 text14 dist/default/debug\2Gto4G.X.debug.o
-__end_of_LCD_Cursor 130A 0 CODE 0 text8 dist/default/debug\2Gto4G.X.debug.o
+_DTE_CommandsReceive 19C6 0 CODE 0 text28 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart2Write_modem 1204 0 CODE 0 text14 dist/default/debug\2Gto4G.X.debug.o
+__end_of_LCD_Cursor 1246 0 CODE 0 text8 dist/default/debug\2Gto4G.X.debug.o
 _ANSELA 1F38 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _ANSELB 1F43 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _ANSELC 1F4E 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-i1_LCD_Clear 11F6 0 CODE 0 text36 dist/default/debug\2Gto4G.X.debug.o
-_Uart1ISR_DTE 17EC 0 CODE 0 text26 dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_LCD_Cursor_Position 14E2 0 CODE 0 text37 dist/default/debug\2Gto4G.X.debug.o
+i1_LCD_Clear 1132 0 CODE 0 text36 dist/default/debug\2Gto4G.X.debug.o
+_Uart1ISR_DTE 16CA 0 CODE 0 text26 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_LCD_Cursor_Position 141E 0 CODE 0 text37 dist/default/debug\2Gto4G.X.debug.o
 __end_of_INTERRUPT_InterruptManager 54 0 CODE 0 intentry dist/default/debug\2Gto4G.X.debug.o
 Execute@state A8 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-_commandFrom BC 0 BANK1 1 dataBANK1 dist/default/debug\2Gto4G.X.debug.o
-_Sys_Init 176A 0 CODE 0 text1 dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_Uart1SendString_DTE 13B6 0 CODE 0 text31 dist/default/debug\2Gto4G.X.debug.o
+_commandFrom BE 0 BANK1 1 dataBANK1 dist/default/debug\2Gto4G.X.debug.o
+_Sys_Init 1648 0 CODE 0 text1 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_Uart1SendString_DTE 12F2 0 CODE 0 text31 dist/default/debug\2Gto4G.X.debug.o
 __Lmaintext 0 0 ABS 0 maintext -
-__end_of_LCD_Cursor_Position 151C 0 CODE 0 text17 dist/default/debug\2Gto4G.X.debug.o
-_Uart2Read_modem 11D4 0 CODE 0 text24 dist/default/debug\2Gto4G.X.debug.o
-i1_LCD_Cursor_Position 14AC 0 CODE 0 text37 dist/default/debug\2Gto4G.X.debug.o
-_LCD_Write_Quartet 167E 0 CODE 0 text20 dist/default/debug\2Gto4G.X.debug.o
-__end_of_Sys_Init 17EC 0 CODE 0 text1 dist/default/debug\2Gto4G.X.debug.o
+__end_of_LCD_Cursor_Position 1458 0 CODE 0 text17 dist/default/debug\2Gto4G.X.debug.o
+_Uart2Read_modem 1110 0 CODE 0 text24 dist/default/debug\2Gto4G.X.debug.o
+i1_LCD_Cursor_Position 13E8 0 CODE 0 text37 dist/default/debug\2Gto4G.X.debug.o
+_LCD_Write_Quartet 155C 0 CODE 0 text20 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Sys_Init 16CA 0 CODE 0 text1 dist/default/debug\2Gto4G.X.debug.o
 ?_strcmp 70 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 ?_strlen 70 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-___stackhi 0 0 ABS 0 - C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
+___stackhi 0 0 ABS 0 - C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
 i1Uart1Write_DTE@data 70 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart1SendString_DTE 14AC 0 CODE 0 text10 dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart2Init_modem 1254 0 CODE 0 text2 dist/default/debug\2Gto4G.X.debug.o
-i1_Uart1SendString_DTE 1388 0 CODE 0 text31 dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_LCD_Write_String 1388 0 CODE 0 text35 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart1SendString_DTE 13E8 0 CODE 0 text10 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart2Init_modem 1190 0 CODE 0 text2 dist/default/debug\2Gto4G.X.debug.o
+i1_Uart1SendString_DTE 12C4 0 CODE 0 text31 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_LCD_Write_String 12C4 0 CODE 0 text35 dist/default/debug\2Gto4G.X.debug.o
 Command@command 7B 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 __Lstringtext10 0 0 ABS 0 stringtext10 -
 __Lstringtext11 0 0 ABS 0 stringtext11 -
@@ -1372,12 +1403,15 @@ __Lstringtext72 0 0 ABS 0 stringtext72 -
 __Lstringtext73 0 0 ABS 0 stringtext73 -
 __Lstringtext74 0 0 ABS 0 stringtext74 -
 __Lstringtext75 0 0 ABS 0 stringtext75 -
-_modemStart 65 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+__Lstringtext76 0 0 ABS 0 stringtext76 -
+__Lstringtext77 0 0 ABS 0 stringtext77 -
+__Lstringtext78 0 0 ABS 0 stringtext78 -
+_modemStart 64 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
 start_initialization 58 0 CODE 0 cinit dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_LCD_Write_Quartet 167E 0 CODE 0 text40 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_LCD_Write_Quartet 155C 0 CODE 0 text40 dist/default/debug\2Gto4G.X.debug.o
 i1LCD_Write_String@str 75 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-_Uart2ISR_modem 1876 0 CODE 0 text23 dist/default/debug\2Gto4G.X.debug.o
-_startMode 68 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+_Uart2ISR_modem 1754 0 CODE 0 text23 dist/default/debug\2Gto4G.X.debug.o
+_startMode 67 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
 _Command 848 0 CODE 0 text34 dist/default/debug\2Gto4G.X.debug.o
 _RB0PPS 1F18 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _RC1REG 119 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
@@ -1385,24 +1419,25 @@ _RC2REG A19 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _RC3PPS 1F23 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _RC4PPS 1F24 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _RC7PPS 1F27 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-_smsStartPoeleLu 69 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart1ISR_DTE 1876 0 CODE 0 text26 dist/default/debug\2Gto4G.X.debug.o
-clear_ram0 FF4 0 CODE 0 clrtext dist/default/debug\2Gto4G.X.debug.o
+_smsStartPoeleLu 68 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart1ISR_DTE 1754 0 CODE 0 text26 dist/default/debug\2Gto4G.X.debug.o
+clear_ram0 10F4 0 CODE 0 clrtext dist/default/debug\2Gto4G.X.debug.o
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
 __pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-__end_of_LCD_Command 15BA 0 CODE 0 text19 dist/default/debug\2Gto4G.X.debug.o
+__end_of_LCD_Command 14F6 0 CODE 0 text19 dist/default/debug\2Gto4G.X.debug.o
 i1LCD_Cursor_Position@position_curseur 77 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
+_modemStatus_OK BC 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
 _TX1REG 11A 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _TX2REG A1A 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _executionFlag BA 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
-__end_of_DTE_CommandsReceive 1CC0 0 CODE 0 text28 dist/default/debug\2Gto4G.X.debug.o
-i1_LCD_Write_String 135A 0 CODE 0 text35 dist/default/debug\2Gto4G.X.debug.o
+__end_of_DTE_CommandsReceive 1CD2 0 CODE 0 text28 dist/default/debug\2Gto4G.X.debug.o
+i1_LCD_Write_String 1296 0 CODE 0 text35 dist/default/debug\2Gto4G.X.debug.o
 _bufferUart1 120 0 BANK2 1 bssBANK2 dist/default/debug\2Gto4G.X.debug.o
 _bufferUart2 1A0 0 BANK3 1 bssBANK3 dist/default/debug\2Gto4G.X.debug.o
-_Uart1Write_DTE 12C8 0 CODE 0 text11 dist/default/debug\2Gto4G.X.debug.o
-_Uart2Init_modem 123C 0 CODE 0 text2 dist/default/debug\2Gto4G.X.debug.o
-__end_of_LCD_Clear 1224 0 CODE 0 text16 dist/default/debug\2Gto4G.X.debug.o
-___int_sp 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
+_Uart1Write_DTE 1204 0 CODE 0 text11 dist/default/debug\2Gto4G.X.debug.o
+_Uart2Init_modem 1178 0 CODE 0 text2 dist/default/debug\2Gto4G.X.debug.o
+__end_of_LCD_Clear 1160 0 CODE 0 text16 dist/default/debug\2Gto4G.X.debug.o
+___int_sp 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
 __Hbank0 0 0 ABS 0 bank0 -
 __Hbank1 0 0 ABS 0 bank1 -
 __Hbank2 0 0 ABS 0 bank2 -
@@ -1415,9 +1450,9 @@ __Hbank8 0 0 ABS 0 bank8 -
 __Hbank9 0 0 ABS 0 bank9 -
 __Hcinit DA 0 CODE 0 cinit -
 _INT_DefaultInterruptHandler 0 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-__end_of_strcmp 1618 0 CODE 0 text33 dist/default/debug\2Gto4G.X.debug.o
-__end_of_strlen 1416 0 CODE 0 text42 dist/default/debug\2Gto4G.X.debug.o
-_Uart1Read_DTE 11C4 0 CODE 0 text27 dist/default/debug\2Gto4G.X.debug.o
+__end_of_strcmp FFC 0 CODE 0 text33 dist/default/debug\2Gto4G.X.debug.o
+__end_of_strlen 1352 0 CODE 0 text42 dist/default/debug\2Gto4G.X.debug.o
+_Uart1Read_DTE 1100 0 CODE 0 text27 dist/default/debug\2Gto4G.X.debug.o
 __Hsfr10 0 0 ABS 0 sfr10 -
 __Hsfr11 0 0 ABS 0 sfr11 -
 __Hsfr12 0 0 ABS 0 sfr12 -
@@ -1473,7 +1508,7 @@ __Hsfr61 0 0 ABS 0 sfr61 -
 __Hsfr62 0 0 ABS 0 sfr62 -
 __Hsfr63 0 0 ABS 0 sfr63 -
 __Hstack 0 0 STACK 2 stack -
-_smsStartPoele 6A 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+_smsStartPoele 69 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
 __Hbank10 0 0 ABS 0 bank10 -
 __Hbank11 0 0 ABS 0 bank11 -
 __Hbank12 0 0 ABS 0 bank12 -
@@ -1530,13 +1565,13 @@ __Hbank62 0 0 BANK62 1 bank62 -
 __Hbank63 0 0 BANK63 1 bank63 -
 __Hbigram 0 0 ABS 0 bigram -
 __Hmaintext 0 0 ABS 0 maintext -
-_smsReadMode 6C 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+_smsReadMode 6B 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
 __Hcommon 0 0 ABS 0 common -
 __Hconfig 10018 0 CONFIG 4 config -
 SIM7600_SendSMS@text A4 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_LCD_Command 1566 0 CODE 0 text39 dist/default/debug\2Gto4G.X.debug.o
-Uart2ISR_modem@indexBufferUart2 64 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart2ISR_modem 1900 0 CODE 0 text23 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_LCD_Command 14A2 0 CODE 0 text39 dist/default/debug\2Gto4G.X.debug.o
+Uart2ISR_modem@indexBufferUart2 63 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart2ISR_modem 17DE 0 CODE 0 text23 dist/default/debug\2Gto4G.X.debug.o
 __Lbank0 0 0 ABS 0 bank0 -
 __Lbank1 0 0 ABS 0 bank1 -
 __Lbank2 0 0 ABS 0 bank2 -
@@ -1605,15 +1640,15 @@ __Lsfr61 0 0 ABS 0 sfr61 -
 __Lsfr62 0 0 ABS 0 sfr62 -
 __Lsfr63 0 0 ABS 0 sfr63 -
 __Lstack 0 0 STACK 2 stack -
-_currentCommand BB 0 BANK1 1 dataBANK1 dist/default/debug\2Gto4G.X.debug.o
-_LCD_Clear 120C 0 CODE 0 text16 dist/default/debug\2Gto4G.X.debug.o
-i1_LCD_Write_Char 130A 0 CODE 0 text38 dist/default/debug\2Gto4G.X.debug.o
+_currentCommand BD 0 BANK1 1 dataBANK1 dist/default/debug\2Gto4G.X.debug.o
+_LCD_Clear 1148 0 CODE 0 text16 dist/default/debug\2Gto4G.X.debug.o
+i1_LCD_Write_Char 1246 0 CODE 0 text38 dist/default/debug\2Gto4G.X.debug.o
 _PORTAbits C 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _PORTBbits D 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _PORTCbits E 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-__end_of_strncmp FF4 0 CODE 0 text41 dist/default/debug\2Gto4G.X.debug.o
+__end_of_strncmp 187E 0 CODE 0 text41 dist/default/debug\2Gto4G.X.debug.o
 _INTCONbits B 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-_INTERRUPT_Initialize 128C 0 CODE 0 text5 dist/default/debug\2Gto4G.X.debug.o
+_INTERRUPT_Initialize 11C8 0 CODE 0 text5 dist/default/debug\2Gto4G.X.debug.o
 __Habs1 0 0 ABS 0 abs1 -
 __Hcode 0 0 ABS 0 code -
 __Hheap 0 0 HEAP 7 heap -
@@ -1684,65 +1719,67 @@ __pstringtext35 2452 0 STRCODE 0 stringtext35 dist/default/debug\2Gto4G.X.debug.
 __pstringtext36 2464 0 STRCODE 0 stringtext36 dist/default/debug\2Gto4G.X.debug.o
 __pstringtext37 2476 0 STRCODE 0 stringtext37 dist/default/debug\2Gto4G.X.debug.o
 __pstringtext38 2488 0 STRCODE 0 stringtext38 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext39 2498 0 STRCODE 0 stringtext39 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext40 24A8 0 STRCODE 0 stringtext40 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext41 24B8 0 STRCODE 0 stringtext41 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext42 24C8 0 STRCODE 0 stringtext42 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext43 24D8 0 STRCODE 0 stringtext43 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext44 24E8 0 STRCODE 0 stringtext44 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext45 24F8 0 STRCODE 0 stringtext45 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext46 2508 0 STRCODE 0 stringtext46 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext47 2518 0 STRCODE 0 stringtext47 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext48 2528 0 STRCODE 0 stringtext48 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext49 2538 0 STRCODE 0 stringtext49 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext50 2546 0 STRCODE 0 stringtext50 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext51 2554 0 STRCODE 0 stringtext51 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext52 2562 0 STRCODE 0 stringtext52 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext53 2570 0 STRCODE 0 stringtext53 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext54 257E 0 STRCODE 0 stringtext54 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext55 258C 0 STRCODE 0 stringtext55 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext56 259A 0 STRCODE 0 stringtext56 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext57 25A6 0 STRCODE 0 stringtext57 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext58 25B2 0 STRCODE 0 stringtext58 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext59 25BE 0 STRCODE 0 stringtext59 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext60 25CA 0 STRCODE 0 stringtext60 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext61 25D4 0 STRCODE 0 stringtext61 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext62 25DE 0 STRCODE 0 stringtext62 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext63 25E8 0 STRCODE 0 stringtext63 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext64 25F2 0 STRCODE 0 stringtext64 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext65 25FC 0 STRCODE 0 stringtext65 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext66 2606 0 STRCODE 0 stringtext66 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext67 260E 0 STRCODE 0 stringtext67 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext68 2616 0 STRCODE 0 stringtext68 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext69 261E 0 STRCODE 0 stringtext69 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext70 2626 0 STRCODE 0 stringtext70 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext71 262E 0 STRCODE 0 stringtext71 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext72 2636 0 STRCODE 0 stringtext72 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext73 263C 0 STRCODE 0 stringtext73 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext74 2642 0 STRCODE 0 stringtext74 dist/default/debug\2Gto4G.X.debug.o
-__pstringtext75 0 0 STRCODE 0 stringtext75 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext39 249A 0 STRCODE 0 stringtext39 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext40 24AC 0 STRCODE 0 stringtext40 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext41 24BE 0 STRCODE 0 stringtext41 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext42 24D0 0 STRCODE 0 stringtext42 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext43 24E0 0 STRCODE 0 stringtext43 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext44 24F0 0 STRCODE 0 stringtext44 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext45 2500 0 STRCODE 0 stringtext45 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext46 2510 0 STRCODE 0 stringtext46 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext47 2520 0 STRCODE 0 stringtext47 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext48 2530 0 STRCODE 0 stringtext48 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext49 2540 0 STRCODE 0 stringtext49 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext50 2550 0 STRCODE 0 stringtext50 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext51 2560 0 STRCODE 0 stringtext51 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext52 2570 0 STRCODE 0 stringtext52 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext53 2580 0 STRCODE 0 stringtext53 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext54 258E 0 STRCODE 0 stringtext54 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext55 259C 0 STRCODE 0 stringtext55 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext56 25AA 0 STRCODE 0 stringtext56 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext57 25B8 0 STRCODE 0 stringtext57 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext58 25C6 0 STRCODE 0 stringtext58 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext59 25D4 0 STRCODE 0 stringtext59 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext60 25E2 0 STRCODE 0 stringtext60 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext61 25EE 0 STRCODE 0 stringtext61 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext62 25FA 0 STRCODE 0 stringtext62 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext63 2606 0 STRCODE 0 stringtext63 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext64 2612 0 STRCODE 0 stringtext64 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext65 261C 0 STRCODE 0 stringtext65 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext66 2626 0 STRCODE 0 stringtext66 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext67 2630 0 STRCODE 0 stringtext67 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext68 263A 0 STRCODE 0 stringtext68 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext69 2644 0 STRCODE 0 stringtext69 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext70 264E 0 STRCODE 0 stringtext70 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext71 2656 0 STRCODE 0 stringtext71 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext72 265E 0 STRCODE 0 stringtext72 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext73 2666 0 STRCODE 0 stringtext73 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext74 266E 0 STRCODE 0 stringtext74 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext75 2676 0 STRCODE 0 stringtext75 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext76 267E 0 STRCODE 0 stringtext76 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext77 2684 0 STRCODE 0 stringtext77 dist/default/debug\2Gto4G.X.debug.o
+__pstringtext78 0 0 STRCODE 0 stringtext78 dist/default/debug\2Gto4G.X.debug.o
 __LcstackBANK0 0 0 ABS 0 cstackBANK0 -
 __LcstackBANK1 0 0 ABS 0 cstackBANK1 -
 int$flags 7E 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
-__S0 1324 0 ABS 0 - -
+__S0 1345 0 ABS 0 - -
 __S1 2E0 0 ABS 0 - -
-__end_of_Uart2SendString_modem 147A 0 CODE 0 text13 dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart1Write_DTE 12E8 0 CODE 0 text11 dist/default/debug\2Gto4G.X.debug.o
-main@negTemp AD 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart2SendString_modem 13B6 0 CODE 0 text13 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart1Write_DTE 1224 0 CODE 0 text11 dist/default/debug\2Gto4G.X.debug.o
 SIM7600_Init@cptStart AA 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-_LCD_Write_String 1416 0 CODE 0 text15 dist/default/debug\2Gto4G.X.debug.o
+_LCD_Write_String 1352 0 CODE 0 text15 dist/default/debug\2Gto4G.X.debug.o
 LCD_BackLight@backLight A0 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-_Uart2SendString_modem 1448 0 CODE 0 text13 dist/default/debug\2Gto4G.X.debug.o
+_Uart2SendString_modem 1384 0 CODE 0 text13 dist/default/debug\2Gto4G.X.debug.o
 __Lintentry 8 0 CODE 0 intentry -
 strcmp@l 70 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 strcmp@r 71 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
 strlen@a 73 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 strlen@s 70 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-_SIM7600_CommandsReceive 1CC0 0 CODE 0 text25 dist/default/debug\2Gto4G.X.debug.o
+_SIM7600_CommandsReceive 1CD2 0 CODE 0 text25 dist/default/debug\2Gto4G.X.debug.o
 __pdataBANK0 6F 0 BANK0 1 dataBANK0 dist/default/debug\2Gto4G.X.debug.o
-__pdataBANK1 BB 0 BANK1 1 dataBANK1 dist/default/debug\2Gto4G.X.debug.o
+__pdataBANK1 BD 0 BANK1 1 dataBANK1 dist/default/debug\2Gto4G.X.debug.o
 ltemp0a 80 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __LbssBANK0 0 0 ABS 0 bssBANK0 -
 __LbssBANK1 0 0 ABS 0 bssBANK1 -
@@ -1760,43 +1797,43 @@ __Lstringtext6 0 0 ABS 0 stringtext6 -
 __Lstringtext7 0 0 ABS 0 stringtext7 -
 __Lstringtext8 0 0 ABS 0 stringtext8 -
 __Lstringtext9 0 0 ABS 0 stringtext9 -
-_INT_InterruptHandler B2 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
+_INT_InterruptHandler B3 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
 _INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_LCD_Clear 120C 0 CODE 0 text36 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_LCD_Clear 1148 0 CODE 0 text36 dist/default/debug\2Gto4G.X.debug.o
 _PIE3bits 719 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 i1Uart2SendString_modem@str 71 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-__ptext10 147A 0 CODE 0 text10 dist/default/debug\2Gto4G.X.debug.o
-__ptext11 12C8 0 CODE 0 text11 dist/default/debug\2Gto4G.X.debug.o
-__ptext12 1900 0 CODE 0 text12 dist/default/debug\2Gto4G.X.debug.o
-__ptext13 1448 0 CODE 0 text13 dist/default/debug\2Gto4G.X.debug.o
-__ptext14 12A8 0 CODE 0 text14 dist/default/debug\2Gto4G.X.debug.o
-__ptext15 1416 0 CODE 0 text15 dist/default/debug\2Gto4G.X.debug.o
-__ptext16 120C 0 CODE 0 text16 dist/default/debug\2Gto4G.X.debug.o
-__ptext17 14E2 0 CODE 0 text17 dist/default/debug\2Gto4G.X.debug.o
-__ptext18 1330 0 CODE 0 text18 dist/default/debug\2Gto4G.X.debug.o
-__ptext19 1566 0 CODE 0 text19 dist/default/debug\2Gto4G.X.debug.o
-__ptext20 167E 0 CODE 0 text20 dist/default/debug\2Gto4G.X.debug.o
-__ptext21 11E4 0 CODE 0 text21 dist/default/debug\2Gto4G.X.debug.o
-__ptext23 1876 0 CODE 0 text23 dist/default/debug\2Gto4G.X.debug.o
-__ptext24 11D4 0 CODE 0 text24 dist/default/debug\2Gto4G.X.debug.o
-__ptext25 1CC0 0 CODE 0 text25 dist/default/debug\2Gto4G.X.debug.o
-__ptext26 17EC 0 CODE 0 text26 dist/default/debug\2Gto4G.X.debug.o
-__ptext27 11C4 0 CODE 0 text27 dist/default/debug\2Gto4G.X.debug.o
-__ptext28 19BA 0 CODE 0 text28 dist/default/debug\2Gto4G.X.debug.o
-__ptext29 13B6 0 CODE 0 text29 dist/default/debug\2Gto4G.X.debug.o
-__ptext30 1270 0 CODE 0 text30 dist/default/debug\2Gto4G.X.debug.o
-__ptext31 1388 0 CODE 0 text31 dist/default/debug\2Gto4G.X.debug.o
-__ptext32 1254 0 CODE 0 text32 dist/default/debug\2Gto4G.X.debug.o
-__ptext33 15BA 0 CODE 0 text33 dist/default/debug\2Gto4G.X.debug.o
+__ptext10 13B6 0 CODE 0 text10 dist/default/debug\2Gto4G.X.debug.o
+__ptext11 1204 0 CODE 0 text11 dist/default/debug\2Gto4G.X.debug.o
+__ptext12 EE4 0 CODE 0 text12 dist/default/debug\2Gto4G.X.debug.o
+__ptext13 1384 0 CODE 0 text13 dist/default/debug\2Gto4G.X.debug.o
+__ptext14 11E4 0 CODE 0 text14 dist/default/debug\2Gto4G.X.debug.o
+__ptext15 1352 0 CODE 0 text15 dist/default/debug\2Gto4G.X.debug.o
+__ptext16 1148 0 CODE 0 text16 dist/default/debug\2Gto4G.X.debug.o
+__ptext17 141E 0 CODE 0 text17 dist/default/debug\2Gto4G.X.debug.o
+__ptext18 126C 0 CODE 0 text18 dist/default/debug\2Gto4G.X.debug.o
+__ptext19 14A2 0 CODE 0 text19 dist/default/debug\2Gto4G.X.debug.o
+__ptext20 155C 0 CODE 0 text20 dist/default/debug\2Gto4G.X.debug.o
+__ptext21 1120 0 CODE 0 text21 dist/default/debug\2Gto4G.X.debug.o
+__ptext23 1754 0 CODE 0 text23 dist/default/debug\2Gto4G.X.debug.o
+__ptext24 1110 0 CODE 0 text24 dist/default/debug\2Gto4G.X.debug.o
+__ptext25 1CD2 0 CODE 0 text25 dist/default/debug\2Gto4G.X.debug.o
+__ptext26 16CA 0 CODE 0 text26 dist/default/debug\2Gto4G.X.debug.o
+__ptext27 1100 0 CODE 0 text27 dist/default/debug\2Gto4G.X.debug.o
+__ptext28 19C6 0 CODE 0 text28 dist/default/debug\2Gto4G.X.debug.o
+__ptext29 12F2 0 CODE 0 text29 dist/default/debug\2Gto4G.X.debug.o
+__ptext30 11AC 0 CODE 0 text30 dist/default/debug\2Gto4G.X.debug.o
+__ptext31 12C4 0 CODE 0 text31 dist/default/debug\2Gto4G.X.debug.o
+__ptext32 1190 0 CODE 0 text32 dist/default/debug\2Gto4G.X.debug.o
+__ptext33 F9E 0 CODE 0 text33 dist/default/debug\2Gto4G.X.debug.o
 __ptext34 848 0 CODE 0 text34 dist/default/debug\2Gto4G.X.debug.o
-__ptext35 135A 0 CODE 0 text35 dist/default/debug\2Gto4G.X.debug.o
-__ptext36 11F6 0 CODE 0 text36 dist/default/debug\2Gto4G.X.debug.o
-__ptext37 14AC 0 CODE 0 text37 dist/default/debug\2Gto4G.X.debug.o
-__ptext38 130A 0 CODE 0 text38 dist/default/debug\2Gto4G.X.debug.o
-__ptext39 151C 0 CODE 0 text39 dist/default/debug\2Gto4G.X.debug.o
-__ptext40 1618 0 CODE 0 text40 dist/default/debug\2Gto4G.X.debug.o
-__ptext41 F54 0 CODE 0 text41 dist/default/debug\2Gto4G.X.debug.o
-__ptext42 13E4 0 CODE 0 text42 dist/default/debug\2Gto4G.X.debug.o
+__ptext35 1296 0 CODE 0 text35 dist/default/debug\2Gto4G.X.debug.o
+__ptext36 1132 0 CODE 0 text36 dist/default/debug\2Gto4G.X.debug.o
+__ptext37 13E8 0 CODE 0 text37 dist/default/debug\2Gto4G.X.debug.o
+__ptext38 1246 0 CODE 0 text38 dist/default/debug\2Gto4G.X.debug.o
+__ptext39 1458 0 CODE 0 text39 dist/default/debug\2Gto4G.X.debug.o
+__ptext40 14F6 0 CODE 0 text40 dist/default/debug\2Gto4G.X.debug.o
+__ptext41 17DE 0 CODE 0 text41 dist/default/debug\2Gto4G.X.debug.o
+__ptext42 1320 0 CODE 0 text42 dist/default/debug\2Gto4G.X.debug.o
 LCD_Command@commande A4 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 i1LCD_Cursor_Position@ligne 76 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 __Lbank10 0 0 ABS 0 bank10 -
@@ -1853,31 +1890,31 @@ __Lbank60 0 0 BANK60 1 bank60 -
 __Lbank61 0 0 BANK61 1 bank61 -
 __Lbank62 0 0 BANK62 1 bank62 -
 __Lbank63 0 0 BANK63 1 bank63 -
-__pmaintext E62 0 CODE 0 maintext dist/default/debug\2Gto4G.X.debug.o
+__pmaintext D20 0 CODE 0 maintext dist/default/debug\2Gto4G.X.debug.o
 __Lbigram 0 0 ABS 0 bigram -
 DTE_CommandsReceive@commandDTE 20 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
 __Lcommon 0 0 ABS 0 common -
 __Lconfig 0 0 CONFIG 4 config -
-__end_ofi1_LCD_Write_Char 1330 0 CODE 0 text38 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_LCD_Write_Char 126C 0 CODE 0 text38 dist/default/debug\2Gto4G.X.debug.o
 strncmp@l 75 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 strncmp@n 78 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 strncmp@r 76 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 _LATAbits 18 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _LATBbits 19 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-_LCD_BackLight 11E4 0 CODE 0 text21 dist/default/debug\2Gto4G.X.debug.o
+_LCD_BackLight 1120 0 CODE 0 text21 dist/default/debug\2Gto4G.X.debug.o
 _smsTEL B9 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
-_strcmp 15BA 0 CODE 0 text33 dist/default/debug\2Gto4G.X.debug.o
-_strlen 13E4 0 CODE 0 text42 dist/default/debug\2Gto4G.X.debug.o
-SIM7600_CommandsReceive@F7559 2A0 0 BANK5 1 bssBANK5 dist/default/debug\2Gto4G.X.debug.o
+_strcmp F9E 0 CODE 0 text33 dist/default/debug\2Gto4G.X.debug.o
+_strlen 1320 0 CODE 0 text42 dist/default/debug\2Gto4G.X.debug.o
+SIM7600_CommandsReceive@F7561 2A0 0 BANK5 1 bssBANK5 dist/default/debug\2Gto4G.X.debug.o
 _TX2STAbits A1E 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __end_of_Execute 848 0 CODE 0 text9 dist/default/debug\2Gto4G.X.debug.o
 i1Uart2Write_modem@data 70 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 i1Uart1SendString_DTE@str 71 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 _BAUD2CONbits A1F 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _SSP1CLKPPS 1EC5 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-__end_of_Uart1Read_DTE 11D4 0 CODE 0 text27 dist/default/debug\2Gto4G.X.debug.o
+__end_of_Uart1Read_DTE 1110 0 CODE 0 text27 dist/default/debug\2Gto4G.X.debug.o
 _SSP1DATPPS 1EC6 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-__end_of_SIM7600_SendSMS 19BA 0 CODE 0 text12 dist/default/debug\2Gto4G.X.debug.o
+__end_of_SIM7600_SendSMS F9E 0 CODE 0 text12 dist/default/debug\2Gto4G.X.debug.o
 Uart1ISR_DTE@caractere 61 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
@@ -1889,53 +1926,53 @@ __HcstackBANK1 0 0 ABS 0 cstackBANK1 -
 _PIR0bits 70C 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _PIR3bits 70F 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __Lend_init 54 0 CODE 0 end_init -
-__end_of_LCD_Write_String 1448 0 CODE 0 text15 dist/default/debug\2Gto4G.X.debug.o
+__end_of_LCD_Write_String 1384 0 CODE 0 text15 dist/default/debug\2Gto4G.X.debug.o
 __LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
 end_of_initialization D2 0 CODE 0 cinit dist/default/debug\2Gto4G.X.debug.o
 LCD_Cursor_Position@position_curseur A7 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 __Hintentry 54 0 CODE 0 intentry -
-_modemStartPin 66 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+_modemStartPin 65 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
 _TX1STAbits 11E 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __Lstrings 0 0 ABS 0 strings -
 SIM7600_CommandsReceive@commandSMS 20 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
 __Hreset_vec 6 0 CODE 0 reset_vec -
-_SIM7600_Init D20 0 CODE 0 text7 dist/default/debug\2Gto4G.X.debug.o
+_SIM7600_Init 187E 0 CODE 0 text7 dist/default/debug\2Gto4G.X.debug.o
 _BAUD1CONbits 11F 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-_INT_SetInterruptHandler 11B8 0 CODE 0 text6 dist/default/debug\2Gto4G.X.debug.o
+_INT_SetInterruptHandler 10E8 0 CODE 0 text6 dist/default/debug\2Gto4G.X.debug.o
 __HbssBANK0 0 0 ABS 0 bssBANK0 -
 __HbssBANK1 0 0 ABS 0 bssBANK1 -
 __HbssBANK2 0 0 ABS 0 bssBANK2 -
 __HbssBANK3 0 0 ABS 0 bssBANK3 -
 __HbssBANK4 0 0 ABS 0 bssBANK4 -
 __HbssBANK5 0 0 ABS 0 bssBANK5 -
-_smsMode 6D 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
-_smsSend 6B 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
-__end_of_INT_SetInterruptHandler 11C4 0 CODE 0 text6 dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_Uart2Write_modem 128C 0 CODE 0 text30 dist/default/debug\2Gto4G.X.debug.o
-Uart2ISR_modem@uart2Overflow 61 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
-Uart1ISR_DTE@indexBufferUart1 63 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+_smsMode 6C 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+_smsSend 6A 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+__end_of_INT_SetInterruptHandler 10F4 0 CODE 0 text6 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_Uart2Write_modem 11C8 0 CODE 0 text30 dist/default/debug\2Gto4G.X.debug.o
+Uart2ISR_modem@uart2Overflow 60 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
+Uart1ISR_DTE@indexBufferUart1 62 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+_poeleStatus_OK BB 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
 _OSCCON1bits 88D 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-__ptext1 176A 0 CODE 0 text1 dist/default/debug\2Gto4G.X.debug.o
-__ptext2 123C 0 CODE 0 text2 dist/default/debug\2Gto4G.X.debug.o
-__ptext3 1224 0 CODE 0 text3 dist/default/debug\2Gto4G.X.debug.o
-__ptext4 16EA 0 CODE 0 text4 dist/default/debug\2Gto4G.X.debug.o
-__ptext5 128C 0 CODE 0 text5 dist/default/debug\2Gto4G.X.debug.o
-__ptext6 11B8 0 CODE 0 text6 dist/default/debug\2Gto4G.X.debug.o
-__ptext7 D20 0 CODE 0 text7 dist/default/debug\2Gto4G.X.debug.o
-__ptext8 12E8 0 CODE 0 text8 dist/default/debug\2Gto4G.X.debug.o
+__ptext1 1648 0 CODE 0 text1 dist/default/debug\2Gto4G.X.debug.o
+__ptext2 1178 0 CODE 0 text2 dist/default/debug\2Gto4G.X.debug.o
+__ptext3 1160 0 CODE 0 text3 dist/default/debug\2Gto4G.X.debug.o
+__ptext4 15C8 0 CODE 0 text4 dist/default/debug\2Gto4G.X.debug.o
+__ptext5 11C8 0 CODE 0 text5 dist/default/debug\2Gto4G.X.debug.o
+__ptext6 10E8 0 CODE 0 text6 dist/default/debug\2Gto4G.X.debug.o
+__ptext7 187E 0 CODE 0 text7 dist/default/debug\2Gto4G.X.debug.o
+__ptext8 1224 0 CODE 0 text8 dist/default/debug\2Gto4G.X.debug.o
 __ptext9 DA 0 CODE 0 text9 dist/default/debug\2Gto4G.X.debug.o
 _RX1DTPPS 1ECB 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 Uart1Write_DTE@data A0 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 _RX2DTPPS 1ECD 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 Uart2Write_modem@data A0 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-i1_Uart2SendString_modem 13B6 0 CODE 0 text29 dist/default/debug\2Gto4G.X.debug.o
+i1_Uart2SendString_modem 12F2 0 CODE 0 text29 dist/default/debug\2Gto4G.X.debug.o
 __Lpowerup 0 0 CODE 0 powerup -
-SIM7600_CommandsReceive@loop_442 60 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
 Uart1ISR_DTE@uart1Overflow 60 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
-__end_ofi1_Uart2SendString_modem 13E4 0 CODE 0 text29 dist/default/debug\2Gto4G.X.debug.o
+__end_ofi1_Uart2SendString_modem 1320 0 CODE 0 text29 dist/default/debug\2Gto4G.X.debug.o
 __Leeprom_data 0 0 EEDATA 3 eeprom_data -
 __H__absolute__ 0 0 ABS 0 __absolute__ -
-_SIM7600_SendSMS 1900 0 CODE 0 text12 dist/default/debug\2Gto4G.X.debug.o
+_SIM7600_SendSMS EE4 0 CODE 0 text12 dist/default/debug\2Gto4G.X.debug.o
 __Lreset_vec 0 0 CODE 0 reset_vec -
 i1LCD_Command@commande 74 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 __Hstringtext1 0 0 ABS 0 stringtext1 -
@@ -1947,41 +1984,41 @@ __Hstringtext6 0 0 ABS 0 stringtext6 -
 __Hstringtext7 0 0 ABS 0 stringtext7 -
 __Hstringtext8 0 0 ABS 0 stringtext8 -
 __Hstringtext9 0 0 ABS 0 stringtext9 -
-_strncmp F54 0 CODE 0 text41 dist/default/debug\2Gto4G.X.debug.o
+_strncmp 17DE 0 CODE 0 text41 dist/default/debug\2Gto4G.X.debug.o
 Command@from 7C 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-i1_Uart1Write_DTE 1254 0 CODE 0 text32 dist/default/debug\2Gto4G.X.debug.o
-___heap_hi 0 0 ABS 0 - C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-___heap_lo 0 0 ABS 0 - C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
+i1_Uart1Write_DTE 1190 0 CODE 0 text32 dist/default/debug\2Gto4G.X.debug.o
+___heap_hi 0 0 ABS 0 - C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
 __end_of__initialization D2 0 CODE 0 cinit dist/default/debug\2Gto4G.X.debug.o
 __Lfunctab 0 0 ENTRY 0 functab -
 __pidataBANK0 6 0 CODE 0 idataBANK0 dist/default/debug\2Gto4G.X.debug.o
-__pidataBANK1 11B4 0 CODE 0 idataBANK1 dist/default/debug\2Gto4G.X.debug.o
-Uart2ISR_modem@caractere 62 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
+__pidataBANK1 FFC 0 CODE 0 idataBANK1 dist/default/debug\2Gto4G.X.debug.o
+Uart2ISR_modem@caractere 61 0 BANK0 1 cstackBANK0 dist/default/debug\2Gto4G.X.debug.o
 _SP1BRGL 11B 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-i1_Uart2Write_modem 1270 0 CODE 0 text30 dist/default/debug\2Gto4G.X.debug.o
+i1_Uart2Write_modem 11AC 0 CODE 0 text30 dist/default/debug\2Gto4G.X.debug.o
 _SP2BRGL A1B 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __Lclrtext 0 0 ABS 0 clrtext -
 INT_SetInterruptHandler@InterruptHandler A0 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 wtemp0a 7F 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-_Uart1Init_DTE 1224 0 CODE 0 text3 dist/default/debug\2Gto4G.X.debug.o
+_Uart1Init_DTE 1160 0 CODE 0 text3 dist/default/debug\2Gto4G.X.debug.o
 LCD_Write_Quartet@data A2 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 __Hend_init 58 0 CODE 0 end_init -
 i1LCD_Write_Quartet@tempData 70 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
 i1LCD_Write_Quartet@tempPort 71 0 COMMON 1 cstackCOMMON dist/default/debug\2Gto4G.X.debug.o
-__end_of_main F54 0 CODE 0 maintext dist/default/debug\2Gto4G.X.debug.o
+__end_of_main EE4 0 CODE 0 maintext dist/default/debug\2Gto4G.X.debug.o
 Uart1SendString_DTE@str A1 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
 LCD_Write_Char@caractere A4 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-__end_of_SIM7600_Init E62 0 CODE 0 text7 dist/default/debug\2Gto4G.X.debug.o
+__end_of_SIM7600_Init 19C6 0 CODE 0 text7 dist/default/debug\2Gto4G.X.debug.o
 _PORTA C 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _TRISA 12 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _TRISB 13 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 _TRISC 14 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __Hram 0 0 ABS 0 ram -
 __Lram 0 0 ABS 0 ram -
-__end_of_LCD_BackLight 11F6 0 CODE 0 text21 dist/default/debug\2Gto4G.X.debug.o
+__end_of_LCD_BackLight 1132 0 CODE 0 text21 dist/default/debug\2Gto4G.X.debug.o
 _noSIM 6F 0 BANK0 1 dataBANK0 dist/default/debug\2Gto4G.X.debug.o
-_ready B6 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
+_ready B7 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
 __pintentry 8 0 CODE 0 intentry dist/default/debug\2Gto4G.X.debug.o
 __HdataBANK0 0 0 ABS 0 dataBANK0 -
 __HdataBANK1 0 0 ABS 0 dataBANK1 -
@@ -1989,19 +2026,19 @@ __HdataBANK1 0 0 ABS 0 dataBANK1 -
 __initialization 58 0 CODE 0 cinit dist/default/debug\2Gto4G.X.debug.o
 btemp0 7E 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 btemp1 7F 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
-__pbssBANK0 63 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
-__pbssBANK1 AE 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
+__pbssBANK0 62 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+__pbssBANK1 AF 0 BANK1 1 bssBANK1 dist/default/debug\2Gto4G.X.debug.o
 __pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/debug\2Gto4G.X.debug.o
 __pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/debug\2Gto4G.X.debug.o
 __pbssBANK4 220 0 BANK4 1 bssBANK4 dist/default/debug\2Gto4G.X.debug.o
 __pbssBANK5 2A0 0 BANK5 1 bssBANK5 dist/default/debug\2Gto4G.X.debug.o
-_LCD_Command 1566 0 CODE 0 text19 dist/default/debug\2Gto4G.X.debug.o
+_LCD_Command 14A2 0 CODE 0 text19 dist/default/debug\2Gto4G.X.debug.o
 LCD_Cursor@on_off A5 0 BANK1 1 cstackBANK1 dist/default/debug\2Gto4G.X.debug.o
-_modemOK 67 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
+_modemOK 66 0 BANK0 1 bssBANK0 dist/default/debug\2Gto4G.X.debug.o
 ttemp0a 7F 0 ABS 0 - dist/default/debug\2Gto4G.X.debug.o
 __end_of_Command D20 0 CODE 0 text34 dist/default/debug\2Gto4G.X.debug.o
-___int_stack_hi 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
-___int_stack_lo 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAss4w.0\driver_tmp_12.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAsx9w.0\driver_tmp_12.o
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -2027,54 +2064,54 @@ ___int_stack_lo 0 0 STACK 2 stack C:\Users\olive\AppData\Local\Temp\xcAss4w.0\dr
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-text1 0 BB5 176A 41 2
-text2 0 91E 123C C 2
-text3 0 912 1224 C 2
-text4 0 B75 16EA 40 2
-text5 0 946 128C E 2
-text6 0 8DC 11B8 6 2
-text8 0 974 12E8 11 2
-text10 0 A3D 147A 19 2
-text11 0 964 12C8 10 2
-text12 0 C80 1900 5D 2
-text13 0 A24 1448 19 2
-text14 0 954 12A8 10 2
-text15 0 A0B 1416 19 2
-text16 0 906 120C C 2
-text17 0 A71 14E2 1D 2
-text18 0 998 1330 15 2
-text19 0 AB3 1566 2A 2
-text20 0 B3F 167E 36 2
-text21 0 8F2 11E4 9 2
-text23 0 C3B 1876 45 2
-text24 0 8EA 11D4 8 2
-text25 0 E60 1CC0 1A0 2
-text26 0 BF6 17EC 45 2
-text27 0 8E2 11C4 8 2
-text28 0 CDD 19BA 183 2
-text29 0 9DB 13B6 17 2
-text30 0 938 1270 E 2
-text31 0 9C4 1388 17 2
-text32 0 92A 1254 E 2
-text33 0 ADD 15BA 2F 2
-text35 0 9AD 135A 17 2
-text36 0 8FB 11F6 B 2
-text37 0 A56 14AC 1B 2
-text38 0 985 130A 13 2
-text39 0 A8E 151C 25 2
-text40 0 B0C 1618 33 2
-text42 0 9F2 13E4 19 2
+text1 0 B24 1648 41 2
+text2 0 8BC 1178 C 2
+text3 0 8B0 1160 C 2
+text4 0 AE4 15C8 40 2
+text5 0 8E4 11C8 E 2
+text6 0 874 10E8 6 2
+text7 0 C3F 187E A4 2
+text8 0 912 1224 11 2
+text10 0 9DB 13B6 19 2
+text11 0 902 1204 10 2
+text13 0 9C2 1384 19 2
+text14 0 8F2 11E4 10 2
+text15 0 9A9 1352 19 2
+text16 0 8A4 1148 C 2
+text17 0 A0F 141E 1D 2
+text18 0 936 126C 15 2
+text19 0 A51 14A2 2A 2
+text20 0 AAE 155C 36 2
+text21 0 890 1120 9 2
+text23 0 BAA 1754 45 2
+text24 0 888 1110 8 2
+text25 0 E69 1CD2 197 2
+text26 0 B65 16CA 45 2
+text27 0 880 1100 8 2
+text28 0 CE3 19C6 186 2
+text29 0 979 12F2 17 2
+text30 0 8D6 11AC E 2
+text31 0 962 12C4 17 2
+text32 0 8C8 1190 E 2
+text35 0 94B 1296 17 2
+text36 0 899 1132 B 2
+text37 0 9F4 13E8 1B 2
+text38 0 923 1246 13 2
+text39 0 A2C 1458 25 2
+text40 0 A7B 14F6 33 2
+text41 0 BEF 17DE 50 2
+text42 0 990 1320 19 2
 cstackCOMMON 1 70 70 E 1
 cstackBANK0 1 20 20 50 1
-cstackBANK1 1 A0 A0 1D 1
-stringtext1 0 1000 2000 324 2
+cstackBANK1 1 A0 A0 1F 1
+stringtext1 0 1000 2000 345 2
 intentry 0 4 8 7FC 2
 reset_vec 0 0 0 4 2
 bssBANK2 1 120 120 40 1
 bssBANK3 1 1A0 1A0 40 1
 bssBANK4 1 220 220 40 1
 bssBANK5 1 2A0 2A0 40 1
-idataBANK1 0 8DA 11B4 2 2
+clrtext 0 87A 10F4 6 2
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

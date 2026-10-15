@@ -12498,6 +12498,10 @@ extern __bank0 __bit __timeout;
 # 59 "main.c" 2
 
 # 1 "./main.h" 1
+# 34 "./main.h"
+_Bool displayStatus = 0;
+_Bool modemStatus_OK = 0;
+_Bool poeleStatus_OK = 0;
 # 61 "main.c" 2
 
 # 1 "./UART1_DTE.h" 1
@@ -12646,10 +12650,14 @@ void Execute(void);
 void Sys_Init(void);
 
 
+
 int main(void)
 {
-    char stringBuffer[12];
-    uint8_t affiche = 0;
+
+    uint8_t affiche_modem = 254;
+    uint8_t affiche_poele = 254;
+    poeleStatus_OK = 0;
+    modemStatus_OK = 0;
 
     _Bool negTemp = 0;
 
@@ -12690,22 +12698,20 @@ int main(void)
     {
         if (PORTCbits.RC2 == 0)
         {
-            while(PORTCbits.RC2 == 0);
+            while (PORTCbits.RC2 == 0);
             Uart2SendString_modem("AT+CMGR=0\r\n");
         }
 
         if (PORTCbits.RC1 == 0)
         {
-            while(PORTCbits.RC1 == 0);
+            while (PORTCbits.RC1 == 0);
 
             Uart2SendString_modem("AT+CPMS?\r\n");
-
         }
-
 
         if (PORTCbits.RC0 == 0)
         {
-            while(PORTCbits.RC0 == 0);
+            while (PORTCbits.RC0 == 0);
             SIM7600_SendSMS("S4");
         }
 
@@ -12714,19 +12720,61 @@ int main(void)
             Execute();
         }
 
+        if (modemStatus_OK)
+        {
+            if (affiche_modem == 0)
+            {
+                LCD_Cursor_Position(2, 1);
+                LCD_Write_String("MODEM OK");
+                affiche_modem = 254;
+            }
+            affiche_modem--;
+        }
+        else
+        {
+            if (affiche_modem == 0)
+            {
+                LCD_Cursor_Position(2, 1);
+                LCD_Write_String("MODEM KO");
+                affiche_modem = 254;
+            }
+            affiche_modem--;
+        }
+
+        if (poeleStatus_OK)
+        {
+            if (affiche_poele == 0)
+            {
+                LCD_Cursor_Position(1, 1);
+                LCD_Write_String("Poele OK");
+                affiche_poele = 254;
+            }
+            affiche_poele--;
+        }
+        else
+        {
+            if (affiche_poele == 0)
+            {
+                LCD_Cursor_Position(1, 1);
+                LCD_Write_String("Poele KO");
+                affiche_poele = 254;
+            }
+            affiche_poele--;
+        }
+
 
     }
 
     while (1);
 }
-# 160 "main.c"
+# 205 "main.c"
 void Sys_Init(void)
 {
-# 172 "main.c"
+# 217 "main.c"
     OSCCON1bits.NOSC = 0b110;
-# 184 "main.c"
+# 229 "main.c"
     OSCFRQbits.HFFRQ = 0b110;
-# 199 "main.c"
+# 244 "main.c"
     OSCCON1bits.NDIV = 0b0000;
 
 

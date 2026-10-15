@@ -30,6 +30,10 @@
 
 #define _XTAL_FREQ 32000000 // 32Mhz freq pour delay
 
+// display status
+bool displayStatus = false; // pour affichage 
+bool modemStatus_OK = false;  // Status du modem
+bool poeleStatus_OK = false;  // Status du poele (DTR))
 
 #endif	/* MAIN_H*/
 
