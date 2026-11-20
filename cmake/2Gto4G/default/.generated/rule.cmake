@@ -1,6 +1,6 @@
 # The following functions contains all the flags passed to the different build stages.
 
-set(PACK_REPO_PATH "C:/Users/olive/.mchp_packs" CACHE PATH "Path to the root of a pack repository.")
+set(PACK_REPO_PATH "C:/Users/pochono/.mchp_packs" CACHE PATH "Path to the root of a pack repository.")
 
 function(A_2Gto4G_default_toolchain_XC8_3_10_assemble_rule target)
     set(options

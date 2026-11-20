@@ -1,10 +1,10 @@
 /*
  * File: UART2.c
  * Auteur: Rolle Clement	
- * Company: EMF (Ecole des Métiers de Fribourg) http://www.emf.ch
+ * Company: EMF (Ecole des MÃ©tiers de Fribourg) http://www.emf.ch
  * Desc.: librarie communication rs232 no2
  * 
- * Ver. Date: V01 20231207 Création (YYYYMMDD)
+ * Ver. Date: V01 20231207 CrÃ©ation (YYYYMMDD)
  * Ver. Date: V01 20250519 Modifications
  */
 
@@ -14,11 +14,14 @@
 #include "UART2_modem.h"
 #include "SIM7600.h"
 
+// buffer lecture uart
+char bufferUart_modem[BUFFER_SIZE] = {0};
+
 //---------------------------------------------------------
 // Sous programme Uart2Init
 // Auteur: RolleC
 // Desc.: sous programme d'initialisation de l'UART
-// Ver. Date: V00 20231215 Création (YYYYMMDD)	
+// Ver. Date: V00 20231215 CrÃ©ation (YYYYMMDD)	
 // Ver. Date: V01 20250519 Modifications
 //---------------------------------------------------------
 void Uart2Init_modem(void)
@@ -79,7 +82,7 @@ void Uart2Init_modem(void)
 // Sous programme Uart2Write
 // Auteur: RolleC
 // Desc.: sous programme decriture sur l'uart
-// Ver. Date: V00 20231215 Création (YYYYMMDD)	
+// Ver. Date: V00 20231215 CrÃ©ation (YYYYMMDD)	
 // Ver. Date: V01 20250519 Modifications
 //---------------------------------------------------------
 void Uart2Write_modem(char data)
@@ -96,7 +99,7 @@ void Uart2Write_modem(char data)
 // Sous programme Uart2Read
 // Auteur: RolleC
 // Desc.: sous programme de lecture de l'uart
-// Ver. Date: V00 20231215 Création (YYYYMMDD)
+// Ver. Date: V00 20231215 CrÃ©ation (YYYYMMDD)
 // Ver. Date: V01 20250519 Modifications
 //---------------------------------------------------------
 char Uart2Read_modem(void)
@@ -111,7 +114,7 @@ char Uart2Read_modem(void)
 // Sous programme Uart2SendString
 // Auteur: RolleC
 // Desc.: sous programme d'ecriture de string sur l'uart
-// Ver. Date: V00 20231215 Création (YYYYMMDD)	
+// Ver. Date: V00 20231215 CrÃ©ation (YYYYMMDD)	
 // Ver. Date: V01 20250519 Modifications
 //---------------------------------------------------------
 void Uart2SendString_modem(const char *str)
@@ -119,7 +122,7 @@ void Uart2SendString_modem(const char *str)
     while (*str != '\0') //ecrire jusqua la fin du string
     {
         Uart2Write_modem(*str); // ecrit le char
-        str++; // passe à l'addresse suivante
+        str++; // passe Ã  l'addresse suivante
     }
 }
 //---------------------------------------------------------
@@ -128,7 +131,7 @@ void Uart2SendString_modem(const char *str)
 // Sous programme Uart2ISR
 // Auteur: RolleC
 // Desc.: sous programme d'interuption de reception sur l'UART reception modem
-// Ver. Date: V00 20250528 Création (YYYYMMDD)	
+// Ver. Date: V00 20250528 CrÃ©ation (YYYYMMDD)	
 //---------------------------------------------------------
 void Uart2ISR_modem(void)
 {

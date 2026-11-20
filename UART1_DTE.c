@@ -1,10 +1,10 @@
 /*
  * File: UART1.c
  * Auteur: Rolle Clement	
- * Company: EMF (Ecole des Métiers de Fribourg) http://www.emf.ch
+ * Company: EMF (Ecole des MÃ©tiers de Fribourg) http://www.emf.ch
  * Desc.: librarie communication rs232 no1
  * 
- * Ver. Date: V01 20231207 Création (YYYYMMDD)
+ * Ver. Date: V01 20231207 CrÃ©ation (YYYYMMDD)
  * Ver. Date: V01 20250519 Modifications
  */
 
@@ -14,11 +14,14 @@
 #include "UART1_DTE.h"
 #include "SIM7600.h"
 
+// buffer lecture uart
+char bufferUart_DTE[BUFFER_SIZE] = {0};
+
 //---------------------------------------------------------
 // Sous programme Uart Init
 // Auteur: RolleC
 // Desc.: sous programme d'initialisation de l'UART
-// Ver. Date: V00 20231215 Création (YYYYMMDD)	
+// Ver. Date: V00 20231215 CrÃ©ation (YYYYMMDD)	
 // Ver. Date: V01 20250519 Modifications
 //---------------------------------------------------------
 void Uart1Init_DTE(void)
@@ -79,7 +82,7 @@ void Uart1Init_DTE(void)
 // Sous programme UartWrite
 // Auteur: RolleC
 // Desc.: sous programme decriture sur l'uart
-// Ver. Date: V00 20231215 Création (YYYYMMDD)	
+// Ver. Date: V00 20231215 CrÃ©ation (YYYYMMDD)	
 // Ver. Date: V01 20250519 Modifications
 //---------------------------------------------------------
 void Uart1Write_DTE(char data)
@@ -96,7 +99,7 @@ void Uart1Write_DTE(char data)
 // Sous programme UartRead
 // Auteur: RolleC
 // Desc.: sous programme de lecture de l'uart
-// Ver. Date: V00 20231215 Création (YYYYMMDD)	
+// Ver. Date: V00 20231215 CrÃ©ation (YYYYMMDD)	
 // Ver. Date: V01 20250519 Modifications
 //---------------------------------------------------------
 char Uart1Read_DTE(void)
@@ -111,7 +114,7 @@ char Uart1Read_DTE(void)
 // Sous programme UartSendString
 // Auteur: RolleC
 // Desc.: sous programme d'ecriture de string sur l'uart
-// Ver. Date: V00 20231215 Création (YYYYMMDD)	
+// Ver. Date: V00 20231215 CrÃ©ation (YYYYMMDD)	
 // Ver. Date: V01 20250519 Modifications
 //---------------------------------------------------------
 void Uart1SendString_DTE(char *str)
@@ -119,7 +122,7 @@ void Uart1SendString_DTE(char *str)
     while (*str != '\0') //ecrire jusqua la fin du string
     {
         Uart1Write_DTE(*str); // ecrit le char
-        str++; // passe à l'addresse suivante
+        str++; // passe Ã  l'addresse suivante
     }
 }
 //---------------------------------------------------------
@@ -128,7 +131,7 @@ void Uart1SendString_DTE(char *str)
 // Sous programme Uart1ISR
 // Auteur: RolleC
 // Desc.: sous programme d'interuption de reception sur l'UART
-// Ver. Date: V00 20250528 Création (YYYYMMDD)	
+// Ver. Date: V00 20250528 CrÃ©ation (YYYYMMDD)	
 //---------------------------------------------------------
 void Uart1ISR_DTE(void)
 {

@@ -3,6 +3,7 @@ include("${CMAKE_CURRENT_LIST_DIR}/file.cmake")
 
 set(2Gto4G_default_library_list )
 
+set(OUTPUT_SUFFIX elf)
 # Handle files with suffix (s|as|asm|AS|ASM|As|aS|Asm), for group toolchain XC8 3.10
 if(2Gto4G_default_toolchain_XC8_3_10_FILE_TYPE_assemble)
 add_library(A_2Gto4G_default_toolchain_XC8_3_10_assemble OBJECT ${2Gto4G_default_toolchain_XC8_3_10_FILE_TYPE_assemble})
@@ -37,18 +38,18 @@ endif()
 
 
 # Main target for this project
-add_executable(2Gto4G_default_image_Kg_b9IuT ${2Gto4G_default_library_list})
+add_executable(2Gto4G_default_image_kT6SPYGG ${2Gto4G_default_library_list})
 
-set_target_properties(2Gto4G_default_image_Kg_b9IuT PROPERTIES
+set_target_properties(2Gto4G_default_image_kT6SPYGG PROPERTIES
     OUTPUT_NAME "default"
     SUFFIX ".elf"
     ADDITIONAL_CLEAN_FILES "${output_extensions}"
     RUNTIME_OUTPUT_DIRECTORY "${2Gto4G_default_output_dir}")
-target_link_libraries(2Gto4G_default_image_Kg_b9IuT PRIVATE ${2Gto4G_default_toolchain_XC8_3_10_FILE_TYPE_link})
+target_link_libraries(2Gto4G_default_image_kT6SPYGG PRIVATE ${2Gto4G_default_toolchain_XC8_3_10_FILE_TYPE_link})
 # Add the link options from the rule file.
-A_2Gto4G_default_link_rule( 2Gto4G_default_image_Kg_b9IuT)
+A_2Gto4G_default_link_rule( 2Gto4G_default_image_kT6SPYGG)
 
 
 #Add objcopy steps
-A_2Gto4G_default_objcopy_lss_rule(2Gto4G_default_image_Kg_b9IuT)
+A_2Gto4G_default_objcopy_lss_rule(2Gto4G_default_image_kT6SPYGG)
 

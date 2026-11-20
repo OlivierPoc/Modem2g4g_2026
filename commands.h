@@ -1,7 +1,7 @@
 /*
  * File: commands.h
  * Auteur: Rolle Clement	
- * Company: EMF (Ecole des Métiers de Fribourg) http://www.emf.ch
+ * Company: EMF (Ecole des MÃ©tiers de Fribourg) http://www.emf.ch
  * Desc.: librarie d'execution des commandes en provenance du DTE ou par SMS
  * 
  * Ver. Date: V1.0.0 20250530
@@ -10,8 +10,11 @@
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
-#ifndef commands
-#define	commands
+#ifndef COMMANDS_H
+#define	COMMANDS_H
+
+#include <stdbool.h>
+#include <stdint.h>
 
 #define PHONE_NUMBER "+41793018256" // numero de l'utilisateur "+41XXXXXXXXX\0" 
 
@@ -30,15 +33,15 @@
 #define AFFICHE_DEBUG_TXT "Debug" 
 
 
-// allumer le rétro éclairage
+// allumer le rÃ©tro Ã©clairage
 #define BACKLIGHT_ON 0x00 
 #define BACKLIGHT_ON_TXT "Backlight on" 
 
-// eteindre le rétro éclairage
+// eteindre le rÃ©tro Ã©clairage
 #define BACKLIGHT_OFF 0x01
 #define BACKLIGHT_OFF_TXT "Backlight off" 
 
-// etat du rétro éclairage
+// etat du rÃ©tro Ã©clairage
 #define BACKLIGHT_STATE 0x02
 #define BACKLIGHT_STATE_TXT "Backlight" 
 
@@ -58,11 +61,11 @@
 #define IO2_HIGH 0x06
 #define IO2_HIGH_TXT "IO2 high" 
 
-// mise a l'etat bas de RB2
+// mise a l'etat bas de RB3
 #define IO2_LOW 0x07
-#define IO2_LOW_TXT "IO2 low" 
+#define IO2_LOW_TXT "IO2 low"
 
-// etat de RB2
+// etat de RB3
 #define IO2_STATE 0x08
 #define IO2_STATE_TXT "IO2" 
 
@@ -122,24 +125,25 @@
 #define DTE 2
 #define ALERTE 4
 
-bool executionFlag = false; // flag indicant si une commande doit être executee
+// variables globales : declarees ici (extern), definies dans commands.c
+extern volatile bool executionFlag; // flag indicant si une commande doit Ãªtre executee (ecrit sous interruption)
 
-// valeur capteur pour trensmission
-uint16_t co2Value;
-double tempValue;
-uint8_t humidityValue;
+// valeur capteur pour transmission
+extern uint16_t co2Value;
+extern double tempValue;
+extern uint8_t humidityValue;
 
 // SMS states
-bool smsMode = false; // reception d'un SMS
-bool smsReadMode = false; // lecture d'un SMS recu
-bool smsSend = false; // envois d'un SMS
-bool smsStartPoele = false;  // sms recut pour le poele NEX
-bool smsStartPoeleLu = false;
-bool smsInfo = false;  // sms recut pour le poele NEX
-bool smsInfoLu = false;
-        
+extern bool smsMode; // reception d'un SMS
+extern bool smsReadMode; // lecture d'un SMS recu
+extern bool smsSend; // envois d'un SMS
+extern bool smsStartPoele;  // sms recu pour le poele NEX
+extern bool smsStartPoeleLu;
+extern bool smsInfo;  // sms recu pour le poele NEX
+extern bool smsInfoLu;
+
 // functions
 void Command(char *command, uint8_t from); // prototype de fonciton de preparation des commandes en provenance du DTE ou par SMS
 void Execute(void); // protoytpe de fonction d'execution de la commande prevue
 
-#endif	/* commands */
+#endif	/* COMMANDS_H */

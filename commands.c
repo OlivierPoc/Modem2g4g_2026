@@ -1,7 +1,7 @@
 /*
  * File: commands.c
  * Auteur: Rolle Clement	
- * Company: EMF (Ecole des M�tiers de Fribourg) http://www.emf.ch
+ * Company: EMF (Ecole des Métiers de Fribourg) http://www.emf.ch
  * Desc.: librarie d'execution des commandes en provenance du DTE ou par SMS
  * 
  * Ver. Date: V1.0.0 20250530
@@ -37,6 +37,94 @@
 uint8_t commandFrom = DTE;
 uint8_t currentCommand = ERROR; // commande prevue
 
+// variables globales (declarees extern dans commands.h)
+volatile bool executionFlag = false; // flag indicant si une commande doit être executee (ecrit sous interruption)
+
+uint16_t co2Value = 0;
+double tempValue = 0.0;
+uint8_t humidityValue = 0;
+
+bool smsMode = false; // reception d'un SMS
+bool smsReadMode = false; // lecture d'un SMS recu
+bool smsSend = false; // envois d'un SMS
+bool smsStartPoele = false; // sms recu pour le poele NEX
+bool smsStartPoeleLu = false;
+bool smsInfo = false; // sms recu pour le poele NEX
+bool smsInfoLu = false;
+
+//---------------------------------------------------
+// Sous programme UIntToString
+// Desc.: convertit un entier non signe en texte decimal (sans sprintf)
+//        buffer doit pouvoir contenir au moins 6 caracteres
+//        retourne un pointeur sur le '\0' final (pour pouvoir continuer)
+//---------------------------------------------------
+static char *UIntToString(uint16_t value, char *buffer)
+{
+    char tmp[5];
+    uint8_t n = 0;
+
+    do
+    {
+        tmp[n++] = (char) ('0' + (value % 10));
+        value /= 10;
+    }
+    while (value != 0);
+
+    while (n != 0)
+    {
+        *buffer++ = tmp[--n];
+    }
+    *buffer = '\0';
+    return buffer;
+}
+
+//---------------------------------------------------
+// Sous programme TempToString
+// Desc.: convertit la temperature en texte avec 1 decimale ("-12.3")
+//---------------------------------------------------
+static void TempToString(double value, char *buffer)
+{
+    int16_t dixiemes;
+
+    // arrondi au dixieme
+    if (value < 0)
+    {
+        dixiemes = (int16_t) (value * 10.0 - 0.5);
+        *buffer++ = '-';
+        dixiemes = -dixiemes;
+    }
+    else
+    {
+        dixiemes = (int16_t) (value * 10.0 + 0.5);
+    }
+
+    buffer = UIntToString((uint16_t) dixiemes / 10, buffer);
+    *buffer++ = '.';
+    *buffer++ = (char) ('0' + ((uint16_t) dixiemes % 10));
+    *buffer = '\0';
+}
+
+//---------------------------------------------------
+// Sous programme SendAnswer
+// Desc.: envoie une reponse a l'emetteur de la commande (SMS ou DTE)
+//        et l'affiche sur le LCD
+//---------------------------------------------------
+static void SendAnswer(char *text)
+{
+    if (commandFrom == SMS)
+    {
+        SIM7600_SendSMS(text);
+    }
+    else
+    {
+        Uart1SendString_DTE(text);
+        Uart1SendString_DTE("\r\n");
+    }
+
+    LCD_Clear();
+    LCD_Write_String(text);
+}
+
 //---------------------------------------------------
 // Sous programme Command
 // Auteur: Rolle Clement
@@ -49,7 +137,8 @@ void Command(char *command, uint8_t from)
 
     // set current command
     // commandes par SMS et par le DTE
-    // ---------- BACKLIGHT LCD ----------
+    // ATTENTION : la comparaison se fait sur le debut du texte, les commandes
+    // longues ("Backlight on") doivent etre testees AVANT les courtes ("Backlight")
     if (strncmp(command, AFFICHE_DEBUG_TXT, strlen(AFFICHE_DEBUG_TXT)) == 0)
     {
         currentCommand = AFFICHE_DEBUG;
@@ -61,6 +150,11 @@ void Command(char *command, uint8_t from)
     else if (strncmp(command, INFO_TXT, strlen(INFO_TXT)) == 0)
     {
         currentCommand = INFO;
+    }
+        // ---------- BACKLIGHT LCD ----------
+    else if (strncmp(command, BACKLIGHT_ON_TXT, strlen(BACKLIGHT_ON_TXT)) == 0)
+    {
+        currentCommand = BACKLIGHT_ON;
     }
     else if (strncmp(command, BACKLIGHT_OFF_TXT, strlen(BACKLIGHT_OFF_TXT)) == 0)
     {
@@ -137,11 +231,9 @@ void Command(char *command, uint8_t from)
     {
         currentCommand = GET_CO2;
     }
-    else // commande invalide
+    else // commande invalide (affichage et reponse faits dans Execute)
     {
         currentCommand = ERROR;
-        LCD_Clear();
-        LCD_Write_String("ERR SMS");
     }
 
     executionFlag = true; // monte le flag
@@ -520,19 +612,41 @@ void Execute(void)
         state = true;
         break;
 
+        // ---------- Temperature ----------
+    case GET_TEMPERATURE:
+        TempToString(tempValue, stringBuffer);
+        SendAnswer(stringBuffer);
+        state = true;
+        break;
+
+        // ---------- Humidite ----------
+    case GET_HUMIDITE:
+        UIntToString(humidityValue, stringBuffer);
+        SendAnswer(stringBuffer);
+        state = true;
+        break;
+
+        // ---------- CO2 ----------
+    case GET_CO2:
+        UIntToString(co2Value, stringBuffer);
+        SendAnswer(stringBuffer);
+        state = true;
+        break;
+
         // ---------- ERROR ----------
     case ERROR:
-//        if (commandFrom == SMS) // reponse SMS
-//        {
-//            SIM7600_SendSMS("ERROR"); // envois de l'erreur par SMS
-//        }
-//        else // reponse DTE
-//        {
-//            Uart1SendString_DTE("\r\nERROR\r\n");
-//        }
-        // affichage "ERROR" sur le LCD
-        LCD_Clear();
-        LCD_Write_String("ERROR");
+    default: // commande inconnue ou non geree
+        if (commandFrom == SMS)
+        {
+            SendAnswer("ERROR"); // reponse SMS + affichage LCD
+        }
+        else
+        {
+            // pas de reponse au DTE : un texte non AT du DTE est aussi un SMS
+            // a envoyer (voir DTE_CommandsReceive), il ne faut pas repondre ERROR
+            LCD_Clear();
+            LCD_Write_String("ERROR");
+        }
         state = true;
         break;
     }

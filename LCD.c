@@ -103,7 +103,7 @@
 // Sous programme LCD_Init
 // Auteur: Rolle Clement
 // Desc.: sous programme d'initialisation du LCD
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_Init(void)
@@ -150,7 +150,7 @@ void LCD_Init(void)
 // Sous programme LCD_Write_Quartet
 // Auteur: Rolle Clement
 // Desc.: sous programme d'ecriture d'un quartet sur le lcd
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 // Ver. Date: V01 20250520 Modifications
 //---------------------------------------------------------
 
@@ -200,7 +200,7 @@ void LCD_Write_Quartet(uint8_t data)
 // Sous programme LCD_Write_Char
 // Auteur: Rolle Clement
 // Desc.: sous programme d'ecriture d'un caractere
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_Write_Char(char caractere)
@@ -216,7 +216,7 @@ void LCD_Write_Char(char caractere)
 // Sous programme LCD_Clear
 // Auteur: Rolle Clement
 // Desc.: sous programme pour effacer le LCD
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_Clear(void)
@@ -231,7 +231,7 @@ void LCD_Clear(void)
 // Sous programme LCD_Cursor
 // Auteur: Rolle Clement
 // Desc.: sous programme pour allumer eteindre le curseur
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_Cursor(uint8_t on_off)
@@ -252,7 +252,7 @@ void LCD_Cursor(uint8_t on_off)
 // Sous programme LCD_Cursor_position
 // Auteur: Rolle Clement
 // Desc.: sous programme pour deplacer le curseur
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_Cursor_Position(uint8_t ligne, uint8_t colonne)
@@ -284,19 +284,19 @@ void _LCD_Clear_Line(void) {...}
 // Sous programme LCD_Clear_Line
 // Auteur: Rolle Clement
 // Desc.: sous programme pour effacer la ligne choisie
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_Clear_Line(uint8_t no_ligne)
 {
-    LCD_Cursor_Position(no_ligne, 1); // positionne le curseur sur la bonne ligne au d�but
+    LCD_Cursor_Position(no_ligne, 1); // positionne le curseur sur la bonne ligne au début
 
     for (uint8_t loop = 8; loop != 0; loop--) // rempli de 8 espace
     {
         LCD_Write_Char(' ');
     }
 
-    LCD_Cursor_Position(no_ligne, 1); // repositionne le curseur au d�but de la ligne
+    LCD_Cursor_Position(no_ligne, 1); // repositionne le curseur au début de la ligne
 }
 //---------------------------------------------------------
 
@@ -304,7 +304,7 @@ void LCD_Clear_Line(uint8_t no_ligne)
 // Sous programme LCD_Write_String
 // Auteur: RolleC
 // Desc.: sous programme d'ecriture de string sur l'uart
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_Write_String(const char *str)
@@ -312,7 +312,7 @@ void LCD_Write_String(const char *str)
     while (*str != '\0') // ecrire jusqua la fin du string
     {
         LCD_Write_Char(*str); // ecrit le char
-        str++; // passe � l'addresse suivante
+        str++; // passe à l'addresse suivante
     }
 }
 //---------------------------------------------------------
@@ -321,7 +321,7 @@ void LCD_Write_String(const char *str)
 // Sous programme LCD_Command
 // Auteur: RolleC
 // Desc.: sous programme de command du lcd
-// Ver. Date: V00 20231222 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20231222 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_Command(uint8_t commande)
@@ -346,7 +346,7 @@ void LCD_Command(uint8_t commande)
 // Sous programme LCD_BackLight
 // Auteur: RolleC
 // Desc.: sous programme de commande du retro-eclairage du lcd
-// Ver. Date: V00 20250528 Cr�ation (YYYYMMDD)	
+// Ver. Date: V00 20250528 Création (YYYYMMDD)	
 //---------------------------------------------------------
 
 void LCD_BackLight(bool backLight)

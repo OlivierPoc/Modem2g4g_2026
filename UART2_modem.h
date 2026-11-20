@@ -1,10 +1,10 @@
 /*
  * File: UART2.h
  * Auteur: Rolle Clement	
- * Company: EMF (Ecole des Métiers de Fribourg) http://www.emf.ch
+ * Company: EMF (Ecole des MÃ©tiers de Fribourg) http://www.emf.ch
  * Desc.: librarie communication rs232 no2
  * 
- * Ver. Date: V01 20231207 Création (YYYYMMDD)
+ * Ver. Date: V01 20231207 CrÃ©ation (YYYYMMDD)
  * Ver. Date: V01 20250519 Modifications
  */
 
@@ -19,7 +19,7 @@
 #include "main.h"
 
 // buffer lecture uart
-char bufferUart_modem[BUFFER_SIZE] = {0};
+extern char bufferUart_modem[BUFFER_SIZE]; // defini dans UART2_modem.c
 
 void Uart2Init_modem(void); // prototype fonction de l'initialisation de l'USART
 void Uart2Write_modem(char data); // prototype de fonction ecriture Uart

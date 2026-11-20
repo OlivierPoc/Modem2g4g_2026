@@ -9,12 +9,12 @@
             "imageType": "application",
             "imagePath": "./out/2Gto4G/default.elf",
             "toolProperties": "default-tool",
-            "tool": "PICkit 5",
+            "tool": "Simulator",
             "packs": [
                 {
                     "name": "PIC16F1xxxx_DFP",
-                    "vendor": "Microchip",
-                    "version": "1.32.471"
+                    "version": "1.32.471",
+                    "vendor": "Microchip"
                 }
             ],
             "fileSet": "Project files",

@@ -1,4 +1,4 @@
-# Install script for directory: D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/cmake/2Gto4G/default
+# Install script for directory: C:/Temp/GIT/Modem2g4g_2026/cmake/2Gto4G/default
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,7 +40,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/install_local_manifest.txt"
+  file(WRITE "C:/Temp/GIT/Modem2g4g_2026/_build/2Gto4G/default/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,6 +56,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/olive/OneDrive/_MyHouse/Mayen/_PoeleModem/fw/2g4g_2026/2Gto4G.X/_build/2Gto4G/default/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Temp/GIT/Modem2g4g_2026/_build/2Gto4G/default/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

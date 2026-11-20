@@ -1,10 +1,10 @@
 /*
  * File: UART1.h
  * Auteur: Rolle Clement	
- * Company: EMF (Ecole des Métiers de Fribourg) http://www.emf.ch
+ * Company: EMF (Ecole des MÃ©tiers de Fribourg) http://www.emf.ch
  * Desc.: librarie communication rs232 no1
  * 
- * Ver. Date: V01 20231207 Création (YYYYMMDD)
+ * Ver. Date: V01 20231207 CrÃ©ation (YYYYMMDD)
  * Ver. Date: V01 20250519 Modifications
  */
 
@@ -19,7 +19,7 @@
 #include "main.h"
 
 // buffer lecture uart
-char bufferUart_DTE[BUFFER_SIZE] = {0};
+extern char bufferUart_DTE[BUFFER_SIZE]; // defini dans UART1_DTE.c
 
 void Uart1Init_DTE(void); // prototype fonction de l'initialisation de l'USART
 void Uart1Write_DTE(char data); // prototype de fonction ecriture Uart

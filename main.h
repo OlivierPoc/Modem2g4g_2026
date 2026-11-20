@@ -1,16 +1,18 @@
 /*
  * File: main.h
  * Auteur: Olivier POCHON	
- * Company: EMF (Ecole des Métiers de Fribourg) http://www.emf.ch
+ * Company: EMF (Ecole des MÃ©tiers de Fribourg) http://www.emf.ch
  * Desc.: librarie 
  * 
- * Ver. Date: V00 20251021 Création (YYYYMMDD)
+ * Ver. Date: V00 20251021 CrÃ©ation (YYYYMMDD)
  */
 
 // This is a guard condition so that contents of this file are not included
 // more than once.  
 #ifndef MAIN_H
 #define	MAIN_H
+
+#include <stdbool.h>
 
 // Switch
 #define S2          PORTCbits.RC2   // Switch S0
@@ -30,16 +32,16 @@
 
 #define _XTAL_FREQ 32000000 // 32Mhz freq pour delay
 
-// display status
-bool displayStatus = false; // pour affichage 
-bool modemStatus_OK = false;  // Status du modem
-bool poeleStatus_OK = false;  // Status du poele (DTR))
+// display status (definies dans main.c)
+extern bool displayStatus; // pour affichage
+extern bool modemStatus_OK;  // Status du modem
+extern bool poeleStatus_OK;  // Status du poele (DTR))
 
 //buffer
 #define BUFFER_SIZE 64
-char bufferSMS[BUFFER_SIZE];
-bool uart2FrameReady=false;
-bool smsToSend=false; 
+extern char bufferSMS[BUFFER_SIZE];
+extern bool uart2FrameReady;
+extern volatile bool smsToSend; // ecrit sous interruption
 
 #endif	/* MAIN_H*/
 

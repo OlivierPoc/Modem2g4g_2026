@@ -1,10 +1,10 @@
 /*
  * File: LCD.h
  * Auteur: Rolle Clement	
- * Company: EMF (Ecole des Métiers de Fribourg) http://www.emf.ch
+ * Company: EMF (Ecole des MÃ©tiers de Fribourg) http://www.emf.ch
  * Desc.: library LCD
  * 
- * Ver. Date: V01 20231222 Création (YYYYMMDD)
+ * Ver. Date: V01 20231222 CrÃ©ation (YYYYMMDD)
  * Ver. Date: V01 20250519 Modifications
  */
 

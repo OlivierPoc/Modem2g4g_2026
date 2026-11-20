@@ -25,14 +25,19 @@
 #define _XTAL_FREQ 32000000 // 32Mhz freq pour delay
 
 // init states
-bool startMode = false; // mode d'init
-bool modemOK = false; // Modem repond
+// volatile : ces flags sont ecrits sous interruption (SIM7600_CommandsReceive)
+// et attendus dans des boucles hors interruption
+volatile bool startMode = false; // mode d'init
+volatile bool modemOK = false; // Modem repond
 bool modemPrompt = false;
 //bool modemError = false;
-bool modemStartPin = false; // Modem demarre avec code PIN
-bool modemStart = false; // Modem demarre sans code PIN
-bool noSIM = true; // pas de carte SIM
-uint8_t ready = 0; // Modem pret
+volatile bool modemStartPin = false; // Modem demarre avec code PIN
+volatile bool modemStart = false; // Modem demarre sans code PIN
+volatile bool noSIM = true; // pas de carte SIM
+volatile uint8_t ready = 0; // Modem pret
+volatile bool smsFull = false; // memoire SMS du modem pleine (leve sous interruption)
+
+#define MODEM_TIMEOUT_MS 5000 // attente max d'une reponse du modem (effacement SMS)
 
 //// SMS states
 //bool smsMode = false; // reception d'un SMS
@@ -45,7 +50,7 @@ uint8_t ready = 0; // Modem pret
 // Sous programme SIM7600_Init
 // Auteur: RolleC
 // Desc.: sous programme d'initialisation du SIM7600
-// Ver. Date: V00 20250528 Crï¿½ation (YYYYMMDD)	
+// Ver. Date: V00 20250528 CrÃ©ation (YYYYMMDD)	
 //---------------------------------------------------------
 
 void SIM7600_Init(void)
@@ -82,7 +87,7 @@ void SIM7600_Init(void)
         modemStart = false;
         modemStartPin = false;
 
-        Uart2SendString_modem("ATE0\r\n"); // pas d'écho
+        Uart2SendString_modem("ATE0\r\n"); // pas d'Ã©cho
         while (!modemOK); // attendre la reponse de la commande
         modemOK = false; // reset state
 
@@ -94,7 +99,7 @@ void SIM7600_Init(void)
         while (!modemOK); // attendre la reponse de la commande
         modemOK = false; // reset state
 
-        Uart2SendString_modem("AT+CNMI=2,1,0,0,0\r\n"); //Configure les notifications lors de la réception d'un SMS.
+        Uart2SendString_modem("AT+CNMI=2,1,0,0,0\r\n"); //Configure les notifications lors de la rÃ©ception d'un SMS.
         while (!modemOK); // attendre la reponse de la commande
         modemOK = false; // reset statee 
 
@@ -105,10 +110,47 @@ void SIM7600_Init(void)
 //---------------------------------------------------------
 
 //---------------------------------------------------------
+// Sous programme SIM7600_Task
+// Desc.: traitements du modem a faire dans la boucle principale
+//        (jamais sous interruption) :
+//        - memoire SMS pleine -> effacement de tous les SMS stockes
+//---------------------------------------------------------
+
+void SIM7600_Task(void)
+{
+    uint16_t timeout;
+
+    if (!smsFull)
+    {
+        return;
+    }
+    smsFull = false;
+
+    startMode = true; // les reponses du modem ne sont pas transmises au DTE
+    modemOK = false;
+
+    // efface tous les SMS (delflag 4 : l'index est ignore)
+    Uart2SendString_modem("AT+CMGD=0,4\r\n");
+
+    // attendre "OK" (mis a jour par l'interruption UART2), avec timeout
+    timeout = MODEM_TIMEOUT_MS;
+    while (!modemOK && (timeout != 0))
+    {
+        __delay_ms(1);
+        timeout--;
+    }
+    modemOK = false; // reset state
+    __delay_ms(10); // delay aquisition de la commande
+
+    startMode = false;
+}
+//---------------------------------------------------------
+
+//---------------------------------------------------------
 // Sous programme SIM7600_SendSMS
 // Auteur: RolleC
 // Desc.: sous programme d'envois d'un sms
-// Ver. Date: V00 20250522 Crï¿½ation (YYYYMMDD)	
+// Ver. Date: V00 20250522 CrÃ©ation (YYYYMMDD)	
 //---------------------------------------------------------
 
 void SIM7600_SendSMS(const char *text)
@@ -146,7 +188,7 @@ void SIM7600_SendSMS(const char *text)
 // Sous programme SIM7600_CommandsSend
 // Auteur: RolleC
 // Desc.: sous programme de controle et envois de toutes les commandes
-// Ver. Date: V00 20250528 Crï¿½ation (YYYYMMDD)	
+// Ver. Date: V00 20250528 CrÃ©ation (YYYYMMDD)	
 //---------------------------------------------------------
 
 void DTE_CommandsReceive(void)
@@ -294,7 +336,7 @@ void DTE_CommandsReceive(void)
 // Sous programme SIM7600_CommandsReceive
 // Auteur: RolleC
 // Desc.: sous programme de reception de commande depuis le Modem 4G
-// Ver. Date: V00 20250528 Crï¿½ation (YYYYMMDD)	
+// Ver. Date: V00 20250528 CrÃ©ation (YYYYMMDD)	
 //---------------------------------------------------------
 
 void SIM7600_CommandsReceive(void)
@@ -364,19 +406,12 @@ void SIM7600_CommandsReceive(void)
 
         else if ((strncmp((const char *) bufferUart_modem, "+SMS FULL", 9) == 0)) // probleme reception SMS
         {
-            startMode = true;
-
-            //            for (uint8_t loop = 2; loop != 0; loop--)
-            //            {
-            Uart2SendString_modem("AT+CMGD=0\r\n"); // vide l'espace memoire SMS 0
-            __delay_ms(10); // delay aquisition de la commande 
-
-            while (!modemOK); // attendre la reponse de la commande
-            modemOK = false; // reset state
-            __delay_ms(10); // delay aquisition de la commande
-
-            startMode = false;
-            //            }
+            // ATTENTION : on est ici sous interruption. Il ne faut PAS attendre
+            // la reponse du modem ici (while (!modemOK)) : modemOK est mis a
+            // jour par cette meme interruption -> blocage definitif.
+            // On leve seulement un flag, le traitement est fait dans la
+            // boucle principale par SIM7600_Task().
+            smsFull = true;
         }
         else if (!smsMode && !startMode && !smsSend) // autres reponse en mode normal
         {
@@ -404,7 +439,7 @@ bool Uart2CopySMSCommand(void)
     uint8_t index = 0;
 
     /*
-     * Arrêter la copie à CR, LF, à la fin de la chaîne,
+     * ArrÃªter la copie Ã  CR, LF, Ã  la fin de la chaÃ®ne,
      * ou lorsque le tampon de destination est plein.
      */
     while ((index < (BUFFER_SIZE - 1)) &&
