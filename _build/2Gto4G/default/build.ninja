@@ -53,6 +53,24 @@ build CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Mod
   TARGET_COMPILE_PDB = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\
   TARGET_PDB = ""
 
+build CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LIB_I2C.c.p1: C_COMPILER__A_2Gto4G_default_toolchain_XC8_3_10_compile_unscanned_ C$:\Temp\GIT\Modem2g4g_2026\LIB_I2C.c || cmake_object_order_depends_target_A_2Gto4G_default_toolchain_XC8_3_10_compile
+  DEFINES = -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1
+  DEP_FILE = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LIB_I2C.c.p1.d
+  FLAGS = -c -mcpu=16F15356 -mdfp=C:/Users/pochono/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto
+  OBJECT_DIR = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir
+  OBJECT_FILE_DIR = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026
+  TARGET_COMPILE_PDB = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\
+  TARGET_PDB = ""
+
+build CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LIB_SCD41.c.p1: C_COMPILER__A_2Gto4G_default_toolchain_XC8_3_10_compile_unscanned_ C$:\Temp\GIT\Modem2g4g_2026\LIB_SCD41.c || cmake_object_order_depends_target_A_2Gto4G_default_toolchain_XC8_3_10_compile
+  DEFINES = -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1
+  DEP_FILE = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LIB_SCD41.c.p1.d
+  FLAGS = -c -mcpu=16F15356 -mdfp=C:/Users/pochono/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto
+  OBJECT_DIR = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir
+  OBJECT_FILE_DIR = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026
+  TARGET_COMPILE_PDB = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\
+  TARGET_PDB = ""
+
 build CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\SIM7600.c.p1: C_COMPILER__A_2Gto4G_default_toolchain_XC8_3_10_compile_unscanned_ C$:\Temp\GIT\Modem2g4g_2026\SIM7600.c || cmake_object_order_depends_target_A_2Gto4G_default_toolchain_XC8_3_10_compile
   DEFINES = -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1
   DEP_FILE = CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\SIM7600.c.p1.d
@@ -112,7 +130,7 @@ build CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Mod
 #############################################
 # Object library A_2Gto4G_default_toolchain_XC8_3_10_compile
 
-build A_2Gto4G_default_toolchain_XC8_3_10_compile: phony CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LCD.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\SIM7600.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\UART1_DTE.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\UART2_modem.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\commands.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\interrupt.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\main.c.p1
+build A_2Gto4G_default_toolchain_XC8_3_10_compile: phony CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LCD.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LIB_I2C.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LIB_SCD41.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\SIM7600.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\UART1_DTE.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\UART2_modem.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\commands.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\interrupt.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\main.c.p1
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 2Gto4G_default_image_kT6SPYGG
@@ -131,7 +149,7 @@ build cmake_object_order_depends_target_2Gto4G_default_image_kT6SPYGG: phony || 
 #############################################
 # Link the executable C:\Temp\GIT\Modem2g4g_2026\out\2Gto4G\default.elf
 
-build C$:\Temp\GIT\Modem2g4g_2026\out\2Gto4G\default.elf: C_EXECUTABLE_LINKER__2Gto4G_default_image_kT6SPYGG_ CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LCD.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\SIM7600.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\UART1_DTE.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\UART2_modem.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\commands.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\interrupt.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\main.c.p1 || A_2Gto4G_default_toolchain_XC8_3_10_compile
+build C$:\Temp\GIT\Modem2g4g_2026\out\2Gto4G\default.elf: C_EXECUTABLE_LINKER__2Gto4G_default_image_kT6SPYGG_ CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LCD.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LIB_I2C.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\LIB_SCD41.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\SIM7600.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\UART1_DTE.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\UART2_modem.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\commands.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\interrupt.c.p1 CMakeFiles\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\C_\Temp\GIT\Modem2g4g_2026\main.c.p1 || A_2Gto4G_default_toolchain_XC8_3_10_compile
   LINK_FLAGS = -Wl,-Map=mem.map -mcpu=16F15356 -Wl,--defsym=__MPLAB_BUILD=1 -mdfp=C:/Users/pochono/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -Wl,--memorysummary,memoryfile.xml
   OBJECT_DIR = CMakeFiles\2Gto4G_default_image_kT6SPYGG.dir
   POST_BUILD = cmd.exe /C "cd /D C:\Temp\GIT\Modem2g4g_2026\out\2Gto4G && "c:\Program Files\Microchip\xc8\v3.10\bin\pic-objdump.exe" --disassemble --wide --demangle --line-numbers --section-headers --source default.elf > default.lss"

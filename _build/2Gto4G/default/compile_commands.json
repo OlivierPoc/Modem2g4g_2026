@@ -7,6 +7,18 @@
 },
 {
   "directory": "C:/Temp/GIT/Modem2g4g_2026/_build/2Gto4G/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/pochono/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\C_\\Temp\\GIT\\Modem2g4g_2026\\LIB_I2C.c.p1 -c C:\\Temp\\GIT\\Modem2g4g_2026\\LIB_I2C.c",
+  "file": "C:\\Temp\\GIT\\Modem2g4g_2026\\LIB_I2C.c",
+  "output": "CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\C_\\Temp\\GIT\\Modem2g4g_2026\\LIB_I2C.c.p1"
+},
+{
+  "directory": "C:/Temp/GIT/Modem2g4g_2026/_build/2Gto4G/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/pochono/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\C_\\Temp\\GIT\\Modem2g4g_2026\\LIB_SCD41.c.p1 -c C:\\Temp\\GIT\\Modem2g4g_2026\\LIB_SCD41.c",
+  "file": "C:\\Temp\\GIT\\Modem2g4g_2026\\LIB_SCD41.c",
+  "output": "CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\C_\\Temp\\GIT\\Modem2g4g_2026\\LIB_SCD41.c.p1"
+},
+{
+  "directory": "C:/Temp/GIT/Modem2g4g_2026/_build/2Gto4G/default",
   "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v3.10\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15356__ -D__DEBUG=1 -c -mcpu=16F15356 -mdfp=C:/Users/pochono/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.32.471/xc8 -fno-short-double -fno-short-float -O0 -maddrqual=ignore -mwarn=-3 -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto -o CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\C_\\Temp\\GIT\\Modem2g4g_2026\\SIM7600.c.p1 -c C:\\Temp\\GIT\\Modem2g4g_2026\\SIM7600.c",
   "file": "C:\\Temp\\GIT\\Modem2g4g_2026\\SIM7600.c",
   "output": "CMakeFiles\\A_2Gto4G_default_toolchain_XC8_3_10_compile.dir\\C_\\Temp\\GIT\\Modem2g4g_2026\\SIM7600.c.p1"

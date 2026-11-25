@@ -103,7 +103,11 @@
 
 // CO2
 #define GET_CO2 0x11
-#define GET_CO2_TXT "CO2" 
+#define GET_CO2_TXT "CO2"
+
+// toutes les mesures du SCD41 en un SMS
+#define GET_MESURES 0x17
+#define GET_MESURES_TXT "Mesures"
 
 // alerte de temperature negative
 #define WARNING_NEG_TEMP 0x12
@@ -128,10 +132,11 @@
 // variables globales : declarees ici (extern), definies dans commands.c
 extern volatile bool executionFlag; // flag indicant si une commande doit être executee (ecrit sous interruption)
 
-// valeur capteur pour transmission
-extern uint16_t co2Value;
-extern double tempValue;
-extern uint8_t humidityValue;
+// valeur capteur pour transmission (mises a jour dans main.c par le SCD41)
+extern uint16_t co2Value;      // [ppm]
+extern int16_t tempValue_x10;  // [1/10 degC] ex: 234 = 23.4 degC
+extern uint8_t humidityValue;  // [%]
+extern bool sensorValid;       // true des qu'une mesure valide a ete lue
 
 // SMS states
 extern bool smsMode; // reception d'un SMS

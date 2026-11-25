@@ -41,8 +41,9 @@ uint8_t currentCommand = ERROR; // commande prevue
 volatile bool executionFlag = false; // flag indicant si une commande doit être executee (ecrit sous interruption)
 
 uint16_t co2Value = 0;
-double tempValue = 0.0;
+int16_t tempValue_x10 = 0;
 uint8_t humidityValue = 0;
+bool sensorValid = false;
 
 bool smsMode = false; // reception d'un SMS
 bool smsReadMode = false; // lecture d'un SMS recu
@@ -80,28 +81,28 @@ static char *UIntToString(uint16_t value, char *buffer)
 
 //---------------------------------------------------
 // Sous programme TempToString
-// Desc.: convertit la temperature en texte avec 1 decimale ("-12.3")
+// Desc.: convertit une temperature en 1/10 degC en texte ("-12.3")
+//        retourne un pointeur sur le '\0' final
 //---------------------------------------------------
-static void TempToString(double value, char *buffer)
+static char *TempToString(int16_t value_x10, char *buffer)
 {
-    int16_t dixiemes;
+    uint16_t dixiemes;
 
-    // arrondi au dixieme
-    if (value < 0)
+    if (value_x10 < 0)
     {
-        dixiemes = (int16_t) (value * 10.0 - 0.5);
         *buffer++ = '-';
-        dixiemes = -dixiemes;
+        dixiemes = (uint16_t) (-value_x10);
     }
     else
     {
-        dixiemes = (int16_t) (value * 10.0 + 0.5);
+        dixiemes = (uint16_t) value_x10;
     }
 
-    buffer = UIntToString((uint16_t) dixiemes / 10, buffer);
+    buffer = UIntToString(dixiemes / 10, buffer);
     *buffer++ = '.';
-    *buffer++ = (char) ('0' + ((uint16_t) dixiemes % 10));
+    *buffer++ = (char) ('0' + (dixiemes % 10));
     *buffer = '\0';
+    return buffer;
 }
 
 //---------------------------------------------------
@@ -231,6 +232,11 @@ void Command(char *command, uint8_t from)
     {
         currentCommand = GET_CO2;
     }
+        // ---------- Toutes les mesures ----------
+    else if (strncmp(command, GET_MESURES_TXT, strlen(GET_MESURES_TXT)) == 0)
+    {
+        currentCommand = GET_MESURES;
+    }
     else // commande invalide (affichage et reponse faits dans Execute)
     {
         currentCommand = ERROR;
@@ -252,6 +258,17 @@ void Execute(void)
     bool state = false; // renvois d'etat 
 
     char stringBuffer[12]; // buffer pour l'envois de string convertit depuis une variable (-XXXX.Xxxxx\0)
+    char smsBuffer[48];    // reponse complete "Temp: -12.3 C\nHum: 100 %\nCO2: 40000 ppm"
+    char *p;
+
+    // commandes capteur : pas encore de mesure valide
+    if ((currentCommand == GET_TEMPERATURE || currentCommand == GET_HUMIDITE ||
+         currentCommand == GET_CO2 || currentCommand == GET_MESURES) && !sensorValid)
+    {
+        SendAnswer("NO DATA");
+        executionFlag = false;
+        return;
+    }
 
     switch (currentCommand)
     {
@@ -613,23 +630,50 @@ void Execute(void)
         break;
 
         // ---------- Temperature ----------
-    case GET_TEMPERATURE:
-        TempToString(tempValue, stringBuffer);
+    case GET_TEMPERATURE:  // reponse "23.4 C"
+        p = TempToString(tempValue_x10, stringBuffer);
+        strcpy(p, " C");
         SendAnswer(stringBuffer);
         state = true;
         break;
 
         // ---------- Humidite ----------
-    case GET_HUMIDITE:
-        UIntToString(humidityValue, stringBuffer);
+    case GET_HUMIDITE:     // reponse "45 %"
+        p = UIntToString(humidityValue, stringBuffer);
+        strcpy(p, " %");
         SendAnswer(stringBuffer);
         state = true;
         break;
 
         // ---------- CO2 ----------
-    case GET_CO2:
-        UIntToString(co2Value, stringBuffer);
+    case GET_CO2:          // reponse "612 ppm"
+        p = UIntToString(co2Value, stringBuffer);
+        strcpy(p, " ppm");
         SendAnswer(stringBuffer);
+        state = true;
+        break;
+
+        // ---------- Toutes les mesures ----------
+    case GET_MESURES:      // reponse "Temp: 23.4 C\nHum: 45 %\nCO2: 612 ppm"
+        strcpy(smsBuffer, "Temp: ");
+        p = TempToString(tempValue_x10, smsBuffer + strlen(smsBuffer));
+        strcpy(p, " C\nHum: ");
+        p = UIntToString(humidityValue, p + strlen(p));
+        strcpy(p, " %\nCO2: ");
+        p = UIntToString(co2Value, p + strlen(p));
+        strcpy(p, " ppm");
+
+        if (commandFrom == SMS)
+        {
+            SIM7600_SendSMS(smsBuffer);
+        }
+        else
+        {
+            Uart1SendString_DTE(smsBuffer);
+            Uart1SendString_DTE("\r\n");
+        }
+        LCD_Clear();
+        LCD_Write_String("MESURES");
         state = true;
         break;
 

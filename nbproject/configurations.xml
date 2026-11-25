@@ -11,6 +11,8 @@
       <itemPath>main.h</itemPath>
       <itemPath>UART1_DTE.h</itemPath>
       <itemPath>UART2_modem.h</itemPath>
+      <itemPath>LIB_I2C.h</itemPath>
+      <itemPath>LIB_SCD41.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -31,6 +33,8 @@
       <itemPath>commands.c</itemPath>
       <itemPath>UART2_modem.c</itemPath>
       <itemPath>UART1_DTE.c</itemPath>
+      <itemPath>LIB_I2C.c</itemPath>
+      <itemPath>LIB_SCD41.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

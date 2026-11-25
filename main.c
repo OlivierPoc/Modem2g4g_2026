@@ -66,6 +66,8 @@
 // peripheriques
 #include "LCD.h" // LCD
 #include "SIM7600.h" // Modem 4G
+#include "LIB_I2C.h" // I2C (MSSP1 RC3=SCL RC4=SDA)
+#include "LIB_SCD41.h" // capteur CO2 / temperature / humidite
 
 
 #include "commands.h" // gestion des commandes SMS et du DTE
@@ -83,6 +85,7 @@ volatile bool smsToSend = false; // ecrit sous interruption
 
 //-------------- Function Declarations --------------
 void Sys_Init(void); // prototype fonction d'initialisation du systeme
+void LCD_Write_Temperature(int16_t temp_x10); // affiche la temperature (1/10 degC)
 
 //========== Main Function Implementation ===========
 
@@ -90,7 +93,8 @@ int main(void)
 {
     //    char stringBuffer[12]; // buffer pour l'envois de string convertit depuis une variable (-XXXX.Xxxxx\0)
     uint8_t affiche_modem = 254; // quelle valeurs on affiche 
-    uint8_t affiche_poele = 254; // quelle valeurs on affiche 
+    uint8_t affiche_poele = 254; // quelle valeurs on affiche
+    bool afficheTemp = false; // ligne 1 : true = temperature, false = status poele
 
     poeleStatus_OK = false;
     modemStatus_OK = false;
@@ -110,6 +114,15 @@ int main(void)
     LCD_Write_String("LOADING");
 
     __delay_ms(1000); // laisse une seconde pour être sur d'appuyer sur les boutons
+                      // (et laisse le SCD41 demarrer : 1s apres mise sous tension)
+
+    // demarre la mesure periodique du SCD41 (nouvelle valeur toutes les 5s)
+    if (!SCD41_Init())
+    {
+        LCD_Clear();
+        LCD_Write_String("SCD41 ERREUR");
+        __delay_ms(1000);
+    }
 
     // Enable the Global Interrupts 
     INTERRUPT_GlobalInterruptEnable();
@@ -151,6 +164,27 @@ int main(void)
         // traitements du modem hors interruption (memoire SMS pleine)
         SIM7600_Task();
 
+        // lecture du SCD41 des qu'une nouvelle mesure est disponible (toutes les 5s)
+        // LCD 2x8 : la ligne 1 alterne a chaque mesure entre temperature et status poele
+        if (SCD41_DataReady())
+        {
+            // met a jour les valeurs utilisees par les commandes SMS (commands.c)
+            if (ReadMeasurement(&co2Value, &tempValue_x10, &humidityValue))
+            {
+                sensorValid = true;
+                afficheTemp = !afficheTemp;
+                if (afficheTemp)
+                {
+                    LCD_Cursor_Position(1, 1);
+                    LCD_Write_Temperature(tempValue_x10);
+                }
+                else
+                {
+                    affiche_poele = 0; // reaffiche le status poele tout de suite
+                }
+            }
+        }
+
         // execution de commande
         if (executionFlag) // si il faut executer une commande
         {
@@ -178,7 +212,11 @@ int main(void)
             affiche_modem--;
         }
 
-        if (poeleStatus_OK)
+        if (afficheTemp)
+        {
+            // ligne 1 occupee par la temperature
+        }
+        else if (poeleStatus_OK)
         {
             if (affiche_poele == 0)
             {
@@ -290,6 +328,9 @@ void Sys_Init(void)
     SSP1DATPPS = 0x14; //RC4->MSSP1:SDA1;
     RC4PPS = 0x16; //RC4->MSSP1:SDA1;
 
+    // I2C (apres le PPS)
+    InitI2C();
+
     // LCD
     LCD_Init();
 
@@ -301,6 +342,50 @@ void Sys_Init(void)
     INTERRUPT_Initialize();
 
 
+}
+//---------------------------------------------------
+
+//---------------------------------------------------
+// Sous programme LCD_Write_Temperature
+// Desc.: affiche une temperature en 1/10 degC sur 8 caracteres (ligne LCD 2x8)
+//        ex: 234 -> " 23.4°C "   -52 -> " -5.2°C "
+//---------------------------------------------------
+
+void LCD_Write_Temperature(int16_t temp_x10)
+{
+    char txt[9];
+    uint16_t val;
+    uint8_t i = 0;
+
+    if (temp_x10 < 0)
+    {
+        val = (uint16_t)(-temp_x10);
+    }
+    else
+    {
+        val = (uint16_t)temp_x10;
+    }
+
+    // dizaines (espace si nul)
+    if (val >= 100)
+    {
+        txt[i++] = (temp_x10 < 0) ? '-' : ' ';
+        txt[i++] = (char)('0' + (val / 100) % 10);
+    }
+    else
+    {
+        txt[i++] = ' ';
+        txt[i++] = (temp_x10 < 0) ? '-' : ' ';
+    }
+    txt[i++] = (char)('0' + (val / 10) % 10); // unites
+    txt[i++] = '.';
+    txt[i++] = (char)('0' + val % 10);        // dixiemes
+    txt[i++] = (char)0xDF;                    // symbole degre (ROM HD44780)
+    txt[i++] = 'C';
+    txt[i++] = ' ';                           // complete a 8 caracteres (efface "Poele OK")
+    txt[i] = '\0';
+
+    LCD_Write_String(txt);
 }
 //---------------------------------------------------
 

@@ -17,6 +17,8 @@ endforeach()
 
 set(2Gto4G_default_toolchain_XC8_3_10_FILE_TYPE_compile
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../LCD.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../LIB_I2C.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/../../../LIB_SCD41.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../SIM7600.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../UART1_DTE.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/../../../UART2_modem.c"

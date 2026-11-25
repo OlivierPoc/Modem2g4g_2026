@@ -194,6 +194,8 @@
                 "main.h",
                 "UART1_DTE.h",
                 "UART2_modem.h",
+                "LIB_I2C.h",
+                "LIB_SCD41.h",
                 "Makefile",
                 "main.c",
                 "LCD.c",
@@ -201,7 +203,9 @@
                 "interrupt.c",
                 "commands.c",
                 "UART2_modem.c",
-                "UART1_DTE.c"
+                "UART1_DTE.c",
+                "LIB_I2C.c",
+                "LIB_SCD41.c"
             ],
             "encoding": "ISO-8859-1"
         }
